@@ -1,0 +1,1607 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+Reading design: MBO_53_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MBO_53_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MBO_53_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : MBO_53_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : Rebuilt
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\crc32.v" into library work
+Parsing module <CRC32>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\sum.v" into library work
+Parsing module <sum>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\udpHeader.v" into library work
+Parsing module <udpHeader>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\ipHeader.v" into library work
+Parsing module <ipHeader>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\headerCutter.v" into library work
+Parsing module <headerCutter>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\FourToEight.v" into library work
+Parsing module <FourToEight>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\dataHolder.v" into library work
+Parsing module <dataHolder>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\arp_parser.v" into library work
+Parsing module <arp_parser>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\ARPanswerFormer.v" into library work
+Parsing module <ARPanswerFormer>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" into library work
+Parsing module <fifo_25_12_5>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" into library work
+Parsing module <Ethernet_module_upper>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" into library work
+Parsing module <adc_imi>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\pll_2.v" into library work
+Parsing module <pll_2>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\pll.v" into library work
+Parsing module <pll>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" into library work
+Parsing module <fifo_acp>.
+Analyzing Verilog file "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" into library work
+Parsing module <MBO_53_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 130: Port data_blocks1 is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 181: Port sck is not connected to this instance
+
+Elaborating module <MBO_53_top>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <pll>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <DCM_SP(CLK_FEEDBACK="1X",CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 81: Assignment to clk_bf ignored, since the identifier is never used
+
+Elaborating module <pll_2>.
+
+Elaborating module <DCM_SP(CLK_FEEDBACK="1X",CLKDV_DIVIDE=4.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 95: Assignment to clk50_double_pll_cross ignored, since the identifier is never used
+
+Elaborating module <Ethernet_module_upper>.
+
+Elaborating module <FourToEight>.
+
+Elaborating module <fifo_25_12_5>.
+WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module <fifo_25_12_5> remains a black box.
+
+Elaborating module <headerCutter>.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\headerCutter.v" Line 19: Assignment to packetID ignored, since the identifier is never used
+
+Elaborating module <arp_parser>.
+
+Elaborating module <ipHeader>.
+
+Elaborating module <sum>.
+
+Elaborating module <udpHeader>.
+
+Elaborating module <dataHolder>.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" Line 202: Assignment to BOARD_PORT ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" Line 205: Assignment to PC_PORT ignored, since the identifier is never used
+
+Elaborating module <ARPanswerFormer>.
+
+Elaborating module <CRC32>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" Line 268: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 134: Assignment to e_tx_clk ignored, since the identifier is never used
+
+Elaborating module <adc_imi>.
+WARNING:HDLCompiler:413 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" Line 56: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" Line 62: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <fifo_acp>.
+WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module <fifo_acp> remains a black box.
+WARNING:HDLCompiler:189 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 203: Size mismatch in connection of port <dout>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 203: Assignment to eth_data_blocks1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 206: Assignment to ground1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 216: Size mismatch in connection of port <dout>. Formal port size is 16-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 216: Assignment to eth_data_blocks2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 219: Assignment to ground2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 54: Net <emdc> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 123: Net <RAW_STATIC_DATA[991]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 126: Net <acp_data2[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 127: Net <acp_data2_ena> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 197: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 199: Net <clk2x> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 211: Net <acp_data_clock2> does not have a driver.
+WARNING:HDLCompiler:552 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 130: Input port data_blocks1[15] is not connected on this instance
+WARNING:HDLCompiler:552 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 181: Input port mdi is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MBO_53_top>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v".
+    Set property "KEEP_HIERARCHY = YES" for instance <ethernet>.
+    Set property "MARK_DEBUG = TRUE" for signal <BTN_counter>.
+    Set property "MARK_DEBUG = TRUE" for signal <e_rx_clk_bf>.
+    Set property "MARK_DEBUG = TRUE" for signal <BTN_WEST_bf>.
+    Set property "MARK_DEBUG = TRUE" for signal <adc_01_start>.
+    Set property "MARK_DEBUG = TRUE" for signal <BTN_WEST_f>.
+    Set property "MARK_DEBUG = TRUE" for signal <BTN_WEST_ff>.
+WARNING:Xst:2898 - Port 'data_blocks1', unconnected in block instance 'ethernet', is tied to GND.
+WARNING:Xst:2898 - Port 'data_blocks2', unconnected in block instance 'ethernet', is tied to GND.
+WARNING:Xst:2898 - Port 'mdi', unconnected in block instance 'adc_imi_01', is tied to GND.
+WARNING:Xst:647 - Input <e_tx_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <e_rx_er> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <e_crc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <e_col> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 76: Output port <CLKIN_IBUFG_OUT> of the instance <pll_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 89: Output port <CLK0_OUT> of the instance <pll_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 130: Output port <TX_CLK> of the instance <ethernet> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 181: Output port <sck> of the instance <adc_imi_01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 196: Output port <dout> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 196: Output port <full> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <dout> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <full> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <RAW_STATIC_DATA> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <acp_data2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <emdc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <acp_data2_ena> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <clk2x> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <acp_data_clock2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <BTN_WEST_ff>.
+    Found 1-bit register for signal <adc_01_start>.
+    Found 1-bit register for signal <BTN_strob>.
+    Found 32-bit register for signal <BTN_counter>.
+    Found 1-bit register for signal <BTN_WEST_f>.
+    Found 32-bit adder for signal <BTN_counter[31]_GND_1_o_add_2_OUT> created at line 174.
+INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_counter may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+Unit <MBO_53_top> synthesized.
+
+Synthesizing Unit <pll>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\pll.v".
+    Summary:
+	no macro.
+Unit <pll> synthesized.
+
+Synthesizing Unit <pll_2>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\pll_2.v".
+    Summary:
+	no macro.
+Unit <pll_2> synthesized.
+
+Synthesizing Unit <Ethernet_module_upper>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v".
+        CONST_BOARD_IP = 32'b11000000101010000000000001110001
+        CONST_BOARD_MAC = 48'b100100000010101100110100000011010000111011100110
+    Set property "KEEP_HIERARCHY = YES" for instance <fte>.
+    Set property "KEEP_HIERARCHY = YES" for instance <fifo_input>.
+    Set property "KEEP_HIERARCHY = YES" for instance <hc>.
+    Set property "MARK_DEBUG = TRUE" for instance <ap>.
+    Set property "KEEP_HIERARCHY = YES" for instance <ih>.
+    Set property "KEEP_HIERARCHY = YES" for instance <dh>.
+    Set property "MARK_DEBUG = TRUE" for instance <aa>.
+    Set property "MARK_DEBUG = TRUE" for signal <preambula_ended>.
+    Set property "MARK_DEBUG = TRUE" for signal <preambula_ended_short>.
+    Set property "MARK_DEBUG = TRUE" for signal <flag_is_input_ARP>.
+WARNING:Xst:647 - Input <data_blocks1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data_blocks2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RAW_STATIC_DATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_main> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset_global_in_1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset_global_in_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdempty1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdempty2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <is_there_256_1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <is_there_256_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" line 120: Output port <rd_data_count> of the instance <fifo_input> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" line 120: Output port <full> of the instance <fifo_input> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" line 182: Output port <BOARD_PORT> of the instance <dh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet_module_upper.v" line 182: Output port <PC_PORT> of the instance <dh> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <TX_CLK> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdreq1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rdreq2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 16-bit register for signal <input_fifo_rdempty_delay>.
+    Found 32-bit register for signal <n0038[31:0]>.
+    Found 1-bit register for signal <preambula_ended>.
+    Found 1-bit register for signal <preambula_ended_short>.
+    Found 4-bit register for signal <counter_for_prolonging_data_validation>.
+    Found 4-bit adder for signal <counter_for_prolonging_data_validation[3]_GND_8_o_add_10_OUT> created at line 268.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+Unit <Ethernet_module_upper> synthesized.
+
+Synthesizing Unit <FourToEight>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\FourToEight.v".
+    Found 8-bit register for signal <datastorage>.
+    Found 1-bit register for signal <ena_ft>.
+    Found 10-bit register for signal <cnt_w>.
+    Found 8-bit register for signal <dataout>.
+    Found 1-bit register for signal <error_pzdc>.
+    Found 1-bit register for signal <state>.
+    Found 10-bit adder for signal <cnt_w[9]_GND_9_o_add_2_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <FourToEight> synthesized.
+
+Synthesizing Unit <headerCutter>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\headerCutter.v".
+    Found 48-bit register for signal <BOARD_MAC>.
+    Found 1-bit register for signal <isIp>.
+    Found 1-bit register for signal <isARP>.
+    Found 1-bit register for signal <isNotAValidPacket>.
+    Found 4-bit register for signal <counter>.
+    Found 1-bit register for signal <EOP>.
+    Found 48-bit register for signal <PC_MAC>.
+    Found 4-bit adder for signal <counter[3]_GND_11_o_add_1_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 104 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <headerCutter> synthesized.
+
+Synthesizing Unit <arp_parser>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\arp_parser.v".
+    Found 6-bit register for signal <counter>.
+    Found 1-bit register for signal <BOARD_IP_reg<31>>.
+    Found 1-bit register for signal <BOARD_IP_reg<30>>.
+    Found 1-bit register for signal <BOARD_IP_reg<29>>.
+    Found 1-bit register for signal <BOARD_IP_reg<28>>.
+    Found 1-bit register for signal <BOARD_IP_reg<27>>.
+    Found 1-bit register for signal <BOARD_IP_reg<26>>.
+    Found 1-bit register for signal <BOARD_IP_reg<25>>.
+    Found 1-bit register for signal <BOARD_IP_reg<24>>.
+    Found 1-bit register for signal <BOARD_IP_reg<23>>.
+    Found 1-bit register for signal <BOARD_IP_reg<22>>.
+    Found 1-bit register for signal <BOARD_IP_reg<21>>.
+    Found 1-bit register for signal <BOARD_IP_reg<20>>.
+    Found 1-bit register for signal <BOARD_IP_reg<19>>.
+    Found 1-bit register for signal <BOARD_IP_reg<18>>.
+    Found 1-bit register for signal <BOARD_IP_reg<17>>.
+    Found 1-bit register for signal <BOARD_IP_reg<16>>.
+    Found 1-bit register for signal <BOARD_IP_reg<15>>.
+    Found 1-bit register for signal <BOARD_IP_reg<14>>.
+    Found 1-bit register for signal <BOARD_IP_reg<13>>.
+    Found 1-bit register for signal <BOARD_IP_reg<12>>.
+    Found 1-bit register for signal <BOARD_IP_reg<11>>.
+    Found 1-bit register for signal <BOARD_IP_reg<10>>.
+    Found 1-bit register for signal <BOARD_IP_reg<9>>.
+    Found 1-bit register for signal <BOARD_IP_reg<8>>.
+    Found 1-bit register for signal <BOARD_IP_reg<7>>.
+    Found 1-bit register for signal <BOARD_IP_reg<6>>.
+    Found 1-bit register for signal <BOARD_IP_reg<5>>.
+    Found 1-bit register for signal <BOARD_IP_reg<4>>.
+    Found 1-bit register for signal <BOARD_IP_reg<3>>.
+    Found 1-bit register for signal <BOARD_IP_reg<2>>.
+    Found 1-bit register for signal <BOARD_IP_reg<1>>.
+    Found 1-bit register for signal <BOARD_IP_reg<0>>.
+    Found 1-bit register for signal <PC_IP_reg<31>>.
+    Found 1-bit register for signal <PC_IP_reg<30>>.
+    Found 1-bit register for signal <PC_IP_reg<29>>.
+    Found 1-bit register for signal <PC_IP_reg<28>>.
+    Found 1-bit register for signal <PC_IP_reg<27>>.
+    Found 1-bit register for signal <PC_IP_reg<26>>.
+    Found 1-bit register for signal <PC_IP_reg<25>>.
+    Found 1-bit register for signal <PC_IP_reg<24>>.
+    Found 1-bit register for signal <PC_IP_reg<23>>.
+    Found 1-bit register for signal <PC_IP_reg<22>>.
+    Found 1-bit register for signal <PC_IP_reg<21>>.
+    Found 1-bit register for signal <PC_IP_reg<20>>.
+    Found 1-bit register for signal <PC_IP_reg<19>>.
+    Found 1-bit register for signal <PC_IP_reg<18>>.
+    Found 1-bit register for signal <PC_IP_reg<17>>.
+    Found 1-bit register for signal <PC_IP_reg<16>>.
+    Found 1-bit register for signal <PC_IP_reg<15>>.
+    Found 1-bit register for signal <PC_IP_reg<14>>.
+    Found 1-bit register for signal <PC_IP_reg<13>>.
+    Found 1-bit register for signal <PC_IP_reg<12>>.
+    Found 1-bit register for signal <PC_IP_reg<11>>.
+    Found 1-bit register for signal <PC_IP_reg<10>>.
+    Found 1-bit register for signal <PC_IP_reg<9>>.
+    Found 1-bit register for signal <PC_IP_reg<8>>.
+    Found 1-bit register for signal <PC_IP_reg<7>>.
+    Found 1-bit register for signal <PC_IP_reg<6>>.
+    Found 1-bit register for signal <PC_IP_reg<5>>.
+    Found 1-bit register for signal <PC_IP_reg<4>>.
+    Found 1-bit register for signal <PC_IP_reg<3>>.
+    Found 1-bit register for signal <PC_IP_reg<2>>.
+    Found 1-bit register for signal <PC_IP_reg<1>>.
+    Found 1-bit register for signal <PC_IP_reg<0>>.
+    Found 1-bit register for signal <dataen_reg>.
+    Found 6-bit adder for signal <counter[5]_GND_12_o_add_3_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  71 D-type flip-flop(s).
+Unit <arp_parser> synthesized.
+
+Synthesizing Unit <ipHeader>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\ipHeader.v".
+    Found 1-bit register for signal <dataen>.
+    Found 5-bit register for signal <counter>.
+    Found 1-bit register for signal <EOP>.
+    Found 16-bit register for signal <checksum>.
+    Found 1-bit register for signal <sumReg<15>>.
+    Found 1-bit register for signal <sumReg<14>>.
+    Found 1-bit register for signal <sumReg<13>>.
+    Found 1-bit register for signal <sumReg<12>>.
+    Found 1-bit register for signal <sumReg<11>>.
+    Found 1-bit register for signal <sumReg<10>>.
+    Found 1-bit register for signal <sumReg<9>>.
+    Found 1-bit register for signal <sumReg<8>>.
+    Found 1-bit register for signal <sumReg<7>>.
+    Found 1-bit register for signal <sumReg<6>>.
+    Found 1-bit register for signal <sumReg<5>>.
+    Found 1-bit register for signal <sumReg<4>>.
+    Found 1-bit register for signal <sumReg<3>>.
+    Found 1-bit register for signal <sumReg<2>>.
+    Found 1-bit register for signal <sumReg<1>>.
+    Found 1-bit register for signal <sumReg<0>>.
+    Found 1-bit register for signal <p>.
+    Found 16-bit register for signal <checkSave>.
+    Found 1-bit register for signal <isNotAValidPacket>.
+    Found 5-bit adder for signal <counter[4]_GND_13_o_add_19_OUT> created at line 150.
+    Found 8-bit comparator equal for signal <n0001> created at line 78
+    Found 8-bit comparator equal for signal <n0005> created at line 86
+    Found 8-bit comparator equal for signal <n0009> created at line 94
+    Found 8-bit comparator equal for signal <n0013> created at line 102
+    Found 8-bit comparator equal for signal <n0017> created at line 110
+    Found 8-bit comparator equal for signal <n0021> created at line 118
+    Found 8-bit comparator equal for signal <n0025> created at line 126
+    Found 8-bit comparator equal for signal <n0029> created at line 135
+    Found 16-bit comparator equal for signal <n0033> created at line 143
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ipHeader> synthesized.
+
+Synthesizing Unit <udpHeader>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\udpHeader.v".
+    Found 5-bit register for signal <counter>.
+    Found 1-bit register for signal <EOP>.
+    Found 16-bit register for signal <PC_PORT>.
+    Found 16-bit register for signal <BOARD_PORT>.
+    Found 1-bit register for signal <dataen>.
+    Found 5-bit adder for signal <counter[4]_GND_15_o_add_12_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+Unit <udpHeader> synthesized.
+
+Synthesizing Unit <dataHolder>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\dataHolder.v".
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_IP> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy_dummy> equivalent to <BOARD_MAC> has been removed
+    Register <BOARD_MAC_dummy> equivalent to <BOARD_MAC> has been removed
+    Found 1-bit register for signal <_n0124>.
+    Found 16-bit register for signal <BOARD_PORT>.
+    Found 16-bit register for signal <PC_PORT>.
+    Found 32-bit register for signal <PC_IP>.
+    Found 48-bit register for signal <PC_MAC>.
+    Found 1-bit register for signal <input_mac_verified_ft>.
+    Found 1-bit register for signal <input_ip_verified_ft>.
+    Found 1-bit register for signal <input_port_verified_ft>.
+    Found 1-bit register for signal <input_in_process_negedge>.
+    Found 1-bit register for signal <input_in_process_ft>.
+    Found 48-bit comparator equal for signal <BOARD_MAC[47]_input_BOARD_MAC[47]_equal_24_o> created at line 95
+    Found 32-bit comparator equal for signal <BOARD_IP[31]_input_BOARD_IP[31]_equal_26_o> created at line 96
+    Found 16-bit comparator equal for signal <BOARD_PORT[15]_input_BOARD_PORT[15]_equal_28_o> created at line 97
+    Found 48-bit comparator equal for signal <PC_MAC[47]_input_PC_MAC[47]_equal_30_o> created at line 99
+    Found 32-bit comparator equal for signal <PC_IP[31]_input_PC_IP[31]_equal_32_o> created at line 100
+    Found 16-bit comparator equal for signal <PC_PORT[15]_input_PC_PORT[15]_equal_34_o> created at line 101
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<47:47>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<45:45>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<39:39>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<38:38>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<37:36>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<33:32>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<30:30>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<24:23>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<21:21>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<17:15>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<13:11>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_MAC<8:7>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_IP<31:30>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_IP<23:23>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_IP<22:22>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_IP<21:21>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_IP<9:7>> (without init value) have a constant value of 1 in block <dataHolder>.
+    WARNING:Xst:2404 -  FFs/Latches <BOARD_IP<3:3>> (without init value) have a constant value of 1 in block <dataHolder>.
+    Summary:
+	inferred 118 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <dataHolder> synthesized.
+
+Synthesizing Unit <ARPanswerFormer>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\ARPanswerFormer.v".
+    Found 8-bit register for signal <gen[1].Shift>.
+    Found 8-bit register for signal <gen[2].Shift>.
+    Found 8-bit register for signal <gen[3].Shift>.
+    Found 8-bit register for signal <gen[4].Shift>.
+    Found 8-bit register for signal <gen[5].Shift>.
+    Found 8-bit register for signal <gen[6].Shift>.
+    Found 8-bit register for signal <gen[7].Shift>.
+    Found 8-bit register for signal <gen[8].Shift>.
+    Found 8-bit register for signal <gen[9].Shift>.
+    Found 8-bit register for signal <gen[10].Shift>.
+    Found 8-bit register for signal <gen[11].Shift>.
+    Found 8-bit register for signal <gen[12].Shift>.
+    Found 8-bit register for signal <gen[13].Shift>.
+    Found 8-bit register for signal <gen[14].Shift>.
+    Found 8-bit register for signal <gen[15].Shift>.
+    Found 8-bit register for signal <gen[16].Shift>.
+    Found 8-bit register for signal <gen[17].Shift>.
+    Found 8-bit register for signal <gen[18].Shift>.
+    Found 8-bit register for signal <gen[19].Shift>.
+    Found 8-bit register for signal <gen[20].Shift>.
+    Found 8-bit register for signal <gen[21].Shift>.
+    Found 8-bit register for signal <gen[22].Shift>.
+    Found 8-bit register for signal <gen[23].Shift>.
+    Found 8-bit register for signal <gen[24].Shift>.
+    Found 8-bit register for signal <gen[25].Shift>.
+    Found 8-bit register for signal <gen[26].Shift>.
+    Found 8-bit register for signal <gen[27].Shift>.
+    Found 8-bit register for signal <gen[28].Shift>.
+    Found 8-bit register for signal <gen[29].Shift>.
+    Found 8-bit register for signal <gen[30].Shift>.
+    Found 8-bit register for signal <gen[31].Shift>.
+    Found 8-bit register for signal <gen[32].Shift>.
+    Found 8-bit register for signal <gen[33].Shift>.
+    Found 8-bit register for signal <gen[34].Shift>.
+    Found 8-bit register for signal <gen[35].Shift>.
+    Found 8-bit register for signal <gen[36].Shift>.
+    Found 8-bit register for signal <gen[37].Shift>.
+    Found 8-bit register for signal <gen[38].Shift>.
+    Found 8-bit register for signal <gen[39].Shift>.
+    Found 8-bit register for signal <gen[40].Shift>.
+    Found 8-bit register for signal <gen[41].Shift>.
+    Found 8-bit register for signal <gen[42].Shift>.
+    Found 8-bit register for signal <gen[43].Shift>.
+    Found 8-bit register for signal <gen[44].Shift>.
+    Found 8-bit register for signal <gen[45].Shift>.
+    Found 8-bit register for signal <gen[46].Shift>.
+    Found 8-bit register for signal <gen[47].Shift>.
+    Found 8-bit register for signal <gen[48].Shift>.
+    Found 8-bit register for signal <gen[49].Shift>.
+    Found 8-bit register for signal <gen[50].Shift>.
+    Found 8-bit register for signal <gen[51].Shift>.
+    Found 8-bit register for signal <gen[52].Shift>.
+    Found 8-bit register for signal <gen[53].Shift>.
+    Found 8-bit register for signal <gen[54].Shift>.
+    Found 8-bit register for signal <gen[55].Shift>.
+    Found 8-bit register for signal <gen[56].Shift>.
+    Found 8-bit register for signal <gen[57].Shift>.
+    Found 8-bit register for signal <gen[58].Shift>.
+    Found 8-bit register for signal <gen[59].Shift>.
+    Found 8-bit register for signal <crcin>.
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <EOA>.
+    Found 8-bit register for signal <counter>.
+    Found 1-bit register for signal <crc_on>.
+    Found 1-bit register for signal <crc_on_ft>.
+    Found 4-bit register for signal <dataout>.
+    Found 8-bit register for signal <gen[0].Shift>.
+    Found 8-bit adder for signal <counter[7]_GND_18_o_add_183_OUT> created at line 134.
+    Found 8-bit comparator greater for signal <GND_18_o_counter[7]_LessThan_185_o> created at line 137
+    Found 8-bit comparator greater for signal <counter[7]_PWR_17_o_LessThan_186_o> created at line 137
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 504 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  34 Multiplexer(s).
+Unit <ARPanswerFormer> synthesized.
+
+Synthesizing Unit <CRC32>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\crc32.v".
+    Found 32-bit register for signal <Rg_CRC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <CRC32> synthesized.
+
+Synthesizing Unit <adc_imi>.
+    Related source file is "E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v".
+WARNING:Xst:647 - Input <mdi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <sck> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <CS_reg>.
+    Found 16-bit register for signal <adc_data_reg>.
+    Found 1-bit register for signal <en_reg>.
+    Found 5-bit register for signal <adc_counter_cycle>.
+    Found 5-bit adder for signal <adc_counter_cycle[4]_GND_20_o_add_4_OUT> created at line 56.
+    Found 16-bit adder for signal <adc_data_reg[15]_GND_20_o_add_7_OUT> created at line 62.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+Unit <adc_imi> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 10-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 3
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 137
+ 1-bit register                                        : 48
+ 10-bit register                                       : 1
+ 16-bit register                                       : 8
+ 32-bit register                                       : 6
+ 4-bit register                                        : 3
+ 48-bit register                                       : 3
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+ 8-bit register                                        : 64
+# Comparators                                          : 17
+ 16-bit comparator equal                               : 3
+ 32-bit comparator equal                               : 2
+ 48-bit comparator equal                               : 2
+ 8-bit comparator equal                                : 8
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 47
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 48-bit 2-to-1 multiplexer                             : 10
+ 8-bit 2-to-1 multiplexer                              : 32
+# Xors                                                 : 53
+ 1-bit xor2                                            : 35
+ 1-bit xor3                                            : 15
+ 1-bit xor4                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/fifo_acp.ngc>.
+Reading core <ipcore_dir/fifo_25_12_5.ngc>.
+Reading core <ipcore_dir/sum.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <fifo_acp> for timing and area information for instance <fifo_input_acp1>.
+Loading core <fifo_acp> for timing and area information for instance <fifo_input_acp2>.
+Loading core <fifo_25_12_5> for timing and area information for instance <fifo_input>.
+Loading core <sum> for timing and area information for instance <summator>.
+WARNING:Xst:1710 - FF/Latch <BOARD_MAC> (without init value) has a constant value of 0 in block <dh>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ARPanswerFormer>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ARPanswerFormer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Ethernet_module_upper>.
+The following registers are absorbed into counter <counter_for_prolonging_data_validation>: 1 register on signal <counter_for_prolonging_data_validation>.
+Unit <Ethernet_module_upper> synthesized (advanced).
+
+Synthesizing (advanced) Unit <FourToEight>.
+The following registers are absorbed into counter <cnt_w>: 1 register on signal <cnt_w>.
+Unit <FourToEight> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MBO_53_top>.
+Unit <MBO_53_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <adc_imi>.
+The following registers are absorbed into counter <adc_counter_cycle>: 1 register on signal <adc_counter_cycle>.
+The following registers are absorbed into counter <adc_data_reg>: 1 register on signal <adc_data_reg>.
+Unit <adc_imi> synthesized (advanced).
+
+Synthesizing (advanced) Unit <arp_parser>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <arp_parser> synthesized (advanced).
+
+Synthesizing (advanced) Unit <headerCutter>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <headerCutter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ipHeader>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ipHeader> synthesized (advanced).
+
+Synthesizing (advanced) Unit <udpHeader>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <udpHeader> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 9
+ 10-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 3
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1004
+ Flip-Flops                                            : 1004
+# Comparators                                          : 17
+ 16-bit comparator equal                               : 3
+ 32-bit comparator equal                               : 2
+ 48-bit comparator equal                               : 2
+ 8-bit comparator equal                                : 8
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 10
+ 16-bit 2-to-1 multiplexer                             : 1
+ 48-bit 2-to-1 multiplexer                             : 10
+ 8-bit 2-to-1 multiplexer                              : 32
+# Xors                                                 : 53
+ 1-bit xor2                                            : 35
+ 1-bit xor3                                            : 15
+ 1-bit xor4                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <gen[59].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[59].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[58].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[57].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[56].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[55].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[54].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[53].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[52].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[51].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[50].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[49].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[48].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[47].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[46].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[45].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[44].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[43].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_0> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_1> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_2> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_3> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_4> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_5> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_6> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gen[42].Shift_7> (without init value) has a constant value of 0 in block <ARPanswerFormer>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <state> in Unit <ARPanswerFormer> is equivalent to the following FF/Latch, which will be removed : <crc_on_ft> 
+
+Optimizing unit <pll> ...
+
+Optimizing unit <pll_2> ...
+
+Optimizing unit <MBO_53_top> ...
+
+Optimizing unit <Ethernet_module_upper> ...
+
+Optimizing unit <FourToEight> ...
+
+Optimizing unit <dataHolder> ...
+
+Optimizing unit <ARPanswerFormer> ...
+
+Optimizing unit <CRC32> ...
+
+Optimizing unit <headerCutter> ...
+
+Optimizing unit <arp_parser> ...
+
+Optimizing unit <ipHeader> ...
+
+Optimizing unit <udpHeader> ...
+
+Optimizing unit <adc_imi> ...
+WARNING:Xst:1710 - FF/Latch <BOARD_MAC> (without init value) has a constant value of 0 in block <dh>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MBO_53_top, actual ratio is 21.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input_acp2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
+
+Final Macro Processing ...
+
+Processing Unit <aa> :
+	Found 5-bit shift register for signal <gen[17].Shift_3>.
+	Found 6-bit shift register for signal <gen[16].Shift_0>.
+	Found 4-bit shift register for signal <gen[14].Shift_1>.
+	Found 4-bit shift register for signal <gen[14].Shift_2>.
+	Found 10-bit shift register for signal <gen[12].Shift_4>.
+	Found 10-bit shift register for signal <gen[12].Shift_5>.
+	Found 10-bit shift register for signal <gen[12].Shift_6>.
+	Found 10-bit shift register for signal <gen[12].Shift_7>.
+Unit <aa> processed.
+
+Processing Unit <ethernet> :
+	Found 15-bit shift register for signal <input_fifo_rdempty_delay_15>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_24>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_25>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_26>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_27>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_28>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_29>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_30>.
+	Found 4-bit shift register for signal <input_last_4_bytes_0_31>.
+Unit <ethernet> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 815
+ Flip-Flops                                            : 815
+# Shift Registers                                      : 17
+ 10-bit shift register                                 : 4
+ 15-bit shift register                                 : 1
+ 4-bit shift register                                  : 10
+ 5-bit shift register                                  : 1
+ 6-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MBO_53_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1789
+#      GND                         : 15
+#      INV                         : 69
+#      LUT1                        : 114
+#      LUT2                        : 318
+#      LUT2_D                      : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 352
+#      LUT4                        : 357
+#      LUT4_D                      : 4
+#      LUT4_L                      : 1
+#      MUXCY                       : 353
+#      MUXF5                       : 22
+#      VCC                         : 11
+#      XORCY                       : 169
+# FlipFlops/Latches                : 1305
+#      FD                          : 20
+#      FD_1                        : 1
+#      FDC                         : 264
+#      FDCE                        : 136
+#      FDE                         : 326
+#      FDE_1                       : 8
+#      FDP                         : 33
+#      FDPE                        : 127
+#      FDR                         : 108
+#      FDR_1                       : 9
+#      FDRE                        : 211
+#      FDRS                        : 3
+#      FDRS_1                      : 3
+#      FDRSE                       : 9
+#      FDSE                        : 47
+# RAMS                             : 3
+#      RAMB16_S36_S36              : 2
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 17
+#      SRL16                       : 1
+#      SRL16E                      : 16
+# Clock Buffers                    : 7
+#      BUFG                        : 6
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 5
+#      IBUFG                       : 2
+#      OBUF                        : 7
+# DCMs                             : 2
+#      DCM_SP                      : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      915  out of   4656    19%  
+ Number of Slice Flip Flops:           1304  out of   9312    14%  
+ Number of 4 input LUTs:               1236  out of   9312    13%  
+    Number used as logic:              1219
+    Number used as Shift registers:      17
+ Number of IOs:                          20
+ Number of bonded IOBs:                  14  out of    232     6%  
+    IOB Flip Flops:                       1
+ Number of BRAMs:                         3  out of     20    15%  
+ Number of GCLKs:                         7  out of     24    29%  
+ Number of DCMs:                          2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                            | Load  |
+-----------------------------------+------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | DCM_SP:CLK2X                                                                                                     | 59    |
+clk                                | DCM_SP:CLK0+DCM_SP:CLKDV                                                                                         | 381   |
+e_rx_clk                           | BUFGP                                                                                                            | 118   |
+clk                                | DCM_SP:CLKDV                                                                                                     | 478   |
+e_mdc_OBUF                         | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i)| 216   |
+adc_imi_01/CS_reg                  | BUFG                                                                                                             | 75    |
+-----------------------------------+------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                         | Buffer(FF name)                                                                                                                  | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+ethernet/rdreq2(ethernet/XST_GND:G)                                                                                                                                    | NONE(ethernet/dh/PC_MAC_41)                                                                                                      | 112   |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_7)                      | 44    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_0)| 44    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_7)    | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_1)    | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1)                         | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_6)    | 36    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0)                       | 35    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_3)                    | 33    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1)                           | 29    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_6)                | 29    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_5)                        | 27    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_2)                        | 27    |
+e_mdc_OBUF(XST_GND:G)                                                                                                                                                  | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d3)                                                    | 12    |
+ethernet/local_reset_summary(ethernet/local_reset_summary1:O)                                                                                                          | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg)                                          | 6     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                          | 2     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                | 2     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                              | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                     | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                 | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                              | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                              | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                     | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                 | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                              | 2     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.016ns (Maximum Frequency: 90.775MHz)
+   Minimum input arrival time before clock: 3.643ns
+   Maximum output required time after clock: 6.137ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.045ns (frequency: 110.559MHz)
+  Total number of paths / destination ports: 137221 / 2018
+-------------------------------------------------------------------------
+Delay:               4.522ns (Levels of Logic = 32)
+  Source:            BTN_counter_1 (FF)
+  Destination:       BTN_counter_31 (FF)
+  Source Clock:      clk rising 2.0X
+  Destination Clock: clk rising 2.0X
+
+  Data Path: BTN_counter_1 to BTN_counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  BTN_counter_1 (BTN_counter<1>)
+     LUT1:I0->O            1   0.612   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<1>_rt (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<1> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<2> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<3> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<4> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<5> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<6> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<7> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<8> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<9> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<10> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<11> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<12> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<13> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<14> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<15> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<16> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<17> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<18> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<19> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<20> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<21> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<22> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<23> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<24> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<25> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<26> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<27> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<28> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<29> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<30> (Madd_BTN_counter[31]_GND_1_o_add_2_OUT_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Madd_BTN_counter[31]_GND_1_o_add_2_OUT_xor<31> (BTN_counter[31]_GND_1_o_add_2_OUT<31>)
+     FDR:D                     0.268          BTN_counter_31
+    ----------------------------------------
+    Total                      4.522ns (3.991ns logic, 0.532ns route)
+                                       (88.2% logic, 11.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'e_rx_clk'
+  Clock period: 11.016ns (frequency: 90.775MHz)
+  Total number of paths / destination ports: 545 / 181
+-------------------------------------------------------------------------
+Delay:               5.508ns (Levels of Logic = 3)
+  Source:            ethernet/fte/ena_ft (FF)
+  Destination:       ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram (RAM)
+  Source Clock:      e_rx_clk falling
+  Destination Clock: e_rx_clk rising
+
+  Data Path: ethernet/fte/ena_ft to ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             2   0.514   0.532  ena_ft (ena_ft)
+     LUT2:I0->O           19   0.612   1.074  ren1 (ren)
+     end scope: 'ethernet/fte:ren'
+     begin scope: 'ethernet/fifo_input:wr_en'
+     LUT2:I0->O           36   0.612   1.074  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
+     RAMB16_S9_S9:WEA          1.090          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x9.ram
+    ----------------------------------------
+    Total                      5.508ns (2.828ns logic, 2.680ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'e_mdc_OBUF'
+  Clock period: 4.055ns (frequency: 246.606MHz)
+  Total number of paths / destination ports: 984 / 292
+-------------------------------------------------------------------------
+Delay:               4.055ns (Levels of Logic = 3)
+  Source:            fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 (FF)
+  Destination:       fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0 (FF)
+  Source Clock:      e_mdc_OBUF rising
+  Destination Clock: e_mdc_OBUF rising
+
+  Data Path: fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 to fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.509  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<5>)
+     LUT4:I0->O            5   0.612   0.541  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor00021 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor0002)
+     LUT4_D:I3->O          1   0.612   0.387  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor000611 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor0006_bdd0)
+     LUT3:I2->O            1   0.612   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor00071 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor0007)
+     FDC:D                     0.268          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0
+    ----------------------------------------
+    Total                      4.055ns (2.618ns logic, 1.437ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_imi_01/CS_reg'
+  Clock period: 4.055ns (frequency: 246.606MHz)
+  Total number of paths / destination ports: 254 / 100
+-------------------------------------------------------------------------
+Delay:               4.055ns (Levels of Logic = 3)
+  Source:            fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 (FF)
+  Destination:       fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0 (FF)
+  Source Clock:      adc_imi_01/CS_reg rising
+  Destination Clock: adc_imi_01/CS_reg rising
+
+  Data Path: fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 to fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.509  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<5>)
+     LUT4:I0->O            5   0.612   0.541  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor00021 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor0002)
+     LUT4_D:I3->O          1   0.612   0.387  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor000611 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor0006_bdd0)
+     LUT3:I2->O            1   0.612   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor00071 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_xor0007)
+     FDC:D                     0.268          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0
+    ----------------------------------------
+    Total                      4.055ns (2.618ns logic, 1.437ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.188ns (Levels of Logic = 1)
+  Source:            BTN_WEST (PAD)
+  Destination:       BTN_WEST_f (FF)
+  Destination Clock: clk rising 2.0X
+
+  Data Path: BTN_WEST to BTN_WEST_f
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            1   2.563   0.357  bf2 (BTN_WEST_bf)
+     FD:D                      0.268          BTN_WEST_f
+    ----------------------------------------
+    Total                      3.188ns (2.831ns logic, 0.357ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'e_rx_clk'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              3.643ns (Levels of Logic = 3)
+  Source:            e_rx_dv (PAD)
+  Destination:       ethernet/fte/state (FF)
+  Destination Clock: e_rx_clk falling
+
+  Data Path: e_rx_dv to ethernet/fte/state
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  e_rx_dv_IBUF (e_rx_dv_IBUF)
+     begin scope: 'ethernet:RX_DV'
+     begin scope: 'ethernet/fte:ena'
+     INV:I->O             10   0.612   0.750  ena_inv1_INV_0 (ena_inv)
+     FDR_1:R                   0.795          state
+    ----------------------------------------
+    Total                      3.643ns (2.513ns logic, 1.130ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              6.137ns (Levels of Logic = 3)
+  Source:            ethernet/aa/EOA (FF)
+  Destination:       e_tx_en (PAD)
+  Source Clock:      clk rising 0.5X
+
+  Data Path: ethernet/aa/EOA to e_tx_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRSE:C->Q          301   0.514   1.145  EOA (EOA)
+     INV:I->O              9   0.612   0.697  EOA_inv1_INV_0 (tx_en)
+     end scope: 'ethernet/aa:tx_en'
+     end scope: 'ethernet:TX_EN'
+     OBUF:I->O                 3.169          e_tx_en_OBUF (e_tx_en)
+    ----------------------------------------
+    Total                      6.137ns (4.295ns logic, 1.842ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock adc_imi_01/CS_reg
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+adc_imi_01/CS_reg|    4.055|         |         |         |
+clk              |    3.797|         |         |         |
+e_mdc_OBUF       |    1.139|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.535|    4.756|    4.649|         |
+e_rx_clk       |    1.139|    5.897|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock e_mdc_OBUF
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+adc_imi_01/CS_reg|    1.139|         |         |         |
+e_mdc_OBUF       |    4.055|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock e_rx_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.139|         |         |         |
+e_rx_clk       |    4.126|    5.508|    4.847|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.12 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+Total memory usage is 499028 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  368 (   0 filtered)
+Number of infos    :   43 (   0 filtered)
+

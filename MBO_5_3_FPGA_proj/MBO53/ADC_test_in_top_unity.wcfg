@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="MBO_53_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/MBO_53_top_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/BTN_WEST" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BTN_WEST</obj_property>
+      <obj_property name="ObjectShortName">BTN_WEST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_tx_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e_tx_clk</obj_property>
+      <obj_property name="ObjectShortName">e_tx_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_rx_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e_rx_d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">e_rx_d[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_rx_er" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e_rx_er</obj_property>
+      <obj_property name="ObjectShortName">e_rx_er</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_rx_dv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e_rx_dv</obj_property>
+      <obj_property name="ObjectShortName">e_rx_dv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_rx_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e_rx_clk</obj_property>
+      <obj_property name="ObjectShortName">e_rx_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_crc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e_crc</obj_property>
+      <obj_property name="ObjectShortName">e_crc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/e_col" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e_col</obj_property>
+      <obj_property name="ObjectShortName">e_col</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/clk2x" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk2x</obj_property>
+      <obj_property name="ObjectShortName">clk2x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/BTN_strob" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BTN_strob</obj_property>
+      <obj_property name="ObjectShortName">BTN_strob</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/BTN_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BTN_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BTN_counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/acp_data1_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">acp_data1_ena</obj_property>
+      <obj_property name="ObjectShortName">acp_data1_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/acp_data1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acp_data1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">acp_data1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/acp_data_clock1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">acp_data_clock1</obj_property>
+      <obj_property name="ObjectShortName">acp_data_clock1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MBO_53_top_tb/uut/locked" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+</wave_config>

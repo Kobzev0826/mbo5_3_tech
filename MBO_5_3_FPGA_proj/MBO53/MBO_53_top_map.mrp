@@ -1,0 +1,3616 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'MBO_53_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed Dec 08 21:18:57 2021
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   16
+Logic Utilization:
+  Total Number Slice Registers:       1,446 out of   9,312   15%
+    Number used as Flip Flops:        1,445
+    Number used as Latches:               1
+  Number of 4 input LUTs:             1,331 out of   9,312   14%
+Logic Distribution:
+  Number of occupied Slices:          1,170 out of   4,656   25%
+    Number of Slices containing only related logic:   1,170 out of   1,170 100%
+    Number of Slices containing unrelated logic:          0 out of   1,170   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,445 out of   9,312   15%
+    Number used as logic:             1,180
+    Number used as a route-thru:        114
+    Number used as Shift registers:     151
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 20 out of     232    8%
+    IOB Flip Flops:                       1
+  Number of RAMB16s:                      9 out of      20   45%
+  Number of BUFGMUXs:                     8 out of      24   33%
+  Number of DCMs:                         2 out of       4   50%
+  Number of BSCANs:                       1 out of       1  100%
+
+  Number of RPM macros:           15
+Average Fanout of Non-Clock Nets:                3.18
+
+Peak Memory Usage:  290 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "adc_imi_01/physical_group_CS/CS_reg_BUFG" (output
+   signal=acp_data_clock1) has a mix of clock and non-clock loads. The non-clock
+   loads are:
+   Pin D of U_ila_pro_0/U0/I_DQ.G_DW[18].U_DQ
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_crc_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_col_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_tx_clk_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_mdio_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<1>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<0>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<3>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<2>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<5>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<4>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<7>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<6>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<8>> is incomplete. The signal does not drive any load
+   pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:113 - input buffer 'e_rx_d_3_IBUF' driving design level port
+   'e_rx_d<3>' is being pushed into module 'ethernet/fte' to enable I/O register
+   usage. The buffer has been renamed as 'ethernet/fte/e_rx_d_3_IBUF'.
+INFO:Map:113 - input buffer 'e_rx_d_2_IBUF' driving design level port
+   'e_rx_d<2>' is being pushed into module 'ethernet/fte' to enable I/O register
+   usage. The buffer has been renamed as 'ethernet/fte/e_rx_d_2_IBUF'.
+INFO:Map:113 - input buffer 'e_rx_d_1_IBUF' driving design level port
+   'e_rx_d<1>' is being pushed into module 'ethernet/fte' to enable I/O register
+   usage. The buffer has been renamed as 'ethernet/fte/e_rx_d_1_IBUF'.
+INFO:Map:113 - input buffer 'e_rx_d_0_IBUF' driving design level port
+   'e_rx_d<0>' is being pushed into module 'ethernet/fte' to enable I/O register
+   usage. The buffer has been renamed as 'ethernet/fte/e_rx_d_0_IBUF'.
+INFO:Map:113 - input buffer 'e_rx_dv_IBUF' driving design level port 'e_rx_dv'
+   is being pushed into module 'ethernet/fte' to enable I/O register usage. The
+   buffer has been renamed as 'ethernet/fte/e_rx_dv_IBUF'.
+INFO:LIT:243 - Logical network n0027<8> has no load.
+INFO:LIT:395 - The above info message is repeated 90 more times for the
+   following (max. 5 shown):
+   eth_rdempty1,
+   n0028<8>,
+   eth_rdempty2,
+   icon_control0<10>,
+   icon_control0<11>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CLKIN_IN are pushed forward
+   through input buffer.
+INFO:MapLib:159 - Net Timing constraints on signal e_rx_clk are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 513 block(s) removed
+ 142 block(s) optimized away
+ 557 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "icon_control0<10>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
+removed.
+  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<6>" is loadless and has been
+removed.
+   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+The signal "icon_control0<11>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
+removed.
+  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<7>" is loadless and has been
+removed.
+   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+The signal "icon_control0<15>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
+removed.
+  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<11>" is loadless and has been
+removed.
+   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+The signal "icon_control0<16>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
+removed.
+  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<12>" is loadless and has been
+removed.
+   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+The signal "icon_control0<17>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
+removed.
+  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<13>" is loadless and has been
+removed.
+   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+The signal "icon_control0<18>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
+removed.
+  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<14>" is loadless and has been
+removed.
+   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+The signal "icon_control0<24>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+The signal "icon_control0<30>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+The signal "icon_control0<25>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+The signal "icon_control0<31>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
+removed.
+The signal "icon_control0<26>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+The signal "icon_control0<32>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
+removed.
+The signal "icon_control0<7>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
+removed.
+The signal "icon_control0<27>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+The signal "icon_control0<33>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
+removed.
+The signal "icon_control0<28>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+The signal "icon_control0<29>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+The signal "icon_control0<34>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+The signal "icon_control0<35>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i_mux0000" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i_mux00001" (ROM) removed.
+    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
+is loadless and has been removed.
+     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
+(FF) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d3" is
+loadless and has been removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d3" (FF)
+removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2" is
+loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2" (FF)
+removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d1" is
+loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d1" (FF)
+removed.
+            The signal "fifo_input_acp2/N0" is loadless and has been removed.
+    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/comp2" is loadless and has been removed.
+     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/gmux.gm[4].gms.ms" (MUX) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/carrynet<3>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/gmux.gm[3].gms.ms" (MUX) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/carrynet<2>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/gmux.gm[2].gms.ms" (MUX) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/carrynet<1>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/gmux.gm[1].gms.ms" (MUX) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/carrynet<0>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/gmux.gm[0].gm1.m1" (MUX) removed.
+              The signal "fifo_input_acp2/N1" is loadless and has been removed.
+               Loadless block "fifo_input_acp2/XST_VCC" (ONE) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1<0>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1_0_and00001" (ROM) removed.
+                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<1>" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_1" (FF) removed.
+                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>"
+is loadless and has been removed.
+                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0"
+(FF) removed.
+                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb"
+is loadless and has been removed.
+                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1"
+(ROM) removed.
+                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg"
+is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg"
+(FF) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d
+1" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d
+1" (FF) removed.
+                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d
+2" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d
+2" (FF) removed.
+                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0006" is loadless and has been removed.
+                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00062" (ROM) removed.
+                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<1>" is loadless and has been removed.
+                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_1" (FF) removed.
+                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<1>" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1" (FF) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<1>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_1" (FF) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>"
+is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1"
+(FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb"
+is loadless and has been removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0006" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0006_Result1" (ROM) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<2>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_2" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+/ram_rd_en_i" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+/ram_rd_en_i1" (ROM) removed.
+                                The signal "eth_rdreq1" is loadless and has been removed.
+                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/ram_empty_fb_i" is loadless and has been removed.
+                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/ram_empty_fb_i" (FF) removed.
+                                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/ram_empty_fb_i_or0000" is loadless and has been removed.
+                                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/ram_empty_fb_i_or00001" (ROM) removed.
+                                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/comp1" is loadless and has been removed.
+                                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[4].gms.ms" (MUX) removed.
+                                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<3>" is loadless and has been removed.
+                                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[3].gms.ms" (MUX) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<2>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[2].gms.ms" (MUX) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<1>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[1].gms.ms" (MUX) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<0>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[0].gm1.m1" (MUX) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<0>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_0_and00001" (ROM) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<1>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_1" (FF) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>"
+is loadless and has been removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<1>" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<1>" (XOR) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<0>" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<0>" (MUX) removed.
+*    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_lut<0>" is loadless and has been removed.
+*     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_lut<0>_INV_0" (BUF) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<0>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_0" (FF) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<0>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<0>" (XOR) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>_rt" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>_rt" (ROM) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<1>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_1" (FF) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0006" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00062" (ROM) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1" (FF) removed.
+*    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<1>" is loadless and has been removed.
+*     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1" (FF) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<1>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_1" (FF) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0006" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0006_Result1" (ROM) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<2>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_2" (FF) removed.
+*            The signal "fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en"
+is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/ram_wr_en_i1" (ROM) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_fb_i" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_fb_i" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>"
+is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1"
+(FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<2>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_2" (FF) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<2>" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_2" (FF) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<2>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<2>" (XOR) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<1>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<1>" (MUX) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<0>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<0>" (MUX) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_lut<0>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_lut<0>_INV_0" (BUF) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<0>" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_0" (FF) removed.
+*                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<0>" is loadless and has been removed.
+*                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<0>" (XOR) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<1>_rt" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<1>_rt" (ROM) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<1>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_1" (FF) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<1>" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<1>" (XOR) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<2>_rt" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<2>_rt" (ROM) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<1>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_1" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<1>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_1" (FF) removed.
+*  The signal "fifo_input_acp2/N11" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor000611/LUT4_D_BUF" (BUF) removed.
+*    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0006_bdd0" is loadless and has been removed.
+*     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor000611" (ROM) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<2>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2" (FF) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<2>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<2>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_2" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0005" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0005_Result1" (ROM) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<3>" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_3" (FF) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<3>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_3" (FF) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<3>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_3" (FF) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<3>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<3>" (XOR) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<2>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<2>" (MUX) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<3>_rt" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<3>_rt" (ROM) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<3>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_3" (FF) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<3>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_3" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<3>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_3" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0004" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0004_Result1" (ROM) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<4>" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_4" (FF) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<4>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_4" (FF) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<4>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_4" (FF) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<4>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<4>" (XOR) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<3>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<3>" (MUX) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<4>_rt" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<4>_rt" (ROM) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<4>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_4" (FF) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<4>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_4" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<4>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_4" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0003" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0003_Result1" (ROM) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<5>" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_5" (FF) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<5>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_5" (FF) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<5>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_5" (FF) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<5>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<5>" (XOR) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<4>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<4>" (MUX) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<5>_rt" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<5>_rt" (ROM) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0002" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00021" (ROM) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<5>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_5" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<5>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_5" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<5>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_5" (FF) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0002" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0002_Result1" (ROM) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<6>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_6" (FF) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<6>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_6" (FF) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<6>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_6" (FF) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<6>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<6>" (XOR) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<5>" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<5>" (MUX) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<6>_rt" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<6>_rt" (ROM) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<6>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_6" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<6>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_6" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<6>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_6" (FF) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0001" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0001_Result1" (ROM) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<7>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_7" (FF) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<7>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_7" (FF) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<7>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_7" (FF) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<7>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<7>" (XOR) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<6>" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<6>" (MUX) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<7>_rt" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<7>_rt" (ROM) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<7>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_7" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<7>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_7" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<7>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_7" (FF) removed.
+*              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0000" is loadless and has been removed.
+*               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0000_Result1" (ROM) removed.
+*                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<8>" is loadless and has been removed.
+*                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_8" (FF) removed.
+*                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<8>" is loadless and has been removed.
+*                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_8" (FF) removed.
+*                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count<8>" is loadless and has been removed.
+*                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_8" (FF) removed.
+*                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Result<8>" is loadless and has been removed.
+*                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<8>" (XOR) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<7>" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_cy<7>" (MUX) removed.
+*                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<8>_rt" is loadless and has been removed.
+*                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/Mcount_count_xor<8>_rt" (ROM) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<8>" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_8" (FF) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<8>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_8" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<8>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_8" (FF) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<0>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_0" (FF) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0007" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00071" (ROM) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_0" (FF) removed.
+*    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<0>" is loadless and has been removed.
+*     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0" (FF) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc<0>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_0" (FF) removed.
+*        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_gc_xor0007" is loadless and has been removed.
+*         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_wr_pntr_gc_xor0007_Result1" (ROM) removed.
+*          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2<0>" is loadless and has been removed.
+*           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d2_0" (FF) removed.
+*            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1<0>" is loadless and has been removed.
+*             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/wpntr/count_d1_0" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<1>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_1_and00001" (ROM) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<3>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_3" (FF) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<3>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<3>" (XOR) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>" (MUX) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>" (MUX) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>_rt" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>_rt" (ROM) removed.
+*    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<2>" is loadless and has been removed.
+*     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_2" (FF) removed.
+*      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<2>" is loadless and has been removed.
+*       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<2>" (XOR) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>_rt" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>_rt" (ROM) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<3>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_3" (FF) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0004" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00041" (ROM) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<2>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_2" (FF) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0005" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00051" (ROM) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<2>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_2_and00001" (ROM) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<5>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_5" (FF) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<5>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<5>" (XOR) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>" (MUX) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>" (MUX) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>_rt" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>_rt" (ROM) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<4>" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_4" (FF) removed.
+*    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<4>" is loadless and has been removed.
+*     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<4>" (XOR) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>_rt" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>_rt" (ROM) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<5>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_5" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<4>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_4" (FF) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0003" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00032" (ROM) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<3>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_3_and00001" (ROM) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<7>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_7" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<7>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<7>" (XOR) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>" (MUX) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>" (MUX) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>_rt" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>_rt" (ROM) removed.
+*The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<6>" is loadless and has been removed.
+* Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_6" (FF) removed.
+*  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<6>" is loadless and has been removed.
+*   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<6>" (XOR) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>_rt" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>_rt" (ROM) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<7>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_7" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0000" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00001" (ROM) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<6>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_6" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0001" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00011" (ROM) removed.
+                                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<4>" is loadless and has been removed.
+                                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_4_not00001" (ROM) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<8>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_8" (FF) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<8>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_8" (FF) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<8>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<8>" (XOR) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>" (MUX) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<8>_rt" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<8>_rt" (ROM) removed.
+                                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/comp0" is loadless and has been removed.
+                                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[4].gms.ms" (MUX) removed.
+                                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<3>" is loadless and has been removed.
+                                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[3].gms.ms" (MUX) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<2>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[2].gms.ms" (MUX) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<1>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[1].gms.ms" (MUX) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<0>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[0].gm1.m1" (MUX) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<0>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_0_and00001" (ROM) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<0>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_0" (FF) removed.
+                                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<1>" is loadless and has been removed.
+                                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_1" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<1>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_1_and00001" (ROM) removed.
+                                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<3>" is loadless and has been removed.
+                                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_3" (FF) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<2>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_2_and00001" (ROM) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<4>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_4" (FF) removed.
+                                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<5>" is loadless and has been removed.
+                                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_5" (FF) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<3>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_3_and00001" (ROM) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<6>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_6" (FF) removed.
+                                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<7>" is loadless and has been removed.
+                                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_7" (FF) removed.
+                                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<4>" is loadless and has been removed.
+                                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_4_not00001" (ROM) removed.
+                                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1<8>" is loadless and has been removed.
+                                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_d1_8" (FF) removed.
+                    The signal "fifo_input_acp2/N2" is loadless and has been removed.
+                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor000611/LUT4_D_BUF" (BUF) removed.
+                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0006_bdd0" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor000611" (ROM) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<2>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_2" (FF) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<2>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<2>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_2" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0005" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0005_Result1" (ROM) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<3>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3" (FF) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<3>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<3>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_3" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0004" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0004_Result1" (ROM) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<4>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_4" (FF) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<4>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_4" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<4>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_4" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0003" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0003_Result1" (ROM) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0002" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00021" (ROM) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<5>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<5>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_5" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<5>" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_5" (FF) removed.
+                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0002" is loadless and has been removed.
+                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0002_Result1" (ROM) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<6>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_6" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<6>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_6" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<6>" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_6" (FF) removed.
+                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0001" is loadless and has been removed.
+                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0001_Result1" (ROM) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<7>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_7" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<7>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_7" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<7>" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_7" (FF) removed.
+                                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0000" is loadless and has been removed.
+                                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0000_Result1" (ROM) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<8>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_8" (FF) removed.
+                            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<8>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_8" (FF) removed.
+                              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<8>" is loadless and has been removed.
+                               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_8" (FF) removed.
+                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<0>" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_0" (FF) removed.
+                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0007" is loadless and has been removed.
+                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00071" (ROM) removed.
+                    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg<0>" is loadless and has been removed.
+                     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].wr_stg_inst/Q_reg_0" (FF) removed.
+                      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg<0>" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0" (FF) removed.
+                        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<0>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_0" (FF) removed.
+                          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0007" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/Mxor_rd_pntr_gc_xor0007_Result1" (ROM) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1<1>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1_1_and00001" (ROM) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<3>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_3" (FF) removed.
+                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0004" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00041" (ROM) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<2>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_2" (FF) removed.
+                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0005" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00051" (ROM) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1<2>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1_2_and00001" (ROM) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<5>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_5" (FF) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<4>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_4" (FF) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0003" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00032" (ROM) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1<3>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1_3_and00001" (ROM) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<7>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_7" (FF) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0000" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00001" (ROM) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<6>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_6" (FF) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor0001" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_xor00011" (ROM) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1<4>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c2/v1_4_not00001" (ROM) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin<8>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_bin_8" (FF) removed.
+    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/comp1" is loadless and has been removed.
+     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/gmux.gm[4].gms.ms" (MUX) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/carrynet<3>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/gmux.gm[3].gms.ms" (MUX) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/carrynet<2>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/gmux.gm[2].gms.ms" (MUX) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/carrynet<1>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/gmux.gm[1].gms.ms" (MUX) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/carrynet<0>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/gmux.gm[0].gm1.m1" (MUX) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1<0>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1_0_and00001" (ROM) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1<1>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1_1_and00001" (ROM) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1<2>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1_2_and00001" (ROM) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1<3>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1_3_and00001" (ROM) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1<4>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/c1/v1_4_not00001" (ROM) removed.
+The signal "fifo_input_acp2/dout<15>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<14>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<13>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<12>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<11>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<10>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<9>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<8>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<7>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<6>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<5>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<4>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<3>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<2>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<1>" is loadless and has been removed.
+The signal "fifo_input_acp2/dout<0>" is loadless and has been removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<7>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_7" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<7>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<7>" (XOR) removed.
+    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<6>" is loadless and has been removed.
+     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<6>" (MUX) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<5>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<5>" (MUX) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<4>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<4>" (MUX) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<3>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<3>" (MUX) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<2>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<2>" (MUX) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<1>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<1>" (MUX) removed.
+                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<0>" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<0>" (MUX) removed.
+                  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" is loadless and has been
+removed.
+                   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" (ROM) removed.
+                The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<1>" is loadless and has been
+removed.
+                 Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<1>" (ROM) removed.
+              The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<2>" is loadless and has been
+removed.
+               Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<2>" (ROM) removed.
+            The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<3>" is loadless and has been
+removed.
+             Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<3>" (ROM) removed.
+          The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<4>" is loadless and has been
+removed.
+           Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<4>" (ROM) removed.
+        The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" is loadless and has been
+removed.
+         Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" (ROM) removed.
+      The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<6>" is loadless and has been
+removed.
+       Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<6>" (ROM) removed.
+    The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<7>" is loadless and has been
+removed.
+     Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<7>" (ROM) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<6>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_6" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<6>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<6>" (XOR) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<5>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_5" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<5>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<5>" (XOR) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<4>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_4" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<4>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<4>" (XOR) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<3>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_3" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<3>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<3>" (XOR) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<2>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_2" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<2>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<2>" (XOR) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<1>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_1" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<1>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<1>" (XOR) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<0>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_0" (FF) removed.
+  The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<0>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<0>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" (FF) removed.
+The signal "fifo_input_acp1/dout<15>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<14>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<13>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<12>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<11>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<10>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<9>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<8>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<7>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<6>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<5>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<4>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<3>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<2>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<1>" is loadless and has been removed.
+The signal "fifo_input_acp1/dout<0>" is loadless and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<7>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_7" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>"
+is loadless and has been removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<7>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<7>" (XOR) removed.
+    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<6>" is loadless and has been removed.
+     Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<6>" (MUX) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<5>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<5>" (MUX) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<4>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<4>" (MUX) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<3>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<3>" (MUX) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<2>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<2>" (MUX) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<1>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<1>" (MUX) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<0>" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<0>" (MUX) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<0>" is loadless and has been removed.
+                   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_0" (FF) removed.
+                    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>"
+is loadless and has been removed.
+                    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0007" is loadless and has been removed.
+                     Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00071" (ROM) removed.
+                      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_0" (FF) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<0>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0" (FF) removed.
+                      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1" (FF) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<1>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1" (FF) removed.
+                      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0006_bdd0" is loadless and has been removed.
+                       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor000611" (ROM) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<2>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2" (FF) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<2>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2" (FF) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<3>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_3" (FF) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<3>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_3" (FF) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<4>" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_4" (FF) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<4>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_4" (FF) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0002" is loadless and has been removed.
+                         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00021" (ROM) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<5>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_5" (FF) removed.
+                            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<5>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_5" (FF) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<6>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_6" (FF) removed.
+                            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<6>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_6" (FF) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<7>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_7" (FF) removed.
+                            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<7>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_7" (FF) removed.
+                          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg<8>" is loadless and has been removed.
+                           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[2].rd_stg_inst/Q_reg_8" (FF) removed.
+                            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg<8>" is loadless and has been removed.
+                             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/gsync_stage[1].rd_stg_inst/Q_reg_8" (FF) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" is loadless and has been
+removed.
+                   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" (ROM) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<1>" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_1" (FF) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0006" is loadless and has been removed.
+                   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00062" (ROM) removed.
+                    The signal "fifo_input_acp1/N11" is loadless and has been removed.
+                     Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor000611/LUT4_D_BUF" (BUF) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<1>" is loadless and has been
+removed.
+                 Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<1>" (ROM) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<2>" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_2" (FF) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0005" is loadless and has been removed.
+                 Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00051" (ROM) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<2>" is loadless and has been
+removed.
+               Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<2>" (ROM) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<3>" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_3" (FF) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0004" is loadless and has been removed.
+               Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00041" (ROM) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<3>" is loadless and has been
+removed.
+             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<3>" (ROM) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<4>" is loadless and has been removed.
+           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_4" (FF) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0003" is loadless and has been removed.
+             Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00032" (ROM) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<4>" is loadless and has been
+removed.
+           Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<4>" (ROM) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<5>" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_5" (FF) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" is loadless and has been
+removed.
+         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" (ROM) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<6>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_6" (FF) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0001" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00011" (ROM) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<6>" is loadless and has been
+removed.
+       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<6>" (ROM) removed.
+    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<7>" is loadless and has been
+removed.
+     Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<7>" (ROM) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<7>" is loadless and has been removed.
+       Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_7" (FF) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor0000" is loadless and has been removed.
+         Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_xor00001" (ROM) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<6>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_6" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<6>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<6>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<5>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_5" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<5>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<5>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<4>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_4" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<4>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<4>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<3>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_3" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<3>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<3>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<2>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_2" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<2>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<2>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<1>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_1" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<1>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<1>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i<0>" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_0" (FF) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<0>" is loadless and has been removed.
+   Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<0>" (XOR) removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "U_ila_pro_0/U0/I_YES_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
+(ROM) removed.
+The signal "ethernet/BOARD_IP<0>" is sourceless and has been removed.
+The signal "ethernet/BOARD_IP<10>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<10>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<9>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<8>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<7>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<6>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<5>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<4>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<3>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<2>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<1>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i<0>" is sourceless and has been removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<10>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_10" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<9>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_9" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<8>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_8" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<7>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_7" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<6>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_6" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<5>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_5" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<4>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_4" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<3>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_3" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<2>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_2" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<1>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_1" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<0>" is sourceless and has been removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/rd_dc_i_0" (FF) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" is sourceless and has been
+removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<0>" (MUX) removed.
+  The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<0>" is sourceless and has been
+removed.
+   Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<1>" (MUX) removed.
+    The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<1>" is sourceless and has been
+removed.
+     Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<2>" (MUX) removed.
+      The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<2>" is sourceless and has been
+removed.
+       Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<3>" (MUX) removed.
+        The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<3>" is sourceless and has been
+removed.
+         Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<4>" (MUX) removed.
+          The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<4>" is sourceless and has been
+removed.
+           Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<5>" (MUX) removed.
+            The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<5>" is sourceless and has been
+removed.
+             Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<6>" (MUX) removed.
+              The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<6>" is sourceless and has been
+removed.
+               Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<7>" (MUX) removed.
+                The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<7>" is sourceless and has been
+removed.
+                 Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<8>" (MUX) removed.
+                  The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<8>" is sourceless and has been
+removed.
+                   Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<9>" (MUX) removed.
+                    The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<9>" is sourceless and has been
+removed.
+                     Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<10>" (XOR) removed.
+                   Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<9>" (XOR) removed.
+                 Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<8>" (XOR) removed.
+               Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<7>" (XOR) removed.
+             Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<6>" (XOR) removed.
+           Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<5>" (XOR) removed.
+         Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<4>" (XOR) removed.
+       Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<3>" (XOR) removed.
+     Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<2>" (XOR) removed.
+   Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<1>" (XOR) removed.
+ Sourceless block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<0>" (XOR) removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<1>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<2>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<3>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<4>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<6>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<7>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<8>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<9>" is sourceless and has been
+removed.
+The signal
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<10>" is sourceless and has been
+removed.
+The signal "pll_2/LOCKED_OUT" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d
+1" is unused and has been removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<7>" is unused and has been removed.
+ Unused block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<7>" (MUX) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<8>" is unused and has been removed.
+ Unused block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<8>" (ROM) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<8>" is unused and has been removed.
+ Unused block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<8>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/ram_empty_fb_i_or0000" is unused and has been removed.
+ Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/ram_empty_fb_i_or00001" (ROM) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+/ram_rd_en_i" is unused and has been removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/comp1" is unused and has been removed.
+   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[4].gms.ms" (MUX) removed.
+    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<3>" is unused and has been removed.
+     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[3].gms.ms" (MUX) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<2>" is unused and has been removed.
+       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[2].gms.ms" (MUX) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<1>" is unused and has been removed.
+         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[1].gms.ms" (MUX) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/carrynet<0>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/gmux.gm[0].gm1.m1" (MUX) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<0>" is unused and has been removed.
+             Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_0_and00001" (ROM) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<1>" is unused and has been removed.
+               Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_1" (FF) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<1>" is unused and has been removed.
+                 Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<1>" (XOR) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<0>" is unused and has been removed.
+                   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<0>" (MUX) removed.
+                    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_lut<0>" is unused and has been removed.
+                     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_lut<0>_INV_0" (BUF) removed.
+                      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<0>" is unused and has been removed.
+                       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_0" (FF) removed.
+                        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<0>" is unused and has been removed.
+                         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<0>" (XOR) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>_rt" is unused and has been removed.
+                   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>_rt" (ROM) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<1>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_1_and00001" (ROM) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<3>" is unused and has been removed.
+             Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_3" (FF) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<3>" is unused and has been removed.
+               Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<3>" (XOR) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>" is unused and has been removed.
+                 Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>" (MUX) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>" is unused and has been removed.
+                   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<1>" (MUX) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>_rt" is unused and has been removed.
+                   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<2>_rt" (ROM) removed.
+                    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<2>" is unused and has been removed.
+                     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_2" (FF) removed.
+                      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<2>" is unused and has been removed.
+                       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<2>" (XOR) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>_rt" is unused and has been removed.
+                 Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>_rt" (ROM) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<2>" is unused and has been removed.
+         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_2_and00001" (ROM) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<5>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_5" (FF) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<5>" is unused and has been removed.
+             Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<5>" (XOR) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>" is unused and has been removed.
+               Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>" (MUX) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>" is unused and has been removed.
+                 Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<3>" (MUX) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>_rt" is unused and has been removed.
+                 Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<4>_rt" (ROM) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<4>" is unused and has been removed.
+                   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_4" (FF) removed.
+                    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<4>" is unused and has been removed.
+                     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<4>" (XOR) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>_rt" is unused and has been removed.
+               Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>_rt" (ROM) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<3>" is unused and has been removed.
+       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_3_and00001" (ROM) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<7>" is unused and has been removed.
+         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_7" (FF) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<7>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<7>" (XOR) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>" is unused and has been removed.
+             Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>" (MUX) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>" is unused and has been removed.
+               Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<5>" (MUX) removed.
+              The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>_rt" is unused and has been removed.
+               Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<6>_rt" (ROM) removed.
+                The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<6>" is unused and has been removed.
+                 Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_6" (FF) removed.
+                  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<6>" is unused and has been removed.
+                   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<6>" (XOR) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>_rt" is unused and has been removed.
+             Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>_rt" (ROM) removed.
+    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1<4>" is unused and has been removed.
+     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c1/v1_4_not00001" (ROM) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin<8>" is unused and has been removed.
+       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/wr_pntr_bin_8" (FF) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count<8>" is unused and has been removed.
+       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/count_8" (FF) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Result<8>" is unused and has been removed.
+         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<8>" (XOR) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_cy<7>" (MUX) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<8>_rt" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/rpntr/Mcount_count_xor<8>_rt" (ROM) removed.
+  The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/comp0" is unused and has been removed.
+   Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[4].gms.ms" (MUX) removed.
+    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<3>" is unused and has been removed.
+     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[3].gms.ms" (MUX) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<2>" is unused and has been removed.
+       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[2].gms.ms" (MUX) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<1>" is unused and has been removed.
+         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[1].gms.ms" (MUX) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/carrynet<0>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/gmux.gm[0].gm1.m1" (MUX) removed.
+            The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<0>" is unused and has been removed.
+             Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_0_and00001" (ROM) removed.
+          The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<1>" is unused and has been removed.
+           Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_1_and00001" (ROM) removed.
+        The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<2>" is unused and has been removed.
+         Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_2_and00001" (ROM) removed.
+      The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<3>" is unused and has been removed.
+       Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_3_and00001" (ROM) removed.
+    The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1<4>" is unused and has been removed.
+     Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.rsts/c0/v1_4_not00001" (ROM) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d
+1" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb"
+is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<7>" is unused and has been removed.
+ Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_cy<7>" (MUX) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<8>" is unused and has been removed.
+ Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<8>" (ROM) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/rd_dc_i_sub0000<8>" is unused and has been removed.
+ Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<8>" (XOR) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<0>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<1>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<2>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<3>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<4>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<5>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<6>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<7>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc<8>" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0000" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0001" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0002" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0003" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0004" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0005" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0006" is unused and has been removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx
+.clkx/rd_pntr_gc_xor0007" is unused and has been removed.
+Unused block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ra
+m.r/s3_noinit.ram/dpram.dp36x36.ram" (RAMB16_S36_S36) removed.
+Unused block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ra
+m.r/s3_noinit.ram/dpram.dp36x36.ram" (RAMB16_S36_S36) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<10>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<1>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<2>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<3>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<4>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<6>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<7>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<8>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<9>" (ROM) removed.
+Unused block
+"ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		U_icon_pro/XST_GND
+VCC 		U_icon_pro/XST_VCC
+LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[10].I_STAT.U_STAT
+   optimized to 0
+LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[12].I_STAT.U_STAT
+   optimized to 0
+LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[14].I_STAT.U_STAT
+   optimized to 0
+LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[16].I_STAT.U_STAT
+   optimized to 0
+GND 		U_ila_pro_0/XST_GND
+VCC 		U_ila_pro_0/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0000_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0001_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0002_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0003_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0004_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0005_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0006_Result1
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/Mxor_rd_pntr_gc_xor0007_Result1
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_4
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_5
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_6
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_7
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/gsync_stage[1].wr_stg_inst/Q_reg_8
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_0
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_1
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_2
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_3
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_4
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_5
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_6
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_7
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gc
+x.clkx/rd_pntr_gc_8
+   optimized to 0
+FDC
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/gras.grdc1.rdc/rd_dc_i_8
+   optimized to 0
+FDP
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/gras.rsts/ram_empty_fb_i
+   optimized to 1
+FDP
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/gras.rsts/ram_empty_i
+   optimized to 1
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_0
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_1
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_2
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_3
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_4
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_5
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_6
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_7
+   optimized to 0
+FDCE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/rpntr/count_d1_8
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.me
+m/ram_rd_en_i1
+   optimized to 0
+FDPE
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+   optimized to 1
+FD
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_
+d1
+   optimized to 0
+FD
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_
+d2
+   optimized to 0
+LUT2
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1
+   optimized to 1
+FDP
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1
+   optimized to 1
+FDP
+		fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2
+   optimized to 1
+GND 		fifo_input_acp1/XST_GND
+VCC 		fifo_input_acp1/XST_VCC
+FDC
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/gras.grdc1.rdc/rd_dc_i_8
+   optimized to 0
+FDP
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl
+0.rd/gras.rsts/ram_empty_i
+   optimized to 1
+FDPE
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+   optimized to 1
+FD
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_
+d1
+   optimized to 0
+FD
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_
+d2
+   optimized to 0
+LUT2
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1
+   optimized to 1
+FDP
+		fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2
+   optimized to 1
+GND 		fifo_input_acp2/XST_GND
+GND 		adc_imi_01/XST_GND
+VCC 		adc_imi_01/XST_VCC
+GND 		ethernet/XST_GND
+VCC 		ethernet/XST_VCC
+GND 		ethernet/aa/XST_GND
+VCC 		ethernet/aa/XST_VCC
+GND 		ethernet/ap/XST_GND
+GND 		ethernet/dh/XST_GND
+VCC 		ethernet/dh/XST_VCC
+GND 		ethernet/fifo_input/XST_GND
+VCC 		ethernet/fifo_input/XST_VCC
+GND 		ethernet/fte/XST_GND
+VCC 		ethernet/fte/XST_VCC
+GND 		ethernet/hc/XST_GND
+VCC 		ethernet/hc/XST_VCC
+GND 		ethernet/ih/XST_GND
+VCC 		ethernet/ih/XST_VCC
+GND 		ethernet/uh/XST_GND
+GND 		pll_1/XST_GND
+GND 		pll_2/XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BTN_WEST                           | IBUF             | INPUT     | LVTTL                |       |          |      | IFF1         | PULLDOWN | 0 / 3    |
+| clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_col                              | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_crc                              | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_mdc                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| e_mdio                             | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_clk                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_d<0>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_d<1>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_d<2>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_d<3>                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_dv                            | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_rx_er                            | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_tx_clk                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_tx_d<0>                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| e_tx_d<1>                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| e_tx_d<2>                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| e_tx_d<3>                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| e_tx_en                            | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| e_tx_er                            | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.
+U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16
+.U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16
+.U_GAND_SRL16_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_VARX.U_match/I_
+SRL16.U_VAR_SRL16_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_VARX.U_match/I_
+SRL16.U_VAR_SRL16_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I
+_SRL16.U_GANDX_SRL16_MSET
+U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_VARX.U_match/I_
+SRL16.U_VAR_SRL16_MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

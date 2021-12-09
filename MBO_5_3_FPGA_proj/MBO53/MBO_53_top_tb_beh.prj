@@ -1,0 +1,7 @@
+verilog work "verilog/adc_imi.v"
+verilog work "pll_2.v"
+verilog work "pll.v"
+verilog work "ipcore_dir/fifo_acp.v"
+verilog work "verilog/MBO_53_top.v"
+verilog work "verilog/MBO_53_top_tb.v"
+verilog work "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

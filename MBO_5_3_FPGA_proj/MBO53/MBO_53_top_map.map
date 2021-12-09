@@ -1,0 +1,131 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'MBO_53_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed Dec 08 21:18:57 2021
+
+Mapping design into LUTs...
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "adc_imi_01/physical_group_CS/CS_reg_BUFG" (output
+   signal=acp_data_clock1) has a mix of clock and non-clock loads. The non-clock
+   loads are:
+   Pin D of U_ila_pro_0/U0/I_DQ.G_DW[18].U_DQ
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_crc_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_col_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_tx_clk_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <e_mdio_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<1>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<0>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<3>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<2>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<5>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<4>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<7>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<6>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.
+   gcx.clkx/wr_pntr_gc<8>> is incomplete. The signal does not drive any load
+   pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   16
+Logic Utilization:
+  Total Number Slice Registers:       1,446 out of   9,312   15%
+    Number used as Flip Flops:        1,445
+    Number used as Latches:               1
+  Number of 4 input LUTs:             1,331 out of   9,312   14%
+Logic Distribution:
+  Number of occupied Slices:          1,170 out of   4,656   25%
+    Number of Slices containing only related logic:   1,170 out of   1,170 100%
+    Number of Slices containing unrelated logic:          0 out of   1,170   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,445 out of   9,312   15%
+    Number used as logic:             1,180
+    Number used as a route-thru:        114
+    Number used as Shift registers:     151
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 20 out of     232    8%
+    IOB Flip Flops:                       1
+  Number of RAMB16s:                      9 out of      20   45%
+  Number of BUFGMUXs:                     8 out of      24   33%
+  Number of DCMs:                         2 out of       4   50%
+  Number of BSCANs:                       1 out of       1  100%
+
+  Number of RPM macros:           15
+Average Fanout of Non-Clock Nets:                3.18
+
+Peak Memory Usage:  290 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "MBO_53_top_map.mrp" for details.
