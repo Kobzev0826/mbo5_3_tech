@@ -57,9 +57,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MBO_53_top_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MBO_53_top_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MBO_53_top_summary.xml"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MBO_53_top_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MBO_53_top_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MBO_53_top_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MBO_53_top_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MBO_53_top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MBO_53_top_xst.xrpt"/>
@@ -72,11 +70,13 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="adc_imi_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adc_imi_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adc_ltc2315_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="adc_ltc2315_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="adc_ltc2315_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mbo_53_top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mbo_53_top.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mbo_53_top.drc" xil_pn:subbranch="FPGAConfiguration"/>
@@ -104,13 +104,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1638984535" xil_pn:in_ck="8455330677494398616" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1638984535">
+    <transform xil_pn:end_ts="1639245038" xil_pn:in_ck="-6069585242349186163" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1639245038">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="verilog/ARPanswerFormer.v"/>
       <outfile xil_pn:name="verilog/Ethernet_module_upper.v"/>
       <outfile xil_pn:name="verilog/FourToEight.v"/>
@@ -118,6 +114,8 @@
       <outfile xil_pn:name="verilog/MBO_53_top_tb.v"/>
       <outfile xil_pn:name="verilog/adc_imi.v"/>
       <outfile xil_pn:name="verilog/adc_imi_tb.v"/>
+      <outfile xil_pn:name="verilog/adc_ltc2315.v"/>
+      <outfile xil_pn:name="verilog/adc_ltc2315_tb.v"/>
       <outfile xil_pn:name="verilog/arp_parser.v"/>
       <outfile xil_pn:name="verilog/crc32.v"/>
       <outfile xil_pn:name="verilog/dataHolder.v"/>
@@ -127,13 +125,13 @@
       <outfile xil_pn:name="verilog/mdio_control.v"/>
       <outfile xil_pn:name="verilog/udpHeader.v"/>
     </transform>
-    <transform xil_pn:end_ts="1638984306" xil_pn:in_ck="-800936291661124517" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-291148562419100125" xil_pn:start_ts="1638984306">
+    <transform xil_pn:end_ts="1639245006" xil_pn:in_ck="-800936291661124517" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6562742724026934593" xil_pn:start_ts="1639245006">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="pll.v"/>
       <outfile xil_pn:name="pll_2.v"/>
     </transform>
-    <transform xil_pn:end_ts="1638984306" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6940462248248198875" xil_pn:start_ts="1638984306">
+    <transform xil_pn:end_ts="1639245006" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1050055939642672067" xil_pn:start_ts="1639245006">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -147,17 +145,9 @@
       <outfile xil_pn:name="ipcore_dir/sum.ngc"/>
       <outfile xil_pn:name="ipcore_dir/sum.v"/>
     </transform>
-    <transform xil_pn:end_ts="1638984535" xil_pn:in_ck="-2331449732246056666" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1638984535">
+    <transform xil_pn:end_ts="1639245038" xil_pn:in_ck="-8240996568365591530" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1639245038">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ipcore_dir/fifo_25_12_5.v"/>
-      <outfile xil_pn:name="ipcore_dir/fifo_acp.v"/>
-      <outfile xil_pn:name="ipcore_dir/sum.v"/>
       <outfile xil_pn:name="pll.v"/>
       <outfile xil_pn:name="pll_2.v"/>
       <outfile xil_pn:name="verilog/ARPanswerFormer.v"/>
@@ -167,6 +157,8 @@
       <outfile xil_pn:name="verilog/MBO_53_top_tb.v"/>
       <outfile xil_pn:name="verilog/adc_imi.v"/>
       <outfile xil_pn:name="verilog/adc_imi_tb.v"/>
+      <outfile xil_pn:name="verilog/adc_ltc2315.v"/>
+      <outfile xil_pn:name="verilog/adc_ltc2315_tb.v"/>
       <outfile xil_pn:name="verilog/arp_parser.v"/>
       <outfile xil_pn:name="verilog/crc32.v"/>
       <outfile xil_pn:name="verilog/dataHolder.v"/>
@@ -176,30 +168,20 @@
       <outfile xil_pn:name="verilog/mdio_control.v"/>
       <outfile xil_pn:name="verilog/udpHeader.v"/>
     </transform>
-    <transform xil_pn:end_ts="1638984538" xil_pn:in_ck="-86573832339104825" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="594332371981479783" xil_pn:start_ts="1638984535">
+    <transform xil_pn:end_ts="1639245043" xil_pn:in_ck="5127603456437133596" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6890587140891879069" xil_pn:start_ts="1639245038">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="MBO_53_top_tb_beh.prj"/>
-      <outfile xil_pn:name="MBO_53_top_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="adc_ltc2315_tb_beh.prj"/>
+      <outfile xil_pn:name="adc_ltc2315_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1638984539" xil_pn:in_ck="1594928048460255077" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5341088685865371210" xil_pn:start_ts="1638984538">
+    <transform xil_pn:end_ts="1639245043" xil_pn:in_ck="-3820855648734311426" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7520746165117214950" xil_pn:start_ts="1639245043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="MBO_53_top_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="adc_ltc2315_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1638957879" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1638957879">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -245,8 +227,10 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="MBO_53_top.lso"/>
       <outfile xil_pn:name="MBO_53_top.ngc"/>
       <outfile xil_pn:name="MBO_53_top.ngr"/>
@@ -254,7 +238,6 @@
       <outfile xil_pn:name="MBO_53_top.stx"/>
       <outfile xil_pn:name="MBO_53_top.syr"/>
       <outfile xil_pn:name="MBO_53_top.xst"/>
-      <outfile xil_pn:name="MBO_53_top_tb_beh.prj"/>
       <outfile xil_pn:name="MBO_53_top_tb_stx_beh.prj"/>
       <outfile xil_pn:name="MBO_53_top_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>

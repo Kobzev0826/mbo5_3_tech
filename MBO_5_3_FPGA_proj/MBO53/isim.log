@@ -1,29 +1,85 @@
 ISim log file
-Running: E:\Xilinx\projects\MBO-5_3\MBO_5_3_FPGA_proj\MBO53\MBO_53_top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_tb_isim_beh.wdb 
+Running: D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\adc_ltc2315_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/adc_ltc2315_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
-WARNING: File "E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v" Line 125.  For instance uut/fifo_input_acp1/, width 16 of formal port dout is not equal to width 8 of actual signal eth_data_blocks1.
-WARNING: File "E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v" Line 125.  For instance uut/fifo_input_acp2/, width 16 of formal port dout is not equal to width 8 of actual signal eth_data_blocks2.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
-WARNING: File "E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v" Line 125.  For instance uut/fifo_input_acp1/, width 16 of formal port dout is not equal to width 8 of actual signal eth_data_blocks1.
-WARNING: File "E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v" Line 125.  For instance uut/fifo_input_acp2/, width 16 of formal port dout is not equal to width 8 of actual signal eth_data_blocks2.
 # run 1000 ns
 Simulator is doing circuit initialization process.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
 Finished circuit initialization process.
