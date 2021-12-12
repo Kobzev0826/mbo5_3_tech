@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/adc_ltc2315_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adc_ltc2315_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/adc_ltc2315_tb/CS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/sck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/sdo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdo</obj_property>
+      <obj_property name="ObjectShortName">sdo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/adc_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/clk_100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_100</obj_property>
+      <obj_property name="ObjectShortName">clk_100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adc_ltc2315_tb/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\adc_ltc2315_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/adc_ltc2315_tb_isim_beh.wdb 
+Running: D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\dac_2624_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/dac_2624_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -13,9 +13,8 @@ This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-# run 1000 ns
+# restart
+# run 1.00us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x7708f090)
@@ -23,19 +22,8 @@ This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-# run 1000 ns
+# restart
+# run 1.00us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x7708f090)

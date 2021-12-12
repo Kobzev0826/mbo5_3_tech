@@ -1,0 +1,5 @@
+set -tmpdir "D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/xst/projnav.tmp"
+set -xsthdpdir "D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/xst"
+elaborate
+-ifn dac_2624.prj
+-ifmt mixed
