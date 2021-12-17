@@ -20,15 +20,27 @@
 <msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_dv_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_dv</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_dv_IBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">n0027&lt;8&gt;</arg> has no load.
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_3_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;3&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_3_OBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">90</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">eth_rdempty1,
-n0028&lt;8&gt;,
-eth_rdempty2,
-icon_control0&lt;10&gt;,
-icon_control0&lt;11&gt;</arg>
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_2_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;2&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_2_OBUF</arg>&apos;.
+</msg>
+
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_1_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;1&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_1_OBUF</arg>&apos;.
+</msg>
+
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_0_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;0&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_0_OBUF</arg>&apos;.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">rd_data_count_01&lt;7&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1181</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">rd_data_count_01&lt;6&gt;,
+rd_data_count_01&lt;5&gt;,
+rd_data_count_01&lt;4&gt;,
+rd_data_count_01&lt;3&gt;,
+rd_data_count_01&lt;2&gt;</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
@@ -38,17 +50,19 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="MapLib" num="159" delta="old" >Net Timing constraints on signal <arg fmt="%s" index="1">CLKIN_IN</arg> are pushed forward through input buffer.
 </msg>
 
+<msg type="info" file="MapLib" num="159" delta="old" >Net Timing constraints on signal <arg fmt="%s" index="1">e_tx_clk</arg> are pushed forward through input buffer.
+</msg>
+
 <msg type="info" file="MapLib" num="159" delta="old" >Net Timing constraints on signal <arg fmt="%s" index="1">e_rx_clk</arg> are pushed forward through input buffer.
 </msg>
 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
-<msg type="warning" file="LIT" num="176" delta="old" >Clock buffer is designated to drive clock loads. <arg fmt="%s" index="1">BUFGMUX symbol &quot;adc_imi_01/physical_group_CS/CS_reg_BUFG&quot; (output signal=acp_data_clock1)</arg> has a mix of clock and non-clock loads. The non-clock loads are:
-<arg fmt="%s" index="2">Pin D of U_ila_pro_0/U0/I_DQ.G_DW[18].U_DQ</arg>
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">_n0134_inv</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_rx_er_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
@@ -60,37 +74,7 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_col_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_tx_clk_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_mdio_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;1&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;0&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;3&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;2&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;5&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;4&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;7&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;6&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc&lt;8&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

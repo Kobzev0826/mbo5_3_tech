@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: XILINX CORE Generator
 --  /   /         Filename   : icon_pro.vhd
--- /___/   /\     Timestamp  : Wed Dec 08 13:07:36 RTZ 2 (зима) 2021
+-- /___/   /\     Timestamp  : Fri Dec 17 14:29:55 RTZ 2 (зима) 2021
 -- \   \  /  \
 --  \___\/\___\
 --

@@ -8,52 +8,57 @@ input RX_CLK,
 
 output [3:0] TX_D,
 output TX_EN,
-output TX_CLK,
+input TX_CLK, //ЕРЕСЬ, ну ладно
 
-input clk_main,
-input clk_25,
-input clk_12_5,
+input clk_main, //тактовая частота обработчиков данных, если такие вдруг будут
+//input clk_25, //несущая частота для выдачи данных если TX_CLK всё же output
+input clk_12_5, //частота поступления данных (25MHz x 4 bit = 12.5MHz x 1 byte)
 
-input reset_global_in_1,
+input reset_global_in_1, //входы ресета, по 1 на каждую pll в проекте
 input reset_global_in_2,
+input reset_global_in_3, // + 1 кастомный
 
-input [15:0] data_blocks1,
+input [15:0] data_blocks1, //входящие данные от АЦП
 input [15:0] data_blocks2,
-input rdempty1,
-input rdempty2,
-input is_there_256_1,
+
+
+input is_there_256_1, //сигнал наличия входящих данных от АЦП
 input is_there_256_2,
-input [991:0] RAW_STATIC_DATA,
-output rdreq1,
-output rdreq2
+input [991:0] RAW_STATIC_DATA, //данные заголовка отправляемого пакета
+output rdreq1, //запрос данных АЦП
+output rdreq2,
+
+output [991:0] header_parsed, //данные заголовка получаемого пакета
+output header_parsed_valid,   // ... и их валидность
+
+output [15:0] data_type_one, //данные тела пакета типа 1
+output data_type_one_wren	 // ... и их валидность
 
 );
 
-
-localparam DATA_VALIDATION_PROLONGING = 4'd4;
-localparam PREAMBULA_LENGTH_TO_SKIP = 4'd13;
-
 integer i;
 
-wire local_reset_signal_3;
-wire [16:0] doll_ground;
+wire local_reset_signal_1, local_reset_signal_2, local_reset_signal_3, local_reset_signal_4;
 wire local_reset_summary, global_reset_summary;
+
+assign local_reset_summary = global_reset_summary | local_reset_signal_1 | local_reset_signal_2 | local_reset_signal_3 | local_reset_signal_4; 
+assign global_reset_summary = reset_global_in_1 | reset_global_in_2 | reset_global_in_3;
+
+
+
+
+
+
+localparam DATA_VALIDATION_PROLONGING = 4'd4; 
 
 wire [7:0] input_8bit_init;
 wire input_8bit_init_ena;
-wire local_reset_signal_1;
 
 wire input_empty, input_rd_req;
 wire [7:0] input_8bit;
 
-reg [15:0] input_fifo_rdempty_delay;//задержка для выхода фифо ( 8 тактов буффер в фифо)
+reg [15:0] input_fifo_rdempty_delay;//задержка для выхода фифо ( 16 тактов буффер в фифо)
 
-/*genvar k;
-generate
-for (k = 0; k < 4; k = k + 1) begin : gen
-	reg [7:0] input_last_4_bytes;
-end
-endgenerate*/
 
 reg [7:0] input_last_4_bytes [3:0];
 
@@ -68,7 +73,6 @@ reg [3:0] counter_for_prolonging_data_validation;
 wire [47:0] input_BOARD_MAC, input_PC_MAC;
 (*mark_debug = "true"*)wire flag_is_input_ARP;
 wire flag_is_input_IP;
-wire local_reset_signal_2;
 
 wire [47:0] BOARD_MAC, PC_MAC;
 wire [31:0] BOARD_IP, PC_IP;
@@ -80,17 +84,18 @@ wire flag_is_input_IP_valid;
 wire [15:0] input_BOARD_PORT, input_PC_PORT;
 wire flag_is_input_PORT_valid;
 
-wire local_reset_signal_4;
-
 wire flag_is_IP_frame_valid;
+
+wire flag_is_input_data_type_one, flag_is_input_data_type_two;
 
 assign input_info_valid_read = input_fifo_rdempty_delay[0] & input_fifo_rdempty_delay[15];
 assign input_rd_req = input_info_valid_read;
 assign input_data = input_last_4_bytes[3][7:0];
 
-assign local_reset_summary = global_reset_summary | local_reset_signal_1 | local_reset_signal_2 | local_reset_signal_3 | local_reset_signal_4; 
-assign global_reset_summary = 0;//reset_global_in_1 | reset_global_in_2;
+//assign local_reset_processing = global_reset_summary | 1'b0;
+//assign TX_CLK = ~clk_25;
 
+//wire clk_out = ~TX_CLK;
 /*
 fifo_doll doll_fifo(
 	.clk(RX_DV),
@@ -119,7 +124,7 @@ FourToEight fte( //module that translates 25Mhz 4bit Ethernet wire input
 (*keep_hierarchy="yes"*) 
 fifo_25_12_5 fifo_input(
 	.rst(local_reset_summary),
-	.wr_clk(RX_CLK),
+	.wr_clk(~RX_CLK),
 	.rd_clk(clk_12_5),
 	.din(input_8bit_init),
 	.wr_en(input_8bit_init_ena),
@@ -168,6 +173,7 @@ ipHeader ih(
 	.sclr(local_reset_summary)
 );
 
+(*keep_hierarchy="yes"*) 
 udpHeader uh(
 	.clock(clk_12_5),
 	.datain(input_data),
@@ -176,6 +182,31 @@ udpHeader uh(
 	.PC_PORT(input_PC_PORT),
 	.BOARD_PORT(input_BOARD_PORT),
 	.sclr(local_reset_summary)
+);
+
+
+//wire [15:0] data_type_one;
+//wire data_type_one_wren;
+//wire [31:0] header_parsed[31];
+
+ourHeader oh(
+	.datain(input_data),
+	.clock(clk_12_5),
+	.ena(flag_is_input_PORT_valid),
+	.sclr(local_reset_summary),
+	.is_type_1(flag_is_input_data_type_one),
+	.is_type_2(flag_is_input_data_type_two)
+);
+
+ourDataTypeOne odto(
+	.datain(input_data),
+	.clock(clk_12_5),
+	.ena(flag_is_input_data_type_one),
+	.sclr(local_reset_summary),
+	.wren(data_type_one_wren),
+	.data(data_type_one),
+	.o_header(header_parsed),
+	.header_ena(header_parsed_valid)
 );
 
 (*keep_hierarchy="yes"*) 
@@ -195,7 +226,7 @@ dataHolder dh(
 	.input_port_verified(flag_is_input_PORT_valid),
 	.input_in_process(preambula_ended_short),
 	.aclr(global_reset_summary),
-	.clock(clk_25),
+	.clock(clk_main),
 	
 	.BOARD_MAC(BOARD_MAC),
 	.BOARD_IP(BOARD_IP),
@@ -206,21 +237,121 @@ dataHolder dh(
 	.isNotAValidPacket(local_reset_signal_3)
 );
 
+wire tx_ena [1:0];
+reg TX_EN_res;
+wire [3:0] tx_d [1:0];
+reg [3:0] TX_D_res;
+
+reg [7:0] counter_for_solving_answers;
+//reg was_there_a_send;
+//reg [6:0] in_between_delay;
+reg module_ena [1:0];
+reg is_there_request_for_send [1:0];
+reg [1:0] state_of_solving;
+
+assign TX_EN = TX_EN_res;
+assign TX_D = TX_D_res;
+
+always @(negedge TX_CLK) begin
+	case(state_of_solving)
+		0: 	begin
+				is_there_request_for_send[0] <= ~preambula_ended_short & flag_is_input_ARP & ~local_reset_summary;
+				is_there_request_for_send[1] <= is_there_256_1 & is_there_256_2;//~rdempty1 & ~rdempty2;
+				state_of_solving <= state_of_solving + 1'b1;
+				//counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+			end
+		1:	begin
+				is_there_request_for_send[1] <= is_there_256_1 & is_there_256_2;//~rdempty1 & ~rdempty2;
+				if (is_there_request_for_send[0]) begin
+					module_ena[0] <= 1;
+					is_there_request_for_send[0] <= 0;
+					counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+				end else begin
+					module_ena[0] <= 0;
+					TX_EN_res<=tx_ena[0];
+					if (tx_ena[0]) begin
+						TX_D_res<=tx_d[0];
+						//counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+					end else begin
+						if (counter_for_solving_answers) begin
+							counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+						end else begin
+							state_of_solving <= state_of_solving + 1'b1;
+						end
+					end
+				end
+			end
+		2:	begin
+				is_there_request_for_send[0] <= ~preambula_ended_short & flag_is_input_ARP & ~local_reset_summary;
+				if (is_there_request_for_send[1]) begin
+					module_ena[1] <= 1;
+					is_there_request_for_send[1] <= 0;
+					counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+				end else begin
+					module_ena[1] <= 0;
+					TX_EN_res<=tx_ena[1];
+					if (tx_ena[1]) begin
+						TX_D_res<=tx_d[1];
+						//counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+					end else begin
+						if (counter_for_solving_answers) begin
+							counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
+						end else begin
+							state_of_solving <= state_of_solving + 1'b1;
+						end
+					end
+				end
+			end
+		3: 	begin
+				state_of_solving <= state_of_solving + 1'b1;
+				is_there_request_for_send[0] <= ~preambula_ended_short & flag_is_input_ARP & ~local_reset_summary;
+				is_there_request_for_send[1] <= is_there_256_1 & is_there_256_2;//~rdempty1 & ~rdempty2;
+			end
+	endcase
+end
+
+
 (*mark_debug="true"*) 
+(*keep_hierarchy="yes"*) 
 ARPanswerFormer aa(
-	.clock(clk_25),
+	.clock(TX_CLK),
 	.BOARD_MAC(BOARD_MAC),
 	.BOARD_IP(BOARD_IP),
 	.PC_MAC(PC_MAC),
 	.PC_IP(PC_IP),
-	.ena(~preambula_ended & flag_is_input_ARP),
-	.dataout(TX_D),
-	.tx_en(TX_EN),
-	.sclr(local_reset_summary)
+	.ena(module_ena[0]),
+	.dataout(tx_d[0]),
+	.tx_en(tx_ena[0]),
+	.sclr(global_reset_summary)
+);
+
+(*keep_hierarchy="yes"*) 
+messagePartialReporter mpr(
+	.clock(TX_CLK),
+	.BOARD_MAC(BOARD_MAC),
+	.BOARD_IP(BOARD_IP),
+	.BOARD_PORT(BOARD_PORT),
+	.PC_MAC(PC_MAC),
+	.PC_IP(PC_IP),
+	.PC_PORT(PC_PORT),
+	.data_blocks1(data_blocks1),
+	.data_blocks2(data_blocks2),
+	//.rdempty1(rdempty1),
+	//.rdempty2(rdempty2),
+	.is_there_256_1(is_there_256_1),
+	.is_there_256_2(is_there_256_2),//is_there_256_2),
+	.sclr(global_reset_summary),
+	.RAW_STATIC_DATA(RAW_STATIC_DATA),
+	.ena(module_ena[1]),
+	
+	.dataout(tx_d[1]),
+	.tx_en(tx_ena[1]),
+	.rdreq1(rdreq1),
+	.rdreq2(rdreq2)
 );
 
 
-always @(posedge clk_12_5) begin
+always @(negedge clk_12_5) begin
 	for (i = 0; i < 15; i = i + 1) begin
 		input_fifo_rdempty_delay[i+1]<=input_fifo_rdempty_delay[i];
 	end
@@ -246,7 +377,7 @@ end
 
 
 
-always @(negedge clk_12_5) begin
+always @(posedge clk_12_5) begin
 	if (input_info_valid_read) begin
 		/*counter_for_skipping_preambula <= counter_for_skipping_preambula + 1;
 		if (counter_for_skipping_preambula == PREAMBULA_LENGTH_TO_SKIP) begin
@@ -254,7 +385,7 @@ always @(negedge clk_12_5) begin
 		end else begin
 			//nothing
 		end*/
-		if (input_last_4_bytes[3][7:0] == 8'hD5) begin 
+		if (input_data == 8'hD5) begin 
 			preambula_ended<=1;
 			preambula_ended_short<=1;
 		end

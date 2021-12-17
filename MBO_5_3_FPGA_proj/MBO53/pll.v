@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : xaw2verilog
 //  /   /         Filename : pll.v
-// /___/   /\     Timestamp : 12/08/2021 13:04:39
+// /___/   /\     Timestamp : 12/17/2021 14:28:23
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: xaw2verilog -intstyle E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/pll.xaw -st pll.v
+//Command: xaw2verilog -intstyle E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/pll.xaw -st pll.v
 //Design Name: pll
 //Device: xc3s500e-5fg320
 //

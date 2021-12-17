@@ -46,7 +46,8 @@ module fifo_acp(
   dout,
   full,
   empty,
-  rd_data_count
+  rd_data_count,
+  wr_data_count
 );
 
 input rst;
@@ -59,6 +60,7 @@ output [15 : 0] dout;
 output full;
 output empty;
 output [8 : 0] rd_data_count;
+output [8 : 0] wr_data_count;
 
 // synthesis translate_off
 
@@ -153,7 +155,7 @@ output [8 : 0] rd_data_count;
     .C_HAS_UNDERFLOW(0),
     .C_HAS_VALID(0),
     .C_HAS_WR_ACK(0),
-    .C_HAS_WR_DATA_COUNT(0),
+    .C_HAS_WR_DATA_COUNT(1),
     .C_HAS_WR_RST(0),
     .C_IMPLEMENTATION_TYPE(2),
     .C_IMPLEMENTATION_TYPE_AXIS(1),
@@ -264,6 +266,7 @@ output [8 : 0] rd_data_count;
     .FULL(full),
     .EMPTY(empty),
     .RD_DATA_COUNT(rd_data_count),
+    .WR_DATA_COUNT(wr_data_count),
     .BACKUP(),
     .BACKUP_MARKER(),
     .CLK(),
@@ -286,7 +289,6 @@ output [8 : 0] rd_data_count;
     .VALID(),
     .UNDERFLOW(),
     .DATA_COUNT(),
-    .WR_DATA_COUNT(),
     .PROG_FULL(),
     .PROG_EMPTY(),
     .SBITERR(),

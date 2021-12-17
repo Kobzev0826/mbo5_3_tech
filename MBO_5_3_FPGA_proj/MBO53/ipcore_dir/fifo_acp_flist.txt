@@ -1,5 +1,4 @@
 # Output products list for <fifo_acp>
-_xmsgs\pn_parser.xmsgs
 fifo_acp.asy
 fifo_acp.gise
 fifo_acp.ngc

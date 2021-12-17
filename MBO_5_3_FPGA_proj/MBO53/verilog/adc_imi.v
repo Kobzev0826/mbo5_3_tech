@@ -53,7 +53,7 @@ always @(posedge clk_100) begin
 				adc_counter_cycle <=0;
 				//en_reg <= 0;
 			end	
-			else adc_counter_cycle <= adc_counter_cycle +1;
+			adc_counter_cycle <= adc_counter_cycle +1;
 			
 			if ( adc_counter_cycle == 5'd 14) CS_reg <=1;
 			

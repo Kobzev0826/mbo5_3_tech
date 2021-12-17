@@ -75,7 +75,7 @@ entity fifo_25_12_5_exdes is
    PORT (
            WR_CLK                    : IN  std_logic;
      	   RD_CLK                    : IN  std_logic;
-           RD_DATA_COUNT             : OUT std_logic_vector(11-1 DOWNTO 0);
+           RD_DATA_COUNT             : OUT std_logic_vector(6-1 DOWNTO 0);
            RST                       : IN  std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
@@ -99,7 +99,7 @@ architecture xilinx of fifo_25_12_5_exdes is
    PORT (
            WR_CLK                    : IN  std_logic;
      	   RD_CLK                    : IN  std_logic;
-           RD_DATA_COUNT             : OUT std_logic_vector(11-1 DOWNTO 0);
+           RD_DATA_COUNT             : OUT std_logic_vector(6-1 DOWNTO 0);
            RST                       : IN  std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;

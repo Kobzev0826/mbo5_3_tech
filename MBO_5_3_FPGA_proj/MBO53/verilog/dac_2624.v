@@ -40,6 +40,7 @@ reg [5:0] dac_cycle_counter;
 assign spi_mosi = data_reg[31];
 assign spi_sck = spi_strob? ~clk:0;
 assign dac_cs = CS_reg;
+assign dac_clr=1'b1;
 
 always @(posedge clk) begin
 

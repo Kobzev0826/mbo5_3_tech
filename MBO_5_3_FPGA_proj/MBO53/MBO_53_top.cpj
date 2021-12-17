@@ -1,5 +1,5 @@
 #ChipScope Pro Analyzer Project File, Version 3.0
-#Wed Dec 01 15:48:15 MSK 2021
+#Mon Dec 13 10:48:01 MSK 2021
 device.0.configFileDir=E\:\\Xilinx\\projects\\MBO-5_3\\MBO_5_3_FPGA_proj\\MBO53
 device.0.configFilename=mbo_53_top.bit
 device.0.inserterCDCFileDir=E\:\\Xilinx\\projects\\MBO-5_3\\MBO_5_3_FPGA_proj\\MBO53
@@ -16,7 +16,7 @@ deviceChain.name2=MyDevice2
 deviceIds=01c220930504609306e5e093
 mdiAreaHeight=0.699468085106383
 mdiAreaHeightLast=0.699468085106383
-mdiCount=2
+mdiCount=0
 mdiDevice0=0
 mdiDevice1=0
 mdiType0=1
@@ -28,6 +28,7 @@ navigatorHeightLast=0.1799645390070922
 navigatorWidth=0.09184171958964338
 navigatorWidthLast=0.1797752808988764
 signalDisplayPath=0
+unit.-1.-1.username=
 unit.0.-1.username=
 unit.0.0.0.HEIGHT0=0.44402036
 unit.0.0.0.TriggerRow0=1

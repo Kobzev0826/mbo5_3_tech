@@ -67,7 +67,7 @@ fifo_25_12_5 your_instance_name (
   .dout(dout), // output [7 : 0] dout
   .full(full), // output full
   .empty(empty), // output empty
-  .rd_data_count(rd_data_count) // output [10 : 0] rd_data_count
+  .rd_data_count(rd_data_count) // output [5 : 0] rd_data_count
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

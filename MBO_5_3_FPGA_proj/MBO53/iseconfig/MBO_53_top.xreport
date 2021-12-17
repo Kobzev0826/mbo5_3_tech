@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-12-12T19:32:29</DateModified>
+  <DateModified>2021-12-17T18:02:53</DateModified>
   <ModuleName>MBO_53_top</ModuleName>
-  <SummaryTimeStamp>2021-12-08T19:22:29</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-12-17T18:01:09</SummaryTimeStamp>
   <SavedFilePath>D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/iseconfig/MBO_53_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53\</ImplementationReportsDirectory>
   <DateInitialized>2021-11-29T12:15:41</DateInitialized>
@@ -17,6 +17,8 @@
     <toc-item title="Performance Summary" target="Performance Summary" />
     <toc-item title="Failing Constraints" target="Failing Constraints" />
     <toc-item title="Detailed Reports" target="Detailed Reports" />
+    <table-item tableState="ExpandedTable" tableKey="DeviceUtilizationSummary" />
+    <table-item tableState="CollapsedTable" tableKey="DeviceUtilizationSummary" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="MBO_53_top_envsettings.html" label="System Settings" />
    <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="MBO_53_top_map.xrpt" label="IOB Properties" />

@@ -9,3 +9,402 @@ Processing design ...
 Writing EDIF netlist file MBO_53_top.edif ...
 ngc2edif: Total memory usage is 78044 kilobytes
 
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_S
+   RL16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_S
+   RL16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dac_cycle_counter[5]_GND_22_o_select_13_OUT<31 : 4> on block dac_2624 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gen[15].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gen[16].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<109 : 5> on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus pins.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_20_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<109 : 0> on block
+   Ethernet_module_upper is not reconstructed, because there are some missing
+   bus pins.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay<15 : 0> on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ila0_data0<109 : 0> on block MBO_53_top
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top_cs.edif ...
+ngc2edif: Total memory usage is 106524 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_S
+   RL16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_S
+   RL16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dac_cycle_counter[5]_GND_22_o_select_13_OUT<31 : 4> on block dac_2624 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gen[15].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gen[16].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<109 : 5> on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus pins.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_20_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<109 : 0> on block
+   Ethernet_module_upper is not reconstructed, because there are some missing
+   bus pins.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay<15 : 0> on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ila0_data0<109 : 0> on block MBO_53_top
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top_cs.edif ...
+ngc2edif: Total memory usage is 106524 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SR
+   L16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_S
+   RL16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_S
+   RL16/sel<10 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dac_cycle_counter[5]_GND_25_o_select_13_OUT<31 : 4> on block dac_2624 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gen[15].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gen[16].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<109 : 5> on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus pins.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_22_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<144 : 0> on block
+   Ethernet_module_upper is not reconstructed, because there are some missing
+   bus pins.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay<15 : 0> on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ila0_data0<144 : 0> on block MBO_53_top
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top_cs.edif ...
+ngc2edif: Total memory usage is 106524 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SR
+   L16/sel[10 : 0] on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_S
+   RL16/sel[10 : 0] on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_S
+   RL16/sel[10 : 0] on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly[2 : 0] on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly[4 : 0] on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dac_cycle_counter[5]_GND_34_o_select_13_OUT<31 : 4> on block dac_2624 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus DATA_REG<0>_0[4927 : 0] on block
+   convolution_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gen[15].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gen[16].Shift[3 : 0] on block
+   ARPanswerFormer is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_31_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay<15 : 0> on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top_cs.edif ...
+ngc2edif: Total memory usage is 106524 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to MBO_53_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus DATA_REG<0>_0[2527 : 0] on block
+   convolution_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Result[31 : 0] on block convolution_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Shift[59][7]_GND_29_o_mux_1_OUT<320 : 0>
+   on block ARPanswerFormer is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_31_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay<15 : 0> on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top.edif ...
+ngc2edif: Total memory usage is 106524 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design sum.ngc ...
+WARNING:NetListWriters:298 - No output is written to sum.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file sum.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_25_12_5.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_25_12_5.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fifo_25_12_5.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_acp.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_acp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fifo_acp.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MEM_OPORA_LCHM.ngc ...
+WARNING:NetListWriters:298 - No output is written to MEM_OPORA_LCHM.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file MEM_OPORA_LCHM.edif ...
+ngc2edif: Total memory usage is 78044 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_CONV_OUT.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_CONV_OUT.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_CONV_OUT.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_CONV_IN.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_CONV_IN.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_CONV_IN.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to MBO_53_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus DATA_REG<0>_0[2527 : 0] on block
+   convolution_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Result[31 : 0] on block convolution_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Shift[59][7]_GND_29_o_mux_1_OUT<320 : 0>
+   on block ARPanswerFormer is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_31_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay<15 : 0> on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top.edif ...
+ngc2edif: Total memory usage is 106524 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design sum.ngc ...
+WARNING:NetListWriters:298 - No output is written to sum.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file sum.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_25_12_5.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_25_12_5.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fifo_25_12_5.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_acp.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_acp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fifo_acp.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MEM_OPORA_LCHM.ngc ...
+WARNING:NetListWriters:298 - No output is written to MEM_OPORA_LCHM.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file MEM_OPORA_LCHM.edif ...
+ngc2edif: Total memory usage is 78044 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_CONV_OUT.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_CONV_OUT.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_CONV_OUT.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_CONV_IN.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_CONV_IN.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_CONV_IN.edif ...
+ngc2edif: Total memory usage is 82140 kilobytes
+
