@@ -36,7 +36,7 @@ void Writter::write() {     //чтение из буфера и запись в 
 
             memcpy(tmp, &params.buffer[*params.writeCounter * 2304], 2304);
 
-            if((tmp[3] == static_cast<char>(1) )|| (*params.writeCounter == 100))
+            if(tmp[3]&0x01)
             {
                 u[0] = tmp[4];
                 u[1] = tmp[5];
