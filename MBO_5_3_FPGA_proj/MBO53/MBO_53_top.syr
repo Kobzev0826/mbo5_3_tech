@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
@@ -95,7 +95,7 @@ Pack IO Registers into IOBs        : Auto
 Equivalent register Removal        : YES
 
 ---- General Options
-Optimization Goal                  : Area
+Optimization Goal                  : Speed
 Optimization Effort                : 1
 Keep Hierarchy                     : Yes
 Netlist Hierarchy                  : Rebuilt
@@ -122,131 +122,131 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" into library work
 Parsing module <fifo_acp>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\crc32.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\crc32.v" into library work
 Parsing module <CRC32>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\sum.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\sum.v" into library work
 Parsing module <sum>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\MEM_OPORA_LCHM.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\MEM_OPORA_LCHM.v" into library work
 Parsing module <MEM_OPORA_LCHM>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\udpHeader.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\udpHeader.v" into library work
 Parsing module <udpHeader>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v" into library work
 Parsing module <ourHeader>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourDataTypeOne.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourDataTypeOne.v" into library work
 Parsing module <ourDataTypeOne>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\messagePartialReporter.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\messagePartialReporter.v" into library work
 Parsing module <messagePartialReporter>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ipHeader.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ipHeader.v" into library work
 Parsing module <ipHeader>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\headerCutter.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\headerCutter.v" into library work
 Parsing module <headerCutter>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\FourToEight.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\FourToEight.v" into library work
 Parsing module <FourToEight>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" into library work
 Parsing module <dataHolder>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\arp_parser.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\arp_parser.v" into library work
 Parsing module <arp_parser>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ARPanswerFormer.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ARPanswerFormer.v" into library work
 Parsing module <ARPanswerFormer>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" into library work
 Parsing module <convolution_block>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_OUT.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_OUT.v" into library work
 Parsing module <FIFO_CONV_OUT>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_IN.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_IN.v" into library work
 Parsing module <FIFO_CONV_IN>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" into library work
 Parsing module <fifo_25_12_5>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" into library work
 Parsing module <Ethernet_module_upper>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" into library work
 Parsing module <convolution_top>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" into library work
 Parsing module <adc_ltc2315>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll_2.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll_2.v" into library work
 Parsing module <pll_2>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll.v" into library work
 Parsing module <pll>.
-Analyzing Verilog file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" into library work
+Analyzing Verilog file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" into library work
 Parsing module <MBO_53_top>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\example_design\fifo_acp_exdes.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\example_design\fifo_acp_exdes.vhd" into library work
 Parsing entity <fifo_acp_exdes>.
 Parsing architecture <xilinx> of entity <fifo_acp_exdes>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pkg.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pkg.vhd" into library work
 Parsing package <fifo_acp_pkg>.
 Parsing package body <fifo_acp_pkg>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dgen.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dgen.vhd" into library work
 Parsing entity <fifo_acp_dgen>.
 Parsing architecture <fg_dg_arch> of entity <fifo_acp_dgen>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dverif.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dverif.vhd" into library work
 Parsing entity <fifo_acp_dverif>.
 Parsing architecture <fg_dv_arch> of entity <fifo_acp_dverif>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pctrl.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pctrl.vhd" into library work
 Parsing entity <fifo_acp_pctrl>.
 Parsing architecture <fg_pc_arch> of entity <fifo_acp_pctrl>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_rng.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_rng.vhd" into library work
 Parsing entity <fifo_acp_rng>.
 Parsing architecture <rg_arch> of entity <fifo_acp_rng>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_synth.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_synth.vhd" into library work
 Parsing entity <fifo_acp_synth>.
 Parsing architecture <simulation_arch> of entity <fifo_acp_synth>.
-Parsing VHDL file "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_tb.vhd" into library work
+Parsing VHDL file "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_tb.vhd" into library work
 Parsing entity <fifo_acp_tb>.
 Parsing architecture <fifo_acp_arch> of entity <fifo_acp_tb>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 209: Port data_read_cnt is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 209: Port data_read_cnt is not connected to this instance
 
 Elaborating module <MBO_53_top>.
 
 Elaborating module <IBUFG>.
-WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 82: Assignment to DAC_CS ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 82: Assignment to DAC_CS ignored, since the identifier is never used
 
 Elaborating module <pll>.
 
 Elaborating module <BUFG>.
 
 Elaborating module <DCM_SP(CLK_FEEDBACK="1X",CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
-WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 110: Assignment to clk_bf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 110: Assignment to clk_bf ignored, since the identifier is never used
 
 Elaborating module <pll_2>.
 
 Elaborating module <DCM_SP(CLK_FEEDBACK="1X",CLKDV_DIVIDE=4.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
-WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 124: Assignment to clk50_double_pll_cross ignored, since the identifier is never used
-WARNING:HDLCompiler:1016 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 94: Port full is not connected to this instance
-WARNING:HDLCompiler:1016 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 110: Port full is not connected to this instance
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 124: Assignment to clk50_double_pll_cross ignored, since the identifier is never used
+WARNING:HDLCompiler:1016 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 94: Port full is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 110: Port full is not connected to this instance
 
 Elaborating module <convolution_top>.
 
 Elaborating module <FIFO_CONV_IN>.
-WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_IN.v" Line 39: Empty module <FIFO_CONV_IN> remains a black box.
-WARNING:HDLCompiler:189 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 102: Size mismatch in connection of port <rd_data_count>. Formal port size is 4-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_IN.v" Line 39: Empty module <FIFO_CONV_IN> remains a black box.
+WARNING:HDLCompiler:189 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 102: Size mismatch in connection of port <rd_data_count>. Formal port size is 4-bit while actual signal size is 5-bit.
 
 Elaborating module <FIFO_CONV_OUT>.
-WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_OUT.v" Line 39: Empty module <FIFO_CONV_OUT> remains a black box.
-WARNING:HDLCompiler:189 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 118: Size mismatch in connection of port <rd_data_count>. Formal port size is 4-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 128: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 155: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 161: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_OUT.v" Line 39: Empty module <FIFO_CONV_OUT> remains a black box.
+WARNING:HDLCompiler:189 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 118: Size mismatch in connection of port <rd_data_count>. Formal port size is 4-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:413 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 128: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 155: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 161: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <convolution_block(MULT_N=25,NLOG=5)>.
 
 Elaborating module <MEM_OPORA_LCHM>.
-WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\MEM_OPORA_LCHM.v" Line 39: Empty module <MEM_OPORA_LCHM> remains a black box.
-WARNING:HDLCompiler:189 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 35: Size mismatch in connection of port <addra>. Formal port size is 6-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 38: Size mismatch in connection of port <addrb>. Formal port size is 6-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 52: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\MEM_OPORA_LCHM.v" Line 39: Empty module <MEM_OPORA_LCHM> remains a black box.
+WARNING:HDLCompiler:189 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 35: Size mismatch in connection of port <addra>. Formal port size is 6-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 38: Size mismatch in connection of port <addrb>. Formal port size is 6-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:413 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 52: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <Ethernet_module_upper>.
 
 Elaborating module <FourToEight>.
 
 Elaborating module <fifo_25_12_5>.
-WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module <fifo_25_12_5> remains a black box.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module <fifo_25_12_5> remains a black box.
+WARNING:HDLCompiler:413 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <headerCutter>.
 
@@ -259,12 +259,12 @@ Elaborating module <sum>.
 Elaborating module <udpHeader>.
 
 Elaborating module <ourHeader>.
-WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 216: Assignment to flag_is_input_data_type_two ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 216: Assignment to flag_is_input_data_type_two ignored, since the identifier is never used
 
 Elaborating module <ourDataTypeOne>.
 
 Elaborating module <dataHolder>.
-WARNING:HDLCompiler:1127 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to input_ip_verified_ft ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to input_ip_verified_ft ignored, since the identifier is never used
 
 Elaborating module <ARPanswerFormer>.
 
@@ -273,19 +273,20 @@ Elaborating module <CRC32>.
 Elaborating module <messagePartialReporter>.
 
 Elaborating module <fifo_acp>.
-WARNING:HDLCompiler:1499 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module <fifo_acp> remains a black box.
+WARNING:HDLCompiler:1499 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module <fifo_acp> remains a black box.
 
 Elaborating module <adc_ltc2315>.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 55: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 435: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:634 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 76: Net <emdc> does not have a driver.
+WARNING:HDLCompiler:413 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 55: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 428: Assignment to adc_02_en ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 435: Assignment to adc_02_cs_f ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 76: Net <emdc> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <MBO_53_top>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v".
         address = 4'b0000
         command = 4'b0011
     Set property "KEEP_HIERARCHY = YES" for instance <convolution_top>.
@@ -295,7 +296,6 @@ Synthesizing Unit <MBO_53_top>.
     Set property "MARK_DEBUG = TRUE" for signal <adc_01_data>.
     Set property "MARK_DEBUG = TRUE" for signal <adc_02_data>.
     Set property "MARK_DEBUG = TRUE" for signal <adc_01_data_true>.
-    Set property "MARK_DEBUG = TRUE" for signal <error_counter>.
     Set property "MARK_DEBUG = TRUE" for signal <rd_data_count_01>.
     Set property "MARK_DEBUG = TRUE" for signal <wr_data_count_01>.
     Set property "MARK_DEBUG = TRUE" for signal <rd_data_count_02>.
@@ -311,6 +311,7 @@ Synthesizing Unit <MBO_53_top>.
     Set property "MARK_DEBUG = TRUE" for signal <adc_02_sdo_bf>.
     Set property "MARK_DEBUG = TRUE" for signal <conv_data_out_en>.
     Set property "MARK_DEBUG = TRUE" for signal <SUB_TA_TB_en>.
+    Set property "MARK_DEBUG = TRUE" for signal <error_counter>.
     Set property "MARK_DEBUG = TRUE" for signal <eth_rdempty1>.
     Set property "MARK_DEBUG = TRUE" for signal <eth_rdempty2>.
     Set property "MARK_DEBUG = TRUE" for signal <eth_rdreq1>.
@@ -324,26 +325,32 @@ Synthesizing Unit <MBO_53_top>.
     Set property "MARK_DEBUG = TRUE" for signal <BTN_WEST_f>.
     Set property "MARK_DEBUG = TRUE" for signal <BTN_WEST_ff>.
     Set property "MARK_DEBUG = TRUE" for signal <ch_a_extremum_en>.
+    Set property "MARK_DEBUG = TRUE" for signal <acp_add1>.
+    Set property "MARK_DEBUG = TRUE" for signal <acp_add2>.
+    Set property "MARK_DEBUG = TRUE" for signal <acp_data1_ft>.
+    Set property "MARK_DEBUG = TRUE" for signal <acp_data2_ft>.
+    Set property "MARK_DEBUG = TRUE" for signal <triger_setup>.
 WARNING:Xst:647 - Input <e_rx_er> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <e_crc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <e_col> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 105: Output port <CLKIN_IBUFG_OUT> of the instance <pll_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 118: Output port <CLK0_OUT> of the instance <pll_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <data_read_cnt> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <data_write_cnt> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <DATA_OUT_A> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <DATA_OUT_B> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <CH_A_EXTREMUM> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <CH_B_EXTREMUM> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <ch_a_extremum_en> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <ch_b_extremum_en> of the instance <convolution_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 349: Output port <wr_data_count> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 349: Output port <full> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 349: Output port <empty> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 363: Output port <wr_data_count> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 363: Output port <full> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 363: Output port <empty> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 105: Output port <CLKIN_IBUFG_OUT> of the instance <pll_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 118: Output port <CLK0_OUT> of the instance <pll_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <data_read_cnt> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <data_write_cnt> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <DATA_OUT_B> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <CH_A_EXTREMUM> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <CH_B_EXTREMUM> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <ch_a_extremum_en> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 209: Output port <ch_b_extremum_en> of the instance <convolution_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 349: Output port <wr_data_count> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 349: Output port <full> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 349: Output port <empty> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 363: Output port <wr_data_count> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 363: Output port <full> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 363: Output port <empty> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 420: Output port <en> of the instance <adc_02> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <emdc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <adc_02_cs_ff> equivalent to <adc_01_cs_ff> has been removed
     Found 1-bit register for signal <BTN_NORTH_ff>.
     Found 1-bit register for signal <BTN_NORTH_strob>.
     Found 32-bit register for signal <BTN_NORTH_counter>.
@@ -357,42 +364,43 @@ WARNING:Xst:653 - Signal <emdc> is used but never assigned. This sourceless sign
     Found 32-bit register for signal <BTN_WEST_counter>.
     Found 8-bit register for signal <LED>.
     Found 1-bit register for signal <adc_01_cs_f>.
-    Found 4-bit register for signal <error_counter>.
+    Found 1-bit register for signal <adc_01_cs_ff>.
     Found 1-bit register for signal <BTN_NORTH_f>.
     Found 32-bit adder for signal <BTN_NORTH_counter[31]_GND_1_o_add_6_OUT> created at line 191.
     Found 32-bit adder for signal <BTN_WEST_counter[31]_GND_1_o_add_16_OUT> created at line 322.
-    Found 4-bit adder for signal <error_counter[3]_GND_1_o_add_23_OUT> created at line 435.
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_NORTH_counter may hinder XST clustering optimizations.
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_WEST_counter may hinder XST clustering optimizations.
-INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal error_counter may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_WEST_f may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal SUB_TA_TB_en may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal adc_01_data_true may hinder XST clustering optimizations.
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred 102 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  99 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <MBO_53_top> synthesized.
 
 Synthesizing Unit <pll>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll.v".
     Summary:
 	no macro.
 Unit <pll> synthesized.
 
 Synthesizing Unit <pll_2>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll_2.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll_2.v".
     Summary:
 	no macro.
 Unit <pll_2> synthesized.
 
 Synthesizing Unit <convolution_top>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v".
         N = 4
         MULT_N = 25
         NLOG = 5
-        CELL = 23
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 94: Output port <full> of the instance <DATA_BUFFER> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 94: Output port <empty> of the instance <DATA_BUFFER> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 110: Output port <full> of the instance <CONV_BUFFER> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 110: Output port <empty> of the instance <CONV_BUFFER> is unconnected or connected to loadless signal.
+        CELL = 5
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 94: Output port <full> of the instance <DATA_BUFFER> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 94: Output port <empty> of the instance <DATA_BUFFER> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 110: Output port <full> of the instance <CONV_BUFFER> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" line 110: Output port <empty> of the instance <CONV_BUFFER> is unconnected or connected to loadless signal.
     Register <SUB_TA_TB_en> equivalent to <ch_b_extremum_en> has been removed
     Found 5-bit register for signal <cnt_x_rate>.
     Found 8-bit register for signal <cnt_opora>.
@@ -465,10 +473,10 @@ INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\
     Found 8-bit comparator greater for signal <cnt_opora[7]_GND_8_o_LessThan_30_o> created at line 182
     Found 8-bit comparator greater for signal <cnt_opora[7]_GND_8_o_LessThan_31_o> created at line 182
     Found 8-bit comparator greater for signal <cnt_opora[7]_GND_8_o_LessThan_34_o> created at line 182
-    Found 16-bit comparator greater for signal <DATA_OUT_A_2ft[15]_DATA_OUT_A_1ft[15]_LessThan_61_o> created at line 232
+    Found 16-bit comparator greater for signal <DATA_OUT_A_1ft[15]_DATA_OUT_A_2ft[15]_LessThan_61_o> created at line 232
     Found 16-bit comparator greater for signal <DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o> created at line 232
     Found 16-bit comparator greater for signal <FIX_POROG[15]_DATA_OUT_A_1ft[15]_LessThan_63_o> created at line 232
-    Found 16-bit comparator greater for signal <DATA_OUT_B_2ft[15]_DATA_OUT_B_1ft[15]_LessThan_67_o> created at line 239
+    Found 16-bit comparator greater for signal <DATA_OUT_B_1ft[15]_DATA_OUT_B_2ft[15]_LessThan_67_o> created at line 239
     Found 16-bit comparator greater for signal <DATA_OUT_B_1ft[15]_DATA_OUT_B[15]_LessThan_68_o> created at line 239
     Found 16-bit comparator greater for signal <FIX_POROG[15]_DATA_OUT_B_1ft[15]_LessThan_69_o> created at line 239
     Found 32-bit comparator greater for signal <GND_8_o_cnt_sub[31]_LessThan_70_o> created at line 242
@@ -480,7 +488,7 @@ INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\
 Unit <convolution_top> synthesized.
 
 Synthesizing Unit <convolution_block>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v".
         MULT_N = 25
         NLOG = 5
     Found 32-bit register for signal <DATA_OUT_B>.
@@ -496,13 +504,13 @@ Synthesizing Unit <convolution_block>.
 Unit <convolution_block> synthesized.
 
 Synthesizing Unit <Ethernet_module_upper>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v".
         CONST_BOARD_IP = 32'b11000000101010000000000001110001
         CONST_BOARD_MAC = 48'b100100000010101100110100000011010000111011100110
 WARNING:Xst:647 - Input <clk_main> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <rd_data_count> of the instance <fifo_input> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <full> of the instance <fifo_input> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 210: Output port <is_type_2> of the instance <oh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <rd_data_count> of the instance <fifo_input> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <full> of the instance <fifo_input> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 210: Output port <is_type_2> of the instance <oh> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <preambula_ended_short>.
     Found 4-bit register for signal <counter_for_prolonging_data_validation>.
     Found 16-bit register for signal <input_fifo_rdempty_delay>.
@@ -527,7 +535,7 @@ INFO:Xst:3210 - "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\
 Unit <Ethernet_module_upper> synthesized.
 
 Synthesizing Unit <FourToEight>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\FourToEight.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\FourToEight.v".
     Found 1-bit register for signal <state>.
     Found 8-bit register for signal <datastorage>.
     Found 1-bit register for signal <ena_ft>.
@@ -544,7 +552,7 @@ Synthesizing Unit <FourToEight>.
 Unit <FourToEight> synthesized.
 
 Synthesizing Unit <headerCutter>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\headerCutter.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\headerCutter.v".
     Found 48-bit register for signal <BOARD_MAC>.
     Found 1-bit register for signal <isIp>.
     Found 1-bit register for signal <isARP>.
@@ -560,7 +568,7 @@ Synthesizing Unit <headerCutter>.
 Unit <headerCutter> synthesized.
 
 Synthesizing Unit <arp_parser>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\arp_parser.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\arp_parser.v".
     Found 5-bit register for signal <counter>.
     Found 1-bit register for signal <BOARD_IP<31>>.
     Found 1-bit register for signal <BOARD_IP<30>>.
@@ -634,7 +642,7 @@ Synthesizing Unit <arp_parser>.
 Unit <arp_parser> synthesized.
 
 Synthesizing Unit <ipHeader>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ipHeader.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ipHeader.v".
     Found 1-bit register for signal <dataen>.
     Found 5-bit register for signal <counter>.
     Found 1-bit register for signal <EOP>.
@@ -676,7 +684,7 @@ Synthesizing Unit <ipHeader>.
 Unit <ipHeader> synthesized.
 
 Synthesizing Unit <udpHeader>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\udpHeader.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\udpHeader.v".
     Found 5-bit register for signal <counter>.
     Found 1-bit register for signal <EOP>.
     Found 16-bit register for signal <PC_PORT>.
@@ -689,7 +697,7 @@ Synthesizing Unit <udpHeader>.
 Unit <udpHeader> synthesized.
 
 Synthesizing Unit <ourHeader>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v".
     Found 1-bit register for signal <is_type_2>.
     Found 1-bit register for signal <flag_type<31>>.
     Found 1-bit register for signal <flag_type<30>>.
@@ -710,7 +718,7 @@ Synthesizing Unit <ourHeader>.
 Unit <ourHeader> synthesized.
 
 Synthesizing Unit <ourDataTypeOne>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourDataTypeOne.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourDataTypeOne.v".
     Found 16-bit register for signal <data>.
     Found 992-bit register for signal <n1217[991:0]>.
     Found 10-bit register for signal <counter>.
@@ -729,7 +737,7 @@ Synthesizing Unit <ourDataTypeOne>.
 Unit <ourDataTypeOne> synthesized.
 
 Synthesizing Unit <dataHolder>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v".
     Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
     Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
     Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
@@ -819,7 +827,7 @@ Synthesizing Unit <dataHolder>.
 Unit <dataHolder> synthesized.
 
 Synthesizing Unit <ARPanswerFormer>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ARPanswerFormer.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ARPanswerFormer.v".
     Found 1-bit register for signal <Shift<59><6>>.
     Found 1-bit register for signal <Shift<59><5>>.
     Found 1-bit register for signal <Shift<59><4>>.
@@ -1318,14 +1326,14 @@ Synthesizing Unit <ARPanswerFormer>.
 Unit <ARPanswerFormer> synthesized.
 
 Synthesizing Unit <CRC32>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\crc32.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\crc32.v".
     Found 32-bit register for signal <Rg_CRC>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <CRC32> synthesized.
 
 Synthesizing Unit <messagePartialReporter>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\messagePartialReporter.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\messagePartialReporter.v".
     Found 1-bit register for signal <Shift<169><7>>.
     Found 1-bit register for signal <Shift<169><6>>.
     Found 1-bit register for signal <Shift<169><5>>.
@@ -2716,7 +2724,7 @@ Synthesizing Unit <messagePartialReporter>.
 Unit <messagePartialReporter> synthesized.
 
 Synthesizing Unit <adc_ltc2315>.
-    Related source file is "E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v".
+    Related source file is "D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v".
     Found 1-bit register for signal <CS_reg>.
     Found 1-bit register for signal <en_reg>.
     Found 16-bit register for signal <adc_data_reg>.
@@ -2734,7 +2742,7 @@ HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 8
  16x16-bit multiplier                                  : 8
-# Adders/Subtractors                                   : 35
+# Adders/Subtractors                                   : 34
  10-bit adder                                          : 2
  16-bit adder                                          : 1
  2-bit adder                                           : 1
@@ -2743,11 +2751,11 @@ Macro Statistics
  33-bit adder                                          : 4
  34-bit adder                                          : 2
  39-bit adder                                          : 2
- 4-bit adder                                           : 3
+ 4-bit adder                                           : 2
  5-bit adder                                           : 11
  8-bit adder                                           : 3
 # Registers                                            : 1969
- 1-bit register                                        : 1883
+ 1-bit register                                        : 1884
  10-bit register                                       : 2
  16-bit register                                       : 23
  2-bit register                                        : 1
@@ -2757,7 +2765,7 @@ Macro Statistics
  3328-bit register                                     : 1
  34-bit register                                       : 2
  39-bit register                                       : 2
- 4-bit register                                        : 7
+ 4-bit register                                        : 6
  48-bit register                                       : 3
  5-bit register                                        : 11
  8-bit register                                        : 9
@@ -3058,12 +3066,11 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 8
  16x16-bit registered multiplier                       : 8
-# Adders/Subtractors                                   : 11
+# Adders/Subtractors                                   : 10
  2-bit adder                                           : 1
  32-bit adder                                          : 2
  33-bit adder                                          : 4
  34-bit adder                                          : 2
- 4-bit adder                                           : 1
  5-bit adder                                           : 1
 # Counters                                             : 22
  10-bit up counter                                     : 2
@@ -3075,8 +3082,8 @@ Macro Statistics
  8-bit up counter                                      : 3
 # Accumulators                                         : 2
  39-bit up loadable accumulator                        : 2
-# Registers                                            : 7230
- Flip-Flops                                            : 7230
+# Registers                                            : 7227
+ Flip-Flops                                            : 7227
 # Comparators                                          : 35
  10-bit comparator greater                             : 3
  16-bit comparator equal                               : 3
@@ -3291,151 +3298,11 @@ INFO:Xst:2261 - The FF/Latch <state> in Unit <ARPanswerFormer> is equivalent to 
 INFO:Xst:2261 - The FF/Latch <Led_reg_1> in Unit <MBO_53_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Led_reg_3> <Led_reg_5> <Led_reg_7> 
 WARNING:Xst:1710 - FF/Latch <name> (without init value) has a constant value of 1 in block <convolution_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <name2> (without init value) has a constant value of 1 in block <convolution_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <SUM_2_chA_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chA_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chA_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_2_chB_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_1_chB_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chA_33> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <SUM_3_chB_33> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chA_33> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chA_34> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chA_35> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chA_36> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chA_37> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chA_38> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_16> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_17> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_18> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_19> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_20> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_21> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_22> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_23> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_24> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_25> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_26> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_27> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_28> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_29> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_30> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_31> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_32> of sequential type is unconnected in block <convolution_top>.
-WARNING:Xst:2677 - Node <acc_chB_33> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chB_34> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chB_35> of sequential type is unconnected in block <convolution_top>.
 WARNING:Xst:2677 - Node <acc_chB_36> of sequential type is unconnected in block <convolution_top>.
@@ -4494,17 +4361,17 @@ WARNING:Xst:2677 - Node <CH_B_EXTREMUM_14> of sequential type is unconnected in 
 WARNING:Xst:2677 - Node <CH_B_EXTREMUM_15> of sequential type is unconnected in block <convolution_top>.
 
 Mapping all equations...
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003b, ipsum31/c_out, sig0000003d, sig00000039, mpr/ipp7, ipsum31/c_in, sig0000003c, sig00000034, sig00000022, mpr/ipp7_anti_loop_AND_342_o, sig00000037, sig00000035, sig00000040, sig00000041, sig00000038, sig00000036, sig0000003a, sig00000021, sig0000003f, sig0000003e, sig00000033.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: mpr/ipp6, sig0000003f, sig00000039, ipsum31/b<15>, sig0000003e, sig00000040, sig00000034, sig00000035, sig0000003a, mpr/ipsum6r<15>, sig00000048, sig0000003d, sig00000033, sig00000041, mpr/ipp6_anti_loop_AND_341_o, sig00000029, sig00000036, sig00000037, ipsum22/c_out, sig00000017, sig00000022, sig0000003c, ipsum22/s<15>, sig00000038, sig00000021, ipsum22/c_in, sig0000003b, sig00000029.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000039, sig0000003d, ipsum22/s<14>, sig00000038, mpr/ipsum4r<14>, sig0000003f, sig00000028, sig00000021, sig0000003e, ipsum14/c_out, sig0000003b, sig00000022, sig00000035, sig0000003c, sig00000037, sig00000041, sig00000028, sig00000028, sig00000016, sig00000016, ipsum14/s<14>, sig0000003a, mpr/ipp4_anti_loop_AND_339_o, mpr/ipp4, sig00000047, sig00000047, sig00000036, ipsum31/b<14>, ipsum22/b<14>, sig00000040, sig00000033, sig00000034, mpr/ipsum6r<14>, ipsum14/c_in.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003d, mpr/ipp3_anti_loop_AND_338_o, sig00000035, ipsum22/a<13>, sig00000037, mpr/ipsum6r<13>, sig00000041, sig0000003c, sig0000003a, sig00000033, sig00000021, sig00000038, ipsum31/b<13>, sig00000027, sig0000003f, sig00000027, ipsum13/c_out, sig00000036, sig0000003b, sig00000039, sig00000046, sig0000003e, sig00000046, sig00000005, ipsum22/s<13>, sig00000034, mpr/ipsum3r<13>, ipsum13/c_in, sig00000027, mpr/ipp3, sig00000022, sig00000015, sig00000040, ipsum13/s<13>.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003e, mpr/ipsum5r<12>, sig00000033, sig00000038, sig00000004, sig00000026, sig0000003f, ipsum21/c_out, mpr/ipp5_anti_loop_AND_340_o, sig0000003c, sig00000021, mpr/ipp5, sig00000036, sig00000022, sig0000003b, sig0000003a, ipsum21/c_in, sig00000039, sig00000034, sig00000026, sig0000003d, ipsum21/s<12>, sig00000035, sig00000040, ipsum31/a<12>, sig00000037, sig00000045, sig00000041.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003e, sig00000022, sig0000003a, ipsum31/a<11>, sig00000040, sig00000036, sig00000037, sig00000038, sig00000044, sig00000003, sig0000003d, mpr/ipp2, sig00000044, sig00000025, ipsum12/c_in, mpr/ipsum2r<11>, ipsum21/b<11>, sig00000021, sig00000034, ipsum12/s<11>, sig00000041, ipsum12/c_out, sig00000013, sig0000003c, sig00000025, mpr/ipsum5r<11>, sig00000025, sig00000035, sig00000033, mpr/ipp2_anti_loop_AND_337_o, sig00000039, ipsum21/s<11>, sig0000003f, sig0000003b.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: mpr/ipsum5r<10>, sig00000043, mpr/ipsum1r<10>, sig0000003c, sig00000039, sig0000003d, ipsum11/c_in, sig00000033, sig00000035, ipsum21/s<10>, sig00000040, ipsum11/s<10>, sig00000034, sig00000041, sig0000003b, ipsum31/a<10>, sig00000024, mpr/ipp1_anti_loop_AND_336_o, sig0000003e, sig00000024, sig00000038, sig0000003f, sig00000036, sig00000037, sig00000022, sig00000002, sig00000024, sig00000002, sig00000021, sig00000043, ipsum21/a<10>, ipsum11/c_out, mpr/ipp1, sig0000003a.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003e, sig0000003c, sig00000035, ipsum31/c_out, sig00000037, mpr/ipp7, sig00000036, sig0000003f, sig0000003b, sig00000021, ipsum31/c_in, sig0000003a, sig00000040, sig00000034, sig00000039, sig00000033, sig00000041, sig0000003d, sig00000038, sig00000022, mpr/ipp7_anti_loop_AND_342_o.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000040, ipsum31/b<15>, sig00000038, sig0000003e, ipsum22/c_out, ipsum22/c_in, sig00000021, sig0000003a, sig00000039, sig0000003d, sig0000003b, sig0000003f, mpr/ipsum6r<15>, sig00000022, sig00000041, sig00000017, sig0000003c, sig00000034, sig00000036, sig00000029, sig00000037, sig00000035, ipsum22/s<15>, sig00000029, sig00000033, mpr/ipp6_anti_loop_AND_341_o, mpr/ipp6, sig00000048.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: mpr/ipsum4r<14>, sig0000003a, sig00000028, sig00000041, sig00000039, mpr/ipp4_anti_loop_AND_339_o, sig00000028, sig00000040, ipsum31/b<14>, sig0000003f, sig00000036, ipsum14/c_out, sig00000022, sig00000037, sig00000033, ipsum22/b<14>, sig0000003e, sig00000035, sig00000038, ipsum22/s<14>, sig00000021, sig00000016, sig0000003d, sig00000034, mpr/ipsum6r<14>, sig0000003b, sig00000028, mpr/ipp4, sig00000047, sig00000016, sig0000003c, ipsum14/c_in, ipsum14/s<14>, sig00000047.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000021, sig00000038, mpr/ipp3, sig00000027, sig0000003b, sig00000037, mpr/ipsum3r<13>, sig00000005, sig0000003d, mpr/ipsum6r<13>, sig00000034, sig00000022, sig00000015, sig0000003f, sig0000003e, mpr/ipp3_anti_loop_AND_338_o, sig00000033, sig00000035, sig00000041, ipsum13/s<13>, ipsum22/a<13>, sig00000040, sig00000039, sig0000003a, sig00000046, sig00000027, ipsum31/b<13>, ipsum22/s<13>, sig00000046, sig00000027, ipsum13/c_out, ipsum13/c_in, sig00000036, sig0000003c.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000040, sig0000003b, ipsum21/c_out, sig00000038, sig00000033, ipsum31/a<12>, mpr/ipp5, sig0000003c, mpr/ipsum5r<12>, sig0000003a, sig00000039, sig00000021, sig00000026, sig0000003e, sig0000003f, sig00000045, mpr/ipp5_anti_loop_AND_340_o, sig00000035, ipsum21/c_in, sig00000041, ipsum21/s<12>, sig0000003d, sig00000034, sig00000036, sig00000004, sig00000022, sig00000026, sig00000037.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: ipsum21/s<11>, sig00000044, sig0000003e, sig00000013, sig00000021, sig00000040, mpr/ipp2, sig0000003c, sig00000025, sig00000037, sig00000041, sig00000034, ipsum12/c_in, sig00000038, ipsum12/c_out, mpr/ipsum2r<11>, mpr/ipp2_anti_loop_AND_337_o, sig00000036, sig0000003b, sig00000025, sig00000033, sig00000044, sig00000003, sig00000025, sig0000003a, ipsum12/s<11>, sig00000035, sig00000022, sig0000003d, sig00000039, ipsum31/a<11>, ipsum21/b<11>, sig0000003f, mpr/ipsum5r<11>.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000038, sig00000043, sig00000002, sig0000003f, sig00000041, sig00000002, sig0000003a, sig0000003e, sig00000037, sig00000043, ipsum21/s<10>, sig00000036, mpr/ipsum5r<10>, sig00000033, ipsum11/c_in, mpr/ipp1, ipsum31/a<10>, sig0000003d, sig00000040, sig0000003b, sig00000035, sig00000034, sig00000022, ipsum11/s<10>, sig00000024, mpr/ipsum1r<10>, ipsum21/a<10>, sig00000024, sig00000024, sig0000003c, sig00000039, mpr/ipp1_anti_loop_AND_336_o, ipsum11/c_out, sig00000021.
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Shift<41>_0> in Unit <aa> is equivalent to the following 4 FFs/Latches, which will be removed : <Shift<39>_7> <Shift<39>_3> <Shift<39>_5> <Shift<38>_6> 
 INFO:Xst:2261 - The FF/Latch <Shift<40>_0> in Unit <aa> is equivalent to the following 2 FFs/Latches, which will be removed : <Shift<38>_5> <Shift<38>_3> 
-Found area constraint ratio of 100 (+ 5) on block MBO_53_top, actual ratio is 91.
+Found area constraint ratio of 100 (+ 5) on block MBO_53_top, actual ratio is 92.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
@@ -4557,9 +4424,12 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <fifo_input_acp1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1> 
-FlipFlop Led_reg_1 has been replicated 3 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
+
+Processing Unit <MBO_53_top> :
+	Found 2-bit shift register for signal <adc_01_cs_ff>.
+Unit <MBO_53_top> processed.
 
 Processing Unit <aa> :
 	Found 5-bit shift register for signal <Shift<17>_3>.
@@ -4701,7 +4571,7 @@ Processing Unit <convolution_top> :
 	Found 25-bit shift register for signal <DATA_REG<0>_0_3325>.
 	Found 25-bit shift register for signal <DATA_REG<0>_0_3326>.
 	Found 25-bit shift register for signal <DATA_REG<0>_0_3327>.
-	Found 4-bit shift register for signal <t_acc_4ft>.
+	Found 3-bit shift register for signal <t_acc_4ft>.
 	Found 25-bit shift register for signal <read_buf_25>.
 Unit <convolution_top> processed.
 
@@ -4729,13 +4599,15 @@ Unit <mpr> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2790
- Flip-Flops                                            : 2790
-# Shift Registers                                      : 152
+# Registers                                            : 2923
+ Flip-Flops                                            : 2923
+# Shift Registers                                      : 153
  10-bit shift register                                 : 4
  15-bit shift register                                 : 1
+ 2-bit shift register                                  : 1
  25-bit shift register                                 : 129
- 4-bit shift register                                  : 16
+ 3-bit shift register                                  : 1
+ 4-bit shift register                                  : 15
  5-bit shift register                                  : 1
  6-bit shift register                                  : 1
 
@@ -4760,33 +4632,33 @@ Top Level Output File Name         : MBO_53_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4911
-#      GND                         : 30
-#      INV                         : 134
+# BELS                             : 5333
+#      GND                         : 27
+#      INV                         : 133
 #      LUT1                        : 214
-#      LUT2                        : 1714
+#      LUT2                        : 1877
 #      LUT2_L                      : 2
-#      LUT3                        : 675
+#      LUT3                        : 728
 #      LUT3_D                      : 1
 #      LUT3_L                      : 2
-#      LUT4                        : 744
+#      LUT4                        : 724
 #      LUT4_D                      : 7
 #      LUT4_L                      : 8
-#      MUXCY                       : 770
-#      MUXF5                       : 61
+#      MUXCY                       : 910
+#      MUXF5                       : 15
 #      MUXF6                       : 4
-#      VCC                         : 23
-#      XORCY                       : 522
-# FlipFlops/Latches                : 3522
-#      FD                          : 223
+#      VCC                         : 21
+#      XORCY                       : 660
+# FlipFlops/Latches                : 3656
+#      FD                          : 363
 #      FD_1                        : 6
 #      FDC                         : 317
 #      FDCE                        : 154
-#      FDE                         : 1854
+#      FDE                         : 1851
 #      FDE_1                       : 23
 #      FDP                         : 59
 #      FDPE                        : 105
-#      FDR                         : 182
+#      FDR                         : 179
 #      FDR_1                       : 8
 #      FDRE                        : 412
 #      FDRE_1                      : 34
@@ -4798,7 +4670,8 @@ Primitive and Black Box Usage:
 #      FDSE                        : 115
 # RAMS                             : 9
 #      RAMB16_S36_S36              : 9
-# Shift Registers                  : 281
+# Shift Registers                  : 282
+#      SRL16                       : 1
 #      SRL16_1                     : 1
 #      SRL16E                      : 143
 #      SRL16E_1                    : 8
@@ -4820,14 +4693,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-5 
 
- Number of Slices:                     2371  out of   4656    50%  
- Number of Slice Flip Flops:           3516  out of   9312    37%  
- Number of 4 input LUTs:               3782  out of   9312    40%  
-    Number used as logic:              3501
-    Number used as Shift registers:     281
+ Number of Slices:                     2490  out of   4656    53%  
+ Number of Slice Flip Flops:           3656  out of   9312    39%  
+ Number of 4 input LUTs:               3978  out of   9312    42%  
+    Number used as logic:              3696
+    Number used as Shift registers:     282
  Number of IOs:                          35
  Number of bonded IOBs:                  30  out of    232    12%  
-    IOB Flip Flops:                       6
  Number of BRAMs:                         9  out of     20    45%  
  Number of MULT18X18SIOs:                 8  out of     20    40%  
  Number of GCLKs:                         9  out of     24    37%  
@@ -4854,13 +4726,13 @@ Clock Information:
 -----------------------------------+-------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)   | Load  |
 -----------------------------------+-------------------------+-------+
-clk                                | DCM_SP:CLK2X            | 80    |
-clk                                | DCM_SP:CLK0+DCM_SP:CLKDV| 540   |
+clk                                | DCM_SP:CLK2X            | 35    |
+clk                                | DCM_SP:CLK0+DCM_SP:CLKDV| 579   |
 e_tx_clk                           | IBUFG+BUFG              | 1958  |
 e_rx_clk                           | BUFGP                   | 84    |
-adc_01/en_reg                      | BUFG                    | 292   |
-clk                                | DCM_SP:CLKDV            | 791   |
-adc_02/en_reg                      | BUFG                    | 84    |
+adc_01/en_reg                      | BUFG                    | 208   |
+clk                                | DCM_SP:CLKDV            | 932   |
+adc_01_cs_ff                       | BUFG                    | 168   |
 -----------------------------------+-------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -4868,44 +4740,44 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                         | Buffer(FF name)                                                                                                                          | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------+
-ethernet/global_reset_summary(ethernet/global_reset_summary1:O)                                                                                                                        | NONE(ethernet/dh/PC_MAC_7)                                                                                                               | 81    |
-locked_2_INV_138_o(locked_2_inv1_INV_0:O)                                                                                                                                              | NONE(convolution_top/cnt_opora_7)                                                                                                        | 39    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_7)            | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_2)                                  | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3)                                | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_6)            | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_6)                                  | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2)                                | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_2)                                   | 29    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_8)                        | 29    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_5)                             | 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5)        | 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_5)                               | 20    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_3)                            | 18    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_3)| 16    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3)| 16    |
+ethernet/global_reset_summary(ethernet/global_reset_summary1:O)                                                                                                                        | NONE(ethernet/dh/PC_MAC_25)                                                                                                              | 81    |
+locked_2_INV_138_o(locked_2_inv1_INV_0:O)                                                                                                                                              | NONE(convolution_top/cnt_opora_0)                                                                                                        | 39    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_4)            | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_4)                                 | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_5)                                | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2)            | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1)            | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_8)                                | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_3)                        | 29    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_3)                        | 29    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_2)                              | 24    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_4)        | 24    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_4)                    | 20    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_4)                            | 18    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2)| 16    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)| 16    |
 convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)| 16    |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_2)                      | 16    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1)                    | 14    |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i)               | 14    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0)                    | 12    |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0)                    | 12    |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2)| 16    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0)                    | 14    |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1)                       | 14    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_3)                    | 12    |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_2)                    | 12    |
 ethernet/local_reset_summary(ethernet/local_reset_summary:O)                                                                                                                           | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg)                                                  | 6     |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                          | 3     |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                          | 3     |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                  | 3     |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)             | 2     |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                          | 2     |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)             | 2     |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                          | 3     |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                          | 3     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                                  | 3     |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                | 2     |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                | 2     |
 convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                          | 2     |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                        | 2     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                     | 2     |
 ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                                  | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                                      | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                            | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                      | 2     |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                                      | 2     |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                            | 2     |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                      | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                                      | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                         | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                                      | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                                      | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                         | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                                      | 2     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -4924,7 +4796,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 9.045ns (frequency: 110.559MHz)
-  Total number of paths / destination ports: 147524 / 2679
+  Total number of paths / destination ports: 159660 / 2810
 -------------------------------------------------------------------------
 Delay:               4.522ns (Levels of Logic = 32)
   Source:            BTN_NORTH_counter_1 (FF)
@@ -4977,7 +4849,7 @@ Delay:               4.522ns (Levels of Logic = 32)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'e_tx_clk'
   Clock period: 28.633ns (frequency: 34.925MHz)
-  Total number of paths / destination ports: 245889 / 4061
+  Total number of paths / destination ports: 245558 / 4061
 -------------------------------------------------------------------------
 Delay:               14.317ns (Levels of Logic = 58)
   Source:            ethernet/mpr/anti_loop (FF)
@@ -5087,10 +4959,10 @@ Delay:               3.051ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adc_01/en_reg'
-  Clock period: 8.015ns (frequency: 124.768MHz)
-  Total number of paths / destination ports: 10664 / 413
+  Clock period: 8.086ns (frequency: 123.666MHz)
+  Total number of paths / destination ports: 10284 / 304
 -------------------------------------------------------------------------
-Delay:               8.015ns (Levels of Logic = 19)
+Delay:               8.086ns (Levels of Logic = 19)
   Source:            convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram (RAM)
   Destination:       convolution_top/cnt_sub_0 (FF)
   Source Clock:      adc_01/en_reg rising
@@ -5100,7 +4972,7 @@ Delay:               8.015ns (Levels of Logic = 19)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S36_S36:CLKB->DOB16    2   2.436   0.449  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram (dout<16>)
+     RAMB16_S36_S36:CLKB->DOB16    3   2.436   0.520  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram (dout<16>)
      end scope: 'convolution_top/CONV_BUFFER:dout<16>'
      LUT2:I1->O            1   0.612   0.000  Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_lut<0> (Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<0> (Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<0>)
@@ -5119,22 +4991,22 @@ Delay:               8.015ns (Levels of Logic = 19)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<13> (Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<13>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<14> (Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<14>)
      MUXCY:CI->O           1   0.399   0.509  Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<15> (Mcompar_DATA_OUT_A_1ft[15]_DATA_OUT_A[15]_LessThan_62_o_cy<15>)
-     LUT3:I0->O           49   0.612   1.077  DATA_OUT_A_2ft[15]_FIX_POROG[15]_AND_272_o1 (DATA_OUT_A_2ft[15]_FIX_POROG[15]_AND_272_o)
+     LUT3:I0->O           49   0.612   1.077  DATA_OUT_A_1ft[15]_FIX_POROG[15]_AND_272_o1 (DATA_OUT_A_1ft[15]_FIX_POROG[15]_AND_272_o)
      FDR:R                     0.795          cnt_sub_0
     ----------------------------------------
-    Total                      8.015ns (5.979ns logic, 2.035ns route)
-                                       (74.6% logic, 25.4% route)
+    Total                      8.086ns (5.979ns logic, 2.107ns route)
+                                       (73.9% logic, 26.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'adc_02/en_reg'
+Timing constraint: Default period analysis for Clock 'adc_01_cs_ff'
   Clock period: 4.055ns (frequency: 246.606MHz)
-  Total number of paths / destination ports: 380 / 109
+  Total number of paths / destination ports: 760 / 218
 -------------------------------------------------------------------------
 Delay:               4.055ns (Levels of Logic = 3)
   Source:            fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 (FF)
   Destination:       fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0 (FF)
-  Source Clock:      adc_02/en_reg rising
-  Destination Clock: adc_02/en_reg rising
+  Source Clock:      adc_01_cs_ff rising
+  Destination Clock: adc_01_cs_ff rising
 
   Data Path: fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5 to fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0
                                 Gate     Net
@@ -5154,16 +5026,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              3.188ns (Levels of Logic = 1)
-  Source:            BTN_WEST (PAD)
-  Destination:       BTN_WEST_f (FF)
+  Source:            BTN_NORTH (PAD)
+  Destination:       BTN_NORTH_f (FF)
   Destination Clock: clk rising 2.0X
 
-  Data Path: BTN_WEST to BTN_WEST_f
+  Data Path: BTN_NORTH to BTN_NORTH_f
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUFG:I->O            1   2.563   0.357  bf1 (BTN_WEST_bf)
-     FD:D                      0.268          BTN_WEST_f
+     IBUFG:I->O            1   2.563   0.357  bf6 (BTN_NORTH_bf)
+     FD:D                      0.268          BTN_NORTH_f
     ----------------------------------------
     Total                      3.188ns (2.831ns logic, 0.357ns route)
                                        (88.8% logic, 11.2% route)
@@ -5213,18 +5085,17 @@ Offset:              4.134ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              4.182ns (Levels of Logic = 2)
-  Source:            adc_01/CS_reg (FF)
-  Destination:       adc_01_cs (PAD)
-  Source Clock:      clk rising 0.5X
+Offset:              4.182ns (Levels of Logic = 1)
+  Source:            Led_reg_1 (FF)
+  Destination:       LED<7> (PAD)
+  Source Clock:      clk rising 0.3X
 
-  Data Path: adc_01/CS_reg to adc_01_cs
+  Data Path: Led_reg_1 to LED<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              4   0.514   0.499  CS_reg (CS_reg)
-     end scope: 'adc_01:CS'
-     OBUF:I->O                 3.169          adc_01_cs_OBUF (adc_01_cs)
+     FDR:C->Q              4   0.514   0.499  Led_reg_1 (Led_reg_1)
+     OBUF:I->O                 3.169          LED_7_OBUF (LED<7>)
     ----------------------------------------
     Total                      4.182ns (3.683ns logic, 0.499ns route)
                                        (88.1% logic, 11.9% route)
@@ -5239,18 +5110,18 @@ Clock to Setup on destination clock adc_01/en_reg
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc_01/en_reg  |    8.015|         |         |         |
-clk            |    6.054|    1.240|         |         |
-e_tx_clk       |    1.139|         |         |         |
+adc_01/en_reg  |    8.086|         |         |         |
+clk            |    6.054|    1.192|         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock adc_02/en_reg
+Clock to Setup on destination clock adc_01_cs_ff
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc_02/en_reg  |    4.055|         |         |         |
-clk            |    4.190|    1.192|         |         |
+adc_01/en_reg  |    3.114|         |         |         |
+adc_01_cs_ff   |    4.055|         |         |         |
+clk            |    4.137|    1.192|         |         |
 e_tx_clk       |    1.139|         |         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -5260,7 +5131,7 @@ Clock to Setup on destination clock clk
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 adc_01/en_reg  |    2.929|         |         |         |
-clk            |   12.245|    8.875|    3.492|         |
+clk            |   12.238|    8.534|    3.492|         |
 e_rx_clk       |         |    5.923|         |         |
 e_tx_clk       |    2.688|    2.759|         |         |
 ---------------+---------+---------+---------+---------+
@@ -5280,8 +5151,8 @@ Clock to Setup on destination clock e_tx_clk
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 adc_01/en_reg  |    1.781|         |         |         |
-adc_02/en_reg  |    1.139|         |         |         |
-clk            |    6.839|         |   10.113|         |
+adc_01_cs_ff   |    1.139|         |         |         |
+clk            |    6.839|         |   10.107|         |
 e_rx_clk       |         |         |    3.791|         |
 e_tx_clk       |   16.271|   14.317|    5.386|         |
 ---------------+---------+---------+---------+---------+
@@ -5289,8 +5160,8 @@ e_tx_clk       |   16.271|   14.317|    5.386|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 39.90 secs
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 48.92 secs
  
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
    for the specified device family. You are free to use it in order to take
@@ -5302,9 +5173,9 @@ WARNING:Xst:3152 - You have chosen to run a version of XST which is not the defa
    on the XST command line or in the XST process properties panel.
 --> 
 
-Total memory usage is 611364 kilobytes
+Total memory usage is 4874756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1569 (   0 filtered)
-Number of infos    :   85 (   0 filtered)
+Number of warnings : 1430 (   0 filtered)
+Number of infos    :   87 (   0 filtered)
 

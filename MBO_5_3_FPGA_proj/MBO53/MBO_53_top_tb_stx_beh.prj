@@ -1,7 +1,0 @@
-verilog isim_temp "verilog/adc_imi.v"
-verilog isim_temp "pll_2.v"
-verilog isim_temp "pll.v"
-verilog isim_temp "ipcore_dir/fifo_acp.v"
-verilog isim_temp "verilog/MBO_53_top.v"
-verilog isim_temp "verilog/MBO_53_top_tb.v"
-verilog isim_temp "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

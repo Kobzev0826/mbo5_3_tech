@@ -136,7 +136,7 @@ wire [15:0] SUB_TA_TB;
 (*mark_debug = "true"*)wire [15:00] adc_01_data, adc_02_data;
 (*mark_debug = "true"*)wire [11:0] adc_01_data_true;
 wire adc_01_en;
-reg adc_01_cs_f;
+reg adc_01_cs_f,adc_01_cs_ff, adc_02_cs_f, adc_02_cs_ff;
 (*mark_debug = "true"*)reg [3:0] error_counter;
 //reg adc_01_start;
 assign adc_01_data_true = adc_01_data[11:00];
@@ -160,8 +160,8 @@ assign acp_data1 = {4'd0,adc_01_data[11:00]};
 assign acp_data2 = {4'd0,adc_02_data[11:00]};
 assign acp_data1_ena = adc_01_start;
 assign acp_data2_ena = adc_01_start;
-assign acp_data_clock1 = adc_01_en;
-assign acp_data_clock2 = adc_02_en;
+assign acp_data_clock1 = adc_01_cs_ff;
+assign acp_data_clock2 = adc_02_cs_ff;
 
 wire [991:0] header_parsed;//[31:0] header_parsed [30:0];
 wire header_parsed_valid;
@@ -307,7 +307,7 @@ fifo_compression_base fcb(
 
 //----INSERT BUTTON SIGNAL-----------------------------------
  
-always @(posedge clk_2x) begin 
+always @(posedge clk_12) begin 
 	BTN_WEST_f <= BTN_WEST_bf;
 	BTN_WEST_ff <= BTN_WEST_f;
 	// при нажатии кнопки включается АЦП имитатор при повторном нажатии выключается 
@@ -364,7 +364,7 @@ fifo_acp 		fifo_input_acp2(
 	.rst			(~locked_2),
 	.wr_clk			(acp_data_clock2),
 	.rd_clk			(e_tx_clk_bf),
-	.din			(acp_data2),
+	.din			(conv_DATA_OUT_A),
 	.wr_en			(acp_data2_ena),
 	.rd_en			(eth_rdreq2),
 	.dout			(eth_data_blocks2),
@@ -428,12 +428,29 @@ adc_ltc2315 adc_02(
 .en			(adc_02_en),
 .adc_data	(adc_02_data)
  );
-
-always @(posedge clk_2x) begin 
+(*mark_debug = "true"*)reg signed [15:0] acp_add1, acp_add2;
+(*mark_debug = "true"*)reg [15:0] acp_data1_ft, acp_data2_ft;
+(*mark_debug = "true"*)reg triger_setup;
+// сдвиг на 2 такта
+always @(posedge clk_12) begin 
 	adc_01_cs_f<= adc_01_cs;
-	if (adc_01_cs&(!adc_01_cs_f) & adc_01_start) begin 
-		if ( adc_01_data[11] != 1) error_counter <= error_counter + 1 ;
+	adc_01_cs_ff <= adc_01_cs_f;
+	adc_02_cs_f<= adc_01_cs;
+	adc_02_cs_ff <= adc_01_cs_f;
+	
+	/*
+	acp_data1_ft <= acp_data1; 
+	acp_data2_ft <= acp_data2; 
+	acp_add1 <= $signed(acp_data1_ft) - $signed(acp_data1);
+	acp_add2 <= $signed(acp_data2_ft) - $signed(acp_data2);
+	if (acp_add1[15]) begin
+		if (acp_add1 < 16'hFF80) triger_setup <= 1;
+		else triger_setup <= 0;
 	end
+	else begin
+		if (acp_add1 > 16'h0080) triger_setup <= 1;
+		else triger_setup <= 0;
+	end*/
 end
 
 //-------------------------------------------------------------------------

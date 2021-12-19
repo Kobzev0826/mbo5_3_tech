@@ -42,7 +42,7 @@ parameter N = 4;  // количество блоков свертки. 200/50 = 
 // Чем длинее опора, тем больше блоков. На данный момент считаю опору равной 200, а частоту 50 МГц
 parameter MULT_N = 25; // во сколько раз частота clkf превосходит clks
 parameter NLOG = $clog2(MULT_N); // некоторые регистры будут иметь разрядность ориентируясь на MULT_N
-parameter CELL = 18+NLOG;
+parameter CELL = NLOG;
 
 localparam NUM_OPORA = 200; // сделал намек на параметризуемость, но пока лучше не пытаться менять.
 
@@ -229,14 +229,14 @@ end
 always @(posedge clks)
 begin
 	DATA_OUT_A_1ft <= DATA_OUT_A; DATA_OUT_A_2ft <= DATA_OUT_A_1ft;
-	if ( (DATA_OUT_A_1ft > DATA_OUT_A_2ft) && (DATA_OUT_A_1ft < DATA_OUT_A) && (DATA_OUT_A_1ft > FIX_POROG))
+	if ( (DATA_OUT_A_1ft < DATA_OUT_A_2ft) && (DATA_OUT_A_1ft < DATA_OUT_A) && (DATA_OUT_A_1ft > FIX_POROG))
 	begin
 		ch_a_extremum_en <= 1; CH_A_EXTREMUM <= DATA_OUT_A_1ft; cnt_sub <= 0;
 	end
 	else begin ch_a_extremum_en <= 0; cnt_sub <= cnt_sub + 1; end
 	
 	DATA_OUT_B_1ft <= DATA_OUT_B; DATA_OUT_B_2ft <= DATA_OUT_B_1ft;
-	if ( (DATA_OUT_B_1ft > DATA_OUT_B_2ft) && (DATA_OUT_B_1ft < DATA_OUT_B) && (DATA_OUT_B_1ft > FIX_POROG))
+	if ( (DATA_OUT_B_1ft < DATA_OUT_B_2ft) && (DATA_OUT_B_1ft < DATA_OUT_B) && (DATA_OUT_B_1ft > FIX_POROG))
 	begin
 		ch_b_extremum_en <= 1; CH_B_EXTREMUM <= DATA_OUT_B_1ft; 
 		if (cnt_sub > 16'hFFFF) SUB_TA_TB <= 16'hFFFF;

@@ -1,15 +1,13 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Dec 17 17:02:31 2021
+Sat Dec 18 19:43:13 2021
 
 drc -z MBO_53_top.ncd MBO_53_top.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <_n0134_inv> is incomplete. The signal
-   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <e_crc_IBUF> is incomplete. The signal
@@ -18,5 +16,5 @@ WARNING:PhysDesignRules:367 - The signal <e_col_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <e_mdio_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-DRC detected 0 errors and 6 warnings.  Please see the previously displayed
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

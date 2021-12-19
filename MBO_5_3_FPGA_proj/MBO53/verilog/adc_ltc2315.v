@@ -61,12 +61,17 @@ always @(posedge clk_100) begin
 				
 				5'd05:	en_reg <= 0;
 				
-				5'd17+DELAY: en_reg <= 1;
+				//5'd17+DELAY: en_reg <= 1;
 				
-				5'd17:	begin CS_reg <=1;if (DELAY==0)en_reg <= 1;end
+				5'd17:	begin CS_reg <=1; en_reg <= 1;end
+			
 			endcase
 			
-			
+			/*if ( DELAY != 0) begin
+				if ( adc_counter_cycle == 5'd17 + DELAY) begin 
+					
+				end
+			*/
 			//else adc_data_reg <= 16'd0;
 		end
 		else begin 
@@ -82,9 +87,10 @@ always @(negedge clk_100)begin
 	if ( reset ) adc_data_reg <=16'd0;
 	else begin 
 		if (~en_reg) begin 
-				adc_data_reg [0] <= sdo;
-				adc_data_reg [15:01] <= adc_data_reg [14:00];
-			end
+			adc_data_reg [0] <= sdo;
+			adc_data_reg [15:01] <= adc_data_reg [14:00];
+		end
+		else adc_data_reg <= adc_data_reg;
 	end
 end
 

@@ -8,7 +8,7 @@ run
 -ofmt NGC
 -p xc3s500e-5-fg320
 -top MBO_53_top
--opt_mode Area
+-opt_mode Speed
 -opt_level 1
 -iuc NO
 -keep_hierarchy Yes

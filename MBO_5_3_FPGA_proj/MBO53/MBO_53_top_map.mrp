@@ -9,44 +9,43 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Dec 17 17:01:33 2021
+Mapped Date    : Sat Dec 18 19:41:53 2021
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    5
 Logic Utilization:
-  Total Number Slice Registers:       3,821 out of   9,312   41%
-    Number used as Flip Flops:        3,820
+  Total Number Slice Registers:       3,788 out of   9,312   40%
+    Number used as Flip Flops:        3,787
     Number used as Latches:               1
-  Number of 4 input LUTs:             3,803 out of   9,312   40%
+  Number of 4 input LUTs:             3,891 out of   9,312   41%
 Logic Distribution:
-  Number of occupied Slices:          2,783 out of   4,656   59%
-    Number of Slices containing only related logic:   2,783 out of   2,783 100%
-    Number of Slices containing unrelated logic:          0 out of   2,783   0%
+  Number of occupied Slices:          2,808 out of   4,656   60%
+    Number of Slices containing only related logic:   2,808 out of   2,808 100%
+    Number of Slices containing unrelated logic:          0 out of   2,808   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,075 out of   9,312   43%
-    Number used as logic:             3,381
-    Number used as a route-thru:        272
-    Number used as Shift registers:     422
+  Total Number of 4 input LUTs:       4,153 out of   9,312   44%
+    Number used as logic:             3,538
+    Number used as a route-thru:        262
+    Number used as Shift registers:     353
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 35 out of     232   15%
-    IOB Flip Flops:                       6
-  Number of RAMB16s:                     12 out of      20   60%
+  Number of RAMB16s:                     10 out of      20   50%
   Number of BUFGMUXs:                    10 out of      24   41%
   Number of DCMs:                         2 out of       4   50%
   Number of BSCANs:                       1 out of       1  100%
   Number of MULT18X18SIOs:                8 out of      20   40%
 
-  Number of RPM macros:           13
-Average Fanout of Non-Clock Nets:                3.02
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                2.90
 
-Peak Memory Usage:  324 MB
-Total REAL time to MAP completion:  4 secs 
-Total CPU time to MAP completion:   4 secs 
+Peak Memory Usage:  4469 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   5 secs 
 
 NOTES:
 
@@ -90,8 +89,6 @@ Section 2 - Warnings
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <_n0134_inv> is incomplete. The signal
-   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <e_crc_IBUF> is incomplete. The signal
@@ -130,14 +127,14 @@ INFO:Map:110 - output buffer 'e_tx_d_1_OBUF' driving design level port
 INFO:Map:110 - output buffer 'e_tx_d_0_OBUF' driving design level port
    'e_tx_d<0>' is being pushed into module 'ethernet' to enable I/O register
    usage. The buffer has been renamed as 'ethernet/e_tx_d_0_OBUF'.
-INFO:LIT:243 - Logical network rd_data_count_01<7> has no load.
-INFO:LIT:395 - The above info message is repeated 1181 more times for the
+INFO:LIT:243 - Logical network CH_A_EXTREMUM<15> has no load.
+INFO:LIT:395 - The above info message is repeated 1071 more times for the
    following (max. 5 shown):
-   rd_data_count_01<6>,
-   rd_data_count_01<5>,
-   rd_data_count_01<4>,
-   rd_data_count_01<3>,
-   rd_data_count_01<2>
+   CH_A_EXTREMUM<14>,
+   CH_A_EXTREMUM<13>,
+   CH_A_EXTREMUM<12>,
+   CH_A_EXTREMUM<11>,
+   CH_A_EXTREMUM<10>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:MapLib:159 - Net Timing constraints on signal CLKIN_IN are pushed forward
@@ -152,9 +149,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 193 block(s) removed
- 126 block(s) optimized away
-1306 signal(s) removed
+ 203 block(s) removed
+  56 block(s) optimized away
+1188 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -185,6 +182,40 @@ The signal "conv_DATA_OUT_B<3>" is loadless and has been removed.
 The signal "conv_DATA_OUT_B<2>" is loadless and has been removed.
 The signal "conv_DATA_OUT_B<1>" is loadless and has been removed.
 The signal "conv_DATA_OUT_B<0>" is loadless and has been removed.
+The signal "CH_A_EXTREMUM<15>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_15" (FF) removed.
+The signal "CH_A_EXTREMUM<14>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_14" (FF) removed.
+The signal "CH_A_EXTREMUM<13>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_13" (FF) removed.
+The signal "CH_A_EXTREMUM<12>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_12" (FF) removed.
+The signal "CH_A_EXTREMUM<11>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_11" (FF) removed.
+The signal "CH_A_EXTREMUM<10>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_10" (FF) removed.
+The signal "CH_A_EXTREMUM<9>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_9" (FF) removed.
+The signal "CH_A_EXTREMUM<8>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_8" (FF) removed.
+The signal "CH_A_EXTREMUM<7>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_7" (FF) removed.
+The signal "CH_A_EXTREMUM<6>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_6" (FF) removed.
+The signal "CH_A_EXTREMUM<5>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_5" (FF) removed.
+The signal "CH_A_EXTREMUM<4>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_4" (FF) removed.
+The signal "CH_A_EXTREMUM<3>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_3" (FF) removed.
+The signal "CH_A_EXTREMUM<2>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_2" (FF) removed.
+The signal "CH_A_EXTREMUM<1>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_1" (FF) removed.
+The signal "CH_A_EXTREMUM<0>" is loadless and has been removed.
+ Loadless block "convolution_top/CH_A_EXTREMUM_0" (FF) removed.
+The signal "ch_a_extremum_en" is loadless and has been removed.
+ Loadless block "convolution_top/ch_a_extremum_en" (FF) removed.
 The signal "rd_data_count_01<7>" is loadless and has been removed.
  Loadless block
 "fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
@@ -802,6 +833,9 @@ removed.
 removed.
    Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
 removed.
+The signal "icon_control0<21>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
+removed.
 The signal "icon_control0<16>" is loadless and has been removed.
  Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
 removed.
@@ -863,11 +897,11 @@ removed.
 The signal "icon_control0<28>" is loadless and has been removed.
  Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
 removed.
-The signal "icon_control0<29>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
-removed.
 The signal "icon_control0<34>" is loadless and has been removed.
  Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+The signal "icon_control0<29>" is loadless and has been removed.
+ Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
 removed.
 The signal "icon_control0<35>" is loadless and has been removed.
  Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
@@ -2032,262 +2066,6 @@ The signal "convolution_top/data_read_cnt<0>" is sourceless and has been
 removed.
 The signal "convolution_top/data_write_cnt<0>" is sourceless and has been
 removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_B<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[3].CONV_CORE/DATA_OUT_A<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_B<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[2].CONV_CORE/DATA_OUT_A<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_B<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[1].CONV_CORE/DATA_OUT_A<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_B<16>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<31>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<30>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<29>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<28>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<27>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<26>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<25>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<24>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<23>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<22>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<21>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<20>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<19>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<18>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<17>" is
-sourceless and has been removed.
-The signal "convolution_top/GEN_N_BLOCKS[0].CONV_CORE/DATA_OUT_A<16>" is
-sourceless and has been removed.
 The signal
 "convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
@@ -2321,27 +2099,6 @@ The trimmed logic reported below is either:
    3. a side-effect of other trimmed logic
 
 The signal "LED_6_OBUF" is unused and has been removed.
-The signal "error_counter<3>" is unused and has been removed.
- Unused block "error_counter_3" (FF) removed.
-  The signal "error_counter[3]_GND_1_o_add_23_OUT<3>" is unused and has been
-removed.
-   Unused block "Madd_error_counter[3]_GND_1_o_add_23_OUT_xor<3>11" (ROM) removed.
-    The signal "error_counter<0>" is unused and has been removed.
-     Unused block "error_counter_0" (FF) removed.
-      The signal "error_counter[3]_GND_1_o_add_23_OUT<0>" is unused and has been
-removed.
-       Unused block "Madd_error_counter[3]_GND_1_o_add_23_OUT_xor<0>11_INV_0" (BUF)
-removed.
-    The signal "error_counter<1>" is unused and has been removed.
-     Unused block "error_counter_1" (FF) removed.
-      The signal "error_counter[3]_GND_1_o_add_23_OUT<1>" is unused and has been
-removed.
-       Unused block "Madd_error_counter[3]_GND_1_o_add_23_OUT_xor<1>11" (ROM) removed.
-    The signal "error_counter<2>" is unused and has been removed.
-     Unused block "error_counter_2" (FF) removed.
-      The signal "error_counter[3]_GND_1_o_add_23_OUT<2>" is unused and has been
-removed.
-       Unused block "Madd_error_counter[3]_GND_1_o_add_23_OUT_xor<2>11" (ROM) removed.
 Unused block
 "convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<0>11" (ROM) removed.
@@ -2389,19 +2146,16 @@ GND 		U_icon_pro/XST_GND
 VCC 		U_icon_pro/XST_VCC
 LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[10].I_STAT.U_STAT
    optimized to 0
-LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[12].I_STAT.U_STAT
+LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
    optimized to 0
 GND 		U_ila_pro_0/XST_GND
 VCC 		U_ila_pro_0/XST_VCC
+GND 		XST_GND
 VCC 		XST_VCC
 GND 		fifo_input_acp1/XST_GND
 VCC 		fifo_input_acp1/XST_VCC
 GND 		fifo_input_acp2/XST_GND
 VCC 		fifo_input_acp2/XST_VCC
-GND 		adc_01/XST_GND
-VCC 		adc_01/XST_VCC
-GND 		adc_02/XST_GND
-VCC 		adc_02/XST_VCC
 GND 		convolution_top/CONV_BUFFER/XST_GND
 GND 		convolution_top/DATA_BUFFER/XST_GND
 GND 		convolution_top/XST_GND
@@ -2432,7 +2186,6 @@ GND 		ethernet/dh/XST_GND
 VCC 		ethernet/dh/XST_VCC
 GND 		ethernet/fte/XST_GND
 VCC 		ethernet/fte/XST_VCC
-GND 		ethernet/hc/XST_GND
 VCC 		ethernet/hc/XST_VCC
 GND 		ethernet/ih/XST_GND
 VCC 		ethernet/ih/XST_VCC
@@ -2455,16 +2208,16 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| BTN_NORTH                          | IBUF             | INPUT     | LVTTL                |       |          |      | IFF1         | PULLDOWN | 0 / 3    |
-| BTN_WEST                           | IBUF             | INPUT     | LVTTL                |       |          |      | IFF1         | PULLDOWN | 0 / 3    |
+| BTN_NORTH                          | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
+| BTN_WEST                           | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
 | LED<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | LED<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| LED<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| LED<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | LED<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| LED<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| LED<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | LED<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| LED<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| LED<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | adc_01_cs                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | adc_01_sck                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | adc_01_sdo                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
@@ -2494,23 +2247,21 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.
 U_GAND_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16
 .U_GAND_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16
 .U_GAND_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_VARX.U_match/I_
-SRL16.U_VAR_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_VARX.U_match/I_
+U_ila_pro_0/U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_VARX.U_match/I_
 SRL16.U_VAR_SRL16_MSET
 
 Section 8 - Guide Report
