@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue Dec 21 18:01:00 2021">
+  <application stringID="NgdBuild" timeStamp="Wed Dec 22 09:46:39 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -108,7 +108,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY_L" value="58"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="92"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="13"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="18"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="19"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S1_S36" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S36_S36" value="9"/>
         <item dataType="int" stringID="NGDBUILD_NUM_SRL16" value="17"/>
@@ -160,7 +160,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY_L" value="58"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="92"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="13"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="18"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="19"/>
         <item dataType="int" stringID="NGDBUILD_NUM_PULLDOWN" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S1_S36" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S36_S36" value="9"/>

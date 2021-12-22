@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 21 18:01:03 2021
+Mapped Date    : Wed Dec 22 09:46:41 2021
 
 Design Summary
 --------------
@@ -33,7 +33,7 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 31 out of     232   13%
+  Number of bonded IOBs:                 32 out of     232   13%
     IOB Flip Flops:                       6
   Number of RAMB16s:                     10 out of      20   50%
   Number of BUFGMUXs:                    10 out of      24   41%
@@ -132,7 +132,7 @@ INFO:Map:110 - output buffer 'e_tx_d_0_OBUF' driving design level port
    'e_tx_d(0)' is being pushed into module 'ethernet' to enable I/O register
    usage. The buffer has been renamed as 'ethernet/e_tx_d_0_OBUF'.
 INFO:LIT:243 - Logical network CH_A_EXTREMUM(15) has no load.
-INFO:LIT:395 - The above info message is repeated 1067 more times for the
+INFO:LIT:395 - The above info message is repeated 1070 more times for the
    following (max. 5 shown):
    CH_A_EXTREMUM(14),
    CH_A_EXTREMUM(13),
@@ -2227,6 +2227,7 @@ Section 6 - IOB Properties
 | adc_02_sck                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | adc_02_sdo                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| e_mdc                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | e_rx_clk                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | e_rx_d(0)                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | e_rx_d(1)                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |

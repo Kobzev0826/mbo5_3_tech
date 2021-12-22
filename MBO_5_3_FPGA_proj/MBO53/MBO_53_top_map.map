@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 21 18:01:03 2021
+Mapped Date    : Wed Dec 22 09:46:41 2021
 
 Mapping design into LUTs...
 WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
@@ -55,7 +55,7 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 31 out of     232   13%
+  Number of bonded IOBs:                 32 out of     232   13%
     IOB Flip Flops:                       6
   Number of RAMB16s:                     10 out of      20   50%
   Number of BUFGMUXs:                    10 out of      24   41%

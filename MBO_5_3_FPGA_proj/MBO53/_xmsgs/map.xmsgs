@@ -35,7 +35,7 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">CH_A_EXTREMUM(15)</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1067</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1070</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">CH_A_EXTREMUM(14),
 CH_A_EXTREMUM(13),
 CH_A_EXTREMUM(12),
