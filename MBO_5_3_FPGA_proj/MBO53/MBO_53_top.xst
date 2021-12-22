@@ -14,13 +14,13 @@ run
 -keep_hierarchy Yes
 -netlist_hierarchy Rebuilt
 -rtlview Yes
--glob_opt AllClockNets
+-glob_opt Inpad_To_Outpad
 -read_cores YES
 -sd {"ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
--bus_delimiter <>
+-bus_delimiter ()
 -case Maintain
 -slice_utilization_ratio 100
 -bram_utilization_ratio 100

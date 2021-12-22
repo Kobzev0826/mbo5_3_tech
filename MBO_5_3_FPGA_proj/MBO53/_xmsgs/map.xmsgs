@@ -5,42 +5,42 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_3_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d&lt;3&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_3_IBUF</arg>&apos;.
+<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_3_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d(3)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_3_IBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_2_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d&lt;2&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_2_IBUF</arg>&apos;.
+<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_2_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d(2)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_2_IBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_1_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d&lt;1&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_1_IBUF</arg>&apos;.
+<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_1_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d(1)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_1_IBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_0_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d&lt;0&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_0_IBUF</arg>&apos;.
+<msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_d_0_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_d(0)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_d_0_IBUF</arg>&apos;.
 </msg>
 
 <msg type="info" file="Map" num="113" delta="old" >input buffer &apos;<arg fmt="%s" index="1">e_rx_dv_IBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_rx_dv</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet/fte</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/fte/e_rx_dv_IBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_3_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;3&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_3_OBUF</arg>&apos;.
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_3_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d(3)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_3_OBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_2_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;2&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_2_OBUF</arg>&apos;.
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_2_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d(2)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_2_OBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_1_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;1&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_1_OBUF</arg>&apos;.
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_1_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d(1)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_1_OBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_0_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d&lt;0&gt;</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_0_OBUF</arg>&apos;.
+<msg type="info" file="Map" num="110" delta="old" >output buffer &apos;<arg fmt="%s" index="1">e_tx_d_0_OBUF</arg>&apos; driving design level port &apos;<arg fmt="%s" index="2">e_tx_d(0)</arg>&apos; is being pushed into module &apos;<arg fmt="%s" index="3">ethernet</arg>&apos; to enable I/O register usage. The buffer has been renamed as &apos;<arg fmt="%s" index="4">ethernet/e_tx_d_0_OBUF</arg>&apos;.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">CH_A_EXTREMUM&lt;15&gt;</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">CH_A_EXTREMUM(15)</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1071</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">CH_A_EXTREMUM&lt;14&gt;,
-CH_A_EXTREMUM&lt;13&gt;,
-CH_A_EXTREMUM&lt;12&gt;,
-CH_A_EXTREMUM&lt;11&gt;,
-CH_A_EXTREMUM&lt;10&gt;</arg>
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1067</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">CH_A_EXTREMUM(14),
+CH_A_EXTREMUM(13),
+CH_A_EXTREMUM(12),
+CH_A_EXTREMUM(11),
+CH_A_EXTREMUM(10)</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
@@ -59,19 +59,18 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
+<msg type="warning" file="LIT" num="176" delta="old" >Clock buffer is designated to drive clock loads. <arg fmt="%s" index="1">BUFGMUX symbol &quot;pll_1/physical_group_CLKDV_OUT/CLKDV_BUFG_INST&quot; (output signal=adc_01_sck_OBUF)</arg> has a mix of clock and non-clock loads. The non-clock loads are:
+<arg fmt="%s" index="2">Pin D of U_ila_pro_0/U0/I_DQ.G_DW[13].U_DQ</arg>
+</msg>
+
+<msg type="warning" file="LIT" num="176" delta="old" >Clock buffer is designated to drive clock loads. <arg fmt="%s" index="1">BUFGMUX symbol &quot;adc_01/physical_group_en/en_reg_BUFG&quot; (output signal=adc_01_en)</arg> has a mix of clock and non-clock loads. The non-clock loads are:
+<arg fmt="%s" index="2">Pin D of U_ila_pro_0/U0/I_DQ.G_DW[12].U_DQ</arg>
+</msg>
+
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_rx_er_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_crc_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_col_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">e_mdio_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

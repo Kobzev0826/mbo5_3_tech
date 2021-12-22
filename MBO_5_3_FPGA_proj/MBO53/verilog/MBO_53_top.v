@@ -33,11 +33,11 @@ input [3:0] e_rx_d,
 input e_rx_er,
 input e_rx_dv,
 input e_rx_clk,
-
+/*
 input e_crc,
 input e_col,
 output e_mdc,
-inout e_mdio,
+inout e_mdio,*/
 
 //-------ADC_01----------
 input adc_01_sdo,
