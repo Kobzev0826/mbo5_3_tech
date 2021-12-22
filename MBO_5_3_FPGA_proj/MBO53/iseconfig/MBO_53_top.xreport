@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-12-21T17:59:41</DateModified>
+  <DateModified>2021-12-22T15:30:15</DateModified>
   <ModuleName>MBO_53_top</ModuleName>
-  <SummaryTimeStamp>2021-12-21T17:54:42</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-12-22T15:30:15</SummaryTimeStamp>
   <SavedFilePath>D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/iseconfig/MBO_53_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53\</ImplementationReportsDirectory>
   <DateInitialized>2021-11-29T12:15:41</DateInitialized>

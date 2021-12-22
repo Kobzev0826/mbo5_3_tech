@@ -34,12 +34,12 @@ localparam DELAY=0;
 	
 reg [4:0] adc_counter_cycle;
 reg [15:00] adc_data_reg;
-reg CS_reg, en_reg;
+reg CS_reg, en_reg, en_sck;
 
 assign CS=CS_reg;
 assign  adc_data[15:00] = adc_data_reg [15:00];
 assign en=en_reg;
-assign sck= clk_100;//start? clk_100 : 0;
+assign sck= en_sck? 0:~clk_100 ;//start? clk_100 : 0;
 
 always @(posedge clk_100) begin
 
@@ -57,13 +57,15 @@ always @(posedge clk_100) begin
 			case (adc_counter_cycle) 
 				5'd00:begin CS_reg <=1;en_reg <= 1;end
 				
-				5'd03: begin CS_reg <=0;end
+				5'd04: begin CS_reg <=0; en_sck<=0; end
 				
 				5'd05:	en_reg <= 0;
 				
-				//5'd17+DELAY: en_reg <= 1;
+				5'd17: en_reg <= 1;
 				
-				5'd17:	begin CS_reg <=1; en_reg <= 1;end
+				5'd18: en_sck<=1;
+				
+				5'd19:	begin CS_reg <=1; /*en_reg <= 1;*/end
 			
 			endcase
 			
