@@ -47,6 +47,7 @@ output adc_01_cs,
 input 	adc_02_sdo,
 output 	adc_02_sck,
 output 	adc_02_cs,
+output 	adc1_data_trigger,
 //----------LED------------
 output [7:0] LED//,
 
@@ -124,6 +125,8 @@ pll_2 pll_2
 .CLK0_OUT			(clk50_double_pll_cross), //-_- 
 .LOCKED_OUT			(locked_2)
 );
+
+
 
 //------------------CONVOLUTION WIRE and REG------------------------------
 (*mark_debug = "true"*)wire [15:0]conv_DATA_OUT_A,conv_DATA_OUT_B;
@@ -204,7 +207,7 @@ end
 
 (*mark_debug = "true"*)wire ch_a_extremum_en;
 (*mark_debug = "true"*)wire [15:00]CH_A_EXTREMUM;
-
+/*
 (*keep_hierarchy="yes"*) 
 convolution_top convolution_top(
 .clks			(adc_01_en), // 1 MHZ
@@ -229,7 +232,7 @@ convolution_top convolution_top(
 .CH_A_EXTREMUM	(CH_A_EXTREMUM),
 .ch_a_extremum_en(ch_a_extremum_en)
 );
-
+*/
 reg SUB_TA_TB_flag;
 reg was_there_a_zero;
 /*reg [7:0] counter_for_falsification;
@@ -345,30 +348,44 @@ adc_imi	adc_imi_01
 );
 */
 //------------------------------------------------------------------
-//ADC -> Ethernet fifo 
+//ADC -> Ethernet fifo
+wire clk_dv_n;
+
+reg adc_01_cs_ft, adc_01_cs_1ft;
+reg adc_02_cs_ft, adc_02_cs_1ft;
+wire adc_01_cs_st, adc_02_cs_st;
+assign adc_01_cs_st = adc_01_cs_ft && (!adc_01_cs_1ft);
+assign adc_02_cs_st = adc_02_cs_ft && (!adc_02_cs_1ft);
+assign  clk_dv_n = ~clk_dv;
+always @(posedge clk_dv_n)
+begin
+	adc_01_cs_ft <= adc_01_cs; adc_01_cs_1ft <= adc_01_cs_ft;
+	adc_02_cs_ft <= adc_02_cs; adc_02_cs_1ft <= adc_02_cs_ft;
+end
+
 fifo_acp 		fifo_input_acp1(
-	.rst			(~locked_2),
-	.wr_clk			(acp_data_clock1),
+	.rst				(~locked_2),
+	.wr_clk			(clk_dv_n),
 	.rd_clk			(e_tx_clk_bf),
-	.din			(acp_data1),
-	.wr_en			(acp_data1_ena),
+	.din				(acp_data1),
+	.wr_en			(adc_01_cs_st),
 	.rd_en			(eth_rdreq1),
-	.dout			(eth_data_blocks1),
-	.full			(),
+	.dout				(eth_data_blocks1),
+	.full				(),
 	.empty			(eth_rdempty1),
 	.rd_data_count	(rd_data_count_01),//{is_there_256_1,ground1[7:0]})
 	.wr_data_count	(wr_data_count_01)
 );
 
 fifo_acp 		fifo_input_acp2(
-	.rst			(~locked_2),
-	.wr_clk			(acp_data_clock2),
+	.rst				(~locked_2),
+	.wr_clk			(clk_dv_n),
 	.rd_clk			(e_tx_clk_bf),
-	.din			(conv_DATA_OUT_A),
-	.wr_en			(acp_data2_ena),
+	.din				(acp_data2),
+	.wr_en			(adc_02_cs_st),
 	.rd_en			(eth_rdreq2),
-	.dout			(eth_data_blocks2),
-	.full			(),
+	.dout				(eth_data_blocks2),
+	.full				(),
 	.empty			(eth_rdempty2),
 	.rd_data_count	(rd_data_count_02),
 	.wr_data_count	(wr_data_count_02)
@@ -406,37 +423,41 @@ end*/
 //--------------ADC LTC2315 block------------------------------------------
 
 adc_ltc2315 adc_01(
-.clk_100	(clk_dv),
-.reset		(~locked_2),
-.start		(adc_01_start),
+.clk_100				(clk_dv),
+.reset				(~locked_2),
+.start				(adc_01_start),
 
-.sck		(adc_01_sck), 
-.CS			(adc_01_cs),
-.sdo		(adc_01_sdo_bf),
-.en			(adc_01_en),
-.adc_data	(adc_01_data)
+//.clk_dv_new			(clk_dv_new),
+.sck					(adc_01_sck), 
+.CS					(adc_01_cs),
+.sdo					(adc_01_sdo_bf),
+.en					(adc_01_en),
+.adc_data_trigger	(adc2_data_trigger),
+.adc_data			(adc_01_data)
  );
 
 adc_ltc2315 adc_02(
-.clk_100	(clk_dv),
-.reset		(~locked_2),
-.start		(adc_01_start),
+.clk_100				(clk_dv),
+.reset				(~locked_2),
+.start				(adc_01_start),
 
-.sck		(adc_02_sck), 
-.CS			(adc_02_cs),
-.sdo		(adc_02_sdo_bf),
-.en			(adc_02_en),
-.adc_data	(adc_02_data)
+//.clk_dv_new			(clk_dv_new),
+.sck					(adc_02_sck), 
+.CS					(adc_02_cs),
+.sdo					(adc_02_sdo_bf),
+.en					(adc_02_en),
+.adc_data_trigger	(adc1_data_trigger),
+.adc_data			(adc_02_data)
  );
 (*mark_debug = "true"*)reg signed [15:0] acp_add1, acp_add2;
 (*mark_debug = "true"*)reg [15:0] acp_data1_ft, acp_data2_ft;
 (*mark_debug = "true"*)reg triger_setup;
 // сдвиг на 2 такта
 always @(posedge clk_12) begin 
-	adc_01_cs_f<= adc_01_cs;
-	adc_01_cs_ff <= adc_01_cs_f;
-	adc_02_cs_f<= adc_01_cs;
-	adc_02_cs_ff <= adc_01_cs_f;
+	adc_01_cs_f		<= adc_01_cs;
+	adc_01_cs_ff 	<= adc_01_cs_f;
+	adc_02_cs_f		<= adc_01_cs;
+	adc_02_cs_ff 	<= adc_01_cs_f;
 	
 	/*
 	acp_data1_ft <= acp_data1; 

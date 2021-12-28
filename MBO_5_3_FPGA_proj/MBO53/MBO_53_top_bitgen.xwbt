@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.ncd
-OUTFILE=D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.bit
+INFILE=C:\Users\user\Documents\Projects\MBO53\MBO_53_top.ncd
+OUTFILE=C:\Users\user\Documents\Projects\MBO53\MBO_53_top.bit
 FAMILY=Spartan3E
 PART=xc3s500e-5fg320
-WORKINGDIR=D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53
+WORKINGDIR=C:\Users\user\Documents\Projects\MBO53
 LICENSE=WebPack
 USER_INFO=__0_0_0
