@@ -9,37 +9,37 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Dec 23 18:00:06 2021
+Mapped Date    : Sun Jan 09 22:05:52 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    5
 Logic Utilization:
-  Number of Slice Flip Flops:         2,704 out of   9,312   29%
-  Number of 4 input LUTs:             2,704 out of   9,312   29%
+  Number of Slice Flip Flops:         2,687 out of   9,312   28%
+  Number of 4 input LUTs:             2,703 out of   9,312   29%
 Logic Distribution:
-  Number of occupied Slices:          1,897 out of   4,656   40%
-    Number of Slices containing only related logic:   1,897 out of   1,897 100%
-    Number of Slices containing unrelated logic:          0 out of   1,897   0%
+  Number of occupied Slices:          1,884 out of   4,656   40%
+    Number of Slices containing only related logic:   1,884 out of   1,884 100%
+    Number of Slices containing unrelated logic:          0 out of   1,884   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,879 out of   9,312   30%
+  Total Number of 4 input LUTs:       2,878 out of   9,312   30%
     Number used as logic:             2,681
     Number used as a route-thru:        175
-    Number used as Shift registers:      23
+    Number used as Shift registers:      22
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 33 out of     232   14%
+  Number of bonded IOBs:                 28 out of     232   12%
     IOB Flip Flops:                       6
   Number of RAMB16s:                      3 out of      20   15%
   Number of BUFGMUXs:                     7 out of      24   29%
   Number of DCMs:                         2 out of       4   50%
 
-Average Fanout of Non-Clock Nets:                3.18
+Average Fanout of Non-Clock Nets:                3.16
 
-Peak Memory Usage:  4475 MB
+Peak Memory Usage:  4451 MB
 Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   3 secs 
 
@@ -82,26 +82,14 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
-   symbol "pll_1/physical_group_CLKDV_OUT/CLKDV_BUFG_INST" (output
-   signal=clk_dv) has a mix of clock and non-clock loads. The non-clock loads
-   are:
-   Pin I1 of adc_02/Mmux_n007311
-   Pin I0 of adc_02/n0073(0)_inv1
-   Pin I1 of adc_01/Mmux_n007311
-   Pin I0 of adc_01/n0073(0)_inv1
-WARNING:PhysDesignRules:372 - Gated clock. Clock net adc_02_sck_OBUF is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net adc_01_sck_OBUF is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net adc_02/n0073(0)_inv is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net adc_01/n0073(0)_inv is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
+WARNING:MapLib:701 - Signal adc_01_sdo connected to top level port adc_01_sdo
+   has been removed.
+WARNING:MapLib:701 - Signal adc_02_sdo connected to top level port adc_02_sdo
+   has been removed.
+WARNING:MapLib:701 - Signal adc_01_sck connected to top level port adc_01_sck
+   has been removed.
+WARNING:MapLib:701 - Signal adc_02_sck connected to top level port adc_02_sck
+   has been removed.
 WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 
@@ -137,18 +125,14 @@ INFO:Map:110 - output buffer 'e_tx_d_0_OBUF' driving design level port
 INFO:Map:110 - output buffer 'e_tx_en_OBUF' driving design level port 'e_tx_en'
    is being pushed into module 'ethernet' to enable I/O register usage. The
    buffer has been renamed as 'ethernet/e_tx_en_OBUF'.
-INFO:Map:110 - output buffer 'adc1_data_trigger_OBUF' driving design level port
-   'adc1_data_trigger' is being pushed into module 'adc_02' to enable I/O
-   register usage. The buffer has been renamed as
-   'adc_02/adc1_data_trigger_OBUF'.
-INFO:LIT:243 - Logical network rd_data_count_01(7) has no load.
-INFO:LIT:395 - The above info message is repeated 48 more times for the
+INFO:LIT:243 - Logical network adc_01_sdo_bf has no load.
+INFO:LIT:395 - The above info message is repeated 50 more times for the
    following (max. 5 shown):
+   adc_02_sdo_bf,
+   rd_data_count_01(7),
    rd_data_count_01(6),
    rd_data_count_01(5),
-   rd_data_count_01(4),
-   rd_data_count_01(3),
-   rd_data_count_01(2)
+   rd_data_count_01(4)
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:MapLib:159 - Net Timing constraints on signal CLKIN_IN are pushed forward
@@ -163,9 +147,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 131 block(s) removed
-  36 block(s) optimized away
- 137 signal(s) removed
+ 139 block(s) removed
+  34 block(s) optimized away
+ 151 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -180,6 +164,14 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
+The signal "adc_01_sdo_bf" is loadless and has been removed.
+ Loadless block "bf3" (CKBUF) removed.
+  The signal "adc_01_sdo" is loadless and has been removed.
+   Loadless block "adc_01_sdo" (PAD) removed.
+The signal "adc_02_sdo_bf" is loadless and has been removed.
+ Loadless block "bf4" (CKBUF) removed.
+  The signal "adc_02_sdo" is loadless and has been removed.
+   Loadless block "adc_02_sdo" (PAD) removed.
 The signal "rd_data_count_01(7)" is loadless and has been removed.
  Loadless block
 "fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
@@ -766,7 +758,13 @@ The signal "eth_rdempty2" is loadless and has been removed.
  Loadless block
 "fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
 .rd/gras.rsts/ram_empty_i" (FF) removed.
+The signal "adc_01_data(15)" is loadless and has been removed.
+The signal "adc_01_data(14)" is loadless and has been removed.
+The signal "adc_01_data(13)" is loadless and has been removed.
 The signal "adc_01_data(12)" is loadless and has been removed.
+The signal "adc_02_data(15)" is loadless and has been removed.
+The signal "adc_02_data(14)" is loadless and has been removed.
+The signal "adc_02_data(13)" is loadless and has been removed.
 The signal "adc_02_data(12)" is loadless and has been removed.
 The signal
 "fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
@@ -926,6 +924,14 @@ The trimmed logic reported below is either:
 The signal "SUB_TA_TB_en" is unused and has been removed.
 The signal "was_there_a_zero_SUB_TA_TB_flag_AND_5_o" is unused and has been
 removed.
+The signal "adc_01_sck_OBUF" is unused and has been removed.
+The signal "adc_02_sck_OBUF" is unused and has been removed.
+The signal "adc_01_sck" is unused and has been removed.
+ Unused block "adc_01_sck_OBUF" (BUF) removed.
+The signal "adc_02_sck" is unused and has been removed.
+ Unused block "adc_02_sck_OBUF" (BUF) removed.
+Unused block "adc_01_sck" (PAD) removed.
+Unused block "adc_02_sck" (PAD) removed.
 Unused block
 "ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
 .gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<0>" (ROM) removed.
@@ -971,7 +977,6 @@ LUT2 		was_there_a_zero_SUB_TA_TB_flag_AND_5_o1
    optimized to 0
 GND 		adc_01/XST_GND
 GND 		adc_02/XST_GND
-VCC 		adc_02/XST_VCC
 GND 		ethernet/XST_GND
 VCC 		ethernet/XST_VCC
 GND 		ethernet/fifo_input/XST_GND
@@ -1012,13 +1017,8 @@ Section 6 - IOB Properties
 | LED(5)                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
 | LED(6)                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | LED(7)                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
-| adc1_data_trigger                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
 | adc_01_cs                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| adc_01_sck                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| adc_01_sdo                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | adc_02_cs                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| adc_02_sck                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
-| adc_02_sdo                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
 | e_mdc                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | e_rx_clk                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |

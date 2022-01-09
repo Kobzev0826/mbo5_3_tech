@@ -33,6 +33,7 @@ module adc_imi(
 reg [4:0] adc_counter_cycle;
 reg [15:00] adc_data_reg;
 reg CS_reg, en_reg;
+reg znak=1;
 
 assign CS=CS_reg;
 assign  adc_data[15:00] = adc_data_reg [15:00];
@@ -59,7 +60,11 @@ always @(posedge clk_100) begin
 			
 			if ( adc_counter_cycle == 5'd 13) begin 
 				en_reg <= 1;
-				adc_data_reg <= adc_data_reg + 1;
+				if ( adc_data_reg == 16'd 4090) znak<=0;
+				else if ( adc_data_reg == 16'd0) znak<=1;
+				
+				if ( znak) adc_data_reg <= adc_data_reg + 1;
+				else adc_data_reg <= adc_data_reg - 1;
 			end
 		end
 		else begin 

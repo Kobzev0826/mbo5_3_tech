@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\user\Documents\Projects\MBO53\impact.xsl
-OUTFILE=C:\Users\user\Documents\Projects\MBO53\impact.xsl
+INFILE=C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\impact.xsl
+OUTFILE=C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\impact.xsl
 FAMILY=Multiple
 PART=Multiple
-WORKINGDIR=C:\Users\user\Documents\Projects\MBO53
+WORKINGDIR=C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53
 LICENSE=iMPACT
 USER_INFO=iMPACT

@@ -14,5 +14,11 @@
 <msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;e_tx_clk&quot; PERIOD = 40 ns HIGH 40 %;&gt; [MBO_53_top.ucf(111)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">adc_01_sck_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">adc_02_sck_OBUF</arg>&apos; has no driver
+</msg>
+
 </messages>
 

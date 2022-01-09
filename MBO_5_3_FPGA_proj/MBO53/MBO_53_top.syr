@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
@@ -122,104 +122,104 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" into library work
 Parsing module <fifo_acp>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\crc32.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\crc32.v" into library work
 Parsing module <CRC32>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\sum.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\sum.v" into library work
 Parsing module <sum>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\udpHeader.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\udpHeader.v" into library work
 Parsing module <udpHeader>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ourHeader.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v" into library work
 Parsing module <ourHeader>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ourDataTypeOne.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourDataTypeOne.v" into library work
 Parsing module <ourDataTypeOne>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\messagePartialReporter.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\messagePartialReporter.v" into library work
 Parsing module <messagePartialReporter>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ipHeader.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ipHeader.v" into library work
 Parsing module <ipHeader>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\headerCutter.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\headerCutter.v" into library work
 Parsing module <headerCutter>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\FourToEight.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\FourToEight.v" into library work
 Parsing module <FourToEight>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\dataHolder.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" into library work
 Parsing module <dataHolder>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\arp_parser.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\arp_parser.v" into library work
 Parsing module <arp_parser>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ARPanswerFormer.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ARPanswerFormer.v" into library work
 Parsing module <ARPanswerFormer>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_25_12_5.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" into library work
 Parsing module <fifo_25_12_5>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" into library work
 Parsing module <Ethernet_module_upper>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\adc_ltc2315.v" into library work
-Parsing module <adc_ltc2315>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\pll_2.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" into library work
+Parsing module <adc_imi>.
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll_2.v" into library work
 Parsing module <pll_2>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\pll.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll.v" into library work
 Parsing module <pll>.
-Analyzing Verilog file "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" into library work
+Analyzing Verilog file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" into library work
 Parsing module <MBO_53_top>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\example_design\fifo_acp_exdes.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\example_design\fifo_acp_exdes.vhd" into library work
 Parsing entity <fifo_acp_exdes>.
 Parsing architecture <xilinx> of entity <fifo_acp_exdes>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pkg.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pkg.vhd" into library work
 Parsing package <fifo_acp_pkg>.
 Parsing package body <fifo_acp_pkg>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dgen.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dgen.vhd" into library work
 Parsing entity <fifo_acp_dgen>.
 Parsing architecture <fg_dg_arch> of entity <fifo_acp_dgen>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dverif.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_dverif.vhd" into library work
 Parsing entity <fifo_acp_dverif>.
 Parsing architecture <fg_dv_arch> of entity <fifo_acp_dverif>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pctrl.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_pctrl.vhd" into library work
 Parsing entity <fifo_acp_pctrl>.
 Parsing architecture <fg_pc_arch> of entity <fifo_acp_pctrl>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_rng.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_rng.vhd" into library work
 Parsing entity <fifo_acp_rng>.
 Parsing architecture <rg_arch> of entity <fifo_acp_rng>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_synth.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_synth.vhd" into library work
 Parsing entity <fifo_acp_synth>.
 Parsing architecture <simulation_arch> of entity <fifo_acp_synth>.
-Parsing VHDL file "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_tb.vhd" into library work
+Parsing VHDL file "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp\simulation\fifo_acp_tb.vhd" into library work
 Parsing entity <fifo_acp_tb>.
 Parsing architecture <fifo_acp_arch> of entity <fifo_acp_tb>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 425: Port clk_dv_new is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 439: Port clk_dv_new is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 479: Port mdi is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 492: Port mdi is not connected to this instance
 
 Elaborating module <MBO_53_top>.
 
 Elaborating module <IBUFG>.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 83: Assignment to DAC_CS ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 83: Assignment to DAC_CS ignored, since the identifier is never used
 
 Elaborating module <pll>.
 
 Elaborating module <BUFG>.
 
 Elaborating module <DCM_SP(CLK_FEEDBACK="1X",CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 111: Assignment to clk_bf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 111: Assignment to clk_bf ignored, since the identifier is never used
 
 Elaborating module <pll_2>.
 
 Elaborating module <DCM_SP(CLK_FEEDBACK="1X",CLKDV_DIVIDE=4.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 125: Assignment to clk50_double_pll_cross ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 164: Assignment to acp_data1_ena ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 165: Assignment to acp_data2_ena ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 166: Assignment to acp_data_clock1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 167: Assignment to acp_data_clock2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 200: Assignment to FIX_POROG ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 125: Assignment to clk50_double_pll_cross ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 164: Assignment to acp_data1_ena ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 165: Assignment to acp_data2_ena ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 166: Assignment to acp_data_clock1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 167: Assignment to acp_data_clock2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 200: Assignment to FIX_POROG ignored, since the identifier is never used
 
 Elaborating module <Ethernet_module_upper>.
 
 Elaborating module <FourToEight>.
 
 Elaborating module <fifo_25_12_5>.
-WARNING:HDLCompiler:1499 - "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module <fifo_25_12_5> remains a black box.
-WARNING:HDLCompiler:413 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1499 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module <fifo_25_12_5> remains a black box.
+WARNING:HDLCompiler:413 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <headerCutter>.
 
@@ -232,44 +232,43 @@ Elaborating module <sum>.
 Elaborating module <udpHeader>.
 
 Elaborating module <ourHeader>.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 216: Assignment to flag_is_input_data_type_two ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 216: Assignment to flag_is_input_data_type_two ignored, since the identifier is never used
 
 Elaborating module <ourDataTypeOne>.
 
 Elaborating module <dataHolder>.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to input_ip_verified_ft ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to input_ip_verified_ft ignored, since the identifier is never used
 
 Elaborating module <ARPanswerFormer>.
 
 Elaborating module <CRC32>.
 
 Elaborating module <messagePartialReporter>.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 291: Assignment to eth_comp_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 292: Assignment to eth_comp_data_ena ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 291: Assignment to eth_comp_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 292: Assignment to eth_comp_data_ena ignored, since the identifier is never used
 
 Elaborating module <fifo_acp>.
-WARNING:HDLCompiler:1499 - "C:\Users\user\Documents\Projects\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module <fifo_acp> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module <fifo_acp> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 457: Assignment to adc_02_cs_f ignored, since the identifier is never used
 
-Elaborating module <adc_ltc2315>.
-WARNING:HDLCompiler:413 - "C:\Users\user\Documents\Projects\MBO53\verilog\adc_ltc2315.v" Line 45: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\user\Documents\Projects\MBO53\verilog\adc_ltc2315.v" Line 58: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\user\Documents\Projects\MBO53\verilog\adc_ltc2315.v" Line 99: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 434: Assignment to adc_01_en ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 435: Assignment to adc2_data_trigger ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 448: Assignment to adc_02_en ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 456: Assignment to adc_02_cs_f ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 77: Net <emdc> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 134: Net <SUB_TA_TB[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 135: Net <SUB_TA_TB_en> does not have a driver.
-WARNING:HDLCompiler:552 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 425: Input port clk_dv_new is not connected on this instance
-WARNING:HDLCompiler:552 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" Line 439: Input port clk_dv_new is not connected on this instance
+Elaborating module <adc_imi>.
+WARNING:HDLCompiler:413 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" Line 57: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" Line 66: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v" Line 67: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 488: Assignment to adc_01_en ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 501: Assignment to adc_02_en ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 77: Net <emdc> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 134: Net <SUB_TA_TB[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 135: Net <SUB_TA_TB_en> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 479: Input port mdi is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 492: Input port mdi is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <MBO_53_top>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v".
         address = 4'b0000
         command = 4'b0011
     Set property "KEEP_HIERARCHY = YES" for instance <ethernet>.
@@ -312,26 +311,25 @@ Synthesizing Unit <MBO_53_top>.
     Set property "MARK_DEBUG = TRUE" for signal <acp_data1_ft>.
     Set property "MARK_DEBUG = TRUE" for signal <acp_data2_ft>.
     Set property "MARK_DEBUG = TRUE" for signal <triger_setup>.
-WARNING:Xst:2898 - Port 'clk_dv_new', unconnected in block instance 'adc_01', is tied to GND.
-WARNING:Xst:2898 - Port 'clk_dv_new', unconnected in block instance 'adc_02', is tied to GND.
+WARNING:Xst:2898 - Port 'mdi', unconnected in block instance 'adc_01', is tied to GND.
+WARNING:Xst:2898 - Port 'mdi', unconnected in block instance 'adc_02', is tied to GND.
 WARNING:Xst:647 - Input <e_rx_er> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <e_crc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <e_col> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 106: Output port <CLKIN_IBUFG_OUT> of the instance <pll_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 119: Output port <CLK0_OUT> of the instance <pll_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 261: Output port <header_parsed> of the instance <ethernet> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 261: Output port <data_type_one> of the instance <ethernet> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 261: Output port <header_parsed_valid> of the instance <ethernet> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 261: Output port <data_type_one_wren> of the instance <ethernet> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 366: Output port <wr_data_count> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 366: Output port <full> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 366: Output port <empty> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 380: Output port <wr_data_count> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 380: Output port <full> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 380: Output port <empty> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 425: Output port <en> of the instance <adc_01> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 425: Output port <adc_data_trigger> of the instance <adc_01> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\MBO_53_top.v" line 439: Output port <en> of the instance <adc_02> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 106: Output port <CLKIN_IBUFG_OUT> of the instance <pll_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 119: Output port <CLK0_OUT> of the instance <pll_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 261: Output port <header_parsed> of the instance <ethernet> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 261: Output port <data_type_one> of the instance <ethernet> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 261: Output port <header_parsed_valid> of the instance <ethernet> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 261: Output port <data_type_one_wren> of the instance <ethernet> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 366: Output port <wr_data_count> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 366: Output port <full> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 366: Output port <empty> of the instance <fifo_input_acp1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 380: Output port <wr_data_count> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 380: Output port <full> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 380: Output port <empty> of the instance <fifo_input_acp2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 479: Output port <en> of the instance <adc_01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" line 492: Output port <en> of the instance <adc_02> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <SUB_TA_TB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <emdc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <SUB_TA_TB_en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -339,6 +337,7 @@ WARNING:Xst:653 - Signal <SUB_TA_TB_en> is used but never assigned. This sourcel
     Found 1-bit register for signal <BTN_NORTH_strob>.
     Found 32-bit register for signal <BTN_NORTH_counter>.
     Found 1-bit register for signal <SUB_TA_TB_flag>.
+    Found 1-bit register for signal <was_there_a_zero>.
     Found 1-bit register for signal <BTN_WEST_f>.
     Found 1-bit register for signal <BTN_WEST_ff>.
     Found 1-bit register for signal <adc_01_start>.
@@ -358,29 +357,29 @@ INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal SUB_TA_TB_e
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal adc_01_data_true may hinder XST clustering optimizations.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  84 D-type flip-flop(s).
+	inferred  85 D-type flip-flop(s).
 Unit <MBO_53_top> synthesized.
 
 Synthesizing Unit <pll>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\pll.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll.v".
     Summary:
 	no macro.
 Unit <pll> synthesized.
 
 Synthesizing Unit <pll_2>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\pll_2.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\pll_2.v".
     Summary:
 	no macro.
 Unit <pll_2> synthesized.
 
 Synthesizing Unit <Ethernet_module_upper>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v".
         CONST_BOARD_IP = 32'b11000000101010000000000001110001
         CONST_BOARD_MAC = 48'b100100000010101100110100000011010000111011100110
 WARNING:Xst:647 - Input <clk_main> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <rd_data_count> of the instance <fifo_input> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <full> of the instance <fifo_input> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 210: Output port <is_type_2> of the instance <oh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <rd_data_count> of the instance <fifo_input> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 72: Output port <full> of the instance <fifo_input> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" line 210: Output port <is_type_2> of the instance <oh> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <preambula_ended_short>.
     Found 4-bit register for signal <counter_for_prolonging_data_validation>.
     Found 16-bit register for signal <input_fifo_rdempty_delay>.
@@ -405,7 +404,7 @@ INFO:Xst:3210 - "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\Etherne
 Unit <Ethernet_module_upper> synthesized.
 
 Synthesizing Unit <FourToEight>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\FourToEight.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\FourToEight.v".
     Found 1-bit register for signal <state>.
     Found 8-bit register for signal <datastorage>.
     Found 1-bit register for signal <ena_ft>.
@@ -422,7 +421,7 @@ Synthesizing Unit <FourToEight>.
 Unit <FourToEight> synthesized.
 
 Synthesizing Unit <headerCutter>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\headerCutter.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\headerCutter.v".
     Found 48-bit register for signal <BOARD_MAC>.
     Found 1-bit register for signal <isIp>.
     Found 1-bit register for signal <isARP>.
@@ -438,7 +437,7 @@ Synthesizing Unit <headerCutter>.
 Unit <headerCutter> synthesized.
 
 Synthesizing Unit <arp_parser>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\arp_parser.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\arp_parser.v".
     Found 5-bit register for signal <counter>.
     Found 1-bit register for signal <BOARD_IP(31)>.
     Found 1-bit register for signal <BOARD_IP(30)>.
@@ -512,7 +511,7 @@ Synthesizing Unit <arp_parser>.
 Unit <arp_parser> synthesized.
 
 Synthesizing Unit <ipHeader>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ipHeader.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ipHeader.v".
     Found 1-bit register for signal <dataen>.
     Found 5-bit register for signal <counter>.
     Found 1-bit register for signal <EOP>.
@@ -554,7 +553,7 @@ Synthesizing Unit <ipHeader>.
 Unit <ipHeader> synthesized.
 
 Synthesizing Unit <udpHeader>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\udpHeader.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\udpHeader.v".
     Found 5-bit register for signal <counter>.
     Found 1-bit register for signal <EOP>.
     Found 16-bit register for signal <PC_PORT>.
@@ -567,7 +566,7 @@ Synthesizing Unit <udpHeader>.
 Unit <udpHeader> synthesized.
 
 Synthesizing Unit <ourHeader>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ourHeader.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v".
     Found 1-bit register for signal <is_type_2>.
     Found 1-bit register for signal <flag_type(31)>.
     Found 1-bit register for signal <flag_type(30)>.
@@ -588,7 +587,7 @@ Synthesizing Unit <ourHeader>.
 Unit <ourHeader> synthesized.
 
 Synthesizing Unit <ourDataTypeOne>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ourDataTypeOne.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourDataTypeOne.v".
     Found 16-bit register for signal <data>.
     Found 992-bit register for signal <n1217[991:0]>.
     Found 10-bit register for signal <counter>.
@@ -607,7 +606,7 @@ Synthesizing Unit <ourDataTypeOne>.
 Unit <ourDataTypeOne> synthesized.
 
 Synthesizing Unit <dataHolder>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\dataHolder.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v".
     Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
     Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
     Register <BOARD_IP_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <BOARD_MAC> has been removed
@@ -697,7 +696,7 @@ Synthesizing Unit <dataHolder>.
 Unit <dataHolder> synthesized.
 
 Synthesizing Unit <ARPanswerFormer>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\ARPanswerFormer.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ARPanswerFormer.v".
     Found 1-bit register for signal <Shift(59)(6)>.
     Found 1-bit register for signal <Shift(59)(5)>.
     Found 1-bit register for signal <Shift(59)(4)>.
@@ -1196,14 +1195,14 @@ Synthesizing Unit <ARPanswerFormer>.
 Unit <ARPanswerFormer> synthesized.
 
 Synthesizing Unit <CRC32>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\crc32.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\crc32.v".
     Found 32-bit register for signal <Rg_CRC>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <CRC32> synthesized.
 
 Synthesizing Unit <messagePartialReporter>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\Ethernet\messagePartialReporter.v".
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\messagePartialReporter.v".
     Found 1-bit register for signal <Shift(169)(7)>.
     Found 1-bit register for signal <Shift(169)(6)>.
     Found 1-bit register for signal <Shift(169)(5)>.
@@ -2593,81 +2592,65 @@ Synthesizing Unit <messagePartialReporter>.
 	inferred 1264 Multiplexer(s).
 Unit <messagePartialReporter> synthesized.
 
-Synthesizing Unit <adc_ltc2315>.
-    Related source file is "C:\Users\user\Documents\Projects\MBO53\verilog\adc_ltc2315.v".
-WARNING:Xst:647 - Input <clk_dv_new> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Synthesizing Unit <adc_imi>.
+    Related source file is "C:\Users\kva-0\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_imi.v".
+WARNING:Xst:647 - Input <mdi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <CS_reg>.
-    Found 1-bit register for signal <en_reg>.
-    Found 1-bit register for signal <en_sck>.
     Found 16-bit register for signal <adc_data_reg>.
-    Found 5-bit register for signal <cnt_reg>.
-    Found 1-bit register for signal <CS_reg_ft>.
-    Found 1-bit register for signal <CS_reg_2ft>.
-    Found 1-bit register for signal <CS_reg_3ft>.
-    Found 12-bit register for signal <adc_data_reg_prev>.
-    Found 1-bit register for signal <adc_data_trigger>.
+    Found 1-bit register for signal <en_reg>.
+    Found 1-bit register for signal <znak>.
     Found 5-bit register for signal <adc_counter_cycle>.
-    Found 5-bit adder for signal <adc_counter_cycle[4]_GND_24_o_add_4_OUT> created at line 58.
-    Found 5-bit adder for signal <cnt_reg[4]_GND_24_o_add_24_OUT> created at line 99.
-    Found 12-bit adder for signal <adc_data_reg[11]_GND_24_o_add_34_OUT> created at line 117.
-    Found 5-bit comparator greater for signal <GND_24_o_cnt_reg[4]_LessThan_27_o> created at line 101
-    Found 5-bit comparator greater for signal <cnt_reg[4]_GND_24_o_LessThan_28_o> created at line 101
-    Found 12-bit comparator greater for signal <adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_36_o> created at line 118
+    Found 5-bit adder for signal <adc_counter_cycle[4]_GND_24_o_add_4_OUT> created at line 57.
+    Found 16-bit adder for signal <adc_data_reg[15]_GND_24_o_add_9_OUT> created at line 66.
+    Found 16-bit subtractor for signal <GND_24_o_GND_24_o_sub_11_OUT(15:0)> created at line 67.
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred  45 D-type flip-flop(s).
-	inferred   3 Comparator(s).
-	inferred   3 Multiplexer(s).
-Unit <adc_ltc2315> synthesized.
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+Unit <adc_imi> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 22
+# Adders/Subtractors                                   : 20
  10-bit adder                                          : 2
- 12-bit adder                                          : 2
  16-bit adder                                          : 1
+ 16-bit addsub                                         : 2
  2-bit adder                                           : 1
  3-bit adder                                           : 2
  32-bit adder                                          : 3
  4-bit adder                                           : 2
- 5-bit adder                                           : 7
+ 5-bit adder                                           : 5
  8-bit adder                                           : 2
-# Registers                                            : 1918
- 1-bit register                                        : 1862
+# Registers                                            : 1907
+ 1-bit register                                        : 1855
  10-bit register                                       : 2
- 12-bit register                                       : 2
  16-bit register                                       : 15
  2-bit register                                        : 1
  3-bit register                                        : 2
  32-bit register                                       : 9
  4-bit register                                        : 6
  48-bit register                                       : 3
- 5-bit register                                        : 7
+ 5-bit register                                        : 5
  8-bit register                                        : 8
  992-bit register                                      : 1
-# Comparators                                          : 28
+# Comparators                                          : 22
  10-bit comparator greater                             : 3
- 12-bit comparator greater                             : 2
  16-bit comparator equal                               : 3
  16-bit comparator greater                             : 2
  32-bit comparator equal                               : 2
  48-bit comparator equal                               : 2
- 5-bit comparator greater                              : 4
  8-bit comparator equal                                : 8
  8-bit comparator greater                              : 2
-# Multiplexers                                         : 2545
- 1-bit 2-to-1 multiplexer                              : 2514
+# Multiplexers                                         : 2539
+ 1-bit 2-to-1 multiplexer                              : 2512
  16-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 5
  2-bit 4-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 2
  4-bit 11-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 7
  4-bit 8-to-1 multiplexer                              : 1
  48-bit 2-to-1 multiplexer                             : 10
- 5-bit 2-to-1 multiplexer                              : 2
 # Xors                                                 : 106
  1-bit xor2                                            : 70
  1-bit xor3                                            : 30
@@ -2715,88 +2698,90 @@ WARNING:Xst:1290 - Hierarchical block <odto> is unconnected in block <ethernet>.
    It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <PC_IP_1> in Unit <dh> is equivalent to the following 25 FFs/Latches, which will be removed : <PC_IP_2> <PC_IP_3> <PC_IP_4> <PC_IP_5> <PC_IP_6> <PC_IP_7> <PC_IP_8> <PC_IP_9> <PC_IP_10> <PC_IP_11> <PC_IP_12> <PC_IP_13> <PC_IP_14> <PC_IP_15> <PC_IP_16> <PC_IP_17> <PC_IP_18> <PC_IP_20> <PC_IP_22> <PC_IP_24> <PC_IP_25> <PC_IP_26> <PC_IP_27> <PC_IP_28> <PC_IP_29> 
 INFO:Xst:2261 - The FF/Latch <PC_IP_0> in Unit <dh> is equivalent to the following 5 FFs/Latches, which will be removed : <PC_IP_19> <PC_IP_21> <PC_IP_23> <PC_IP_30> <PC_IP_31> 
+WARNING:Xst:1710 - FF/Latch <was_there_a_zero> (without init value) has a constant value of 1 in block <MBO_53_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <PC_IP_1> (without init value) has a constant value of 0 in block <dh>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <PC_IP_0> (without init value) has a constant value of 1 in block <dh>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(59)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(59)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Shift(59)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(59)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(59)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Shift(59)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Shift(59)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(59)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(59)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Shift(59)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(58)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(57)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(56)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(55)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(54)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(53)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(52)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(51)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(50)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
@@ -2804,7 +2789,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_5> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(49)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
@@ -2813,14 +2797,14 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_4> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(48)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(47)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
@@ -2829,6 +2813,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_1> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(46)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
@@ -2836,7 +2821,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_5> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(45)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(44)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(44)_6> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(44)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
@@ -2861,14 +2845,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(42)_1> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(42)_3> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(42)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Shift(42)_0> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <adc_data_reg_12> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_13> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_14> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_15> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_12> of sequential type is unconnected in block <adc_02>.
-WARNING:Xst:2677 - Node <adc_data_reg_13> of sequential type is unconnected in block <adc_02>.
-WARNING:Xst:2677 - Node <adc_data_reg_14> of sequential type is unconnected in block <adc_02>.
-WARNING:Xst:2677 - Node <adc_data_reg_15> of sequential type is unconnected in block <adc_02>.
 
 Synthesizing (advanced) Unit <ARPanswerFormer>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
@@ -2886,10 +2862,10 @@ Unit <FourToEight> synthesized (advanced).
 Synthesizing (advanced) Unit <MBO_53_top>.
 Unit <MBO_53_top> synthesized (advanced).
 
-Synthesizing (advanced) Unit <adc_ltc2315>.
+Synthesizing (advanced) Unit <adc_imi>.
+The following registers are absorbed into counter <adc_data_reg>: 1 register on signal <adc_data_reg>.
 The following registers are absorbed into counter <adc_counter_cycle>: 1 register on signal <adc_counter_cycle>.
-The following registers are absorbed into counter <cnt_reg>: 1 register on signal <cnt_reg>.
-Unit <adc_ltc2315> synthesized (advanced).
+Unit <adc_imi> synthesized (advanced).
 
 Synthesizing (advanced) Unit <arp_parser>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
@@ -2920,45 +2896,38 @@ Unit <ourHeader> synthesized (advanced).
 Synthesizing (advanced) Unit <udpHeader>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <udpHeader> synthesized (advanced).
-WARNING:Xst:2677 - Node <adc_data_reg_12> of sequential type is unconnected in block <adc_ltc2315>.
-WARNING:Xst:2677 - Node <adc_data_reg_13> of sequential type is unconnected in block <adc_ltc2315>.
-WARNING:Xst:2677 - Node <adc_data_reg_14> of sequential type is unconnected in block <adc_ltc2315>.
-WARNING:Xst:2677 - Node <adc_data_reg_15> of sequential type is unconnected in block <adc_ltc2315>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 5
- 12-bit adder                                          : 2
+# Adders/Subtractors                                   : 3
  2-bit adder                                           : 1
  32-bit adder                                          : 2
 # Counters                                             : 17
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
+ 16-bit updown counter                                 : 2
  3-bit up counter                                      : 2
  32-bit up counter                                     : 1
  4-bit up counter                                      : 2
- 5-bit up counter                                      : 7
+ 5-bit up counter                                      : 5
  8-bit up counter                                      : 2
-# Registers                                            : 3560
- Flip-Flops                                            : 3560
-# Comparators                                          : 28
+# Registers                                            : 3505
+ Flip-Flops                                            : 3505
+# Comparators                                          : 22
  10-bit comparator greater                             : 3
- 12-bit comparator greater                             : 2
  16-bit comparator equal                               : 3
  16-bit comparator greater                             : 2
  32-bit comparator equal                               : 2
  48-bit comparator equal                               : 2
- 5-bit comparator greater                              : 4
  8-bit comparator equal                                : 8
  8-bit comparator greater                              : 2
-# Multiplexers                                         : 2549
+# Multiplexers                                         : 2547
  1-bit 2-to-1 multiplexer                              : 2523
  16-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 5
  2-bit 4-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 2
  4-bit 11-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 4
  4-bit 8-to-1 multiplexer                              : 1
@@ -3149,6 +3118,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PC_IP_3> (without i
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PC_IP_2> (without init value) has a constant value of 0 in block <dataHolder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PC_IP_1> (without init value) has a constant value of 0 in block <dataHolder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PC_IP_0> (without init value) has a constant value of 1 in block <dataHolder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <was_there_a_zero> (without init value) has a constant value of 1 in block <MBO_53_top>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <state> in Unit <ARPanswerFormer> is equivalent to the following FF/Latch, which will be removed : <crc_on_ft> 
 INFO:Xst:2261 - The FF/Latch <Led_reg_1> in Unit <MBO_53_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Led_reg_3> <Led_reg_5> <Led_reg_7> 
 INFO:Xst:2261 - The FF/Latch <Led_reg_0> in Unit <MBO_53_top> is equivalent to the following 3 FFs/Latches, which will be removed : <Led_reg_2> <Led_reg_4> <Led_reg_6> 
@@ -3183,7 +3153,7 @@ Optimizing unit <ourDataTypeOne> ...
 
 Optimizing unit <dataHolder> ...
 
-Optimizing unit <adc_ltc2315> ...
+Optimizing unit <adc_imi> ...
 WARNING:Xst:1710 - FF/Latch <Shift(38)_1> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(38)_4> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(38)_2> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
@@ -3211,31 +3181,15 @@ WARNING:Xst:1290 - Hierarchical block <odto> is unconnected in block <ethernet>.
    It will be removed from the design.
 WARNING:Xst:2677 - Node <en_reg> of sequential type is unconnected in block <adc_02>.
 WARNING:Xst:2677 - Node <en_reg> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <CS_reg_ft> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <CS_reg_2ft> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <CS_reg_3ft> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_0> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_1> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_2> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_3> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_4> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_5> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_6> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_7> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_8> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_9> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_10> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_reg_prev_11> of sequential type is unconnected in block <adc_01>.
-WARNING:Xst:2677 - Node <adc_data_trigger> of sequential type is unconnected in block <adc_01>.
 
 Mapping all equations...
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000040, sig0000003c, sig00000039, sig00000022, mpr/ipp7_anti_loop_AND_71_o, sig0000003a, sig00000038, sig00000035, sig00000034, sig0000003f, sig00000021, sig00000036, ipsum31/c_out, sig00000037, ipsum31/c_in, sig0000003b, mpr/ipp7, sig0000003e, sig0000003d, sig00000033, sig00000041.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000017, sig00000040, ipsum22/c_in, sig00000041, sig00000036, sig00000029, sig00000039, sig00000035, sig0000003e, sig00000021, sig0000003b, sig0000003a, mpr/ipp6_anti_loop_AND_70_o, sig0000003f, sig00000037, ipsum22/c_out, sig0000003d, sig00000034, sig00000048, ipsum22/s<15>, sig00000038, ipsum31/b<15>, sig00000033, mpr/ipsum6r(15), sig0000003c, sig00000022, sig00000029, mpr/ipp6.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000047, sig00000028, ipsum14/s<14>, sig0000003b, sig00000047, sig00000038, sig00000022, sig0000003f, sig00000040, sig00000028, sig00000037, sig0000003a, sig0000003d, ipsum31/b<14>, mpr/ipp4, ipsum22/b<14>, sig00000039, sig00000036, sig00000016, sig00000033, mpr/ipsum6r(14), ipsum14/c_out, ipsum22/s<14>, sig00000016, sig00000041, sig00000034, sig0000003c, mpr/ipp4_anti_loop_AND_68_o, sig00000035, sig00000021, mpr/ipsum4r(14), sig00000028, sig0000003e, ipsum14/c_in.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: mpr/ipsum6r(13), sig0000003c, mpr/ipp3_anti_loop_AND_67_o, sig0000003d, ipsum22/s<13>, ipsum31/b<13>, mpr/ipsum3r(13), sig00000046, sig00000021, sig00000015, sig00000036, sig00000033, ipsum13/c_out, sig00000039, sig00000038, sig00000027, sig00000027, ipsum13/s<13>, sig0000003b, sig00000027, sig00000041, mpr/ipp3, ipsum13/c_in, sig0000003f, sig00000022, sig00000035, ipsum22/a<13>, sig0000003e, sig00000005, sig0000003a, sig00000034, sig00000037, sig00000046, sig00000040.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003f, sig00000040, ipsum31/a<12>, sig00000035, sig00000004, mpr/ipsum5r(12), sig0000003a, mpr/ipp5, sig00000038, sig00000022, ipsum21/s<12>, ipsum21/c_out, sig00000021, mpr/ipp5_anti_loop_AND_69_o, sig00000041, ipsum21/c_in, sig00000033, sig00000045, sig0000003e, sig0000003d, sig0000003c, sig00000039, sig00000034, sig0000003b, sig00000037, sig00000036, sig00000026, sig00000026.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000044, mpr/ipp2_anti_loop_AND_66_o, ipsum21/s<11>, sig00000022, mpr/ipp2, sig00000041, sig00000044, sig00000036, mpr/ipsum2r(11), sig00000038, sig00000035, sig0000003c, ipsum31/a<11>, sig0000003f, ipsum12/c_out, sig0000003e, mpr/ipsum5r(11), ipsum12/s<11>, sig00000039, sig00000037, sig00000021, sig00000033, sig0000003a, ipsum12/c_in, sig00000025, ipsum21/b<11>, sig0000003b, sig00000040, sig00000034, sig00000003, sig00000025, sig0000003d, sig00000013, sig00000025.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: mpr/ipp1, sig0000003f, sig00000036, ipsum21/s<10>, sig00000024, ipsum11/s<10>, sig00000037, sig00000024, mpr/ipsum1r(10), sig00000041, sig0000003b, sig00000039, mpr/ipp1_anti_loop_AND_65_o, sig00000022, sig0000003e, sig00000043, sig0000003c, sig00000021, ipsum31/a<10>, ipsum21/a<10>, sig00000034, ipsum11/c_out, sig0000003d, sig00000043, ipsum11/c_in, sig00000002, mpr/ipsum5r(10), sig00000035, sig0000003a, sig00000024, sig00000033, sig00000040, sig00000038, sig00000002.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000038, mpr/ipp7_anti_loop_AND_71_o, sig00000041, sig00000034, mpr/ipp7, sig0000003e, sig00000021, sig0000003f, sig0000003c, sig0000003b, sig0000003a, sig00000022, sig0000003d, sig00000037, sig00000039, sig00000035, sig00000036, sig00000040, ipsum31/c_in, sig00000033, ipsum31/c_out.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000036, sig00000035, sig0000003e, sig00000040, sig0000003a, sig00000037, sig00000038, sig00000029, ipsum22/c_in, sig00000017, mpr/ipsum6r(15), sig00000048, sig00000021, ipsum22/s<15>, sig00000033, mpr/ipp6_anti_loop_AND_70_o, mpr/ipp6, sig00000041, ipsum22/c_out, sig0000003f, sig00000039, sig00000034, ipsum31/b<15>, sig0000003c, sig0000003b, sig00000022, sig0000003d, sig00000029.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000028, sig00000034, sig00000033, ipsum31/b<14>, sig00000037, sig0000003f, mpr/ipsum6r(14), sig00000028, sig00000028, sig0000003a, sig0000003b, ipsum14/c_in, mpr/ipp4, sig00000038, sig00000047, sig0000003d, sig00000021, ipsum14/c_out, ipsum22/b<14>, sig00000039, ipsum14/s<14>, sig00000041, sig00000016, sig00000022, mpr/ipsum4r(14), mpr/ipp4_anti_loop_AND_68_o, sig0000003e, sig00000036, ipsum22/s<14>, sig00000040, sig00000035, sig00000016, sig00000047, sig0000003c.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000035, mpr/ipsum3r(13), sig00000034, ipsum22/s<13>, sig0000003d, ipsum13/c_out, ipsum22/a<13>, sig00000046, sig00000033, ipsum13/c_in, mpr/ipp3, ipsum13/s<13>, sig00000027, sig00000015, ipsum31/b<13>, sig0000003a, sig00000040, sig00000022, sig00000041, sig00000027, sig00000037, mpr/ipsum6r(13), sig00000021, sig0000003e, sig00000046, mpr/ipp3_anti_loop_AND_67_o, sig00000027, sig00000038, sig0000003b, sig00000005, sig00000039, sig0000003c, sig0000003f, sig00000036.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003a, sig00000033, mpr/ipp5_anti_loop_AND_69_o, mpr/ipsum5r(12), sig00000045, ipsum21/s<12>, sig00000026, sig0000003f, sig00000037, sig00000041, sig00000036, ipsum21/c_out, sig00000040, ipsum21/c_in, mpr/ipp5, sig00000021, sig00000035, sig00000004, sig00000026, sig00000034, sig00000038, sig00000022, sig0000003d, sig0000003b, sig0000003c, ipsum31/a<12>, sig00000039, sig0000003e.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000037, sig00000022, sig00000013, ipsum21/s<11>, sig00000025, sig00000044, ipsum31/a<11>, sig0000003c, sig00000040, sig0000003d, sig00000021, sig00000038, ipsum12/c_out, sig00000003, sig00000025, mpr/ipsum5r(11), ipsum12/s<11>, sig00000036, sig00000041, sig00000035, ipsum21/b<11>, sig0000003e, sig00000025, sig0000003f, sig00000039, mpr/ipp2_anti_loop_AND_66_o, sig00000034, mpr/ipsum2r(11), sig0000003b, ipsum12/c_in, sig00000044, sig00000033, sig0000003a, mpr/ipp2.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: mpr/ipsum5r(10), sig00000024, sig00000043, mpr/ipsum1r(10), sig00000036, sig00000033, ipsum21/a<10>, sig00000002, sig00000021, sig0000003c, sig00000040, sig0000003d, sig0000003b, sig00000035, sig00000002, sig0000003e, mpr/ipp1, sig00000041, ipsum11/c_out, sig00000022, sig0000003f, ipsum11/c_in, sig00000039, sig00000024, sig00000034, sig00000037, sig00000043, sig0000003a, ipsum11/s<10>, ipsum31/a<10>, ipsum21/s<10>, sig00000038, mpr/ipp1_anti_loop_AND_65_o, sig00000024.
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Shift(41)_0> in Unit <aa> is equivalent to the following 4 FFs/Latches, which will be removed : <Shift(39)_7> <Shift(39)_3> <Shift(39)_5> <Shift(38)_6> 
 INFO:Xst:2261 - The FF/Latch <Shift(40)_0> in Unit <aa> is equivalent to the following 2 FFs/Latches, which will be removed : <Shift(38)_5> <Shift(38)_3> 
@@ -3284,10 +3238,6 @@ Processing Unit <aa> :
 	Found 10-bit shift register for signal <Shift(12)_5>.
 Unit <aa> processed.
 
-Processing Unit <adc_02> :
-	Found 2-bit shift register for signal <CS_reg_2ft>.
-Unit <adc_02> processed.
-
 Processing Unit <ethernet> :
 	Found 15-bit shift register for signal <input_fifo_rdempty_delay_15>.
 	Found 4-bit shift register for signal <input_last_4_bytes_0_24>.
@@ -3312,12 +3262,11 @@ Unit <mpr> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2307
- Flip-Flops                                            : 2307
-# Shift Registers                                      : 23
+# Registers                                            : 2291
+ Flip-Flops                                            : 2291
+# Shift Registers                                      : 22
  10-bit shift register                                 : 4
  15-bit shift register                                 : 1
- 2-bit shift register                                  : 1
  4-bit shift register                                  : 15
  5-bit shift register                                  : 1
  6-bit shift register                                  : 1
@@ -3343,57 +3292,55 @@ Top Level Output File Name         : MBO_53_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3855
+# BELS                             : 3892
 #      GND                         : 17
-#      INV                         : 124
+#      INV                         : 120
 #      LUT1                        : 167
-#      LUT2                        : 1475
-#      LUT3                        : 580
+#      LUT2                        : 1491
+#      LUT3                        : 581
 #      LUT3_D                      : 1
-#      LUT4                        : 548
+#      LUT4                        : 537
 #      LUT4_D                      : 5
 #      LUT4_L                      : 4
-#      MUXCY                       : 515
-#      MUXF5                       : 59
+#      MUXCY                       : 533
+#      MUXF5                       : 45
 #      MUXF6                       : 4
-#      VCC                         : 12
-#      XORCY                       : 344
-# FlipFlops/Latches                : 2760
-#      FD                          : 18
+#      VCC                         : 11
+#      XORCY                       : 376
+# FlipFlops/Latches                : 2743
+#      FD                          : 16
 #      FD_1                        : 6
 #      FDC                         : 237
 #      FDCE                        : 111
 #      FDCP                        : 4
 #      FDCP_1                      : 4
 #      FDCPE                       : 4
-#      FDE                         : 1590
+#      FDE                         : 1575
 #      FDE_1                       : 23
 #      FDP                         : 35
 #      FDPE                        : 95
 #      FDR                         : 152
 #      FDR_1                       : 8
-#      FDRE                        : 326
-#      FDRE_1                      : 26
+#      FDRE                        : 348
+#      FDRE_1                      : 2
 #      FDRS                        : 5
-#      FDRSE                       : 13
+#      FDRSE                       : 17
 #      FDRSE_1                     : 1
-#      FDS                         : 2
 #      FDS_1                       : 1
 #      FDSE                        : 99
 # RAMS                             : 3
 #      RAMB16_S36_S36              : 3
-# Shift Registers                  : 23
-#      SRL16                       : 1
+# Shift Registers                  : 22
 #      SRL16_1                     : 1
 #      SRL16E                      : 13
 #      SRL16E_1                    : 8
 # Clock Buffers                    : 7
 #      BUFG                        : 6
 #      BUFGP                       : 1
-# IO Buffers                       : 31
+# IO Buffers                       : 30
 #      IBUF                        : 5
 #      IBUFG                       : 6
-#      OBUF                        : 20
+#      OBUF                        : 19
 # DCMs                             : 2
 #      DCM_SP                      : 2
 
@@ -3402,13 +3349,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-5 
 
- Number of Slices:                     1822  out of   4656    39%  
- Number of Slice Flip Flops:           2750  out of   9312    29%  
- Number of 4 input LUTs:               2927  out of   9312    31%  
-    Number used as logic:              2904
-    Number used as Shift registers:      23
- Number of IOs:                          36
- Number of bonded IOBs:                  31  out of    232    13%  
+ Number of Slices:                     1812  out of   4656    38%  
+ Number of Slice Flip Flops:           2733  out of   9312    29%  
+ Number of 4 input LUTs:               2928  out of   9312    31%  
+    Number used as logic:              2906
+    Number used as Shift registers:      22
+ Number of IOs:                          35
+ Number of bonded IOBs:                  30  out of    232    12%  
     IOB Flip Flops:                      10
  Number of BRAMs:                         3  out of     20    15%  
  Number of GCLKs:                         7  out of     24    29%  
@@ -3432,54 +3379,46 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------+-------------------------------+-------+
-Clock Signal                               | Clock buffer(FF name)         | Load  |
--------------------------------------------+-------------------------------+-------+
-clk                                        | DCM_SP:CLK2X                  | 35    |
-clk                                        | DCM_SP:CLK0+DCM_SP:CLKDV      | 476   |
-clk                                        | DCM_SP:CLKDV                  | 202   |
-e_tx_clk                                   | IBUFG+BUFG                    | 1958  |
-e_rx_clk                                   | BUFGP                         | 84    |
-adc_02/sck(adc_02/Mmux_n007311:O)          | NONE(*)(adc_02/adc_data_reg_0)| 12    |
-adc_02/n0073(0)_inv(adc_02/n0073(0)_inv1:O)| NONE(*)(adc_02/cnt_reg_0)     | 5     |
-adc_01/sck(adc_01/Mmux_n007311:O)          | NONE(*)(adc_01/adc_data_reg_0)| 12    |
-adc_01/n0073(0)_inv(adc_01/n0073(0)_inv1:O)| NONE(*)(adc_01/cnt_reg_0)     | 5     |
--------------------------------------------+-------------------------------+-------+
-(*) These 4 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+clk                                | DCM_SP:CLK2X            | 35    |
+clk                                | DCM_SP:CLK0+DCM_SP:CLKDV| 476   |
+clk                                | DCM_SP:CLKDV            | 218   |
+e_tx_clk                           | IBUFG+BUFG              | 1958  |
+e_rx_clk                           | BUFGP                   | 84    |
+-----------------------------------+-------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                         | Buffer(FF name)                                                                                                                  | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
-ethernet/global_reset_summary(ethernet/global_reset_summary1:O)                                                                                                        | NONE(ethernet/dh/PC_MAC_21)                                                                                                      | 81    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1)    | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1)    | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1)                           | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_4)    | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_7)                         | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_6)                        | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0)                | 29    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0)                           | 29    |
+ethernet/global_reset_summary(ethernet/global_reset_summary1:O)                                                                                                        | NONE(ethernet/dh/PC_MAC_47)                                                                                                      | 81    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_8)    | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_2)                          | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_4)                        | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_8)    | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1)                          | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_1)                        | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_4)                | 29    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_3)                           | 29    |
 SUB_TA_TB_en(XST_GND:G)                                                                                                                                                | NONE(BTN_NORTH_strob)                                                                                                            | 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_4)| 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5)| 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0)            | 20    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0)                    | 18    |
-locked_2_INV_106_o(locked_2_INV_106_o1_INV_0:O)                                                                                                                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                              | 12    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)| 24    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_4)                     | 24    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0)                       | 20    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1)                    | 18    |
+locked_2_INV_106_o(locked_2_INV_106_o1_INV_0:O)                                                                                                                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                              | 12    |
 ethernet/local_reset_summary(ethernet/local_reset_summary:O)                                                                                                           | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg)                                          | 6     |
 ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                          | 3     |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)             | 2     |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                          | 2     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                | 2     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
 fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                              | 2     |
 fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                     | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                 | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                              | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                              | 2     |
 fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                              | 2     |
 fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                     | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                    | 2     |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                              | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                              | 2     |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -3488,7 +3427,7 @@ Speed Grade: -5
 
    Minimum period: 28.633ns (Maximum Frequency: 34.925MHz)
    Minimum input arrival time before clock: 3.188ns
-   Maximum output required time after clock: 5.781ns
+   Maximum output required time after clock: 4.063ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -3498,7 +3437,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 9.314ns (frequency: 107.368MHz)
-  Total number of paths / destination ports: 117728 / 1379
+  Total number of paths / destination ports: 118750 / 1488
 -------------------------------------------------------------------------
 Delay:               4.657ns (Levels of Logic = 11)
   Source:            BTN_NORTH_counter_24 (FF)
@@ -3521,7 +3460,7 @@ Delay:               4.657ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.052   0.000  BTN_NORTH_strob_BTN_NORTH_counter[31]_AND_3_o_wg_cy(6) (BTN_NORTH_strob_BTN_NORTH_counter[31]_AND_3_o_wg_cy(6))
      MUXCY:CI->O           1   0.052   0.000  BTN_NORTH_strob_BTN_NORTH_counter[31]_AND_3_o_wg_cy(7) (BTN_NORTH_strob_BTN_NORTH_counter[31]_AND_3_o_wg_cy(7))
      MUXCY:CI->O           2   0.399   0.383  BTN_NORTH_strob_BTN_NORTH_counter[31]_AND_3_o_wg_cy(8) (BTN_NORTH_strob_BTN_NORTH_counter[31]_AND_3_o_wg_cy(8))
-     LUT4:I3->O            1   0.612   0.357  _n0108_inv1 (_n0108_inv)
+     LUT4:I3->O            1   0.612   0.357  _n0105_inv1 (_n0105_inv)
      FDCPE:CE                  0.483          BTN_NORTH_strob
     ----------------------------------------
     Total                      4.657ns (3.385ns logic, 1.272ns route)
@@ -3639,94 +3578,6 @@ Delay:               3.051ns (Levels of Logic = 1)
                                        (63.0% logic, 37.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'adc_02/sck'
-  Clock period: 1.532ns (frequency: 652.869MHz)
-  Total number of paths / destination ports: 11 / 11
--------------------------------------------------------------------------
-Delay:               1.532ns (Levels of Logic = 0)
-  Source:            adc_02/adc_data_reg_5 (FF)
-  Destination:       adc_02/adc_data_reg_6 (FF)
-  Source Clock:      adc_02/sck falling
-  Destination Clock: adc_02/sck falling
-
-  Data Path: adc_02/adc_data_reg_5 to adc_02/adc_data_reg_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE_1:C->Q          10   0.514   0.750  adc_data_reg_5 (adc_data_reg_5)
-     FDRE_1:D                  0.268          adc_data_reg_6
-    ----------------------------------------
-    Total                      1.532ns (0.782ns logic, 0.750ns route)
-                                       (51.1% logic, 48.9% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'adc_02/n0073(0)_inv'
-  Clock period: 4.065ns (frequency: 245.996MHz)
-  Total number of paths / destination ports: 44 / 10
--------------------------------------------------------------------------
-Delay:               4.065ns (Levels of Logic = 2)
-  Source:            adc_02/cnt_reg_3 (FF)
-  Destination:       adc_02/cnt_reg_0 (FF)
-  Source Clock:      adc_02/n0073(0)_inv rising
-  Destination Clock: adc_02/n0073(0)_inv rising
-
-  Data Path: adc_02/cnt_reg_3 to adc_02/cnt_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:C->Q             5   0.514   0.568  cnt_reg_3 (cnt_reg_3)
-     LUT3:I2->O            1   0.612   0.426  _n0092_SW0 (N15)
-     LUT4:I1->O            5   0.612   0.538  _n0092 (_n0092)
-     FDRE:R                    0.795          cnt_reg_0
-    ----------------------------------------
-    Total                      4.065ns (2.533ns logic, 1.532ns route)
-                                       (62.3% logic, 37.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'adc_01/sck'
-  Clock period: 1.162ns (frequency: 860.622MHz)
-  Total number of paths / destination ports: 11 / 11
--------------------------------------------------------------------------
-Delay:               1.162ns (Levels of Logic = 0)
-  Source:            adc_01/adc_data_reg_0 (FF)
-  Destination:       adc_01/adc_data_reg_1 (FF)
-  Source Clock:      adc_01/sck falling
-  Destination Clock: adc_01/sck falling
-
-  Data Path: adc_01/adc_data_reg_0 to adc_01/adc_data_reg_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE_1:C->Q           2   0.514   0.380  adc_data_reg_0 (adc_data_reg_0)
-     FDRE_1:D                  0.268          adc_data_reg_1
-    ----------------------------------------
-    Total                      1.162ns (0.782ns logic, 0.380ns route)
-                                       (67.3% logic, 32.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'adc_01/n0073(0)_inv'
-  Clock period: 4.065ns (frequency: 245.996MHz)
-  Total number of paths / destination ports: 44 / 10
--------------------------------------------------------------------------
-Delay:               4.065ns (Levels of Logic = 2)
-  Source:            adc_01/cnt_reg_3 (FF)
-  Destination:       adc_01/cnt_reg_0 (FF)
-  Source Clock:      adc_01/n0073(0)_inv rising
-  Destination Clock: adc_01/n0073(0)_inv rising
-
-  Data Path: adc_01/cnt_reg_3 to adc_01/cnt_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:C->Q             5   0.514   0.568  cnt_reg_3 (cnt_reg_3)
-     LUT3:I2->O            1   0.612   0.426  _n0092_SW0 (N11)
-     LUT4:I1->O            5   0.612   0.538  _n0092 (_n0092)
-     FDRE:R                    0.795          cnt_reg_0
-    ----------------------------------------
-    Total                      4.065ns (2.533ns logic, 1.532ns route)
-                                       (62.3% logic, 37.7% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
@@ -3767,46 +3618,6 @@ Offset:              1.731ns (Levels of Logic = 2)
                                        (79.4% logic, 20.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_02/sck'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.188ns (Levels of Logic = 2)
-  Source:            adc_02_sdo (PAD)
-  Destination:       adc_02/adc_data_reg_0 (FF)
-  Destination Clock: adc_02/sck falling
-
-  Data Path: adc_02_sdo to adc_02/adc_data_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUFG:I->O            1   2.563   0.357  bf4 (adc_02_sdo_bf)
-     begin scope: 'adc_02:sdo'
-     FDRE_1:D                  0.268          adc_data_reg_0
-    ----------------------------------------
-    Total                      3.188ns (2.831ns logic, 0.357ns route)
-                                       (88.8% logic, 11.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_01/sck'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.188ns (Levels of Logic = 2)
-  Source:            adc_01_sdo (PAD)
-  Destination:       adc_01/adc_data_reg_0 (FF)
-  Destination Clock: adc_01/sck falling
-
-  Data Path: adc_01_sdo to adc_01/adc_data_reg_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUFG:I->O            1   2.563   0.357  bf3 (adc_01_sdo_bf)
-     begin scope: 'adc_01:sdo'
-     FDRE_1:D                  0.268          adc_data_reg_0
-    ----------------------------------------
-    Total                      3.188ns (2.831ns logic, 0.357ns route)
-                                       (88.8% logic, 11.2% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'e_tx_clk'
   Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
@@ -3828,72 +3639,35 @@ Offset:              4.040ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 13 / 13
+  Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              5.781ns (Levels of Logic = 3)
-  Source:            adc_01/en_sck (FF)
-  Destination:       adc_01_sck (PAD)
+Offset:              4.063ns (Levels of Logic = 2)
+  Source:            adc_01/CS_reg (FF)
+  Destination:       adc_01_cs (PAD)
   Source Clock:      clk rising 0.5X
 
-  Data Path: adc_01/en_sck to adc_01_sck
+  Data Path: adc_01/CS_reg to adc_01_cs
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.514   0.651  en_sck (en_sck)
-     LUT2:I0->O           13   0.612   0.836  Mmux_n007311 (sck)
-     end scope: 'adc_01:sck'
-     OBUF:I->O                 3.169          adc_01_sck_OBUF (adc_01_sck)
+     FDRSE:C->Q            2   0.514   0.380  CS_reg (CS_reg)
+     end scope: 'adc_01:CS'
+     OBUF:I->O                 3.169          adc_01_cs_OBUF (adc_01_cs)
     ----------------------------------------
-    Total                      5.781ns (4.295ns logic, 1.487ns route)
-                                       (74.3% logic, 25.7% route)
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock adc_01/n0073(0)_inv
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-adc_01/n0073(0)_inv|    4.065|         |         |         |
--------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock adc_01/sck
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-adc_01/n0073(0)_inv|         |         |    3.425|         |
-adc_01/sck         |         |         |    1.162|         |
--------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock adc_02/n0073(0)_inv
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-adc_02/n0073(0)_inv|    4.065|         |         |         |
--------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock adc_02/sck
--------------------+---------+---------+---------+---------+
-                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------+---------+---------+---------+---------+
-adc_02/n0073(0)_inv|         |         |    3.425|         |
-adc_02/sck         |         |         |    1.532|         |
--------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-adc_01/sck     |         |         |    1.121|         |
-adc_02/sck     |         |    4.606|    1.491|         |
-clk            |   12.234|    8.873|    4.941|         |
+clk            |   12.234|    9.577|    4.941|         |
 e_rx_clk       |         |    5.912|         |         |
 e_tx_clk       |    2.415|         |    1.139|         |
 ---------------+---------+---------+---------+---------+
@@ -3920,8 +3694,8 @@ e_tx_clk       |   16.271|   14.317|    5.386|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 46.00 secs
-Total CPU time to Xst completion: 46.11 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 32.73 secs
  
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
    for the specified device family. You are free to use it in order to take
@@ -3933,9 +3707,9 @@ WARNING:Xst:3152 - You have chosen to run a version of XST which is not the defa
    on the XST command line or in the XST process properties panel.
 --> 
 
-Total memory usage is 4880492 kilobytes
+Total memory usage is 4857540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  459 (   0 filtered)
-Number of infos    :   58 (   0 filtered)
+Number of warnings :  432 (   0 filtered)
+Number of infos    :   56 (   0 filtered)
 

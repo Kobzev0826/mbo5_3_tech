@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Dec 23 18:00:09 2021
+// Written by: Map P.20131013 on Sun Jan 09 22:05:54 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -19,7 +19,6 @@ COMP "LED(4)" LOCATE = SITE "C11" LEVEL 1;
 COMP "LED(5)" LOCATE = SITE "D11" LEVEL 1;
 COMP "LED(6)" LOCATE = SITE "E9" LEVEL 1;
 COMP "LED(7)" LOCATE = SITE "F9" LEVEL 1;
-COMP "adc1_data_trigger" LOCATE = SITE "D7" LEVEL 1;
 COMP "e_rx_clk" LOCATE = SITE "V3" LEVEL 1;
 PIN e_rx_clk_pin<0> = BEL "e_rx_clk" PINNAME PAD;
 PIN "e_rx_clk_pin<0>" CLOCK_DEDICATED_ROUTE;
@@ -27,10 +26,6 @@ COMP "e_tx_clk" LOCATE = SITE "T7" LEVEL 1;
 PIN e_tx_clk_pin<0> = BEL "e_tx_clk" PINNAME PAD;
 PIN "e_tx_clk_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "e_tx_en" LOCATE = SITE "P15" LEVEL 1;
-COMP "adc_01_sck" LOCATE = SITE "G9" LEVEL 1;
-COMP "adc_01_sdo" LOCATE = SITE "A8" LEVEL 1;
-COMP "adc_02_sck" LOCATE = SITE "B11" LEVEL 1;
-COMP "adc_02_sdo" LOCATE = SITE "C4" LEVEL 1;
 COMP "BTN_NORTH" LOCATE = SITE "V4" LEVEL 1;
 COMP "adc_01_cs" LOCATE = SITE "A11" LEVEL 1;
 COMP "adc_02_cs" LOCATE = SITE "E13" LEVEL 1;

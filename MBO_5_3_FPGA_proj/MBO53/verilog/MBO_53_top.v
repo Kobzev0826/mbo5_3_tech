@@ -47,7 +47,7 @@ output adc_01_cs,
 input 	adc_02_sdo,
 output 	adc_02_sck,
 output 	adc_02_cs,
-output 	adc1_data_trigger,
+//output 	adc1_data_trigger,
 //----------LED------------
 output [7:0] LED//,
 
@@ -421,7 +421,7 @@ always @(posedge DAC_CS_wire)begin
 end*/
 //-------------------------------------------------------------------------
 //--------------ADC LTC2315 block------------------------------------------
-
+/*
 adc_ltc2315 adc_01(
 .clk_100				(clk_dv),
 .reset				(~locked_2),
@@ -435,7 +435,8 @@ adc_ltc2315 adc_01(
 .adc_data_trigger	(adc2_data_trigger),
 .adc_data			(adc_01_data)
  );
-
+ */
+/*
 adc_ltc2315 adc_02(
 .clk_100				(clk_dv),
 .reset				(~locked_2),
@@ -448,7 +449,7 @@ adc_ltc2315 adc_02(
 .en					(adc_02_en),
 .adc_data_trigger	(adc1_data_trigger),
 .adc_data			(adc_02_data)
- );
+ );*/
 (*mark_debug = "true"*)reg signed [15:0] acp_add1, acp_add2;
 (*mark_debug = "true"*)reg [15:0] acp_data1_ft, acp_data2_ft;
 (*mark_debug = "true"*)reg triger_setup;
@@ -475,6 +476,30 @@ always @(posedge clk_12) begin
 end
 
 //-------------------------------------------------------------------------
+adc_imi adc_01(
+.clk_100				(clk_dv),
+.reset				(~locked_2),
+.start				(adc_01_start),
 
+//.clk_dv_new			(clk_dv_new),
+.sck					(adc_01_sck), 
+.CS					(adc_01_cs),
+
+.en					(adc_01_en),
+.adc_data			(adc_01_data)
+ );
+
+adc_imi adc_02(
+.clk_100				(clk_dv),
+.reset				(~locked_2),
+.start				(adc_01_start),
+
+//.clk_dv_new			(clk_dv_new),
+.sck					(adc_02_sck), 
+.CS					(adc_02_cs),
+
+.en					(adc_02_en),
+.adc_data			(adc_02_data)
+ );
 
 endmodule

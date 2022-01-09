@@ -502,10 +502,8 @@ NET "ethernet/input_PC_PORT[14]" TIG;
 NET "ethernet/input_PC_PORT[15]" TIG;
 
 
-NET "adc1_data_trigger" LOC = D7;
-
-
-NET "adc1_data_trigger" IOSTANDARD = LVCMOS33;
+#NET "adc1_data_trigger" LOC = D7;
+#NET "adc1_data_trigger" IOSTANDARD = LVCMOS33;
 
 
 NET "adc_02_sck" DRIVE = 12;
