@@ -1,13 +1,12 @@
 Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+Command Line: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p
 xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd
 
 Reading NGO file
-"C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.
-ngc" ...
+"E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ngc" ...
 Loading design module "ipcore_dir/sum.ngc"...
 Loading design module "ipcore_dir/fifo_25_12_5.ngc"...
 Loading design module "ipcore_dir/fifo_acp.ngc"...
@@ -50,10 +49,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   2
 
-Total memory usage is 4413504 kilobytes
+Total memory usage is 195740 kilobytes
 
 Writing NGD file "MBO_53_top.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "MBO_53_top.bld"...

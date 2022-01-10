@@ -1,3 +1,5 @@
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -80,7 +82,7 @@ def setting_convert(name,name_w):
 
 if __name__ == '__main__':
     file = 'output.dat' # входной файл дампа
-    file_w = 'output_adc_and_convolution.txt' #ыходной чистый файл с сырыми данными
-    #file_Convert(file, file_w) # конвертирование записанного файла
+    file_w = 'output_adc_test.txt' #ыходной чистый файл с сырыми данными
+    file_Convert(file, file_w) # конвертирование записанного файла
     plot_data(file_w) # отображение "чистого" файла
     #setting_convert('opora.txt','opora.hex')
