@@ -47,6 +47,7 @@ output adc_01_cs,
 input 	adc_02_sdo,
 output 	adc_02_sck,
 output 	adc_02_cs,
+//output 	adc1_data_trigger,
 //----------LED------------
 output [7:0] LED//,
 
@@ -58,6 +59,9 @@ output SPI_SCK,
 output DAC_CLR,
 input SPI_MISO*/
     );
+
+(*mark_debug = "true"*) wire adc1_data_trigger, adc2_data_trigger;
+
 	
 (*mark_debug = "true"*)wire e_tx_clk_bf,BTN_WEST_bf,BTN_NORTH_bf,SPI_MISO_bf,adc_01_sdo_bf,adc_02_sdo_bf;
 IBUFG	bf3(.I(adc_01_sdo), .O(adc_01_sdo_bf));
@@ -75,7 +79,7 @@ IBUFG	bf5(.I(e_tx_clk), 	.O(e_tx_clk_bf));
 //(*mark_debug="yes"*)wire e_mdio_bf;
 wire emdc;
 wire DAC_CS_wire;
-wire clk_12, clk_bf_2, locked_2, clk50_double_pll_cross;
+wire clk_12, clk_bf_2, locked_2, clk50_double_pll_cross,clk_dv_90;
 reg[11:0] dac_data=12'h000;
 reg dac_strob_up=1;
 assign e_mdc = emdc;
@@ -113,29 +117,29 @@ pll pll_1
 .LOCKED_OUT			(locked)
 );
 
-
-
 pll_2 pll_2
 (
-.CLKIN_IN			(clk_50), //50... MHz? ? 
+.CLKIN_IN			(clk_dv), //50... MHz? ? 
 .RST_IN				(~locked), 
 .CLKDV_OUT			(clk_12), //12.5 MHz ? 
-//.CLKIN_IBUFG_OUT	(clk_bf_2), // ?????????? 
+.CLK90_OUT				(clk_dv_90), // ?????????? 
 .CLK0_OUT			(clk50_double_pll_cross), //-_- 
 .LOCKED_OUT			(locked_2)
 );
 
+
+
 //------------------CONVOLUTION WIRE and REG------------------------------
-(*mark_debug = "true"*)wire [15:0]conv_DATA_OUT_A,conv_DATA_OUT_B;
+(*mark_debug = "true"*)wire [15:0] conv_DATA_OUT_A, conv_DATA_OUT_B;
 (*mark_debug = "true"*)wire conv_data_out_en;
-wire [15:0] SUB_TA_TB;
+wire [23:0] SUB_TA_TB;
 (*mark_debug = "true"*)wire SUB_TA_TB_en;
 //-------------------------------------------------------------------
 
 //-------------ADC WIRE AND REG------------------------------------------
 (*mark_debug = "true"*)wire [15:00] adc_01_data, adc_02_data;
 (*mark_debug = "true"*)wire [11:0] adc_01_data_true;
-wire adc_01_en;
+
 reg adc_01_cs_f,adc_01_cs_ff, adc_02_cs_f, adc_02_cs_ff;
 (*mark_debug = "true"*)reg [3:0] error_counter;
 //reg adc_01_start;
@@ -148,7 +152,7 @@ assign adc_01_data_true = adc_01_data[11:00];
 wire [15:0] eth_data_blocks1, eth_data_blocks2;
 wire [15:0] acp_data1, acp_data2;
 wire acp_data1_ena, acp_data2_ena;
-wire acp_data_clock1, acp_data_clock2;
+//wire acp_data_clock1, acp_data_clock2;
 (*mark_debug = "true"*)wire [8:0] rd_data_count_01,wr_data_count_01,rd_data_count_02,wr_data_count_02;
 (*mark_debug = "true"*)wire dac_start;
 assign dac_start = adc_01_start;
@@ -160,8 +164,8 @@ assign acp_data1 = {4'd0,adc_01_data[11:00]};
 assign acp_data2 = {4'd0,adc_02_data[11:00]};
 assign acp_data1_ena = adc_01_start;
 assign acp_data2_ena = adc_01_start;
-assign acp_data_clock1 = adc_01_cs_ff;
-assign acp_data_clock2 = adc_02_cs_ff;
+//assign acp_data_clock1 = adc_01_cs_ff;
+//assign acp_data_clock2 = adc_02_cs_ff;
 
 wire [991:0] header_parsed;//[31:0] header_parsed [30:0];
 wire header_parsed_valid;
@@ -171,21 +175,29 @@ wire eth_comp_data_ena;
 
 (*mark_debug = "true"*)reg BTN_NORTH_f, BTN_NORTH_ff;
 reg BTN_NORTH_strob=0;
-(*mark_debug = "true"*)reg [31:00]BTN_NORTH_counter;
+(*mark_debug = "true"*)reg [23:00]BTN_NORTH_counter;
 
 (*mark_debug = "true"*)reg adc_01_start, BTN_WEST_f, BTN_WEST_ff;
 reg BTN_WEST_strob=0;
-(*mark_debug = "true"*)reg [31:00]BTN_WEST_counter;
+(*mark_debug = "true"*)reg [23:00]BTN_WEST_counter;
 //----INSERT BUTTON SIGNAL-----------------------------------
  
-always @(posedge clk_2x) begin 
+ 
+wire clk_dv_n;
+
+wire adc_01_cs_st, adc_02_cs_st;
+assign adc_01_cs_st = adc_01_cs_f && (!adc_01_cs_ff);
+assign adc_02_cs_st = adc_02_cs_f && (!adc_02_cs_ff);
+assign clk_dv_n = ~clk_dv; 
+ 
+always @(posedge clk_12) begin 
 	BTN_NORTH_f <= BTN_NORTH_bf;
 	BTN_NORTH_ff <= BTN_NORTH_f;
 	if ( BTN_NORTH_f & (!BTN_NORTH_ff) &(!BTN_NORTH_strob)) begin 
 		BTN_NORTH_strob <= 1;
 	end
 	
-	if ( BTN_NORTH_strob & BTN_NORTH_counter == 20_000_000) BTN_NORTH_strob <= 0;
+	if ( BTN_NORTH_strob && BTN_NORTH_counter[23]) BTN_NORTH_strob <= 0;
 	
 	// счетчик сброса сигнала кнопки
 	if (BTN_NORTH_strob) BTN_NORTH_counter <= BTN_NORTH_counter +1;
@@ -194,40 +206,39 @@ end
 
 reg [15:0] FIX_POROG = 0;
 
+
 always @(posedge clk_12) begin //ЗАМЕНИТЬ RAM-переходом!!!
-	if (~locked_2) begin
-		FIX_POROG <= 0;
-	end else if (header_parsed_valid) begin
+	if (header_parsed_valid) begin
 		FIX_POROG <= header_parsed[991:976];
 	end
 end
 
 (*mark_debug = "true"*)wire ch_a_extremum_en;
-(*mark_debug = "true"*)wire [15:00]CH_A_EXTREMUM;
+//(*mark_debug = "true"*)wire [15:00]CH_A_EXTREMUM;
 
 (*keep_hierarchy="yes"*) 
 convolution_top convolution_top(
-.clks			(adc_01_en), // 1 MHZ
-.clkf			(clk_dv), // 50 MHz уменьшим число умножителей в 50 раз
-.clke			(clk_12), // клок эзернета для записи опары из ПК в память блока свертки
-.rst			(~locked_2), // глобальный асинхронный сброс
-
-.opora_en		(eth_comp_data_ena), // строб сопровождающий запись опоры в память
-.OPORA			(eth_comp_data), // Опора из ПК
-
-.data_in_en		(acp_data1_ena),
-.DATA_IN_A		(acp_data1), // данные с АЦП1
-.DATA_IN_B		(acp_data2), // данные с АЦП2
-
-.FIX_POROG		(FIX_POROG),
-.DATA_OUT_A		(conv_DATA_OUT_A),	//{real, image}
-.DATA_OUT_B		(conv_DATA_OUT_B),	//{real, image}
-
-.SUB_TA_TB		(SUB_TA_TB),
-.SUB_TA_TB_en	(SUB_TA_TB_en),
-
-.CH_A_EXTREMUM	(CH_A_EXTREMUM),
-.ch_a_extremum_en(ch_a_extremum_en)
+.clks				(clk_12), // 
+.clkf				(clk_dv), // 50 MHz уменьшим число умножителей в 50 раз
+.clke				(clk_12), // клок эзернета для записи опары из ПК в память блока свертки
+.rst				(~locked_2), // глобальный асинхронный сброс
+	
+.opora_en			(eth_comp_data_ena), // строб сопровождающий запись опоры в память
+.OPORA				(eth_comp_data), // Опора из ПК
+	
+.data_in_en			(adc_01_cs_st),
+.DATA_IN_A			(acp_data1), // данные с АЦП1
+.DATA_IN_B			(acp_data2), // данные с АЦП2
+	
+.FIX_POROG			(FIX_POROG),
+.DATA_OUT_A			(conv_DATA_OUT_A),	//{real, image}
+.DATA_OUT_B			(conv_DATA_OUT_B),	//{real, image}
+	
+.SUB_TA_TB			(SUB_TA_TB),
+.SUB_TA_TB_en		(SUB_TA_TB_en),
+	
+//.CH_A_EXTREMUM		(CH_A_EXTREMUM),
+.ch_a_extremum_en	(ch_a_extremum_en)
 );
 
 reg SUB_TA_TB_flag;
@@ -243,6 +254,9 @@ always @(posedge clk_12) begin
 		SUB_TA_TB_en_falsificied <= 1;
 end*/
 
+reg [23:00] SUB_TA_TB_reg;
+always @(posedge clk_dv) begin if (SUB_TA_TB_en) SUB_TA_TB_reg<=SUB_TA_TB; end
+/*
 always @(posedge clk_12) begin
 	if (SUB_TA_TB_en) begin
 		SUB_TA_TB_flag <= 1;
@@ -252,7 +266,7 @@ always @(posedge clk_12) begin
 	end else if (~was_there_a_zero && SUB_TA_TB_flag && ~e_tx_en) begin
 		was_there_a_zero <= 1;
 	end
-end
+end*/
 
 (*keep_hierarchy="yes"*) 
 Ethernet_module_upper ethernet(
@@ -279,7 +293,7 @@ Ethernet_module_upper ethernet(
 //.rdempty2(1'b0),//eth_rdempty2),
 .is_there_256_1(is_there_256_1),
 .is_there_256_2(is_there_256_2),
-.RAW_STATIC_DATA({31'b0,SUB_TA_TB_flag,SUB_TA_TB,{118{8'b0}}}), //[991:0]
+.RAW_STATIC_DATA({31'b0,1'b1,SUB_TA_TB,{117{8'b0}}}), //[991:0]
 .rdreq1(eth_rdreq1),
 .rdreq2(eth_rdreq2),
 .header_parsed(header_parsed),
@@ -316,65 +330,76 @@ always @(posedge clk_12) begin
 		BTN_WEST_strob <= 1;
 	end
 	
-	if ( BTN_WEST_strob & BTN_WEST_counter == 20_000_000) BTN_WEST_strob <= 0;
+	if ( BTN_WEST_strob && BTN_WEST_counter[23]) BTN_WEST_strob <= 0;
 	
 	// счетчик сброса сигнала кнопки
 	if (BTN_WEST_strob) BTN_WEST_counter <= BTN_WEST_counter +1;
 	else BTN_WEST_counter <= 0;
 	
-	if (adc_01_start) Led_reg <= 8'b 10101010;
+	if (adc_01_start) Led_reg <= 8'b10101010;
 	else Led_reg <= 8'd0;
-	
 end
 
-//-------------------------------------------------------------------------
-// insert imitator of ADC 
+reg [15:0] fifo_eth_in_data_1, fifo_eth_in_data_2;
+reg [15:0] CONTROL_MULT = 0;
 
-/*
-adc_imi	adc_imi_01
-(
-.clk_100	(clk_dv), //100_MHZ clock
-.reset		(~locked),
-.start		(adc_01_start), //строб начала общения с АЦП
+always @(posedge clk_12) begin
+	case (CONTROL_MULT)
+		0 : begin
+			fifo_eth_in_data_1 <= acp_data1;
+			fifo_eth_in_data_2 <= acp_data2;
+		end
+		1 : begin
+			fifo_eth_in_data_1 <= acp_data1;
+			fifo_eth_in_data_2 <= conv_DATA_OUT_A;
+		end
+		2: begin
+			fifo_eth_in_data_1 <= acp_data2;
+			fifo_eth_in_data_2 <= conv_DATA_OUT_B;
+		end
+		3: begin
+			fifo_eth_in_data_1 <= conv_DATA_OUT_A;
+			fifo_eth_in_data_2 <= conv_DATA_OUT_B;
+		end
+		default: begin
+			fifo_eth_in_data_1 <= acp_data1;
+			fifo_eth_in_data_2 <= acp_data2;
+		end
+	endcase
+	if (~locked_2) begin
+		CONTROL_MULT <= 0;
+	end else if (header_parsed_valid) begin
+		CONTROL_MULT <= header_parsed[975:960];
+	end
+end
 
-//.sck, 
-.CS			(acp_data_clock1), // фронт каждый раз когда приняли данные
-//.mdi,
-.en			(acp_data1_ena), // строб запуска фифо немного дебажный вариант 
-.adc_data	(acp_data1) //данные
-);
-*/
-//------------------------------------------------------------------
-//ADC -> Ethernet fifo 
 fifo_acp 		fifo_input_acp1(
-	.rst			(~locked_2),
-	.wr_clk			(acp_data_clock1),
-	.rd_clk			(e_tx_clk_bf),
-	.din			(acp_data1),
-	.wr_en			(acp_data1_ena),
-	.rd_en			(eth_rdreq1),
-	.dout			(eth_data_blocks1),
-	.full			(),
-	.empty			(eth_rdempty1),
-	.rd_data_count	(rd_data_count_01),//{is_there_256_1,ground1[7:0]})
-	.wr_data_count	(wr_data_count_01)
+	.rst				(~locked_2),
+	.wr_clk				(clk_12),
+	.rd_clk				(e_tx_clk_bf),
+	.din				(conv_DATA_OUT_B),
+	.wr_en				(adc_02_cs_st),
+	.rd_en				(eth_rdreq1),
+	.dout				(eth_data_blocks1),
+	.full				(),
+	.empty				(eth_rdempty1),
+	.rd_data_count		(rd_data_count_01),//{is_there_256_1,ground1[7:0]})
+	.wr_data_count		(wr_data_count_01)
 );
 
 fifo_acp 		fifo_input_acp2(
-	.rst			(~locked_2),
-	.wr_clk			(acp_data_clock2),
-	.rd_clk			(e_tx_clk_bf),
-	.din			(conv_DATA_OUT_A),
-	.wr_en			(acp_data2_ena),
-	.rd_en			(eth_rdreq2),
-	.dout			(eth_data_blocks2),
-	.full			(),
-	.empty			(eth_rdempty2),
-	.rd_data_count	(rd_data_count_02),
-	.wr_data_count	(wr_data_count_02)
+	.rst				(~locked_2),
+	.wr_clk				(clk_12),
+	.rd_clk				(e_tx_clk_bf),
+	.din				(conv_DATA_OUT_A),
+	.wr_en				(adc_01_cs_st),
+	.rd_en				(eth_rdreq2),
+	.dout				(eth_data_blocks2),
+	.full				(),
+	.empty				(eth_rdempty2),
+	.rd_data_count		(rd_data_count_02),
+	.wr_data_count		(wr_data_count_02)
 );
-
-parameter address=4'd0,command=4'b0011;
 
 /*
 dac_2624 dac 
@@ -406,37 +431,44 @@ end*/
 //--------------ADC LTC2315 block------------------------------------------
 
 adc_ltc2315 adc_01(
-.clk_100	(clk_dv),
-.reset		(~locked_2),
-.start		(adc_01_start),
+.clk_100			(clk_dv),
+.clk_90				(clk_dv_90),
+.reset				(~locked_2),
+.start				(adc_01_start),
 
-.sck		(adc_01_sck), 
-.CS			(adc_01_cs),
-.sdo		(adc_01_sdo_bf),
-.en			(adc_01_en),
-.adc_data	(adc_01_data)
+//.clk_dv_new		(clk_dv_new),
+.sck				(adc_01_sck), 
+.CS					(adc_01_cs),
+.sdo				(adc_01_sdo_bf),
+.en					(),
+.adc_data_trigger	(adc2_data_trigger),
+.adc_data			(adc_01_data)
  );
+ 
 
 adc_ltc2315 adc_02(
-.clk_100	(clk_dv),
-.reset		(~locked_2),
-.start		(adc_01_start),
+.clk_100			(clk_dv),
+.clk_90				(clk_dv_90),
+.reset				(~locked_2),
+.start				(adc_01_start),
 
-.sck		(adc_02_sck), 
-.CS			(adc_02_cs),
-.sdo		(adc_02_sdo_bf),
-.en			(adc_02_en),
-.adc_data	(adc_02_data)
+//.clk_dv_new			(clk_dv_new),
+.sck				(adc_02_sck), 
+.CS					(adc_02_cs),
+.sdo				(adc_02_sdo_bf),
+.en					(),
+.adc_data_trigger	(adc1_data_trigger),
+.adc_data			(adc_02_data)
  );
 (*mark_debug = "true"*)reg signed [15:0] acp_add1, acp_add2;
 (*mark_debug = "true"*)reg [15:0] acp_data1_ft, acp_data2_ft;
 (*mark_debug = "true"*)reg triger_setup;
 // сдвиг на 2 такта
 always @(posedge clk_12) begin 
-	adc_01_cs_f<= adc_01_cs;
-	adc_01_cs_ff <= adc_01_cs_f;
-	adc_02_cs_f<= adc_01_cs;
-	adc_02_cs_ff <= adc_01_cs_f;
+	adc_01_cs_f		<= adc_01_cs;
+	adc_01_cs_ff 	<= adc_01_cs_f;
+	adc_02_cs_f		<= adc_01_cs;
+	adc_02_cs_ff 	<= adc_01_cs_f;
 	
 	/*
 	acp_data1_ft <= acp_data1; 
@@ -454,6 +486,27 @@ always @(posedge clk_12) begin
 end
 
 //-------------------------------------------------------------------------
+/*
+adc_imi adc_01(
+.clk_25					(clk_dv),
+.reset					(~locked_2),
+.start					(adc_01_start),
 
+.sck					(adc_01_sck), 
+.CS						(adc_01_cs),
 
+.adc_data				(adc_01_data)
+ );
+
+adc_imi adc_02(
+.clk_25					(clk_dv),
+.reset					(~locked_2),
+.start					(adc_01_start),
+
+.sck					(adc_02_sck), 
+.CS						(adc_02_cs),
+
+.adc_data				(adc_02_data)
+ );
+*/
 endmodule

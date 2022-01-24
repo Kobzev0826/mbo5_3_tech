@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : xaw2verilog
 //  /   /         Filename : pll_2.v
-// /___/   /\     Timestamp : 12/18/2021 19:14:01
+// /___/   /\     Timestamp : 01/20/2022 09:07:33
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: xaw2verilog -intstyle D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/pll_2.xaw -st pll_2.v
+//Command: xaw2verilog -intstyle C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/pll_2.xaw -st pll_2.v
 //Design Name: pll_2
 //Device: xc3s500e-5fg320
 //
@@ -24,17 +24,20 @@ module pll_2(CLKIN_IN,
              RST_IN, 
              CLKDV_OUT, 
              CLK0_OUT, 
+             CLK90_OUT, 
              LOCKED_OUT);
 
     input CLKIN_IN;
     input RST_IN;
    output CLKDV_OUT;
    output CLK0_OUT;
+   output CLK90_OUT;
    output LOCKED_OUT;
    
    wire CLKDV_BUF;
    wire CLKFB_IN;
    wire CLK0_BUF;
+   wire CLK90_BUF;
    wire GND_BIT;
    
    assign GND_BIT = 0;
@@ -43,9 +46,11 @@ module pll_2(CLKIN_IN,
                          .O(CLKDV_OUT));
    BUFG  CLK0_BUFG_INST (.I(CLK0_BUF), 
                         .O(CLKFB_IN));
-   DCM_SP #( .CLK_FEEDBACK("1X"), .CLKDV_DIVIDE(4.0), .CLKFX_DIVIDE(1), 
+   BUFG  CLK90_BUFG_INST (.I(CLK90_BUF), 
+                         .O(CLK90_OUT));
+   DCM_SP #( .CLK_FEEDBACK("1X"), .CLKDV_DIVIDE(2.0), .CLKFX_DIVIDE(1), 
          .CLKFX_MULTIPLY(4), .CLKIN_DIVIDE_BY_2("FALSE"), 
-         .CLKIN_PERIOD(20.000), .CLKOUT_PHASE_SHIFT("NONE"), 
+         .CLKIN_PERIOD(40.000), .CLKOUT_PHASE_SHIFT("NONE"), 
          .DESKEW_ADJUST("SYSTEM_SYNCHRONOUS"), .DFS_FREQUENCY_MODE("LOW"), 
          .DLL_FREQUENCY_MODE("LOW"), .DUTY_CYCLE_CORRECTION("TRUE"), 
          .FACTORY_JF(16'hC080), .PHASE_SHIFT(0), .STARTUP_WAIT("FALSE") ) 
@@ -62,7 +67,7 @@ module pll_2(CLKIN_IN,
                        .CLK0(CLK0_BUF), 
                        .CLK2X(), 
                        .CLK2X180(), 
-                       .CLK90(), 
+                       .CLK90(CLK90_BUF), 
                        .CLK180(), 
                        .CLK270(), 
                        .LOCKED(LOCKED_OUT), 

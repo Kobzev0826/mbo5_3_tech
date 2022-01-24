@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Copyright (c) 2021 Xilinx, Inc.
+-- Copyright (c) 2022 Xilinx, Inc.
 -- All Rights Reserved
 -------------------------------------------------------------------------------
 --   ____  ____
@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: XILINX CORE Generator
 --  /   /         Filename   : ila_pro_0.vhd
--- /___/   /\     Timestamp  : Tue Dec 21 18:00:41 RTZ 2 (зима) 2021
+-- /___/   /\     Timestamp  : Thu Jan 20 16:47:41 RTZ 2 (зима) 2022
 -- \   \  /  \
 --  \___\/\___\
 --
@@ -22,8 +22,8 @@ ENTITY ila_pro_0 IS
   port (
     CONTROL: inout std_logic_vector(35 downto 0);
     CLK: in std_logic;
-    DATA: in std_logic_vector(15 downto 0);
-    TRIG0: in std_logic_vector(3 downto 0);
+    DATA: in std_logic_vector(60 downto 0);
+    TRIG0: in std_logic_vector(0 to 0);
     TRIG1: in std_logic_vector(0 to 0));
 END ila_pro_0;
 

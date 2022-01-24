@@ -9,44 +9,40 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Dec 22 15:28:58 2021
+Mapped Date    : Thu Jan 20 18:35:14 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    4
+Number of warnings:    2
 Logic Utilization:
-  Total Number Slice Registers:       3,847 out of   9,312   41%
-    Number used as Flip Flops:        3,846
-    Number used as Latches:               1
-  Number of 4 input LUTs:             3,929 out of   9,312   42%
+  Number of Slice Flip Flops:         3,641 out of   9,312   39%
+  Number of 4 input LUTs:             3,808 out of   9,312   40%
 Logic Distribution:
-  Number of occupied Slices:          2,853 out of   4,656   61%
-    Number of Slices containing only related logic:   2,853 out of   2,853 100%
-    Number of Slices containing unrelated logic:          0 out of   2,853   0%
+  Number of occupied Slices:          2,579 out of   4,656   55%
+    Number of Slices containing only related logic:   2,579 out of   2,579 100%
+    Number of Slices containing unrelated logic:          0 out of   2,579   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,199 out of   9,312   45%
-    Number used as logic:             3,557
-    Number used as a route-thru:        270
-    Number used as Shift registers:     372
+  Total Number of 4 input LUTs:       4,007 out of   9,312   43%
+    Number used as logic:             3,530
+    Number used as a route-thru:        199
+    Number used as Shift registers:     278
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 32 out of     232   13%
     IOB Flip Flops:                       6
-  Number of RAMB16s:                     10 out of      20   50%
-  Number of BUFGMUXs:                    10 out of      24   41%
+  Number of RAMB16s:                      9 out of      20   45%
+  Number of BUFGMUXs:                     7 out of      24   29%
   Number of DCMs:                         2 out of       4   50%
-  Number of BSCANs:                       1 out of       1  100%
   Number of MULT18X18SIOs:                8 out of      20   40%
 
-  Number of RPM macros:           13
-Average Fanout of Non-Clock Nets:                2.92
+Average Fanout of Non-Clock Nets:                2.96
 
-Peak Memory Usage:  4469 MB
-Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   5 secs 
+Peak Memory Usage:  4468 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   4 secs 
 
 NOTES:
 
@@ -91,15 +87,8 @@ WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
    symbol "pll_1/physical_group_CLKDV_OUT/CLKDV_BUFG_INST" (output
    signal=clk_dv) has a mix of clock and non-clock loads. The non-clock loads
    are:
-   Pin I1 of adc_02/Mmux_n005111
-   Pin I1 of adc_01/Mmux_n005111
-WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
-   symbol "adc_01/physical_group_en/en_reg_BUFG" (output signal=adc_01_en) has a
-   mix of clock and non-clock loads. The non-clock loads are:
-   Pin D of U_ila_pro_0/U0/I_DQ.G_DW[12].U_DQ
-WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
+   Pin I1 of adc_02/Mmux_n007511
+   Pin I1 of adc_01/Mmux_n007511
 WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 
@@ -132,14 +121,17 @@ INFO:Map:110 - output buffer 'e_tx_d_1_OBUF' driving design level port
 INFO:Map:110 - output buffer 'e_tx_d_0_OBUF' driving design level port
    'e_tx_d(0)' is being pushed into module 'ethernet' to enable I/O register
    usage. The buffer has been renamed as 'ethernet/e_tx_d_0_OBUF'.
-INFO:LIT:243 - Logical network CH_A_EXTREMUM(15) has no load.
-INFO:LIT:395 - The above info message is repeated 1070 more times for the
+INFO:Map:110 - output buffer 'e_tx_en_OBUF' driving design level port 'e_tx_en'
+   is being pushed into module 'ethernet' to enable I/O register usage. The
+   buffer has been renamed as 'ethernet/e_tx_en_OBUF'.
+INFO:LIT:243 - Logical network clk_2x has no load.
+INFO:LIT:395 - The above info message is repeated 1033 more times for the
    following (max. 5 shown):
-   CH_A_EXTREMUM(14),
-   CH_A_EXTREMUM(13),
-   CH_A_EXTREMUM(12),
-   CH_A_EXTREMUM(11),
-   CH_A_EXTREMUM(10)
+   rd_data_count_01(7),
+   rd_data_count_01(6),
+   rd_data_count_01(5),
+   rd_data_count_01(4),
+   rd_data_count_01(3)
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:MapLib:159 - Net Timing constraints on signal CLKIN_IN are pushed forward
@@ -154,9 +146,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 202 block(s) removed
-  71 block(s) optimized away
-1187 signal(s) removed
+ 252 block(s) removed
+  51 block(s) optimized away
+1236 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -171,56 +163,7 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "conv_DATA_OUT_B(15)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(14)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(13)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(12)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(11)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(10)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(9)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(8)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(7)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(6)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(5)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(4)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(3)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(2)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(1)" is loadless and has been removed.
-The signal "conv_DATA_OUT_B(0)" is loadless and has been removed.
-The signal "CH_A_EXTREMUM(15)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_15" (FF) removed.
-The signal "CH_A_EXTREMUM(14)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_14" (FF) removed.
-The signal "CH_A_EXTREMUM(13)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_13" (FF) removed.
-The signal "CH_A_EXTREMUM(12)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_12" (FF) removed.
-The signal "CH_A_EXTREMUM(11)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_11" (FF) removed.
-The signal "CH_A_EXTREMUM(10)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_10" (FF) removed.
-The signal "CH_A_EXTREMUM(9)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_9" (FF) removed.
-The signal "CH_A_EXTREMUM(8)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_8" (FF) removed.
-The signal "CH_A_EXTREMUM(7)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_7" (FF) removed.
-The signal "CH_A_EXTREMUM(6)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_6" (FF) removed.
-The signal "CH_A_EXTREMUM(5)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_5" (FF) removed.
-The signal "CH_A_EXTREMUM(4)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_4" (FF) removed.
-The signal "CH_A_EXTREMUM(3)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_3" (FF) removed.
-The signal "CH_A_EXTREMUM(2)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_2" (FF) removed.
-The signal "CH_A_EXTREMUM(1)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_1" (FF) removed.
-The signal "CH_A_EXTREMUM(0)" is loadless and has been removed.
- Loadless block "convolution_top/CH_A_EXTREMUM_0" (FF) removed.
-The signal "ch_a_extremum_en" is loadless and has been removed.
- Loadless block "convolution_top/ch_a_extremum_en" (FF) removed.
+The signal "SUB_TA_TB_en" is loadless and has been removed.
 The signal "rd_data_count_01(7)" is loadless and has been removed.
  Loadless block
 "fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
@@ -807,150 +750,482 @@ The signal "eth_rdempty2" is loadless and has been removed.
  Loadless block
 "fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
 .rd/gras.rsts/ram_empty_i" (FF) removed.
-The signal "adc_01_data(15)" is loadless and has been removed.
- Loadless block "adc_01/adc_data_reg_15" (SFF) removed.
-  The signal "adc_01_data(14)" is loadless and has been removed.
-The signal "adc_01_data(13)" is loadless and has been removed.
 The signal "adc_01_data(12)" is loadless and has been removed.
-The signal "adc_02_data(15)" is loadless and has been removed.
- Loadless block "adc_02/adc_data_reg_15" (SFF) removed.
-  The signal "adc_02_data(14)" is loadless and has been removed.
-The signal "adc_02_data(13)" is loadless and has been removed.
-The signal "adc_02_data(12)" is loadless and has been removed.
-The signal "icon_control0<10>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<6>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
-removed.
-The signal "icon_control0<11>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<7>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
-removed.
-The signal "icon_control0<15>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<11>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
-removed.
-The signal "icon_control0<16>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<12>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
-removed.
-The signal "icon_control0<22>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
-removed.
-The signal "icon_control0<17>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<13>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
-removed.
-The signal "icon_control0<23>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<3>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[3].U_LUT" (ROM)
-removed.
-The signal "icon_control0<18>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<14>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
-removed.
-The signal "icon_control0<24>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
-removed.
-The signal "icon_control0<30>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
-removed.
-The signal "icon_control0<25>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
-removed.
-The signal "icon_control0<31>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
-removed.
-The signal "icon_control0<26>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
-removed.
-The signal "icon_control0<32>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
-removed.
-The signal "icon_control0<7>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
-removed.
-The signal "icon_control0<27>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
-removed.
-The signal "icon_control0<33>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
-removed.
-The signal "icon_control0<28>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
-removed.
-The signal "icon_control0<29>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
-removed.
-The signal "icon_control0<34>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
-removed.
-The signal "icon_control0<35>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
-removed.
-The signal
-"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
-.wr/gwas.wsts/ram_full_i" is loadless and has been removed.
- Loadless block
-"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
-.wr/gwas.wsts/ram_full_i" (FF) removed.
-The signal
-"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
-.wr/gwas.wsts/ram_full_i" is loadless and has been removed.
- Loadless block
-"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
-.wr/gwas.wsts/ram_full_i" (FF) removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
-removed.
-Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
-removed.
-Loadless block "U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
-Loadless block "U_ila_pro_0/U0/I_YES_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
+The signal "adc2_data_trigger" is loadless and has been removed.
+ Loadless block "adc_01/adc_data_trigger" (FF) removed.
+  The signal "adc_01/CS_reg_st" is loadless and has been removed.
+   Loadless block "adc_01/CS_reg_st1" (ROM) removed.
+    The signal "adc_01/CS_reg_2ft" is loadless and has been removed.
+     Loadless block "adc_01/CS_reg_2ft" (FF) removed.
+      The signal "adc_01/Mshreg_CS_reg_2ft" is loadless and has been removed.
+    The signal "adc_01/CS_reg_3ft" is loadless and has been removed.
+     Loadless block "adc_01/CS_reg_3ft" (FF) removed.
+  The signal "adc_01/adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o" is
+loadless and has been removed.
+   Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(11)_inv_
+INV_0" (BUF) removed.
+    The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(11)" is
+loadless and has been removed.
+     Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(11)"
+(MUX) removed.
+      The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(10)" is
+loadless and has been removed.
+       Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(10)"
+(MUX) removed.
+        The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(9)" is
+loadless and has been removed.
+         Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(9)"
+(MUX) removed.
+          The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(8)" is
+loadless and has been removed.
+           Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(8)"
+(MUX) removed.
+            The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(7)" is
+loadless and has been removed.
+             Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(7)"
+(MUX) removed.
+              The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(6)" is
+loadless and has been removed.
+               Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(6)"
+(MUX) removed.
+                The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(5)" is
+loadless and has been removed.
+                 Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(5)"
+(MUX) removed.
+                  The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(4)" is
+loadless and has been removed.
+                   Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(4)"
+(MUX) removed.
+                    The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(3)" is
+loadless and has been removed.
+                     Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(3)"
+(MUX) removed.
+                      The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(2)" is
+loadless and has been removed.
+                       Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(2)"
+(MUX) removed.
+                        The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(1)" is
+loadless and has been removed.
+                         Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(1)"
+(MUX) removed.
+                          The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(0)" is
+loadless and has been removed.
+                           Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(0)"
+(MUX) removed.
+                            The signal "adc_01/N0" is loadless and has been removed.
+                             Loadless block "adc_01/XST_VCC" (ONE) removed.
+                            The signal "adc_01/adc_data_reg_prev(0)" is loadless and has been removed.
+                             Loadless block "adc_01/adc_data_reg_prev_0" (FF) removed.
+                            The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(0)" is
+loadless and has been removed.
+                             Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(0)"
 (ROM) removed.
+                          The signal "adc_01/adc_data_reg_prev(1)" is loadless and has been removed.
+                           Loadless block "adc_01/adc_data_reg_prev_1" (FF) removed.
+                          The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(1)" is
+loadless and has been removed.
+                           Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(1)"
+(ROM) removed.
+                        The signal "adc_01/adc_data_reg_prev(2)" is loadless and has been removed.
+                         Loadless block "adc_01/adc_data_reg_prev_2" (FF) removed.
+                        The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(2)" is
+loadless and has been removed.
+                         Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(2)"
+(ROM) removed.
+                      The signal "adc_01/adc_data_reg_prev(3)" is loadless and has been removed.
+                       Loadless block "adc_01/adc_data_reg_prev_3" (FF) removed.
+                      The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(3)" is
+loadless and has been removed.
+                       Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(3)"
+(ROM) removed.
+                    The signal "adc_01/adc_data_reg_prev(4)" is loadless and has been removed.
+                     Loadless block "adc_01/adc_data_reg_prev_4" (FF) removed.
+                    The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(4)" is
+loadless and has been removed.
+                     Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(4)"
+(ROM) removed.
+                  The signal "adc_01/adc_data_reg_prev(5)" is loadless and has been removed.
+                   Loadless block "adc_01/adc_data_reg_prev_5" (FF) removed.
+                    The signal "adc_01/adc_data_reg[11]_GND_33_o_add_35_OUT(5)" is loadless and has
+been removed.
+                     Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(5)11_INV_0"
+(BUF) removed.
+                  The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(5)" is
+loadless and has been removed.
+                   Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(5)"
+(ROM) removed.
+                The signal "adc_01/adc_data_reg_prev(6)" is loadless and has been removed.
+                 Loadless block "adc_01/adc_data_reg_prev_6" (FF) removed.
+                  The signal "adc_01/adc_data_reg[11]_GND_33_o_add_35_OUT(6)" is loadless and has
+been removed.
+                   Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(6)11" (ROM)
+removed.
+                The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(6)" is
+loadless and has been removed.
+                 Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(6)"
+(ROM) removed.
+              The signal "adc_01/adc_data_reg_prev(7)" is loadless and has been removed.
+               Loadless block "adc_01/adc_data_reg_prev_7" (FF) removed.
+                The signal "adc_01/adc_data_reg[11]_GND_33_o_add_35_OUT(7)" is loadless and has
+been removed.
+                 Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(7)11" (ROM)
+removed.
+              The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(7)" is
+loadless and has been removed.
+               Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(7)"
+(ROM) removed.
+            The signal "adc_01/adc_data_reg_prev(8)" is loadless and has been removed.
+             Loadless block "adc_01/adc_data_reg_prev_8" (FF) removed.
+              The signal "adc_01/adc_data_reg[11]_GND_33_o_add_35_OUT(8)" is loadless and has
+been removed.
+               Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(8)11" (ROM)
+removed.
+            The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(8)" is
+loadless and has been removed.
+             Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(8)"
+(ROM) removed.
+          The signal "adc_01/adc_data_reg_prev(9)" is loadless and has been removed.
+           Loadless block "adc_01/adc_data_reg_prev_9" (FF) removed.
+            The signal "adc_01/adc_data_reg[11]_GND_33_o_add_35_OUT(9)" is loadless and has
+been removed.
+             Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(9)11" (ROM)
+removed.
+              The signal "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(8)11" is
+loadless and has been removed.
+               Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(8)111"
+(ROM) removed.
+              The signal "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)11" is
+loadless and has been removed.
+               Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)111"
+(ROM) removed.
+          The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(9)" is
+loadless and has been removed.
+           Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(9)"
+(ROM) removed.
+        The signal "adc_01/adc_data_reg_prev(10)" is loadless and has been removed.
+         Loadless block "adc_01/adc_data_reg_prev_10" (FF) removed.
+          The signal "adc_01/adc_data_reg[11]_GND_33_o_add_35_OUT(10)" is loadless and has
+been removed.
+           Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)1" (ROM)
+removed.
+            The signal "adc_01/N20" is loadless and has been removed.
+             Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)1_SW1"
+(ROM) removed.
+        The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(10)" is
+loadless and has been removed.
+         Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(10)"
+(ROM) removed.
+      The signal "adc_01/adc_data_reg_prev(11)" is loadless and has been removed.
+       Loadless block "adc_01/adc_data_reg_prev_11" (FF) removed.
+        The signal "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)1_f5" is
+loadless and has been removed.
+         Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)1_f5"
+(MUX) removed.
+          The signal "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)11" is
+loadless and has been removed.
+           Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)12"
+(ROM) removed.
+          The signal "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)1" is
+loadless and has been removed.
+           Loadless block "adc_01/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)11"
+(ROM) removed.
+      The signal
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(11)" is
+loadless and has been removed.
+       Loadless block
+"adc_01/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(11)"
+(ROM) removed.
+The signal "adc_02_data(12)" is loadless and has been removed.
+The signal "adc1_data_trigger" is loadless and has been removed.
+ Loadless block "adc_02/adc_data_trigger" (FF) removed.
+  The signal "adc_02/CS_reg_st" is loadless and has been removed.
+   Loadless block "adc_02/CS_reg_st1" (ROM) removed.
+    The signal "adc_02/CS_reg_2ft" is loadless and has been removed.
+     Loadless block "adc_02/CS_reg_2ft" (FF) removed.
+      The signal "adc_02/Mshreg_CS_reg_2ft" is loadless and has been removed.
+    The signal "adc_02/CS_reg_3ft" is loadless and has been removed.
+     Loadless block "adc_02/CS_reg_3ft" (FF) removed.
+  The signal "adc_02/adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o" is
+loadless and has been removed.
+   Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(11)_inv_
+INV_0" (BUF) removed.
+    The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(11)" is
+loadless and has been removed.
+     Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(11)"
+(MUX) removed.
+      The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(10)" is
+loadless and has been removed.
+       Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(10)"
+(MUX) removed.
+        The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(9)" is
+loadless and has been removed.
+         Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(9)"
+(MUX) removed.
+          The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(8)" is
+loadless and has been removed.
+           Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(8)"
+(MUX) removed.
+            The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(7)" is
+loadless and has been removed.
+             Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(7)"
+(MUX) removed.
+              The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(6)" is
+loadless and has been removed.
+               Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(6)"
+(MUX) removed.
+                The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(5)" is
+loadless and has been removed.
+                 Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(5)"
+(MUX) removed.
+                  The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(4)" is
+loadless and has been removed.
+                   Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(4)"
+(MUX) removed.
+                    The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(3)" is
+loadless and has been removed.
+                     Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(3)"
+(MUX) removed.
+                      The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(2)" is
+loadless and has been removed.
+                       Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(2)"
+(MUX) removed.
+                        The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(1)" is
+loadless and has been removed.
+                         Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(1)"
+(MUX) removed.
+                          The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(0)" is
+loadless and has been removed.
+                           Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_cy(0)"
+(MUX) removed.
+                            The signal "adc_02/N0" is loadless and has been removed.
+                             Loadless block "adc_02/XST_VCC" (ONE) removed.
+                            The signal "adc_02/adc_data_reg_prev(0)" is loadless and has been removed.
+                             Loadless block "adc_02/adc_data_reg_prev_0" (FF) removed.
+                            The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(0)" is
+loadless and has been removed.
+                             Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(0)"
+(ROM) removed.
+                          The signal "adc_02/adc_data_reg_prev(1)" is loadless and has been removed.
+                           Loadless block "adc_02/adc_data_reg_prev_1" (FF) removed.
+                          The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(1)" is
+loadless and has been removed.
+                           Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(1)"
+(ROM) removed.
+                        The signal "adc_02/adc_data_reg_prev(2)" is loadless and has been removed.
+                         Loadless block "adc_02/adc_data_reg_prev_2" (FF) removed.
+                        The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(2)" is
+loadless and has been removed.
+                         Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(2)"
+(ROM) removed.
+                      The signal "adc_02/adc_data_reg_prev(3)" is loadless and has been removed.
+                       Loadless block "adc_02/adc_data_reg_prev_3" (FF) removed.
+                      The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(3)" is
+loadless and has been removed.
+                       Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(3)"
+(ROM) removed.
+                    The signal "adc_02/adc_data_reg_prev(4)" is loadless and has been removed.
+                     Loadless block "adc_02/adc_data_reg_prev_4" (FF) removed.
+                    The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(4)" is
+loadless and has been removed.
+                     Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(4)"
+(ROM) removed.
+                  The signal "adc_02/adc_data_reg_prev(5)" is loadless and has been removed.
+                   Loadless block "adc_02/adc_data_reg_prev_5" (FF) removed.
+                    The signal "adc_02/adc_data_reg[11]_GND_33_o_add_35_OUT(5)" is loadless and has
+been removed.
+                     Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(5)11_INV_0"
+(BUF) removed.
+                  The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(5)" is
+loadless and has been removed.
+                   Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(5)"
+(ROM) removed.
+                The signal "adc_02/adc_data_reg_prev(6)" is loadless and has been removed.
+                 Loadless block "adc_02/adc_data_reg_prev_6" (FF) removed.
+                  The signal "adc_02/adc_data_reg[11]_GND_33_o_add_35_OUT(6)" is loadless and has
+been removed.
+                   Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(6)11" (ROM)
+removed.
+                The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(6)" is
+loadless and has been removed.
+                 Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(6)"
+(ROM) removed.
+              The signal "adc_02/adc_data_reg_prev(7)" is loadless and has been removed.
+               Loadless block "adc_02/adc_data_reg_prev_7" (FF) removed.
+                The signal "adc_02/adc_data_reg[11]_GND_33_o_add_35_OUT(7)" is loadless and has
+been removed.
+                 Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(7)11" (ROM)
+removed.
+              The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(7)" is
+loadless and has been removed.
+               Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(7)"
+(ROM) removed.
+            The signal "adc_02/adc_data_reg_prev(8)" is loadless and has been removed.
+             Loadless block "adc_02/adc_data_reg_prev_8" (FF) removed.
+              The signal "adc_02/adc_data_reg[11]_GND_33_o_add_35_OUT(8)" is loadless and has
+been removed.
+               Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(8)11" (ROM)
+removed.
+            The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(8)" is
+loadless and has been removed.
+             Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(8)"
+(ROM) removed.
+          The signal "adc_02/adc_data_reg_prev(9)" is loadless and has been removed.
+           Loadless block "adc_02/adc_data_reg_prev_9" (FF) removed.
+            The signal "adc_02/adc_data_reg[11]_GND_33_o_add_35_OUT(9)" is loadless and has
+been removed.
+             Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(9)11" (ROM)
+removed.
+              The signal "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(8)11" is
+loadless and has been removed.
+               Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(8)111"
+(ROM) removed.
+              The signal "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)11" is
+loadless and has been removed.
+               Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)111"
+(ROM) removed.
+          The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(9)" is
+loadless and has been removed.
+           Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(9)"
+(ROM) removed.
+        The signal "adc_02/adc_data_reg_prev(10)" is loadless and has been removed.
+         Loadless block "adc_02/adc_data_reg_prev_10" (FF) removed.
+          The signal "adc_02/adc_data_reg[11]_GND_33_o_add_35_OUT(10)" is loadless and has
+been removed.
+           Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)1" (ROM)
+removed.
+            The signal "adc_02/N20" is loadless and has been removed.
+             Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(10)1_SW1"
+(ROM) removed.
+        The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(10)" is
+loadless and has been removed.
+         Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(10)"
+(ROM) removed.
+      The signal "adc_02/adc_data_reg_prev(11)" is loadless and has been removed.
+       Loadless block "adc_02/adc_data_reg_prev_11" (FF) removed.
+        The signal "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)1_f5" is
+loadless and has been removed.
+         Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)1_f5"
+(MUX) removed.
+          The signal "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)11" is
+loadless and has been removed.
+           Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)12"
+(ROM) removed.
+          The signal "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)1" is
+loadless and has been removed.
+           Loadless block "adc_02/Madd_adc_data_reg[11]_GND_33_o_add_35_OUT_xor(11)11"
+(ROM) removed.
+      The signal
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(11)" is
+loadless and has been removed.
+       Loadless block
+"adc_02/Mcompar_adc_data_reg_prev[11]_adc_data_reg[11]_LessThan_37_o_lut(11)"
+(ROM) removed.
+The signal
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" (FF) removed.
+The signal
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" is loadless and has been removed.
+ Loadless block
+"fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
+.wr/gwas.wsts/ram_full_i" (FF) removed.
 The signal "ethernet/header_parsed(975)" is sourceless and has been removed.
 The signal "ethernet/header_parsed(974)" is sourceless and has been removed.
 The signal "ethernet/header_parsed(973)" is sourceless and has been removed.
@@ -2064,16 +2339,18 @@ The signal
 "ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
 .gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_lut<5>" is sourceless and has been
 removed.
-The signal "convolution_top/data_read_cnt(0)" is sourceless and has been
-removed.
-The signal "convolution_top/data_write_cnt(0)" is sourceless and has been
-removed.
+The signal "pll_1/CLK2X_BUF" is sourceless and has been removed.
+ Sourceless block "pll_1/CLK2X_BUFG_INST" (CKBUF) removed.
+  The signal "clk_2x" is sourceless and has been removed.
 The signal
 "convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
 The signal
 "convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i<0>" is sourceless and has been removed.
 The signal
 "convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<0>" is sourceless and has been
@@ -2089,18 +2366,28 @@ The signal
 ync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
 The signal
 "convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i<0>" is sourceless and has been removed.
+The signal
+"convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_sub0000<0>" is sourceless and has been
 removed.
  Sourceless block
 "convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0" (FF) removed.
+The signal "adc_02/Mshreg_CS_reg_2ft/CE" is sourceless and has been removed.
+The signal "adc_01/Mshreg_CS_reg_2ft/CE" is sourceless and has been removed.
 
 The trimmed logic reported below is either:
    1. part of a cycle
    2. part of disabled logic
    3. a side-effect of other trimmed logic
 
+The signal "N1" is unused and has been removed.
 The signal "LED_6_OBUF" is unused and has been removed.
+Unused block "adc_01/Mshreg_CS_reg_2ft/SRL16E" (SRLC16E) removed.
+Unused block "adc_01/Mshreg_CS_reg_2ft/VCC" (ONE) removed.
+Unused block "adc_02/Mshreg_CS_reg_2ft/SRL16E" (SRLC16E) removed.
+Unused block "adc_02/Mshreg_CS_reg_2ft/VCC" (ONE) removed.
 Unused block
 "convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
 ync_fifo.gl0.rd/gras.grdc1.rdc/Msub_rd_dc_i_sub0000_xor<0>11" (ROM) removed.
@@ -2144,18 +2431,14 @@ Unused block "ethernet/fifo_input/XST_VCC" (ONE) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-GND 		U_icon_pro/XST_GND
-VCC 		U_icon_pro/XST_VCC
-LUT4 		U_ila_pro_0/U0/I_YES_D.U_ILA/U_STAT/F_SSTAT[12].I_STAT.U_STAT
-   optimized to 0
-GND 		U_ila_pro_0/XST_GND
-VCC 		U_ila_pro_0/XST_VCC
 GND 		XST_GND
 VCC 		XST_VCC
 GND 		fifo_input_acp1/XST_GND
 VCC 		fifo_input_acp1/XST_VCC
 GND 		fifo_input_acp2/XST_GND
 VCC 		fifo_input_acp2/XST_VCC
+GND 		adc_01/XST_GND
+GND 		adc_02/XST_GND
 GND 		convolution_top/CONV_BUFFER/XST_GND
 GND 		convolution_top/DATA_BUFFER/XST_GND
 GND 		convolution_top/XST_GND
@@ -2245,24 +2528,6 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCMPCE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WHCMPCE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_WLCMPCE_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_SCNT_CMP_I_SRL16.
-U_GAND_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_HCMP_I_SRL16
-.U_GAND_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL_U_CAP_ADDRGEN_U_WCNT_LCMP_I_SRL16
-.U_GAND_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_VARX.U_match/I_
-SRL16.U_VAR_SRL16_MSET
-U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I
-_SRL16.U_GANDX_SRL16_MSET
 
 Section 8 - Guide Report
 ------------------------

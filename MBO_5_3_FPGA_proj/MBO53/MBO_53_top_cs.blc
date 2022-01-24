@@ -2,13 +2,16 @@ Release 14.7 ngcbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: ngcbuild.exe -dd
-D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo -sd ipcore_dir -p
-xc3s500e-fg320-5 -i
-D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.ngc
-D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top_cs.ngc
+C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/_ngo
+-sd ipcore_dir -p xc3s500e-fg320-5 -i
+C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\MBO_
+53_top.ngc
+C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\MBO_
+53_top_cs.ngc
 
 Reading NGO file
-"D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ngc" ...
+"C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO
+_53_top.ngc" ...
 Loading design module "ipcore_dir/sum.ngc"...
 Loading design module "ipcore_dir/fifo_25_12_5.ngc"...
 Loading design module "ipcore_dir/MEM_OPORA_LCHM.ngc"...
@@ -31,12 +34,14 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4413520 kilobytes
+Total memory usage is 4413480 kilobytes
 
 Writing NGC file
-"D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_cs.ngc" ...
-Total REAL time to NGCBUILD completion:  5 sec
-Total CPU time to NGCBUILD completion:   5 sec
+"C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO
+_53_top_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  8 sec
+Total CPU time to NGCBUILD completion:   8 sec
 
 Writing NGCBUILD log file
-"D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_cs.blc"...
+"C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO
+_53_top_cs.blc"...

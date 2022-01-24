@@ -5,85 +5,130 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 209: Port <arg fmt="%s" index="1">data_read_cnt</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 220: Port <arg fmt="%s" index="1">ch_b_extremum_en</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 82: Assignment to <arg fmt="%s" index="1">DAC_CS</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 433: Port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 110: Assignment to <arg fmt="%s" index="1">clk_bf</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 449: Port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 124: Assignment to <arg fmt="%s" index="1">clk50_double_pll_cross</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 86: Assignment to <arg fmt="%s" index="1">DAC_CS</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 94: Port <arg fmt="%s" index="1">full</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 114: Assignment to <arg fmt="%s" index="1">clk_bf</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 110: Port <arg fmt="%s" index="1">full</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 115: Assignment to <arg fmt="%s" index="1">clk_50</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_IN.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">FIFO_CONV_IN</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 126: Assignment to <arg fmt="%s" index="1">clk50_double_pll_cross</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 102: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 165: Assignment to <arg fmt="%s" index="1">acp_data1_ena</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_OUT.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">FIFO_CONV_OUT</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 166: Assignment to <arg fmt="%s" index="1">acp_data2_ena</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 118: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 191: Assignment to <arg fmt="%s" index="1">clk_dv_n</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 128: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 203: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 155: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 90: Port <arg fmt="%s" index="1">full</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v" Line 161: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 106: Port <arg fmt="%s" index="1">full</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\MEM_OPORA_LCHM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">MEM_OPORA_LCHM</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_IN.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">FIFO_CONV_IN</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 35: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 98: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 38: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addrb</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\FIFO_CONV_OUT.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">FIFO_CONV_OUT</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 52: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 114: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_25_12_5</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 124: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 108: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 150: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 216: Assignment to <arg fmt="%s" index="1">flag_is_input_data_type_two</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\MEM_OPORA_LCHM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">MEM_OPORA_LCHM</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to <arg fmt="%s" index="1">input_ip_verified_ft</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 35: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_acp</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 38: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addrb</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 42: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_block.v" Line 52: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 55: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 232: Assignment to <arg fmt="%s" index="1">strob_en_a_st</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 428: Assignment to <arg fmt="%s" index="1">adc_02_en</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 252: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 435: Assignment to <arg fmt="%s" index="1">adc_02_cs_f</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 258: Assignment to <arg fmt="%s" index="1">SUB_TA_TB_reg</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 76: Net &lt;<arg fmt="%s" index="1">emdc</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_25_12_5</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 108: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v" Line 216: Assignment to <arg fmt="%s" index="1">flag_is_input_data_type_two</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to <arg fmt="%s" index="1">input_ip_verified_ft</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 336: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 346: Assignment to <arg fmt="%s" index="1">fifo_eth_in_data_1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_acp</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 48: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 61: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 97: Assignment to <arg fmt="%s" index="1">sck_n</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 103: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 80: Net &lt;<arg fmt="%s" index="1">emdc</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 433: Input port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 449: Input port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk_dv_new</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">adc_01</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk_dv_new</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">adc_02</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">e_rx_er</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -95,52 +140,52 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">e_col</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">118</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">data_read_cnt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">120</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">data_write_cnt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">220</arg>: Output port &lt;<arg fmt="%s" index="3">SUB_TA_TB_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">DATA_OUT_B</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">220</arg>: Output port &lt;<arg fmt="%s" index="3">ch_a_extremum_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">CH_A_EXTREMUM</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">220</arg>: Output port &lt;<arg fmt="%s" index="3">ch_b_extremum_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">CH_B_EXTREMUM</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">ch_a_extremum_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">ch_b_extremum_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">376</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">349</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">390</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">349</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">390</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">349</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">390</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">363</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">433</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_01</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">363</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">433</arg>: Output port &lt;<arg fmt="%s" index="3">adc_data_trigger</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_01</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">363</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">449</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">420</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">449</arg>: Output port &lt;<arg fmt="%s" index="3">adc_data_trigger</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">emdc</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -155,34 +200,40 @@
 <msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">BTN_WEST_f</arg> may hinder XST clustering optimizations.
 </msg>
 
-<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">SUB_TA_TB_en</arg> may hinder XST clustering optimizations.
-</msg>
-
 <msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">adc_01_data_true</arg> may hinder XST clustering optimizations.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATA_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATA_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">94</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATA_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DATA_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">110</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CONV_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">106</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CONV_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\D3_PROCESSING\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">110</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CONV_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v</arg>&quot; line <arg fmt="%s" index="2">106</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CONV_BUFFER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SUB_TA_TB_en</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ch_a_extremum_en</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ch_b_extremum_en</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_main</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Xilinx\git\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">is_type_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">oh</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">is_type_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">oh</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">BOARD_MAC</arg>&lt;<arg fmt="%d" index="2">47</arg>:<arg fmt="%d" index="3">47</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">dataHolder</arg>&gt;.
@@ -237,6 +288,12 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">BOARD_IP</arg>&lt;<arg fmt="%d" index="2">3</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">dataHolder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_dv_new</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 <msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">MBO_53_top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">rd_data_count_01(8)</arg> and <arg fmt="%s" index="3">is_there_256_1</arg> <arg fmt="%s" index="4">is_there_256_1</arg> signal will be lost.
@@ -738,6 +795,42 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Shift(42)_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">aa</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_01</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_01</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_01</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_01</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_02</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_02</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_02</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_02</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_ltc2315</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_ltc2315</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_ltc2315</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">adc_data_reg_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_ltc2315</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Shift(59)_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ARPanswerFormer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1284,45 +1377,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Led_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MBO_53_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Led_reg_3&gt; &lt;Led_reg_5&gt; &lt;Led_reg_7&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">name</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">convolution_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">name2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">convolution_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chA_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chA_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chA_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chA_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chA_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chB_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chB_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chB_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chB_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">acc_chB_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">t_acc_4ft</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;name1&gt; &lt;name3&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Shift(38)_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">aa</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -4319,52 +4373,10 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_991</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">en_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_02</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CH_B_EXTREMUM_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">convolution_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">en_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">adc_01</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">blk00000001</arg> : the following signal(s) form a combinatorial loop: </msg>

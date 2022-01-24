@@ -245,10 +245,11 @@ always @(posedge clock) begin
 		counter 	<= 0;
 		crc_on 		<= 0;
 		crc_on_ft 	<= 0;
-		flag1		<=0;
-		flag2		<=0;
-		rdreq1		<=0;
-		rdreq2		<=0;
+		flag1		<= 0;
+		flag2		<= 0;
+		rdreq1		<= 0;
+		rdreq2		<= 0;
+		//counter_for_sends <= 0;
 	end else
 	if (is_there_256_1 & is_there_256_2 & ~flag1 & ena) begin
 		flag1 		<= 1;
@@ -282,9 +283,12 @@ always @(posedge clock) begin
 				dataout[3:0] <= Shift[0][3:0];
 			end
 		end
+		//if (counter == 352) begin
+		//	rdreq1 <= 1;
+		//end
 		if (counter == 353) begin
 			flag2 	 <= 1;
-			rdreq1 	 <= 1;
+			//rdreq1 	 <= 0;
 			EOC1 	 <= 0;
 			counter1 <= 0;
 		end //?????????? ?????????? ????????????? ????? ??????
@@ -292,41 +296,42 @@ always @(posedge clock) begin
 	if (flag2) begin //???????? ???????????? ????? ?????? (?????? ?? ??? ?? fifo)
 		state <= ~state;
 		counter <= counter + 1'b1;
-		if (~EOC1) counter1 <= counter1 + 1'b1;
+		if (~EOC1) begin
+		counter1 <= counter1 + 1'b1;
 		case (counter1)
 			0: 	begin 
-					rdreq1 <= 0; 
 					dataout[3:0] <= data_blocks1[11:8]; 
 					Shift[0][7:0] <= data_blocks1[15:8]; 
 				end
 			1: 	dataout[3:0] <= data_blocks1[15:12];
 			2:	begin 
 					dataout[3:0] <= data_blocks1[3:0]; 
-					Shift[0][7:0] <= data_blocks1[7:0]; 
+					Shift[0][7:0] <= data_blocks1[7:0];
+					rdreq2 <= 1;
 				end
 			3: 	begin 
 					dataout[3:0] <= data_blocks1[7:4]; 
-					rdreq2 <= 1; 
+					rdreq2 <= 0; 
 				end
 			4: 	begin 
-					rdreq2 <= 0; 
 					dataout[3:0] <= data_blocks2[11:8]; 
 					Shift[0][7:0] <= data_blocks2[15:8];
 				end                     
 			5: 	dataout[3:0] <= data_blocks2[15:12];
 			6: 	begin                   
 					dataout[3:0] <= data_blocks2[3:0]; 
-					Shift[0][7:0] <= data_blocks2[7:0]; 
+					Shift[0][7:0] <= data_blocks2[7:0];
+					rdreq1 <= 1;
 				end                     
 			7: 	begin                   
-					dataout[3:0] <= data_blocks2[7:4]; 
-					if (counter!=2410) begin //?????????? ???????????? ????? ?????? 
-						rdreq1 <= 1;
-					end else begin
+					dataout[3:0] <= data_blocks2[7:4];
+					rdreq1 <= 0;
+					if (counter>=2395) begin //?????????? ???????????? ????? ?????? 
 						EOC1 <= 1;
 					end
 				end
 		endcase
+		end
 
 		case(counter)	//???????? CRC-32 ??????
 			2401: begin crc_on_ft <= 0; counter_for_sends <= counter_for_sends + 1'b1; end

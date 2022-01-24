@@ -7,43 +7,50 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MBO_53_top C:|Users|kva-0|Documents|FPGA|Ivel|MBO53_tech_ver16|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/convolution_top - convolution_top</ClosedNode>
+         <ClosedNode>/MBO_53_top C:|Users|kva-0|Documents|FPGA|Ivel|MBO53_tech_ver16|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper</ClosedNode>
+         <ClosedNode>/MBO_53_top C:|Users|kva-0|Documents|FPGA|Ivel|MBO53_tech_ver16|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/mpr - messagePartialReporter</ClosedNode>
+         <ClosedNode>/MBO_53_top C:|Users|kva-0|Documents|GitHub|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/aa - ARPanswerFormer</ClosedNode>
+         <ClosedNode>/MBO_53_top C:|Users|kva-0|Documents|GitHub|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/ih - ipHeader</ClosedNode>
+         <ClosedNode>/MBO_53_top C:|Users|kva-0|Documents|GitHub|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/mpr - messagePartialReporter</ClosedNode>
+         <ClosedNode>/MBO_53_top C:|Users|user|Documents|Projects|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper</ClosedNode>
          <ClosedNode>/MBO_53_top D:|Xilinx|git|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper</ClosedNode>
          <ClosedNode>/MBO_53_top E:|Xilinx|projects|MBO-5_3|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper</ClosedNode>
          <ClosedNode>/MBO_53_top E:|Xilinx|projects|MBO-5_3|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/aa - ARPanswerFormer</ClosedNode>
          <ClosedNode>/MBO_53_top E:|Xilinx|projects|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/convolution_top - convolution_top/CONV_CORE - convolution_block</ClosedNode>
-         <ClosedNode>/MBO_53_top E:|Xilinx|projects|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper</ClosedNode>
          <ClosedNode>/MBO_53_top E:|Xilinx|projects|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/aa - ARPanswerFormer</ClosedNode>
          <ClosedNode>/MBO_53_top E:|Xilinx|projects|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/ih - ipHeader</ClosedNode>
          <ClosedNode>/MBO_53_top E:|Xilinx|projects|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v/ethernet - Ethernet_module_upper/mpr - messagePartialReporter</ClosedNode>
+         <ClosedNode>/MBO_53_top F:|documents|git|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|MBO_53_top.v</ClosedNode>
+         <ClosedNode>/convolution_top F:|documents|git|mbo5_3_tech|MBO_5_3_FPGA_proj|MBO53|verilog|D3_PROCESSING|convolution_top.v</ClosedNode>
          <ClosedNode>/ethernet_top E:|Xilinx|projects|MBO-5_3|MBO_5_3_FPGA_proj|MBO53|verilog|ethernet_top.v</ClosedNode>
          <ClosedNode>/ethernet_top E:|Xilinx|projects|MBO-5_3|MBO_5_3_FPGA_proj|MBO53|verilog|ethernet|ethernet_top.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MBO_53_top (D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v)</SelectedItem>
+         <SelectedItem>MBO_53_top (C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b20000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MBO_53_top (D:/Xilinx/git/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v)</CurrentItem>
+      <CurrentItem>MBO_53_top (C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Utilities</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000180000000010000000100000000000000000000000064ffffffff000000810000000000000001000001800000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000118000000010000000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Utilities</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -52,42 +59,38 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000f00000000100000000000000240000000100000000000000660000000100000000000001580000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>MBO_53_top.ucf</CurrentItem>
+      <CurrentItem>adc_imi.v</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>work</ClosedNode>
       </ClosedNodes>
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>CORE Generator</ClosedNode>
-         <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000118000000010000000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
@@ -100,7 +103,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000118000000010000000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -124,7 +127,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000180000000010000000100000000000000000000000064ffffffff000000810000000000000001000001800000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000118000000010000000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -141,7 +144,7 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>MBO_53_top.v (E:/Xilinx/projects/MBO-5_3/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v)</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000001790000011f01000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001710000013501000000050100000001</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XAW" guiview="Process" >
       <ClosedNodes>
@@ -152,23 +155,22 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000118000000010000000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>CORE Generator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CORE Generator</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000118000000010000000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>CORE Generator</CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
