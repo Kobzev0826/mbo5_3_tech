@@ -2921,54 +2921,6 @@
 <msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">clk_2x</arg> with clock driver <arg fmt="%s" index="2">pll_1/CLK2X_BUFG_INST</arg> drives no clock pins
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(975)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(974)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(973)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(972)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(971)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(970)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(969)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(968)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(967)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(966)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(965)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(964)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(963)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(962)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(961)</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(960)</arg>&apos; has no driver
-</msg>
-
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ethernet/header_parsed(959)</arg>&apos; has no driver
 </msg>
 

@@ -38,7 +38,7 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">clk_2x</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1033</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">1017</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">rd_data_count_01(7),
 rd_data_count_01(6),
 rd_data_count_01(5),

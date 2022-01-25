@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Jan 20 18:35:18 2022
+// Written by: Map P.20131013 on Tue Jan 25 14:37:08 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -85,37 +85,58 @@ PIN
         = BEL
         "fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram.A"
         PINNAME CLKA;
-TIMEGRP WR_CLK = BEL "FIX_POROG_0" BEL "FIX_POROG_1" BEL "FIX_POROG_2" BEL
-        "FIX_POROG_3" BEL "FIX_POROG_4" BEL "FIX_POROG_5" BEL "FIX_POROG_6"
-        BEL "FIX_POROG_7" BEL "FIX_POROG_8" BEL "FIX_POROG_9" BEL
-        "FIX_POROG_10" BEL "FIX_POROG_11" BEL "FIX_POROG_12" BEL
-        "FIX_POROG_13" BEL "FIX_POROG_14" BEL "FIX_POROG_15" BEL "BTN_WEST_f"
-        BEL "BTN_NORTH_f" BEL "BTN_NORTH_strob" BEL "BTN_WEST_strob" BEL
-        "adc_01_start" BEL "BTN_NORTH_ff" BEL "BTN_WEST_ff" BEL
-        "BTN_NORTH_counter_0" BEL "BTN_NORTH_counter_1" BEL
-        "BTN_NORTH_counter_2" BEL "BTN_NORTH_counter_3" BEL
-        "BTN_NORTH_counter_4" BEL "BTN_NORTH_counter_5" BEL
-        "BTN_NORTH_counter_6" BEL "BTN_NORTH_counter_7" BEL
-        "BTN_NORTH_counter_8" BEL "BTN_NORTH_counter_9" BEL
-        "BTN_NORTH_counter_10" BEL "BTN_NORTH_counter_11" BEL
-        "BTN_NORTH_counter_12" BEL "BTN_NORTH_counter_13" BEL
-        "BTN_NORTH_counter_14" BEL "BTN_NORTH_counter_15" BEL
-        "BTN_NORTH_counter_16" BEL "BTN_NORTH_counter_17" BEL
-        "BTN_NORTH_counter_18" BEL "BTN_NORTH_counter_19" BEL
-        "BTN_NORTH_counter_20" BEL "BTN_NORTH_counter_21" BEL
-        "BTN_NORTH_counter_22" BEL "BTN_NORTH_counter_23" BEL
-        "BTN_WEST_counter_0" BEL "BTN_WEST_counter_1" BEL "BTN_WEST_counter_2"
-        BEL "BTN_WEST_counter_3" BEL "BTN_WEST_counter_4" BEL
-        "BTN_WEST_counter_5" BEL "BTN_WEST_counter_6" BEL "BTN_WEST_counter_7"
-        BEL "BTN_WEST_counter_8" BEL "BTN_WEST_counter_9" BEL
-        "BTN_WEST_counter_10" BEL "BTN_WEST_counter_11" BEL
-        "BTN_WEST_counter_12" BEL "BTN_WEST_counter_13" BEL
-        "BTN_WEST_counter_14" BEL "BTN_WEST_counter_15" BEL
-        "BTN_WEST_counter_16" BEL "BTN_WEST_counter_17" BEL
-        "BTN_WEST_counter_18" BEL "BTN_WEST_counter_19" BEL
-        "BTN_WEST_counter_20" BEL "BTN_WEST_counter_21" BEL
-        "BTN_WEST_counter_22" BEL "BTN_WEST_counter_23" BEL "Led_reg_1" BEL
-        "adc_01_cs_f" BEL "adc_01_cs_ff" BEL
+TIMEGRP WR_CLK = BEL "CONTROL_MULT_0" BEL "CONTROL_MULT_1" BEL
+        "CONTROL_MULT_2" BEL "CONTROL_MULT_3" BEL "CONTROL_MULT_4" BEL
+        "CONTROL_MULT_5" BEL "CONTROL_MULT_6" BEL "CONTROL_MULT_7" BEL
+        "CONTROL_MULT_8" BEL "CONTROL_MULT_9" BEL "CONTROL_MULT_10" BEL
+        "CONTROL_MULT_11" BEL "CONTROL_MULT_12" BEL "CONTROL_MULT_13" BEL
+        "CONTROL_MULT_14" BEL "CONTROL_MULT_15" BEL "FIX_POROG_0" BEL
+        "FIX_POROG_1" BEL "FIX_POROG_2" BEL "FIX_POROG_3" BEL "FIX_POROG_4"
+        BEL "FIX_POROG_5" BEL "FIX_POROG_6" BEL "FIX_POROG_7" BEL
+        "FIX_POROG_8" BEL "FIX_POROG_9" BEL "FIX_POROG_10" BEL "FIX_POROG_11"
+        BEL "FIX_POROG_12" BEL "FIX_POROG_13" BEL "FIX_POROG_14" BEL
+        "FIX_POROG_15" BEL "BTN_WEST_f" BEL "BTN_NORTH_f" BEL
+        "BTN_NORTH_strob" BEL "BTN_WEST_strob" BEL "adc_01_start" BEL
+        "BTN_WEST_ff" BEL "BTN_NORTH_ff" BEL "BTN_NORTH_counter_0" BEL
+        "BTN_NORTH_counter_1" BEL "BTN_NORTH_counter_2" BEL
+        "BTN_NORTH_counter_3" BEL "BTN_NORTH_counter_4" BEL
+        "BTN_NORTH_counter_5" BEL "BTN_NORTH_counter_6" BEL
+        "BTN_NORTH_counter_7" BEL "BTN_NORTH_counter_8" BEL
+        "BTN_NORTH_counter_9" BEL "BTN_NORTH_counter_10" BEL
+        "BTN_NORTH_counter_11" BEL "BTN_NORTH_counter_12" BEL
+        "BTN_NORTH_counter_13" BEL "BTN_NORTH_counter_14" BEL
+        "BTN_NORTH_counter_15" BEL "BTN_NORTH_counter_16" BEL
+        "BTN_NORTH_counter_17" BEL "BTN_NORTH_counter_18" BEL
+        "BTN_NORTH_counter_19" BEL "BTN_NORTH_counter_20" BEL
+        "BTN_NORTH_counter_21" BEL "BTN_NORTH_counter_22" BEL
+        "BTN_NORTH_counter_23" BEL "BTN_WEST_counter_0" BEL
+        "BTN_WEST_counter_1" BEL "BTN_WEST_counter_2" BEL "BTN_WEST_counter_3"
+        BEL "BTN_WEST_counter_4" BEL "BTN_WEST_counter_5" BEL
+        "BTN_WEST_counter_6" BEL "BTN_WEST_counter_7" BEL "BTN_WEST_counter_8"
+        BEL "BTN_WEST_counter_9" BEL "BTN_WEST_counter_10" BEL
+        "BTN_WEST_counter_11" BEL "BTN_WEST_counter_12" BEL
+        "BTN_WEST_counter_13" BEL "BTN_WEST_counter_14" BEL
+        "BTN_WEST_counter_15" BEL "BTN_WEST_counter_16" BEL
+        "BTN_WEST_counter_17" BEL "BTN_WEST_counter_18" BEL
+        "BTN_WEST_counter_19" BEL "BTN_WEST_counter_20" BEL
+        "BTN_WEST_counter_21" BEL "BTN_WEST_counter_22" BEL
+        "BTN_WEST_counter_23" BEL "Led_reg_1" BEL "adc_01_cs_f" BEL
+        "adc_01_cs_ff" BEL "fifo_eth_in_data_1_0" BEL "fifo_eth_in_data_1_1"
+        BEL "fifo_eth_in_data_1_2" BEL "fifo_eth_in_data_1_3" BEL
+        "fifo_eth_in_data_1_4" BEL "fifo_eth_in_data_1_5" BEL
+        "fifo_eth_in_data_1_6" BEL "fifo_eth_in_data_1_7" BEL
+        "fifo_eth_in_data_1_8" BEL "fifo_eth_in_data_1_9" BEL
+        "fifo_eth_in_data_1_10" BEL "fifo_eth_in_data_1_11" BEL
+        "fifo_eth_in_data_1_12" BEL "fifo_eth_in_data_1_13" BEL
+        "fifo_eth_in_data_1_14" BEL "fifo_eth_in_data_1_15" BEL
+        "fifo_eth_in_data_2_0" BEL "fifo_eth_in_data_2_1" BEL
+        "fifo_eth_in_data_2_2" BEL "fifo_eth_in_data_2_3" BEL
+        "fifo_eth_in_data_2_4" BEL "fifo_eth_in_data_2_5" BEL
+        "fifo_eth_in_data_2_6" BEL "fifo_eth_in_data_2_7" BEL
+        "fifo_eth_in_data_2_8" BEL "fifo_eth_in_data_2_9" BEL
+        "fifo_eth_in_data_2_10" BEL "fifo_eth_in_data_2_11" BEL
+        "fifo_eth_in_data_2_12" BEL "fifo_eth_in_data_2_13" BEL
+        "fifo_eth_in_data_2_14" BEL "fifo_eth_in_data_2_15" BEL
         "ethernet/input_fifo_rdempty_delay_0" BEL
         "ethernet/preambula_ended_short" BEL "ethernet/preambula_ended" BEL
         "ethernet/counter_for_prolonging_data_validation_0" BEL
@@ -264,6 +285,14 @@ TIMEGRP WR_CLK = BEL "FIX_POROG_0" BEL "FIX_POROG_1" BEL "FIX_POROG_2" BEL
         "ethernet/oh/is_type_1" BEL "ethernet/oh/counter_2" BEL
         "ethernet/oh/counter_0" BEL "ethernet/oh/counter_1" BEL
         "ethernet/odto/EOP" BEL "ethernet/odto/header_ena" BEL
+        "ethernet/odto/header_0_0" BEL "ethernet/odto/header_0_1" BEL
+        "ethernet/odto/header_0_2" BEL "ethernet/odto/header_0_3" BEL
+        "ethernet/odto/header_0_4" BEL "ethernet/odto/header_0_5" BEL
+        "ethernet/odto/header_0_6" BEL "ethernet/odto/header_0_7" BEL
+        "ethernet/odto/header_0_8" BEL "ethernet/odto/header_0_9" BEL
+        "ethernet/odto/header_0_10" BEL "ethernet/odto/header_0_11" BEL
+        "ethernet/odto/header_0_12" BEL "ethernet/odto/header_0_13" BEL
+        "ethernet/odto/header_0_14" BEL "ethernet/odto/header_0_15" BEL
         "ethernet/odto/header_0_16" BEL "ethernet/odto/header_0_17" BEL
         "ethernet/odto/header_0_18" BEL "ethernet/odto/header_0_19" BEL
         "ethernet/odto/header_0_20" BEL "ethernet/odto/header_0_21" BEL
@@ -2347,6 +2376,38 @@ PIN ethernet/uh/BOARD_PORT_14_pins<3> = BEL "ethernet/uh/BOARD_PORT_14"
         PINNAME Q;
 PIN ethernet/uh/BOARD_PORT_15_pins<3> = BEL "ethernet/uh/BOARD_PORT_15"
         PINNAME Q;
+PIN ethernet/odto/header_0_0_pins<3> = BEL "ethernet/odto/header_0_0" PINNAME
+        Q;
+PIN ethernet/odto/header_0_1_pins<3> = BEL "ethernet/odto/header_0_1" PINNAME
+        Q;
+PIN ethernet/odto/header_0_2_pins<3> = BEL "ethernet/odto/header_0_2" PINNAME
+        Q;
+PIN ethernet/odto/header_0_3_pins<3> = BEL "ethernet/odto/header_0_3" PINNAME
+        Q;
+PIN ethernet/odto/header_0_4_pins<3> = BEL "ethernet/odto/header_0_4" PINNAME
+        Q;
+PIN ethernet/odto/header_0_5_pins<3> = BEL "ethernet/odto/header_0_5" PINNAME
+        Q;
+PIN ethernet/odto/header_0_6_pins<3> = BEL "ethernet/odto/header_0_6" PINNAME
+        Q;
+PIN ethernet/odto/header_0_7_pins<3> = BEL "ethernet/odto/header_0_7" PINNAME
+        Q;
+PIN ethernet/odto/header_0_8_pins<3> = BEL "ethernet/odto/header_0_8" PINNAME
+        Q;
+PIN ethernet/odto/header_0_9_pins<3> = BEL "ethernet/odto/header_0_9" PINNAME
+        Q;
+PIN ethernet/odto/header_0_10_pins<3> = BEL "ethernet/odto/header_0_10"
+        PINNAME Q;
+PIN ethernet/odto/header_0_11_pins<3> = BEL "ethernet/odto/header_0_11"
+        PINNAME Q;
+PIN ethernet/odto/header_0_12_pins<3> = BEL "ethernet/odto/header_0_12"
+        PINNAME Q;
+PIN ethernet/odto/header_0_13_pins<3> = BEL "ethernet/odto/header_0_13"
+        PINNAME Q;
+PIN ethernet/odto/header_0_14_pins<3> = BEL "ethernet/odto/header_0_14"
+        PINNAME Q;
+PIN ethernet/odto/header_0_15_pins<3> = BEL "ethernet/odto/header_0_15"
+        PINNAME Q;
 PIN ethernet/odto/header_0_16_pins<3> = BEL "ethernet/odto/header_0_16"
         PINNAME Q;
 PIN ethernet/odto/header_0_17_pins<3> = BEL "ethernet/odto/header_0_17"
@@ -2716,6 +2777,22 @@ PIN "ethernet/uh/BOARD_PORT_12_pins<3>" TIG;
 PIN "ethernet/uh/BOARD_PORT_13_pins<3>" TIG;
 PIN "ethernet/uh/BOARD_PORT_14_pins<3>" TIG;
 PIN "ethernet/uh/BOARD_PORT_15_pins<3>" TIG;
+PIN "ethernet/odto/header_0_0_pins<3>" TIG;
+PIN "ethernet/odto/header_0_1_pins<3>" TIG;
+PIN "ethernet/odto/header_0_2_pins<3>" TIG;
+PIN "ethernet/odto/header_0_3_pins<3>" TIG;
+PIN "ethernet/odto/header_0_4_pins<3>" TIG;
+PIN "ethernet/odto/header_0_5_pins<3>" TIG;
+PIN "ethernet/odto/header_0_6_pins<3>" TIG;
+PIN "ethernet/odto/header_0_7_pins<3>" TIG;
+PIN "ethernet/odto/header_0_8_pins<3>" TIG;
+PIN "ethernet/odto/header_0_9_pins<3>" TIG;
+PIN "ethernet/odto/header_0_10_pins<3>" TIG;
+PIN "ethernet/odto/header_0_11_pins<3>" TIG;
+PIN "ethernet/odto/header_0_12_pins<3>" TIG;
+PIN "ethernet/odto/header_0_13_pins<3>" TIG;
+PIN "ethernet/odto/header_0_14_pins<3>" TIG;
+PIN "ethernet/odto/header_0_15_pins<3>" TIG;
 PIN "ethernet/odto/header_0_16_pins<3>" TIG;
 PIN "ethernet/odto/header_0_17_pins<3>" TIG;
 PIN "ethernet/odto/header_0_18_pins<3>" TIG;

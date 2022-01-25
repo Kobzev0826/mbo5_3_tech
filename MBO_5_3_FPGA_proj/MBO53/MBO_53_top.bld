@@ -4881,22 +4881,6 @@ Done...
 Checking expanded design ...
 WARNING:NgdBuild:478 - clock net clk_2x with clock driver pll_1/CLK2X_BUFG_INST
    drives no clock pins
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(975)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(974)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(973)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(972)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(971)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(970)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(969)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(968)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(967)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(966)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(965)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(964)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(963)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(962)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(961)' has no driver
-WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(960)' has no driver
 WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(959)' has no driver
 WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(958)' has no driver
 WARNING:NgdBuild:452 - logical net 'ethernet/header_parsed(957)' has no driver
@@ -5867,12 +5851,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 1945
+  Number of warnings: 1929
 
-Total memory usage is 4445904 kilobytes
+Total memory usage is 4445928 kilobytes
 
 Writing NGD file "MBO_53_top.ngd" ...
-Total REAL time to NGDBUILD completion:  23 sec
+Total REAL time to NGDBUILD completion:  24 sec
 Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "MBO_53_top.bld"...

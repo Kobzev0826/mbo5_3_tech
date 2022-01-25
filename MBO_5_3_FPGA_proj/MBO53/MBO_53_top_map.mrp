@@ -9,22 +9,22 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Jan 20 18:35:14 2022
+Mapped Date    : Tue Jan 25 14:37:03 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:         3,641 out of   9,312   39%
-  Number of 4 input LUTs:             3,808 out of   9,312   40%
+  Number of Slice Flip Flops:         3,705 out of   9,312   39%
+  Number of 4 input LUTs:             3,875 out of   9,312   41%
 Logic Distribution:
-  Number of occupied Slices:          2,579 out of   4,656   55%
-    Number of Slices containing only related logic:   2,579 out of   2,579 100%
-    Number of Slices containing unrelated logic:          0 out of   2,579   0%
+  Number of occupied Slices:          2,634 out of   4,656   56%
+    Number of Slices containing only related logic:   2,634 out of   2,634 100%
+    Number of Slices containing unrelated logic:          0 out of   2,634   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,007 out of   9,312   43%
-    Number used as logic:             3,530
+  Total Number of 4 input LUTs:       4,074 out of   9,312   43%
+    Number used as logic:             3,597
     Number used as a route-thru:        199
     Number used as Shift registers:     278
 
@@ -38,10 +38,10 @@ Logic Distribution:
   Number of DCMs:                         2 out of       4   50%
   Number of MULT18X18SIOs:                8 out of      20   40%
 
-Average Fanout of Non-Clock Nets:                2.96
+Average Fanout of Non-Clock Nets:                2.99
 
 Peak Memory Usage:  4468 MB
-Total REAL time to MAP completion:  4 secs 
+Total REAL time to MAP completion:  6 secs 
 Total CPU time to MAP completion:   4 secs 
 
 NOTES:
@@ -125,7 +125,7 @@ INFO:Map:110 - output buffer 'e_tx_en_OBUF' driving design level port 'e_tx_en'
    is being pushed into module 'ethernet' to enable I/O register usage. The
    buffer has been renamed as 'ethernet/e_tx_en_OBUF'.
 INFO:LIT:243 - Logical network clk_2x has no load.
-INFO:LIT:395 - The above info message is repeated 1033 more times for the
+INFO:LIT:395 - The above info message is repeated 1017 more times for the
    following (max. 5 shown):
    rd_data_count_01(7),
    rd_data_count_01(6),
@@ -148,7 +148,7 @@ Section 4 - Removed Logic Summary
 ---------------------------------
  252 block(s) removed
   51 block(s) optimized away
-1236 signal(s) removed
+1220 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -1226,22 +1226,6 @@ The signal
  Loadless block
 "fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0
 .wr/gwas.wsts/ram_full_i" (FF) removed.
-The signal "ethernet/header_parsed(975)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(974)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(973)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(972)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(971)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(970)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(969)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(968)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(967)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(966)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(965)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(964)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(963)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(962)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(961)" is sourceless and has been removed.
-The signal "ethernet/header_parsed(960)" is sourceless and has been removed.
 The signal "ethernet/header_parsed(959)" is sourceless and has been removed.
 The signal "ethernet/header_parsed(958)" is sourceless and has been removed.
 The signal "ethernet/header_parsed(957)" is sourceless and has been removed.

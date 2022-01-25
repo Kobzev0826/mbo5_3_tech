@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.47 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.47 secs
  
 --> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
@@ -281,7 +281,6 @@ Elaborating module <CRC32>.
 
 Elaborating module <messagePartialReporter>.
 WARNING:HDLCompiler:413 - "C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 336: Result of 25-bit expression is truncated to fit in 24-bit target.
-WARNING:HDLCompiler:1127 - "C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 346: Assignment to fifo_eth_in_data_1 ignored, since the identifier is never used
 
 Elaborating module <fifo_acp>.
 WARNING:HDLCompiler:1499 - "C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module <fifo_acp> remains a black box.
@@ -377,18 +376,24 @@ WARNING:Xst:653 - Signal <emdc> is used but never assigned. This sourceless sign
     Found 1-bit register for signal <BTN_WEST_strob>.
     Found 24-bit register for signal <BTN_WEST_counter>.
     Found 8-bit register for signal <LED>.
+    Found 16-bit register for signal <fifo_eth_in_data_1>.
+    Found 16-bit register for signal <fifo_eth_in_data_2>.
+    Found 16-bit register for signal <CONTROL_MULT>.
     Found 1-bit register for signal <adc_01_cs_f>.
     Found 1-bit register for signal <adc_01_cs_ff>.
     Found 1-bit register for signal <BTN_NORTH_f>.
     Found 24-bit adder for signal <BTN_NORTH_counter[23]_GND_1_o_add_5_OUT> created at line 203.
     Found 24-bit adder for signal <BTN_WEST_counter[23]_GND_1_o_add_15_OUT> created at line 336.
+    Found 16-bit 3-to-1 multiplexer for signal <_n0118> created at line 347.
+    Found 16-bit 3-to-1 multiplexer for signal <_n0128> created at line 347.
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_NORTH_counter may hinder XST clustering optimizations.
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_WEST_counter may hinder XST clustering optimizations.
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal BTN_WEST_f may hinder XST clustering optimizations.
 INFO:Xst:2774 - HDL ADVISOR - MARK_DEBUG property attached to signal adc_01_data_true may hinder XST clustering optimizations.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  81 D-type flip-flop(s).
+	inferred 129 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
 Unit <MBO_53_top> synthesized.
 
 Synthesizing Unit <pll>.
@@ -2756,11 +2761,11 @@ Macro Statistics
  4-bit adder                                           : 2
  5-bit adder                                           : 12
  8-bit adder                                           : 3
-# Registers                                            : 1951
+# Registers                                            : 1954
  1-bit register                                        : 1864
  10-bit register                                       : 2
  12-bit register                                       : 2
- 16-bit register                                       : 16
+ 16-bit register                                       : 19
  2-bit register                                        : 1
  24-bit register                                       : 6
  3-bit register                                        : 2
@@ -2788,9 +2793,10 @@ Macro Statistics
  5-bit comparator greater                              : 6
  8-bit comparator equal                                : 8
  8-bit comparator greater                              : 6
-# Multiplexers                                         : 2683
+# Multiplexers                                         : 2687
  1-bit 2-to-1 multiplexer                              : 2642
- 16-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 16-bit 3-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 5
  2-bit 4-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 2
@@ -3108,8 +3114,8 @@ Macro Statistics
  8-bit up counter                                      : 3
 # Accumulators                                         : 2
  39-bit up loadable accumulator                        : 2
-# Registers                                            : 7250
- Flip-Flops                                            : 7250
+# Registers                                            : 7298
+ Flip-Flops                                            : 7298
 # Comparators                                          : 40
  10-bit comparator greater                             : 3
  12-bit comparator greater                             : 2
@@ -3124,9 +3130,10 @@ Macro Statistics
  5-bit comparator greater                              : 6
  8-bit comparator equal                                : 8
  8-bit comparator greater                              : 6
-# Multiplexers                                         : 2688
+# Multiplexers                                         : 2692
  1-bit 2-to-1 multiplexer                              : 2656
- 16-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 16-bit 3-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 5
  2-bit 4-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 2
@@ -3387,22 +3394,6 @@ WARNING:Xst:1710 - FF/Latch <Shift(41)_6> (without init value) has a constant va
 WARNING:Xst:1710 - FF/Latch <Shift(41)_7> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Shift(41)_5> (without init value) has a constant value of 0 in block <aa>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <is_type_2> of sequential type is unconnected in block <oh>.
-WARNING:Xst:2677 - Node <header_0_0> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_1> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_2> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_3> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_4> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_5> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_6> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_7> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_8> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_9> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_10> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_11> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_12> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_13> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_14> of sequential type is unconnected in block <odto>.
-WARNING:Xst:2677 - Node <header_0_15> of sequential type is unconnected in block <odto>.
 WARNING:Xst:2677 - Node <header_0_32> of sequential type is unconnected in block <odto>.
 WARNING:Xst:2677 - Node <header_0_33> of sequential type is unconnected in block <odto>.
 WARNING:Xst:2677 - Node <header_0_34> of sequential type is unconnected in block <odto>.
@@ -4367,17 +4358,17 @@ WARNING:Xst:2677 - Node <en_reg> of sequential type is unconnected in block <adc
 WARNING:Xst:2677 - Node <en_reg> of sequential type is unconnected in block <adc_01>.
 
 Mapping all equations...
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000039, sig0000003a, sig00000021, sig00000041, sig0000003d, sig00000038, ipsum31/c_out, sig00000022, sig00000035, mpr/ipp7_anti_loop_AND_339_o, sig0000003c, sig00000037, sig0000003f, sig00000034, sig0000003b, sig0000003e, sig00000040, sig00000033, sig00000036, mpr/ipp7, ipsum31/c_in.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000029, mpr/ipp6_anti_loop_AND_338_o, sig00000035, sig00000034, sig0000003e, sig00000037, sig0000003b, sig00000041, sig00000021, sig00000048, ipsum31/b<15>, mpr/ipsum6r(15), sig0000003f, sig0000003c, sig00000022, sig00000033, sig0000003d, ipsum22/s<15>, sig00000036, sig00000039, sig00000038, ipsum22/c_in, sig0000003a, sig00000017, ipsum22/c_out, sig00000029, sig00000040, mpr/ipp6.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000039, sig00000041, mpr/ipp4_anti_loop_AND_336_o, mpr/ipsum6r(14), sig00000047, ipsum22/s<14>, sig0000003c, sig00000035, sig00000016, ipsum31/b<14>, sig00000040, sig0000003d, sig0000003e, ipsum14/s<14>, mpr/ipsum4r(14), sig00000036, ipsum14/c_out, sig0000003a, sig00000028, sig00000028, ipsum14/c_in, sig0000003b, sig00000022, sig00000033, sig00000038, sig0000003f, sig00000021, sig00000016, sig00000034, sig00000028, ipsum22/b<14>, mpr/ipp4, sig00000037, sig00000047.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000046, mpr/ipp3_anti_loop_AND_335_o, sig00000033, sig0000003e, sig0000003d, sig00000027, ipsum22/a<13>, sig0000003a, sig00000046, sig00000005, sig00000039, sig00000015, ipsum13/c_out, ipsum13/c_in, sig00000021, sig00000037, mpr/ipp3, ipsum13/s<13>, mpr/ipsum6r(13), sig00000027, ipsum31/b<13>, sig0000003f, sig0000003c, sig0000003b, sig00000041, sig00000034, mpr/ipsum3r(13), sig00000040, sig00000035, sig00000022, ipsum22/s<13>, sig00000027, sig00000036, sig00000038.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: ipsum21/s<12>, sig00000037, sig0000003f, sig00000034, sig00000026, sig0000003b, sig00000036, sig00000022, mpr/ipp5, sig00000045, sig00000040, sig00000038, sig0000003a, sig0000003e, ipsum21/c_in, sig00000026, sig00000035, sig00000033, mpr/ipsum5r(12), sig00000004, sig00000039, ipsum21/c_out, sig0000003c, sig00000021, sig0000003d, mpr/ipp5_anti_loop_AND_337_o, sig00000041, ipsum31/a<12>.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: ipsum21/b<11>, sig00000022, sig00000025, sig00000044, mpr/ipsum5r(11), sig00000025, sig00000021, sig00000033, ipsum21/s<11>, sig00000013, ipsum12/c_in, sig00000039, sig00000003, sig00000037, sig0000003a, sig00000034, sig00000038, sig0000003b, sig00000044, mpr/ipp2_anti_loop_AND_334_o, sig00000036, ipsum12/c_out, ipsum31/a<11>, mpr/ipsum2r(11), sig00000040, mpr/ipp2, sig0000003f, sig00000035, sig00000025, sig0000003d, sig0000003c, ipsum12/s<11>, sig0000003e, sig00000041.
-WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003d, sig00000038, ipsum21/s<10>, sig00000033, sig00000043, sig00000034, sig00000040, sig00000043, sig0000003c, sig00000037, sig00000035, ipsum21/a<10>, ipsum11/c_in, sig0000003f, mpr/ipp1, sig0000003b, sig00000039, sig00000036, sig00000022, sig00000002, ipsum11/c_out, mpr/ipp1_anti_loop_AND_333_o, sig00000024, mpr/ipsum5r(10), sig0000003e, sig0000003a, sig00000021, sig00000041, sig00000002, sig00000024, ipsum11/s<10>, ipsum31/a<10>, mpr/ipsum1r(10), sig00000024.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003c, sig00000033, sig00000036, sig00000038, sig00000034, sig0000003f, sig00000039, sig0000003a, sig00000041, ipsum31/c_in, mpr/ipp7, ipsum31/c_out, sig00000040, sig00000037, mpr/ipp7_anti_loop_AND_339_o, sig00000035, sig0000003d, sig0000003b, sig00000022, sig00000021, sig0000003e.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig0000003b, mpr/ipp6, sig00000048, sig0000003c, mpr/ipp6_anti_loop_AND_338_o, sig00000022, mpr/ipsum6r(15), ipsum22/c_out, sig00000034, sig0000003a, sig0000003d, sig00000041, sig00000039, sig00000037, ipsum22/s<15>, ipsum31/b<15>, sig00000038, sig00000036, sig00000021, sig0000003f, sig0000003e, sig00000029, sig00000033, ipsum22/c_in, sig00000040, sig00000017, sig00000035, sig00000029.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000038, sig00000036, sig00000028, sig0000003e, mpr/ipp4_anti_loop_AND_336_o, mpr/ipp4, sig00000021, sig00000047, sig00000041, mpr/ipsum6r(14), ipsum14/c_out, sig0000003c, sig00000028, ipsum14/s<14>, sig00000035, sig00000047, sig0000003b, ipsum31/b<14>, sig00000034, ipsum14/c_in, sig00000037, sig00000028, sig00000022, ipsum22/s<14>, sig0000003a, sig0000003f, sig00000039, ipsum22/b<14>, sig00000033, sig0000003d, sig00000040, sig00000016, sig00000016, mpr/ipsum4r(14).
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000038, sig0000003f, sig00000033, mpr/ipsum6r(13), sig00000005, ipsum13/s<13>, sig00000027, sig0000003e, sig0000003d, sig0000003c, sig00000021, sig00000022, ipsum13/c_out, ipsum31/b<13>, sig00000037, sig00000027, ipsum13/c_in, sig00000027, mpr/ipsum3r(13), sig0000003a, sig00000046, sig00000036, sig00000046, mpr/ipp3_anti_loop_AND_335_o, sig00000015, mpr/ipp3, sig00000035, ipsum22/a<13>, sig00000040, sig0000003b, sig00000034, ipsum22/s<13>, sig00000041, sig00000039.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000036, ipsum31/a<12>, ipsum21/s<12>, sig00000045, mpr/ipsum5r(12), sig0000003e, sig00000034, sig00000026, sig00000035, sig00000033, ipsum21/c_out, mpr/ipp5_anti_loop_AND_337_o, mpr/ipp5, sig00000037, sig0000003a, sig0000003d, sig00000041, sig00000022, sig00000026, ipsum21/c_in, sig00000004, sig00000040, sig0000003c, sig00000039, sig00000021, sig0000003f, sig0000003b, sig00000038.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: ipsum31/a<11>, sig00000038, sig00000041, sig00000034, sig00000040, ipsum21/b<11>, sig0000003f, sig00000013, ipsum21/s<11>, ipsum12/c_in, mpr/ipsum2r(11), sig0000003b, sig00000037, sig00000025, ipsum12/s<11>, mpr/ipp2, sig00000022, sig00000025, sig00000039, sig0000003e, sig00000036, sig00000033, sig0000003c, sig00000044, sig00000025, mpr/ipsum5r(11), sig00000044, sig0000003a, sig00000021, sig00000035, sig0000003d, ipsum12/c_out, mpr/ipp2_anti_loop_AND_334_o, sig00000003.
+WARNING:Xst:2170 - Unit blk00000001 : the following signal(s) form a combinatorial loop: sig00000024, sig00000033, ipsum11/c_out, ipsum21/a<10>, sig0000003b, sig00000036, sig00000021, mpr/ipsum5r(10), sig0000003f, sig00000034, ipsum11/s<10>, sig00000002, sig00000040, mpr/ipsum1r(10), ipsum21/s<10>, mpr/ipp1_anti_loop_AND_333_o, sig00000038, sig00000043, sig0000003d, ipsum31/a<10>, mpr/ipp1, sig00000002, sig00000035, sig00000024, sig00000037, sig0000003c, sig0000003a, sig00000024, sig00000041, sig00000043, sig00000022, sig00000039, ipsum11/c_in, sig0000003e.
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Shift(41)_0> in Unit <aa> is equivalent to the following 4 FFs/Latches, which will be removed : <Shift(39)_7> <Shift(39)_3> <Shift(39)_5> <Shift(38)_6> 
 INFO:Xst:2261 - The FF/Latch <Shift(40)_0> in Unit <aa> is equivalent to the following 2 FFs/Latches, which will be removed : <Shift(38)_5> <Shift(38)_3> 
-Found area constraint ratio of 100 (+ 5) on block MBO_53_top, actual ratio is 92.
+Found area constraint ratio of 100 (+ 5) on block MBO_53_top, actual ratio is 93.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <fifo_input> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
@@ -4608,8 +4599,8 @@ Unit <mpr> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2996
- Flip-Flops                                            : 2996
+# Registers                                            : 3060
+ Flip-Flops                                            : 3060
 # Shift Registers                                      : 152
  10-bit shift register                                 : 4
  15-bit shift register                                 : 1
@@ -4640,25 +4631,25 @@ Top Level Output File Name         : MBO_53_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 5597
+# BELS                             : 5688
 #      GND                         : 30
 #      INV                         : 144
 #      LUT1                        : 191
-#      LUT2                        : 1953
+#      LUT2                        : 1959
 #      LUT2_L                      : 2
-#      LUT3                        : 882
+#      LUT3                        : 895
 #      LUT3_D                      : 1
 #      LUT3_L                      : 2
-#      LUT4                        : 640
+#      LUT4                        : 690
 #      LUT4_D                      : 7
 #      LUT4_L                      : 8
 #      MUXCY                       : 980
-#      MUXF5                       : 64
+#      MUXF5                       : 86
 #      MUXF6                       : 4
 #      VCC                         : 23
 #      XORCY                       : 666
-# FlipFlops/Latches                : 3728
-#      FD                          : 312
+# FlipFlops/Latches                : 3792
+#      FD                          : 344
 #      FD_1                        : 6
 #      FDC                         : 317
 #      FDCE                        : 159
@@ -4668,7 +4659,7 @@ Primitive and Black Box Usage:
 #      FDPE                        : 181
 #      FDR                         : 132
 #      FDR_1                       : 8
-#      FDRE                        : 450
+#      FDRE                        : 482
 #      FDRE_1                      : 2
 #      FDRS                        : 8
 #      FDRSE                       : 15
@@ -4701,10 +4692,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-5 
 
- Number of Slices:                     2523  out of   4656    54%  
- Number of Slice Flip Flops:           3722  out of   9312    39%  
- Number of 4 input LUTs:               4110  out of   9312    44%  
-    Number used as logic:              3830
+ Number of Slices:                     2568  out of   4656    55%  
+ Number of Slice Flip Flops:           3786  out of   9312    40%  
+ Number of 4 input LUTs:               4179  out of   9312    44%  
+    Number used as logic:              3899
     Number used as Shift registers:     280
  Number of IOs:                          35
  Number of bonded IOBs:                  30  out of    232    12%  
@@ -4735,7 +4726,7 @@ Clock Information:
 -----------------------------------+--------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)    | Load  |
 -----------------------------------+--------------------------+-------+
-clk                                | DCM_SP:CLKDV+DCM_SP:CLKDV| 846   |
+clk                                | DCM_SP:CLKDV+DCM_SP:CLKDV| 910   |
 e_tx_clk                           | IBUFG+BUFG               | 1958  |
 e_rx_clk                           | BUFGP                    | 84    |
 clk                                | DCM_SP:CLKDV             | 1112  |
@@ -4747,27 +4738,27 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                         | Buffer(FF name)                                                                                                                          | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------+
-locked_2_INV_129_o(locked_2_INV_129_o1_INV_0:O)                                                                                                                                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d1)                                                            | 120   |
-ethernet/global_reset_summary(ethernet/global_reset_summary1:O)                                                                                                                        | NONE(ethernet/dh/BOARD_PORT_15)                                                                                                          | 81    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_5)                                 | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_3)                                  | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3)                                | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_0)            | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_6)                                 | 36    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_2)                | 36    |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0)                                | 29    |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_6)                                | 29    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1)        | 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)        | 24    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2)                    | 20    |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_2)                               | 18    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_3)                      | 16    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_2)                      | 16    |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)| 16    |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_3)                     | 16    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1)                    | 14    |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1)            | 14    |
-convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_1)                    | 12    |
+locked_2_INV_129_o(locked_2_inv1_INV_0:O)                                                                                                                                              | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                          | 120   |
+ethernet/global_reset_summary(ethernet/global_reset_summary1:O)                                                                                                                        | NONE(ethernet/dh/PC_MAC_28)                                                                                                              | 81    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_7)            | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_6)                                  | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_5)                | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1)                                 | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)            | 36    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_6)                                | 36    |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_6)                                   | 29    |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                        | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_6)                                   | 29    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0)                             | 24    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0)                              | 24    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i)                    | 20    |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3)                               | 18    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1)                     | 16    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3)| 16    |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1)| 16    |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)| 16    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3)                    | 14    |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2)            | 14    |
+convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1)                    | 12    |
 convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_3)                    | 12    |
 ethernet/local_reset_summary(ethernet/local_reset_summary:O)                                                                                                                           | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg)                                                  | 6     |
 convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                          | 3     |
@@ -4776,15 +4767,15 @@ ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb
 convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                | 2     |
 convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(convolution_top/CONV_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
 convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)             | 2     |
-convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                          | 2     |
-ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                        | 2     |
+convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(convolution_top/DATA_BUFFER/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
+ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                             | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                     | 2     |
 ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                  | NONE(ethernet/fifo_input/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                                  | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                                      | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                         | 2     |
-fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                      | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2)                                                      | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)                            | 2     |
+fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                                      | 2     |
 fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1)                                                      | 2     |
 fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                                     | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                         | 2     |
-fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                                                      | 2     |
+fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                          | NONE(fifo_input_acp2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                      | 2     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -4803,7 +4794,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.132ns (frequency: 163.074MHz)
-  Total number of paths / destination ports: 209004 / 3567
+  Total number of paths / destination ports: 216592 / 3679
 -------------------------------------------------------------------------
 Delay:               3.066ns (Levels of Logic = 1)
   Source:            adc_01/CS_reg (FF)
@@ -5023,8 +5014,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   12.774|    8.875|    3.492|         |
-e_rx_clk       |         |    5.884|         |         |
+clk            |   12.778|    8.876|    3.492|         |
+e_rx_clk       |         |    5.888|         |         |
 e_tx_clk       |    1.139|         |         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -5042,16 +5033,16 @@ Clock to Setup on destination clock e_tx_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.635|         |   10.681|         |
-e_rx_clk       |         |         |    3.791|         |
+clk            |    6.635|         |   10.685|         |
+e_rx_clk       |         |         |    3.795|         |
 e_tx_clk       |   16.271|   14.265|    5.386|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 39.96 secs
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 42.58 secs
  
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
    for the specified device family. You are free to use it in order to take
@@ -5063,9 +5054,9 @@ WARNING:Xst:3152 - You have chosen to run a version of XST which is not the defa
    on the XST command line or in the XST process properties panel.
 --> 
 
-Total memory usage is 4873740 kilobytes
+Total memory usage is 4889932 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1436 (   0 filtered)
+Number of warnings : 1419 (   0 filtered)
 Number of infos    :   86 (   0 filtered)
 

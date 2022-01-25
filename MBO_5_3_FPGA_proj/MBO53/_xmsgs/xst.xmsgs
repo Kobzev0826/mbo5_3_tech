@@ -80,7 +80,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\convolution_top.v" Line 252: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 258: Assignment to <arg fmt="%s" index="1">SUB_TA_TB_reg</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 258: Assignment to <arg fmt="%s" index="1">SUB_TA_TB_reg</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_25_12_5</arg>&gt; remains a black box.
@@ -96,9 +96,6 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 336: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 346: Assignment to <arg fmt="%s" index="1">fifo_eth_in_data_1</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_acp</arg>&gt; remains a black box.
@@ -149,7 +146,7 @@
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">120</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">220</arg>: Output port &lt;<arg fmt="%s" index="3">SUB_TA_TB_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">220</arg>: Output port &lt;<arg fmt="%s" index="3">SUB_TA_TB_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">220</arg>: Output port &lt;<arg fmt="%s" index="3">ch_a_extremum_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convolution_top</arg>&gt; is unconnected or connected to loadless signal.
@@ -1443,54 +1440,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">is_type_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">oh</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">header_0_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">odto</arg>&gt;.
