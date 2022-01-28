@@ -1,14 +1,14 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-O10-VKOBZEV-PC::  Tue Dec 21 08:03:03 2021
+DESKTOP-P9GM206::  Tue Jan 25 14:37:12 2022
 
 par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd
 MBO_53_top.pcf 
 
 
 Constraints file: MBO_53_top.pcf.
-Loading device for application Rf_Device from file '3s500e.nph' in environment E:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "MBO_53_top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -20,18 +20,18 @@ Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          28 out of 232    12%
+ Number of External IOBs                          32 out of 232    13%
 
-   Number of External Input IOBs                 11
+   Number of External Input IOBs                 13
 
-      Number of External Input IBUFs             11
-        Number of LOCed External Input IBUFs     11 out of 11    100%
+      Number of External Input IBUFs             13
+        Number of LOCed External Input IBUFs     13 out of 13    100%
 
 
-   Number of External Output IOBs                17
+   Number of External Output IOBs                19
 
-      Number of External Output IOBs             17
-        Number of LOCed External Output IOBs     16 out of 17     94%
+      Number of External Output IOBs             19
+        Number of LOCed External Output IOBs     18 out of 19     94%
 
 
    Number of External Bidir IOBs                  0
@@ -39,9 +39,10 @@ Design Summary Report:
 
    Number of BUFGMUXs                        7 out of 24     29%
    Number of DCMs                            2 out of 4      50%
-   Number of RAMB16s                         3 out of 20     15%
-   Number of Slices                       1892 out of 4656   40%
-      Number of SLICEMs                     14 out of 2328    1%
+   Number of MULT18X18SIOs                   8 out of 20     40%
+   Number of RAMB16s                         9 out of 20     45%
+   Number of Slices                       2634 out of 4656   56%
+      Number of SLICEMs                    142 out of 2328    6%
 
 
 
@@ -50,31 +51,31 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 WARNING:Par:288 - The signal e_rx_er_IBUF has no load.  PAR will not attempt to route this signal.
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:2e2bdb5c) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:77cf15b4) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-INFO:Place:834 - Only a subset of IOs are locked. Out of 17 IOs, 16 are locked and 1 are not locked. If you would like
+INFO:Place:834 - Only a subset of IOs are locked. Out of 19 IOs, 18 are locked and 1 are not locked. If you would like
    to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:2e2bdb5c) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:77cf15b4) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:2e2bdb5c) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:77cf15b4) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-..................
+.................
 WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
-   clock site pair. The clock component <e_rx_clk_BUFGP/BUFG> is placed at site <BUFGMUX_X1Y1>. The IO component
+   clock site pair. The clock component <e_rx_clk_BUFGP/BUFG> is placed at site <BUFGMUX_X1Y10>. The IO component
    <e_rx_clk> is placed at site <IPAD170>.  This will not allow the use of the fast path between the IO and the Clock
    buffer. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <e_rx_clk.PAD>
    allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
@@ -87,39 +88,39 @@ WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
    design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of
    this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error
    condition be corrected in the design.
-Phase 4.2  Initial Clock and IO Placement (Checksum:41d38e87) REAL time: 3 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:25968f8a) REAL time: 5 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:41d38e87) REAL time: 3 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:25968f8a) REAL time: 5 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:41d38e87) REAL time: 3 secs 
+Phase 6.36  Local Placement Optimization (Checksum:25968f8a) REAL time: 5 secs 
 
 Phase 7.3  Local Placement Optimization
 
-Phase 7.3  Local Placement Optimization (Checksum:fa400447) REAL time: 3 secs 
+Phase 7.3  Local Placement Optimization (Checksum:2db4f18a) REAL time: 5 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:48a6df17) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:2efc070a) REAL time: 5 secs 
 
 Phase 9.8  Global Placement
-....................................
-............................................................................................................................................................
-....................................................................................................
-.......................
-Phase 9.8  Global Placement (Checksum:5116a8f3) REAL time: 6 secs 
+.............................
+..................................................................................................................................................
+..........................................................................
+............
+Phase 9.8  Global Placement (Checksum:75a9ff2) REAL time: 16 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:5116a8f3) REAL time: 6 secs 
+Phase 10.5  Local Placement Optimization (Checksum:75a9ff2) REAL time: 16 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:aae6250c) REAL time: 7 secs 
+Phase 11.18  Placement Optimization (Checksum:9b8c1c3c) REAL time: 17 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:aae6250c) REAL time: 7 secs 
+Phase 12.5  Local Placement Optimization (Checksum:9b8c1c3c) REAL time: 17 secs 
 
-Total REAL time to Placer completion: 7 secs 
-Total CPU  time to Placer completion: 7 secs 
+Total REAL time to Placer completion: 18 secs 
+Total CPU  time to Placer completion: 17 secs 
 Writing design to file MBO_53_top.ncd
 
 
@@ -127,26 +128,28 @@ Writing design to file MBO_53_top.ncd
 Starting Router
 
 
-Phase  1  : 11773 unrouted;      REAL time: 10 secs 
+Phase  1  : 17376 unrouted;      REAL time: 21 secs 
 
-Phase  2  : 10080 unrouted;      REAL time: 11 secs 
+Phase  2  : 14356 unrouted;      REAL time: 21 secs 
 
-Phase  3  : 1496 unrouted;      REAL time: 12 secs 
+Phase  3  : 2730 unrouted;      REAL time: 23 secs 
 
-Phase  4  : 1496 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 12 secs 
+Phase  4  : 2730 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
 
 Updating file: MBO_53_top.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 27 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 27 secs 
+WARNING:Route:455 - CLK Net:clk_dv may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 14 secs 
-Total CPU time to Router completion: 14 secs 
+Total REAL time to Router completion: 27 secs 
+Total CPU time to Router completion: 26 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -164,15 +167,15 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|      e_rx_clk_BUFGP |  BUFGMUX_X1Y1| No   |   48 |  0.026     |  0.155      |
+|      e_rx_clk_BUFGP | BUFGMUX_X1Y10| No   |   48 |  0.058     |  0.164      |
 +---------------------+--------------+------+------+------------+-------------+
-|    e_tx_clk_bf_BUFG |  BUFGMUX_X1Y0| No   | 1020 |  0.076     |  0.178      |
+|    e_tx_clk_bf_BUFG |  BUFGMUX_X1Y0| No   | 1021 |  0.076     |  0.179      |
 +---------------------+--------------+------+------+------------+-------------+
-|              clk_12 |  BUFGMUX_X2Y0| No   |  255 |  0.074     |  0.176      |
+|              clk_12 |  BUFGMUX_X1Y1| No   |  505 |  0.076     |  0.178      |
 +---------------------+--------------+------+------+------------+-------------+
-|              clk_dv | BUFGMUX_X2Y10| No   |  118 |  0.051     |  0.165      |
+|              clk_dv | BUFGMUX_X2Y11| No   |  502 |  0.067     |  0.170      |
 +---------------------+--------------+------+------+------------+-------------+
-|              clk_2x | BUFGMUX_X2Y11| No   |   19 |  0.052     |  0.171      |
+|           clk_dv_90 |  BUFGMUX_X2Y0| No   |   18 |  0.039     |  0.151      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -185,7 +188,7 @@ for example SLICE loads not FF loads.
 
 Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
 
-Number of Timing Constraints that were not applied: 5
+Number of Timing Constraints that were not applied: 4
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -194,26 +197,19 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "pll_2/CLKDV_BUF" | SETUP       |     0.188ns|    78.496ns|       0|           0
-   derived from  NET "pll_1/CLKIN_IBUFG_OUT | HOLD        |     0.713ns|            |       0|           0
-  " PERIOD = 20 ns HIGH 40%                 |             |            |            |        |            
+  PERIOD analysis for net "pll_2/CLK90_BUF" | SETUP       |     4.357ns|    22.572ns|       0|           0
+   derived from  PERIOD analysis for net "p | HOLD        |     0.842ns|            |       0|           0
+  ll_1/CLKDV_BUF" derived from NET "pll_1/C |             |            |            |        |            
+  LKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "pll_1/CLK2X_BUF" | SETUP       |     4.130ns|     5.870ns|       0|           0
-   derived from  NET "pll_1/CLKIN_IBUFG_OUT | HOLD        |     1.397ns|            |       0|           0
-  " PERIOD = 20 ns HIGH 40%                 |             |            |            |        |            
+  NET "e_tx_clk_bf" PERIOD = 40 ns HIGH 40% | SETUP       |     6.915ns|    28.475ns|       0|           0
+                                            | HOLD        |     0.606ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  NET "e_tx_clk_bf" PERIOD = 40 ns HIGH 40% | SETUP       |     6.481ns|    29.198ns|       0|           0
-                                            | HOLD        |     0.596ns|            |       0|           0
+  NET "e_rx_clk_BUFGP/IBUFG" PERIOD = 40 ns | SETUP       |    11.483ns|    11.292ns|       0|           0
+   HIGH 40%                                 | HOLD        |     0.759ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   NET "pll_1/CLKIN_IBUFG_OUT" PERIOD = 20 n | MINHIGHPULSE|    12.500ns|     7.500ns|       0|           0
   s HIGH 40%                                |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET "e_rx_clk_BUFGP/IBUFG" PERIOD = 40 ns | SETUP       |    12.849ns|     7.877ns|       0|           0
-   HIGH 40%                                 | HOLD        |     0.806ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "pll_1/CLK0_BUF"  | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
-  derived from  NET "pll_1/CLKIN_IBUFG_OUT" |             |            |            |        |            
-   PERIOD = 20 ns HIGH 40%                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_RD_CLK = PERIOD TIMEGRP "RD_CLK" 50 MH | MINLOWPULSE |    17.224ns|     2.776ns|       0|           0
   z HIGH 50%                                |             |            |            |        |            
@@ -221,9 +217,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_WR_CLK = PERIOD TIMEGRP "WR_CLK" 50 MH | MINLOWPULSE |    17.224ns|     2.776ns|       0|           0
   z HIGH 50%                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "pll_1/CLKDV_BUF" | SETUP       |    17.931ns|     9.325ns|       0|           0
-   derived from  NET "pll_1/CLKIN_IBUFG_OUT | HOLD        |     0.804ns|            |       0|           0
-  " PERIOD = 20 ns HIGH 40%                 |             |            |            |        |            
+  PERIOD analysis for net "pll_2/CLKDV_BUF" | SETUP       |    26.161ns|    17.836ns|       0|           0
+   derived from  PERIOD analysis for net "p | HOLD        |     0.517ns|            |       0|           0
+  ll_1/CLKDV_BUF" derived from NET "pll_1/C |             |            |            |        |            
+  LKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "pll_1/CLKDV_BUF" | SETUP       |    30.389ns|     9.611ns|       0|           0
+   derived from  NET "pll_1/CLKIN_IBUFG_OUT | HOLD        |     0.630ns|            |       0|           0
+  " PERIOD = 20 ns HIGH 40%                 | MINLOWPULSE |    30.000ns|    10.000ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
   NET "clk" PERIOD = 20 ns HIGH 40%         | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
@@ -239,11 +240,10 @@ Derived Constraints for pll_1/CLKIN_IBUFG_OUT
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|pll_1/CLKIN_IBUFG_OUT          |     20.000ns|      7.500ns|     19.624ns|            0|            0|            0|         9151|
-| pll_1/CLK0_BUF                |     20.000ns|      6.000ns|     19.624ns|            0|            0|            0|         6769|
-|  pll_2/CLKDV_BUF              |     80.000ns|     78.496ns|          N/A|            0|            0|         6769|            0|
-| pll_1/CLK2X_BUF               |     10.000ns|      5.870ns|          N/A|            0|            0|          630|            0|
-| pll_1/CLKDV_BUF               |     40.000ns|      9.325ns|          N/A|            0|            0|         1752|            0|
+|pll_1/CLKIN_IBUFG_OUT          |     20.000ns|      7.500ns|     11.286ns|            0|            0|            0|        77452|
+| pll_1/CLKDV_BUF               |     40.000ns|     10.000ns|     22.572ns|            0|            0|        65964|        11488|
+|  pll_2/CLK90_BUF              |     40.000ns|     22.572ns|          N/A|            0|            0|          216|            0|
+|  pll_2/CLKDV_BUF              |     80.000ns|     17.836ns|          N/A|            0|            0|        11272|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -260,17 +260,17 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 14 secs 
-Total CPU time to PAR completion: 14 secs 
+Total REAL time to PAR completion: 28 secs 
+Total CPU time to PAR completion: 27 secs 
 
-Peak Memory Usage:  330 MB
+Peak Memory Usage:  4511 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 5
+Number of warning messages: 6
 Number of info messages: 1
 
 Writing design to file MBO_53_top.ncd

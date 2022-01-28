@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module adc_ltc2315(
 	input clk_100,
+	input clk_90,
 	input reset,
 	input start,
 	
@@ -33,6 +34,8 @@ module adc_ltc2315(
 
     );
 localparam DELAY=0;	
+
+//(*mark_debug="yes"*)reg adc_data_trigger;
 	
 reg [4:0] adc_counter_cycle;
 reg [15:00] adc_data_reg;
@@ -92,10 +95,28 @@ end
 reg [4:0] cnt_reg;
 wire sck_n;
 assign sck_n = ~sck;
-always @(posedge sck_n)begin 
+always @(posedge clk_90)begin 
+	if (reset) adc_data_reg <=16'd0;
+	else begin
+		if ( ~CS_reg) begin 
+			if (cnt_reg == 14) cnt_reg <= 0;
+			else cnt_reg <= cnt_reg + 1;
+		end
+		else cnt_reg <=0;
+		
+		if ((cnt_reg > 1) && (cnt_reg < 14)) begin 
+			adc_data_reg [0] <= sdo;
+			adc_data_reg [15:01] <= adc_data_reg [14:00];
+		end
+		else adc_data_reg[11:0] <= adc_data_reg[11:0];
+		
+	end
+end
+/*
+always @(posedge sck)begin 
 	if ( reset ) adc_data_reg <=16'd0;
 	else begin
-		if (cnt_reg == 13) cnt_reg <= 0;
+		if (cnt_reg == 14) cnt_reg <= 0;
 		else cnt_reg <= cnt_reg + 1;
 		
 		if ((cnt_reg > 0) && (cnt_reg < 13)) begin 
@@ -105,7 +126,7 @@ always @(posedge sck_n)begin
 		else adc_data_reg[11:0] <= adc_data_reg[11:0];
 	end
 end
-
+*/
 reg CS_reg_ft, CS_reg_2ft, CS_reg_3ft;
 reg [11:0] adc_data_reg_prev;
 wire CS_reg_st;

@@ -19,61 +19,48 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module adc_imi(
-	input clk_100,
-	input reset,
-	input start,
+	input 		clk_25,
+	input 		reset,
+	input 		start,
 	
-	output sck, 
-	output CS,
-	input mdi,
-	output en,
-	output [15:00]adc_data
+	output 		sck, 
+	output reg 	CS,
+	input 		mdi,
+	output 		en,
+	output [11:00] adc_data
     );
 
 reg [4:0] adc_counter_cycle;
-reg [15:00] adc_data_reg;
-reg CS_reg, en_reg;
-reg znak=1;
+reg [5:0] adc_data_reg;
 
-assign CS=CS_reg;
-assign  adc_data[15:00] = adc_data_reg [15:00];
-assign en=en_reg;
+assign adc_data = {6'h0, adc_data_reg};
+assign adc_01_sck = 0;
+assign en = 0;
 
-always @(posedge clk_100) begin
+always @(posedge clk_25 or posedge reset) begin
 
-	if ( reset ) begin 
-		adc_counter_cycle <= 0;
-		CS_reg <=0;
-		adc_data_reg <=16'd0;
-		en_reg <= 0;
+	if (reset) begin 
+		adc_counter_cycle 	<= 0;
+		CS 					<= 0;
+		adc_data_reg 		<= 0;
 	end
 	else begin 
-		if (start)begin
-			if (adc_counter_cycle == 5'd 18) begin
-				CS_reg <=0;
-				adc_counter_cycle <=0;
-				//en_reg <= 0;
-			end	
-			adc_counter_cycle <= adc_counter_cycle +1;
+		if (start) begin
+			if (adc_counter_cycle == 24) adc_counter_cycle <=0;
+			else adc_counter_cycle <= adc_counter_cycle +1;
 			
-			if ( adc_counter_cycle == 5'd 14) CS_reg <=1;
-			
-			if ( adc_counter_cycle == 5'd 13) begin 
-				en_reg <= 1;
-				if ( adc_data_reg == 16'd 4090) znak<=0;
-				else if ( adc_data_reg == 16'd2) znak<=1;
-				
-				if ( znak) adc_data_reg <= adc_data_reg + 1;
-				else adc_data_reg <= adc_data_reg - 1;
-			end
+			case (adc_counter_cycle)
+			1: 	adc_data_reg <= adc_data_reg + 1;			
+			14: CS <= 1;
+			23: CS <= 0; 
+			endcase
 		end
 		else begin 
-			en_reg <= 0;
-			CS_reg <=0;
-			adc_data_reg <=16'd0;
-			adc_counter_cycle <=0;
+			adc_counter_cycle 	<= 0;
+			CS 					<= 0;
 		end
 	end
+	
 end
 
 endmodule

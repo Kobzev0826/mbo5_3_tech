@@ -1,17 +1,17 @@
-# Date: Sat Dec 18 16:15:01 2021
+# Date: Wed Dec 22 03:56:51 2021
 
 SET addpads = false
 SET asysymbol = true
 SET busformat = BusFormatAngleBracketNotRipped
 SET createndf = false
 SET designentry = VHDL
-SET device = xc7vx330t
-SET devicefamily = virtex7
+SET device = xc6vlx75t
+SET devicefamily = virtex6
 SET flowvendor = Other
 SET formalverification = false
 SET foundationsym = false
 SET implementationfiletype = Ngc
-SET package = ffg1157
+SET package = ff484
 SET removerpms = false
 SET simulationfiles = Behavioral
 SET speedgrade = -3
@@ -19,4 +19,4 @@ SET verilogsim = false
 SET vhdlsim = true
 SET workingdirectory = .\tmp\
 
-# CRC: 8054ceb1
+# CRC: 149810a2

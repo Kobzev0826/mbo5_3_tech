@@ -57,7 +57,7 @@ always @(posedge clock) begin
 					end
 			endcase
 		end
-		if (counter == 524) begin EOP <= 1; state <= 0; end
+		if (counter == 524) begin EOP <= 1; state <= 0; wren <= 0; end
 	end else begin
 		wren 		<= 0;
 		counter 	<= 0;

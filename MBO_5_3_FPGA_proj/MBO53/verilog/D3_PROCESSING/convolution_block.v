@@ -1,7 +1,7 @@
 module convolution_block
 #(
 // 1 takt delay
-parameter MULT_N = 50,
+parameter MULT_N = 25,
 parameter NLOG = $clog2(MULT_N)
 )
 (
@@ -18,8 +18,8 @@ input		[15:0]			DATA_IN_B,
 input 		[NLOG-1:0]		ADDRB_RAMK,
 // OUTPUT
 // разрядность пока не огрубляем
-output reg signed  [31:0] 	DATA_OUT_A, 
-output reg signed  [31:0] 	DATA_OUT_B
+output reg  [31:0] 	DATA_OUT_A, 
+output reg  [31:0] 	DATA_OUT_B
 );
 
 // ====================== WIRES & REGS ========================================
@@ -41,8 +41,8 @@ MEM_OPORA_LCHM			RAM_K(
 );
 
 always @(posedge clkf) begin
-	DATA_OUT_A <= $signed(DATA_IN_A) * $signed(Q_RAM_D);
-	DATA_OUT_B <= $signed(DATA_IN_B) * $signed(Q_RAM_D);
+	DATA_OUT_A <= DATA_IN_A * Q_RAM_D;
+	DATA_OUT_B <= DATA_IN_B * Q_RAM_D;
 end
 
 always @(posedge clke) begin

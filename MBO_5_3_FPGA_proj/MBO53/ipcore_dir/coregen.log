@@ -1,0 +1,24 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+ERROR:sim - Unable to find
+ERROR:sim -   
+   D:\Xilinx\project\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\v2\eth
+ERROR:sim -    _ram_42_arp.coe
+ERROR:sim -    Coregen is looking for
+ERROR:sim -   
+   D:\Xilinx\project\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\v2\eth
+ERROR:sim -    _ram_42_arp.coe
+ERROR:sim - Unable to find
+ERROR:sim -   
+   D:\Xilinx\project\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\v2\eth
+ERROR:sim -    _ram_42_arp.coe
+ERROR:sim -    Coregen is looking for
+ERROR:sim -   
+   D:\Xilinx\project\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\v2\eth
+ERROR:sim -    _ram_42_arp.coe
+ERROR:sim - An invalid core configuration has been detected during
+ERROR:sim -    Customization. Core parameters will be reset to their default
+   values.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'Eth_RAM_ARP'.

@@ -9,17 +9,15 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 21 08:02:57 2021
+Mapped Date    : Tue Jan 25 14:37:03 2022
 
 Mapping design into LUTs...
-WARNING:MapLib:701 - Signal adc_01_sdo connected to top level port adc_01_sdo
-   has been removed.
-WARNING:MapLib:701 - Signal adc_02_sdo connected to top level port adc_02_sdo
-   has been removed.
-WARNING:MapLib:701 - Signal adc_01_sck connected to top level port adc_01_sck
-   has been removed.
-WARNING:MapLib:701 - Signal adc_02_sck connected to top level port adc_02_sck
-   has been removed.
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "pll_1/physical_group_CLKDV_OUT/CLKDV_BUFG_INST" (output
+   signal=clk_dv) has a mix of clock and non-clock loads. The non-clock loads
+   are:
+   Pin I1 of adc_02/Mmux_n007511
+   Pin I1 of adc_01/Mmux_n007511
 Running directed packing...
 Running delay-based LUT packing...
 Running related packing...
@@ -32,34 +30,35 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    5
+Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:         2,687 out of   9,312   28%
-  Number of 4 input LUTs:             2,728 out of   9,312   29%
+  Number of Slice Flip Flops:         3,705 out of   9,312   39%
+  Number of 4 input LUTs:             3,875 out of   9,312   41%
 Logic Distribution:
-  Number of occupied Slices:          1,892 out of   4,656   40%
-    Number of Slices containing only related logic:   1,892 out of   1,892 100%
-    Number of Slices containing unrelated logic:          0 out of   1,892   0%
+  Number of occupied Slices:          2,634 out of   4,656   56%
+    Number of Slices containing only related logic:   2,634 out of   2,634 100%
+    Number of Slices containing unrelated logic:          0 out of   2,634   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,895 out of   9,312   31%
-    Number used as logic:             2,706
-    Number used as a route-thru:        167
-    Number used as Shift registers:      22
+  Total Number of 4 input LUTs:       4,074 out of   9,312   43%
+    Number used as logic:             3,597
+    Number used as a route-thru:        199
+    Number used as Shift registers:     278
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 28 out of     232   12%
+  Number of bonded IOBs:                 32 out of     232   13%
     IOB Flip Flops:                       6
-  Number of RAMB16s:                      3 out of      20   15%
+  Number of RAMB16s:                      9 out of      20   45%
   Number of BUFGMUXs:                     7 out of      24   29%
   Number of DCMs:                         2 out of       4   50%
+  Number of MULT18X18SIOs:                8 out of      20   40%
 
-Average Fanout of Non-Clock Nets:                3.17
+Average Fanout of Non-Clock Nets:                2.99
 
-Peak Memory Usage:  306 MB
-Total REAL time to MAP completion:  3 secs 
-Total CPU time to MAP completion:   3 secs 
+Peak Memory Usage:  4468 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   4 secs 
 
 NOTES:
 

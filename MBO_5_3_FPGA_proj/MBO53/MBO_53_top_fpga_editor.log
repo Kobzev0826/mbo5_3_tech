@@ -1,0 +1,19 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53
+#Date/Time:
+#:T   Tue Dec 21 22:34:35 2021
+#------------------------------
+	#Reading MBO_53_top.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment E:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "MBO_53_top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+	#Design creation date: 2021.12.21.19.30.27
+	#ERROR:Place:665 - The design has 13 block-RAM components of which 13 block-RAM components require the adjacent multiplier site  to remain empty. This is because certain input pins of adjacent block-RAM and multiplier sites share routing ressources. In addition, the design has 8 multiplier components. Therefore, the design would require a total of 21 multiplier sites on the device. The current device has only 20 multiplier sites.
+	#
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

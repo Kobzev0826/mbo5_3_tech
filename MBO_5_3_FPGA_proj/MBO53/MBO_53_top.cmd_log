@@ -1,28 +1,19 @@
-xst -intstyle ise -ifn "C:/Users/user/Documents/Projects/MBO53/MBO_53_top.xst" -ofn "C:/Users/user/Documents/Projects/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
 par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
 bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
 par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
 bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
-xst -intstyle ise -ifn "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
-map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
-par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
-bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
-xst -intstyle ise -ifn "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
-ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
-map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
-par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
-bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
-xst -intstyle ise -ifn "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
 par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
@@ -41,6 +32,814 @@ par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
 bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
 xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_53_top.twx MBO_53_top.ncd -o MBO_53_top.twr MBO_53_top.pcf -ucf MBO_53_top.ucf 
+bitgen -intstyle ise -f MBO_53_top.ut MBO_53_top.ncd 
+xst -intstyle ise -ifn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.xst" -ofn "C:/Users/kva-0/Documents/FPGA/Ivel/MBO53_tech_ver16/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc MBO_53_top.ucf -p xc3s500e-fg320-5 MBO_53_top.ngc MBO_53_top.ngd  
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MBO_53_top_map.ncd MBO_53_top.ngd MBO_53_top.pcf 
 par -w -intstyle ise -ol high -t 1 MBO_53_top_map.ncd MBO_53_top.ncd MBO_53_top.pcf 
