@@ -3,24 +3,26 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="impact" timeStamp="Thu Dec 30 17:54:56 2021">
+<application name="impact" timeStamp="Fri Jan 28 15:12:35 2022">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="843a7d728ce64470aa9039b35090f0dc"/>
+<property name="ProjectID" value="cdf60413bee742959979d3493c820f0e"/>
 <property name="ProjectIteration" value="1"/>
 </section>
 <section name="iMPACT Project Info" visible="true">
 <property name="Use Project File" value="No"/>
 <property name="Project Entry" value="ise"/>
 <property name="OS Name" value="Microsoft Windows NT (64 Bit)"/>
-<property name="User Lic. Info" value="_"/>
+<property name="User Lic. Info" value="__0_0_0"/>
 </section>
 <section name="iMPACT Boundary Scan Mode" visible="true">
 <item name="Chain Summary">
-<property name="Number of device" value="0"/>
-<property name="Number of Xilinx device" value="0"/>
+<property name="Number of device" value="1"/>
+<property name="Number of Xilinx device" value="1"/>
 <property name="Number of Non-Xilinx device" value="0"/>
 </item>
 <item name="Chain Description">
+<property name="Device1" value="spartan3e"/>
+<property name="Part1" value="xc3s500e"/>
 </item>
 <item name="Boundary Scan Operations Statistics">
 </item>

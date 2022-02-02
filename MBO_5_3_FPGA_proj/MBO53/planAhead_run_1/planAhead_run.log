@@ -1,0 +1,203 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/pa.fromNetlist.tcl
+# create_project -name MBO53 -dir "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/planAhead_run_1" -part xc3s500efg320-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53} {ipcore_dir} }
+# add_files [list {ipcore_dir/Eth_RAM_120_data.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_ARP.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_headers.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_holder.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_udp.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_25_12_5.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_acp.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_compression_base.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/FIFO_CONV_IN.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/FIFO_CONV_OUT.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_doll.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/MEM_OPORA_LCHM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/sum.ncf}] -fileset [get_property constrset [current_run]]
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "MBO_53_top.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf' to fileset 'constrs_1'
+# add_files [list {MBO_53_top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-5
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to MBO_53_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus DATA_REG(0)_0(2527 : 0) on block
+   convolution_top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top.edif ...
+ngc2edif: Total memory usage is 4322320 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/MBO_53_top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/MBO_53_top_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MEM_OPORA_LCHM.ngc ...
+WARNING:NetListWriters:298 - No output is written to MEM_OPORA_LCHM.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file MEM_OPORA_LCHM.edif ...
+ngc2edif: Total memory usage is 4310032 kilobytes
+
+Reading core file 'C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ngc' for (cell view 'MEM_OPORA_LCHM', library 'MBO_53_top_lib', file 'MBO_53_top.ngc')
+Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/MEM_OPORA_LCHM_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/MEM_OPORA_LCHM_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_CONV_OUT.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_CONV_OUT.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_CONV_OUT.edif ...
+ngc2edif: Total memory usage is 4314128 kilobytes
+
+Reading core file 'C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/FIFO_CONV_OUT.ngc' for (cell view 'FIFO_CONV_OUT', library 'MBO_53_top_lib', file 'MBO_53_top.ngc')
+Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/FIFO_CONV_OUT_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/FIFO_CONV_OUT_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_CONV_IN.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_CONV_IN.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_CONV_IN.edif ...
+ngc2edif: Total memory usage is 4314128 kilobytes
+
+Reading core file 'C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/FIFO_CONV_IN.ngc' for (cell view 'FIFO_CONV_IN', library 'MBO_53_top_lib', file 'MBO_53_top.ngc')
+Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/FIFO_CONV_IN_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/FIFO_CONV_IN_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fifo_acp.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_acp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fifo_acp.edif ...
+ngc2edif: Total memory usage is 4314128 kilobytes
+
+Reading core file 'C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ngc' for (cell view 'fifo_acp', library 'MBO_53_top_lib', file 'MBO_53_top.ngc')
+Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/fifo_acp_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/MBO53.data/cache/fifo_acp_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/FIFO_CONV_IN.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/FIFO_CONV_IN.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/FIFO_CONV_OUT.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/FIFO_CONV_OUT.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/MEM_OPORA_LCHM.ncf]
+Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:3]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:4]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:5]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:7]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:14]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:15]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:16]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:17]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_d[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:18]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:19]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:20]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:21]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:22]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:23]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:24]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:25]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_d[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:26]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_er' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:27]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_er' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:28]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_er' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:29]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_er' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:30]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_er' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:31]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_er' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:32]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_dv' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:33]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_dv' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:34]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_en' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:35]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_en' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:36]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_en' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:37]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_en' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:38]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:39]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_rx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:40]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'e_rx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:41]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'e_rx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:42]
+CRITICAL WARNING: [Constraints 18-10] Could not create constraint 'CLOCK_DEDICATED_ROUTE' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:42]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:110]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'e_tx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:111]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'e_tx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:112]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'e_tx_clk' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:113]
+CRITICAL WARNING: [Constraints 18-10] Could not create constraint 'CLOCK_DEDICATED_ROUTE' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:113]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ethernet/BOARD_IP[0]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:119]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ethernet/BOARD_IP[1]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:120]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ethernet/BOARD_IP[2]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:121]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ethernet/BOARD_IP[3]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:122]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ethernet/BOARD_IP[4]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:123]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ethernet/BOARD_IP[5]' [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf:124]
+INFO: [Common 17-14] Message 'Constraints 18-11' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+Finished Parsing UCF File [C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: b20e6247
+link_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 617.270 ; gain = 150.941
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jan 31 18:15:00 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

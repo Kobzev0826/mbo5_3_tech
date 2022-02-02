@@ -8,7 +8,16 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/verilog/D3_PROCESSING/convolution_block.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/verilog/MBO_53_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/verilog/adc_ltc2315.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/kva-0/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/verilog/convolution_top.v&quot; into library work</arg>
 </msg>
 
 </messages>
