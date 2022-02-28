@@ -1,11 +1,16 @@
 
 # PlanAhead Launch Script for Post PAR Floorplanning, created by Project Navigator
 
-create_project -name MBO53 -dir "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/planAhead_run_2" -part xc3s500efg320-5
+create_project -name MBO53 -dir "C:/Users/user/Documents/MBO53_ver17/MBO53/planAhead_run_2" -part xc3s500efg320-5
 set srcset [get_property srcset [current_run -impl]]
 set_property design_mode GateLvl $srcset
-set_property edif_top_file "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ngc" [ get_property srcset [ current_run ] ]
-add_files -norecurse { {E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53} {ipcore_dir} }
+set_property edif_top_file "C:/Users/user/Documents/MBO53_ver17/MBO53/MBO_53_top.ngc" [ get_property srcset [ current_run ] ]
+add_files -norecurse { {C:/Users/user/Documents/MBO53_ver17/MBO53} {ipcore_dir} }
+add_files [list {ipcore_dir/Eth_RAM_120_data.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/Eth_RAM_ARP.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/Eth_RAM_headers.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/Eth_RAM_holder.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/Eth_RAM_udp.ncf}] -fileset [get_property constrset [current_run]]
 add_files [list {ipcore_dir/fifo_25_12_5.ncf}] -fileset [get_property constrset [current_run]]
 add_files [list {ipcore_dir/fifo_acp.ncf}] -fileset [get_property constrset [current_run]]
 add_files [list {ipcore_dir/fifo_compression_base.ncf}] -fileset [get_property constrset [current_run]]
@@ -17,7 +22,7 @@ add_files [list {ipcore_dir/sum.ncf}] -fileset [get_property constrset [current_
 set_property target_constrs_file "MBO_53_top.ucf" [current_fileset -constrset]
 add_files [list {MBO_53_top.ucf}] -fileset [get_property constrset [current_run]]
 link_design
-read_xdl -file "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.ncd"
-if {[catch {read_twx -name results_1 -file "E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.twx"} eInfo]} {
-   puts "WARNING: there was a problem importing \"E:/Xilinx/projects/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.twx\": $eInfo"
+read_xdl -file "C:/Users/user/Documents/MBO53_ver17/MBO53/MBO_53_top.ncd"
+if {[catch {read_twx -name results_1 -file "C:/Users/user/Documents/MBO53_ver17/MBO53/MBO_53_top.twx"} eInfo]} {
+   puts "WARNING: there was a problem importing \"C:/Users/user/Documents/MBO53_ver17/MBO53/MBO_53_top.twx\": $eInfo"
 }

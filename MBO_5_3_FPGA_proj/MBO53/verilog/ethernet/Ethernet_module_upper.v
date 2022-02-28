@@ -32,9 +32,14 @@ output [991:0] header_parsed, //данные заголовка получаем
 output header_parsed_valid,   // ... и их валидность
 
 output [15:0] data_type_one, //данные тела пакета типа 1
-output data_type_one_wren	 // ... и их валидность
+output data_type_one_wren,	 // ... и их валидность
+
+
+output wire laser,
+output wire start
 
 );
+
 //=======================================================
 //======================GLOBAL===========================
 
@@ -205,7 +210,8 @@ udpHeader uh(
 
 //===================OUR=HEADER==========================
 
-wire flag_is_input_data_type_one, flag_is_input_data_type_two;
+wire flag_is_input_data_type_one, flag_is_input_data_type_two, flag_is_input_data_type_two_two;
+wire flag_is_input_start_signal, flag_is_input_stop_signal, flag_is_input_sync_signal;
 
 ourHeader oh(
 	.datain(input_data),
@@ -213,8 +219,54 @@ ourHeader oh(
 	.ena(flag_is_input_PORT_valid),
 	.sclr(local_reset_summary),
 	.is_type_1(flag_is_input_data_type_one),
-	.is_type_2(flag_is_input_data_type_two)
+	.is_type_2(flag_is_input_data_type_two),
+	.is_type_2_2(flag_is_input_data_type_two_two),
+	.is_start_signal(flag_is_input_start_signal),
+	.is_sync_signal(flag_is_input_sync_signal),
+	.is_stop_signal(flag_is_input_stop_signal)
 );
+
+reg sync_req, sync_ready;
+reg laser_signal = 0;
+reg start_signal = 0;
+reg laser_ft;
+
+assign laser = laser_signal;
+assign start = start_signal;
+
+always @(negedge clk_12_5) begin
+	if (global_reset_summary) begin
+		laser_signal <= 0;
+		start_signal <= 0;
+		sync_req <= 0;
+		//sync_ready <= 0;
+	end else begin
+		if (sync_ready) begin
+			sync_req <= 0;
+		end else begin
+			if (flag_is_input_sync_signal) begin
+				sync_req <= 1;
+			end
+		end
+		//start_ft <= flag_is_input_start_signal;
+		laser_ft <= flag_is_input_data_type_two;
+		/*if (flag_is_input_start_signal && not start_ft) begin
+			start_signal <= ~start_signal;
+		end*/
+		if (flag_is_input_start_signal) begin
+			start_signal <= 1;
+		end
+		else if (flag_is_input_stop_signal) begin
+			start_signal <= 0;
+		end
+		if (flag_is_input_data_type_two) begin
+			laser_signal <= 1;
+		end
+		else if (flag_is_input_data_type_two_two) begin
+			laser_signal <= 0;
+		end
+	end
+end
 
 //============OUR=DATA=IN=UDP=PACKEDGE===================
 
@@ -274,14 +326,20 @@ assign TX_EN = TX_EN_res;
 assign TX_D = TX_D_res;
 
 always @(negedge TX_CLK) begin
+	if (global_reset_summary) begin
+		sync_ready <= 0;
+	end else begin
 	case(state_of_solving)
 		0: 	begin
 				is_there_request_for_send[0] <= ~preambula_ended_short & flag_is_input_ARP & ~local_reset_summary;
-				is_there_request_for_send[1] <= is_there_256_1 & is_there_256_2;
+				is_there_request_for_send[1] <= is_there_256_1 && is_there_256_2 || sync_req;
 				state_of_solving <= state_of_solving + 1'b1;
+				if (sync_ready && !sync_req) begin
+					sync_ready <= 0;
+				end
 			end
 		1:	begin
-				is_there_request_for_send[1] <= is_there_256_1 & is_there_256_2;
+				is_there_request_for_send[1] <= is_there_256_1 && is_there_256_2 || sync_req;
 				if (is_there_request_for_send[0]) begin
 					module_ena[0] <= 1;
 					is_there_request_for_send[0] <= 0;
@@ -311,6 +369,9 @@ always @(negedge TX_CLK) begin
 					TX_EN_res<=tx_ena[1];
 					if (tx_ena[1]) begin
 						TX_D_res<=tx_d[1];
+						if (sync_req) begin
+							sync_ready <= 1;
+						end
 					end else begin
 						if (counter_for_solving_answers) begin
 							counter_for_solving_answers <= counter_for_solving_answers + 1'b1;
@@ -323,9 +384,10 @@ always @(negedge TX_CLK) begin
 		3: 	begin
 				state_of_solving <= state_of_solving + 1'b1;
 				is_there_request_for_send[0] <= ~preambula_ended_short & flag_is_input_ARP & ~local_reset_summary;
-				is_there_request_for_send[1] <= is_there_256_1 & is_there_256_2;//~rdempty1 & ~rdempty2;
+				is_there_request_for_send[1] <= is_there_256_1 && is_there_256_2 || sync_req;//~rdempty1 & ~rdempty2;
 			end
 	endcase
+	end
 end
 
 //==============ARP=REQUEST=ANSWER=======================
@@ -354,10 +416,10 @@ messagePartialReporter mpr(
 	.PC_PORT(PC_PORT),
 	.data_blocks1(data_blocks1),
 	.data_blocks2(data_blocks2),
-	.is_there_256_1(is_there_256_1),
-	.is_there_256_2(is_there_256_2),
+	.is_there_256_1(is_there_256_1 || sync_req),
+	.is_there_256_2(is_there_256_2 || sync_req),
 	.sclr(global_reset_summary),
-	.RAW_STATIC_DATA(RAW_STATIC_DATA),
+	.RAW_STATIC_DATA({RAW_STATIC_DATA[991:1],1'b1}),
 	.ena(module_ena[1]),
 	
 	.dataout(tx_d[1]),

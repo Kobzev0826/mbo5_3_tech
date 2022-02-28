@@ -225,8 +225,8 @@ reg strob_en_a;
 reg cnt_cha_en;
 reg strob_en_a_ft;
 wire strob_en_a_st;
-reg [38:0] acc_chA_MIN;
-reg [38:0] acc_chB_MIN;
+reg [38:0] acc_chA_MAX;
+reg [38:0] acc_chB_MAX;
 reg [23:0] cnt_cha;
 reg [23:0] chB_MIN_cnt, chA_MIN_cnt;
 assign strob_en_a_st = strob_en_a & (!strob_en_a_ft);
@@ -235,13 +235,13 @@ begin
 	if (rst) begin
 		strob_en_a <= 0;
 		cnt_cha_en <= 0;
-		acc_chA_MIN <= 38'h3FFFFFFFFF;
-		acc_chB_MIN <= 38'h3FFFFFFFFF;
+		acc_chA_MAX <= 38'h3000000000;
+		acc_chB_MAX <= 38'h3000000000;
 	end
 	else if (t_acc) begin
 		
-		if (acc_chA > {FIX_POROG, 23'h7FFFFF}) strob_en_a <= 0;
-		else if ( acc_chA < {FIX_POROG, 23'h000000}) strob_en_a <= 1;
+		if (acc_chA < {FIX_POROG, 23'h7FFFFF}) strob_en_a <= 0;
+		else if ( acc_chA > {FIX_POROG, 23'h000000}) strob_en_a <= 1;
 
 		strob_en_a_ft <= strob_en_a;
 
@@ -252,12 +252,12 @@ begin
 		else if (cnt_cha_en) cnt_cha <= cnt_cha+1;
 
 		if (cnt_cha_en) begin
-			if (acc_chA < acc_chA_MIN) begin acc_chA_MIN <= acc_chA; chA_MIN_cnt <= cnt_cha; end
-			if (acc_chB < acc_chB_MIN) begin acc_chB_MIN <= acc_chB; chB_MIN_cnt <= cnt_cha; end
+			if (acc_chA > acc_chA_MAX) begin acc_chA_MAX <= acc_chA; chA_MIN_cnt <= cnt_cha; end
+			if (acc_chB > acc_chB_MAX) begin acc_chB_MAX <= acc_chB; chB_MIN_cnt <= cnt_cha; end
 		end
 		else begin
-			acc_chA_MIN <= 38'h3FFFFFFFFF;
-			acc_chB_MIN <= 38'h3FFFFFFFFF;
+			acc_chA_MAX <= 38'h3000000000;
+			acc_chB_MAX <= 38'h3000000000;
 			if (chA_MIN_cnt > chB_MIN_cnt) SUB_TA_TB <= chA_MIN_cnt - chB_MIN_cnt;
 			else  SUB_TA_TB <= chB_MIN_cnt - chA_MIN_cnt;
 		end

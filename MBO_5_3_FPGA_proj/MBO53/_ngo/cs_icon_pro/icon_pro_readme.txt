@@ -1,5 +1,5 @@
 The following files were generated for 'icon_pro' in directory
-E:\Xilinx\projects\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\_ngo\cs_icon_pro\
+C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\_ngo\cs_icon_pro\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

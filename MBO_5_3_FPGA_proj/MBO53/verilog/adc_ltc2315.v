@@ -38,7 +38,7 @@ localparam DELAY=0;
 //(*mark_debug="yes"*)reg adc_data_trigger;
 	
 reg [4:0] adc_counter_cycle;
-reg [15:00] adc_data_reg;
+(*IOB="TRUE"*)reg [15:00] adc_data_reg;
 
 reg CS_reg, en_reg, en_sck;
 

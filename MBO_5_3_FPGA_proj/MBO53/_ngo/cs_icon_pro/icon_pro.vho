@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Copyright (c) 2021 Xilinx, Inc.
+-- Copyright (c) 2022 Xilinx, Inc.
 -- All Rights Reserved
 -------------------------------------------------------------------------------
 --   ____  ____
@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: Xilinx CORE Generator
 --  /   /         Filename   : icon_pro.vho
--- /___/   /\     Timestamp  : Wed Dec 22 06:57:37 RTZ 2 (зима) 2021
+-- /___/   /\     Timestamp  : Thu Feb 17 20:06:51 RTZ 2 (зима) 2022
 -- \   \  /  \
 --  \___\/\___\
 --

@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Jan 25 14:37:03 2022
+Mapped Date    : Mon Feb 21 17:14:38 2022
 
 Mapping design into LUTs...
 WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
@@ -19,45 +19,181 @@ WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
    Pin I1 of adc_02/Mmux_n007511
    Pin I1 of adc_01/Mmux_n007511
 Running directed packing...
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_10" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_11" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_3" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_4" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_5" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_6" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_8" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_9" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_3" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_4" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_5" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_6" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_8" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_02/adc_data_reg_9" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_10" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register "adc_01/adc_data_reg_11" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <e_rx_er_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<laser_cntrl/uart_data_rom/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB1
+   6B>.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    2
+Number of warnings:   41
 Logic Utilization:
-  Number of Slice Flip Flops:         3,705 out of   9,312   39%
-  Number of 4 input LUTs:             3,875 out of   9,312   41%
+  Total Number Slice Registers:       3,187 out of   9,312   34%
+    Number used as Flip Flops:        3,186
+    Number used as Latches:               1
+  Number of 4 input LUTs:             3,308 out of   9,312   35%
 Logic Distribution:
-  Number of occupied Slices:          2,634 out of   4,656   56%
-    Number of Slices containing only related logic:   2,634 out of   2,634 100%
-    Number of Slices containing unrelated logic:          0 out of   2,634   0%
+  Number of occupied Slices:          2,427 out of   4,656   52%
+    Number of Slices containing only related logic:   2,427 out of   2,427 100%
+    Number of Slices containing unrelated logic:          0 out of   2,427   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,074 out of   9,312   43%
-    Number used as logic:             3,597
-    Number used as a route-thru:        199
-    Number used as Shift registers:     278
+  Total Number of 4 input LUTs:       3,523 out of   9,312   37%
+    Number used as logic:             3,169
+    Number used as a route-thru:        215
+    Number used as Shift registers:     139
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 32 out of     232   13%
-    IOB Flip Flops:                       6
-  Number of RAMB16s:                      9 out of      20   45%
-  Number of BUFGMUXs:                     7 out of      24   29%
-  Number of DCMs:                         2 out of       4   50%
-  Number of MULT18X18SIOs:                8 out of      20   40%
+  Number of bonded IOBs:                 31 out of     232   13%
+    IOB Flip Flops:                       3
+  Number of RAMB16s:                     11 out of      20   55%
+  Number of BUFGMUXs:                    10 out of      24   41%
+  Number of DCMs:                         3 out of       4   75%
+  Number of BSCANs:                       1 out of       1  100%
 
-Average Fanout of Non-Clock Nets:                2.99
+  Number of RPM macros:           16
+Average Fanout of Non-Clock Nets:                3.22
 
-Peak Memory Usage:  4468 MB
-Total REAL time to MAP completion:  6 secs 
+Peak Memory Usage:  4491 MB
+Total REAL time to MAP completion:  4 secs 
 Total CPU time to MAP completion:   4 secs 
 
 NOTES:

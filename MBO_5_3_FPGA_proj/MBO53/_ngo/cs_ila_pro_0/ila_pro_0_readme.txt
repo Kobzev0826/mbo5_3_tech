@@ -1,5 +1,5 @@
 The following files were generated for 'ila_pro_0' in directory
-C:\Users\kva-0\Documents\FPGA\Ivel\MBO53_tech_ver16\MBO_5_3_FPGA_proj\MBO53\_ngo\cs_ila_pro_0\
+C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\_ngo\cs_ila_pro_0\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

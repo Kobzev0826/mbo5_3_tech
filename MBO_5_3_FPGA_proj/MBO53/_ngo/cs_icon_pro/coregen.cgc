@@ -88,8 +88,8 @@
                   <xilinx:file>
                      <xilinx:name>./icon_pro.xco</xilinx:name>
                      <xilinx:userFileType>xco</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:56:52 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0x77738FD4</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:05 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7E6D1614</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -98,14 +98,14 @@
                   <xilinx:file>
                      <xilinx:name>./icon_pro.ngc</xilinx:name>
                      <xilinx:userFileType>ngc</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:40 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0x819207FD</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:55 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0x93643EAA</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./icon_pro.ucf</xilinx:name>
                      <xilinx:userFileType>ucf</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:37 GMT 2021</xilinx:timeStamp>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:51 GMT 2022</xilinx:timeStamp>
                      <xilinx:checkSum>0x4E907B10</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -113,15 +113,15 @@
                      <xilinx:name>./icon_pro.vhd</xilinx:name>
                      <xilinx:userFileType>vhdl</xilinx:userFileType>
                      <xilinx:userFileType>vhdlSynthesis</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:37 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0xBA5A492E</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:51 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC182E8CC</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                   <xilinx:file>
                      <xilinx:name>./icon_pro.vho</xilinx:name>
                      <xilinx:userFileType>vho</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:37 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0x6F41F851</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:51 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB84C7016</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -130,8 +130,8 @@
                   <xilinx:file>
                      <xilinx:name>./icon_pro.vho</xilinx:name>
                      <xilinx:userFileType>vho</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:41 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0x6F41F851</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:55 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB84C7016</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -144,7 +144,7 @@
                      <xilinx:name>./icon_pro_xmdf.tcl</xilinx:name>
                      <xilinx:userFileType>tclXmdf</xilinx:userFileType>
                      <xilinx:userFileType>tcl</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:41 GMT 2021</xilinx:timeStamp>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:55 GMT 2022</xilinx:timeStamp>
                      <xilinx:checkSum>0x7AB748A4</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -155,7 +155,7 @@
                      <xilinx:name>./icon_pro.gise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>gise</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:42 GMT 2021</xilinx:timeStamp>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:57 GMT 2022</xilinx:timeStamp>
                      <xilinx:checkSum>0xCBBED9A9</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -163,8 +163,8 @@
                      <xilinx:name>./icon_pro.xise</xilinx:name>
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>xise</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:42 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0x98B497EE</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:57 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD325CE85</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -175,8 +175,8 @@
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>txtReadme</xilinx:userFileType>
                      <xilinx:userFileType>txt</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:42 GMT 2021</xilinx:timeStamp>
-                     <xilinx:checkSum>0xFF03DB58</xilinx:checkSum>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:57 GMT 2022</xilinx:timeStamp>
+                     <xilinx:checkSum>0x54174069</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
                </xilinx:fileSet>
@@ -187,7 +187,7 @@
                      <xilinx:userFileType>ignore</xilinx:userFileType>
                      <xilinx:userFileType>txtFlist</xilinx:userFileType>
                      <xilinx:userFileType>txt</xilinx:userFileType>
-                     <xilinx:timeStamp>Wed Dec 22 03:57:42 GMT 2021</xilinx:timeStamp>
+                     <xilinx:timeStamp>Thu Feb 17 17:06:57 GMT 2022</xilinx:timeStamp>
                      <xilinx:checkSum>0x40C01B05</xilinx:checkSum>
                      <xilinx:generationId>generationID_1879581046</xilinx:generationId>
                   </xilinx:file>
@@ -205,9 +205,9 @@
             <xilinx:subWorkingDirectory>./tmp/_cg/</xilinx:subWorkingDirectory>
          </xilinx:projectOptions>
          <xilinx:part>
-            <xilinx:device>xc6vlx75t</xilinx:device>
-            <xilinx:deviceFamily>virtex6</xilinx:deviceFamily>
-            <xilinx:package>ff484</xilinx:package>
+            <xilinx:device>xc7vx330t</xilinx:device>
+            <xilinx:deviceFamily>virtex7</xilinx:deviceFamily>
+            <xilinx:package>ffg1157</xilinx:package>
             <xilinx:speedGrade>-3</xilinx:speedGrade>
          </xilinx:part>
          <xilinx:flowOptions>
