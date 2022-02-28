@@ -53,6 +53,10 @@ output 			adc_02_cs,
 input 			Laser_rx_d,
 output 			Laser_tx_d,
 
+//-------------UART_control---------------
+input uart_rx_d,
+output uart_tx_d,
+
 //---------------  LED  ------------------
 output 	[7:0] 	LED//,
 
@@ -316,6 +320,14 @@ always @(posedge clk_12) begin
 	adc_02_cs_ff 	<= adc_01_cs_f;
 end
 
+
+uart_control uart_control(
+
+.clk	(clk_laser_uart),
+.rst	(~locked_3),
+.rx_d 	(uart_rx_d),
+.tx_d 	(uart_tx_d)
+);
 
 
 endmodule

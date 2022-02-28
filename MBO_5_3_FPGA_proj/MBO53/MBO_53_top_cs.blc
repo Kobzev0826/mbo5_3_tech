@@ -2,16 +2,20 @@ Release 14.7 ngcbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: ngcbuild.exe -dd
-C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo -sd ipcore_dir -p
-xc3s500e-fg320-5 -i
-C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\MBO_53_top.ngc
-C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\MBO_53_top_cs.ngc
+C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo -sd
+ipcore_dir -p xc3s500e-fg320-5 -i
+C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.ng
+c
+C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top_cs
+.ngc
 
 Reading NGO file
-"C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/MBO_53_top.ngc" ...
+"C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top.n
+gc" ...
 Loading design module "ipcore_dir/sum.ngc"...
 Loading design module "ipcore_dir/fifo_25_12_5.ngc"...
 Loading design module "ipcore_dir/ROM_UART_DATA.ngc"...
+Loading design module "ipcore_dir/RAM_control_data.ngc"...
 Loading design module "ipcore_dir/fifo_acp.ngc"...
 Applying constraints in "ipcore_dir/fifo_acp.ncf" to module "fifo_input_acp2"...
 Checking Constraint Associations...
@@ -29,12 +33,14 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4436536 kilobytes
+Total memory usage is 207228 kilobytes
 
 Writing NGC file
-"C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/MBO_53_top_cs.ngc" ...
-Total REAL time to NGCBUILD completion:  5 sec
-Total CPU time to NGCBUILD completion:   5 sec
+"C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_c
+s.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   6 sec
 
 Writing NGCBUILD log file
-"C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/MBO_53_top_cs.blc"...
+"C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_c
+s.blc"...

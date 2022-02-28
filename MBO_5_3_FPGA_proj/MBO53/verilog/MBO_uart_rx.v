@@ -36,12 +36,12 @@ parameter 	s_IDLE			= 0,
 
 (*IOB ="True"*) reg r_Rx_Data_R;
 reg r_Rx_Data;
-
+(*mark_debug = "true"*) reg [7:0] o_Rx_Byte_reg;
 assign o_Rx_Byte_wire = o_Rx_Byte_reg;
 (*mark_debug = "true"*) reg [7:0] r_Clock_Count;
 (*mark_debug = "true"*) reg [2:0] r_SM_Main;
 reg [7:0] o_Rx_Byte;
-(*mark_debug = "true"*) reg [7:0] o_Rx_Byte_reg;
+
 reg [2:0] r_Bit_Index;
 reg stop_bit_true;
 

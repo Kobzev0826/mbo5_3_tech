@@ -1,0 +1,37 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "verilog/MBO_uart_tx.v" in library work
+Compiling verilog file "verilog/MBO_uart_rx.v" in library work
+Module <MBO_uart_tx> compiled
+ERROR:HDLCompilers:28 - "verilog/MBO_uart_rx.v" line 40 'o_Rx_Byte_reg' has not been declared
+Compiling verilog file "ipcore_dir/RAM_control_data.v" in library work
+Module <MBO_uart_rx> compiled
+Compiling verilog file "verilog/uart_control.v" in library work
+Module <RAM_control_data> compiled
+Module <uart_control> compiled
+Analysis of file <"uart_control.prj"> failed.
+--> 
+
+Total memory usage is 262456 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

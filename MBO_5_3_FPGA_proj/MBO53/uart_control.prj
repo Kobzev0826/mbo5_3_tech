@@ -1,0 +1,4 @@
+verilog work "verilog/MBO_uart_tx.v"
+verilog work "verilog/MBO_uart_rx.v"
+verilog work "ipcore_dir/RAM_control_data.v"
+verilog work "verilog/uart_control.v"

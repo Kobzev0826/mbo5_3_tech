@@ -6,7 +6,8 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc3s500e-fg320-5 MBO_53_top_cs.ngc MBO_53_top.ngd
 
 Reading NGO file
-"C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/MBO_53_top_cs.ngc" ...
+"C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_c
+s.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -74,10 +75,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  11
 
-Total memory usage is 4456116 kilobytes
+Total memory usage is 225588 kilobytes
 
 Writing NGD file "MBO_53_top.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "MBO_53_top.bld"...

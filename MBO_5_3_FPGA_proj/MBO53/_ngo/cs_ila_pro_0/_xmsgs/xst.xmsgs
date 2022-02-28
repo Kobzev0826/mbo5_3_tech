@@ -5,43 +5,46 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG5</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG4</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG6</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG5</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG7</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG6</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG8</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG7</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG9</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG8</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG10</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG9</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG11</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG10</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG12</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG11</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG13</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG12</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG14</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG13</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG15</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG14</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TRIG_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos;.
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">TRIG15</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos; is tied to default value.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/user/Documents/MBO53_ver17_laser_update/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/chipscope_ila_v1_05_a/ila_core.vhd</arg>&quot; line <arg fmt="%d" index="2">874</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WR_TSTAMP_OVERFLOW</arg>&apos; of component &apos;<arg fmt="%s" index="4">ila_cap_storage</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/ila_pro_0.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TRIG_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">chipscope_ila</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/_ngo/cs_ila_pro_0/tmp/_cg/_bbx/chipscope_ila_v1_05_a/ila_core.vhd</arg>&quot; line <arg fmt="%d" index="2">874</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WR_TSTAMP_OVERFLOW</arg>&apos; of component &apos;<arg fmt="%s" index="4">ila_cap_storage</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CONTROL_I&lt;3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -68,25 +71,22 @@
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;3:1&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">tmpCompData&lt;2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;5:4&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;10:6&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;1:0&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;3:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly2&lt;5:3&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly2&lt;10:8&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly1&lt;5:3&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly1&lt;10:8&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">comp&lt;5:1&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">comp&lt;10:3&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;10:3&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;5:1&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iO</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -143,22 +143,25 @@
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">tmpCompData&lt;2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;18:13&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;15:10&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;12&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;9&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;10:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel&lt;7:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly1&lt;18:15&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_dly1&lt;15&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">comp&lt;18:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">comp&lt;15:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;18:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">cfg_data&lt;15:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">DOPB</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic_1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -210,12 +213,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic_1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CFG_EN_VEC</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CFG_EN_VEC</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -281,10 +278,7 @@
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic_1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iTRIGGER</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iMATCH_TC&lt;7:2&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iMATCH_TC&lt;7:4&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iCFG_EN_VEC</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -293,7 +287,7 @@
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iCFG_DOUT</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iCFG_DATA&lt;17:3&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">iCFG_DATA</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">state_set</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -320,7 +314,7 @@
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localDOB</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localADDRB&lt;14:12&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localADDRB&lt;14:9&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">localADDRA&lt;14&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -476,7 +470,7 @@
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">CFG_TRIGMCNT_EN</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CONTROL_IN&lt;34:24&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CONTROL_IN&lt;34:23&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CONTROL_IN&lt;17:14&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -542,6 +536,9 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">TRIG15&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">TRIG4&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">TRIG5&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -573,9 +570,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ATC_CLKIN</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

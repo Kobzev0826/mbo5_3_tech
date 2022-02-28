@@ -5,139 +5,151 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 105: Port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 109: Port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 119: Port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 123: Port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 137: Port <arg fmt="%s" index="1">error_uart</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 141: Port <arg fmt="%s" index="1">error_uart</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 77: Assignment to <arg fmt="%s" index="1">clk_bf</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 324: Port <arg fmt="%s" index="1">laser_on</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 78: Assignment to <arg fmt="%s" index="1">clk_50</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 81: Assignment to <arg fmt="%s" index="1">clk_bf</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\adc_ltc2315.v" Line 48: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 82: Assignment to <arg fmt="%s" index="1">clk_50</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\adc_ltc2315.v" Line 61: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 48: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\adc_ltc2315.v" Line 97: Assignment to <arg fmt="%s" index="1">sck_n</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 61: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\adc_ltc2315.v" Line 103: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 97: Assignment to <arg fmt="%s" index="1">sck_n</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 49: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\adc_ltc2315.v" Line 103: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_tx.v" Line 73: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 49: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_tx.v" Line 83: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_tx.v" Line 73: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_tx.v" Line 87: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_tx.v" Line 83: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_tx.v" Line 98: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_tx.v" Line 87: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_tx.v" Line 46: Assignment to <arg fmt="%s" index="1">cnt_wait</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_tx.v" Line 98: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_rx.v" Line 88: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_tx.v" Line 46: Assignment to <arg fmt="%s" index="1">cnt_wait</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_rx.v" Line 95: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_rx.v" Line 88: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_rx.v" Line 100: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_rx.v" Line 95: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_rx.v" Line 112: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_rx.v" Line 100: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_uart_rx.v" Line 61: Assignment to <arg fmt="%s" index="1">stop_bit_true</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_rx.v" Line 112: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\ipcore_dir\ROM_UART_DATA.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ROM_UART_DATA</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_uart_rx.v" Line 61: Assignment to <arg fmt="%s" index="1">stop_bit_true</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 112: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\ROM_UART_DATA.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ROM_UART_DATA</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 120: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 112: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 131: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 120: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 141: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 131: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 155: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 141: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 160: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 155: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 175: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 160: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 176: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 175: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 180: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 176: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 192: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 180: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v" Line 199: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 192: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_25_12_5</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v" Line 199: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\ethernet\Ethernet_module_upper.v" Line 113: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_25_12_5.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_25_12_5</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\Ethernet\ourHeader.v" Line 18: Assignment to <arg fmt="%s" index="1">flag_type</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\Ethernet_module_upper.v" Line 113: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\ethernet\Ethernet_module_upper.v" Line 237: Assignment to <arg fmt="%s" index="1">laser_ft</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\ourHeader.v" Line 18: Assignment to <arg fmt="%s" index="1">flag_type</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to <arg fmt="%s" index="1">input_ip_verified_ft</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\Ethernet_module_upper.v" Line 237: Assignment to <arg fmt="%s" index="1">laser_ft</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 195: Assignment to <arg fmt="%s" index="1">eth_comp_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\Ethernet\dataHolder.v" Line 35: Assignment to <arg fmt="%s" index="1">input_ip_verified_ft</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 196: Assignment to <arg fmt="%s" index="1">eth_comp_data_ena</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 199: Assignment to <arg fmt="%s" index="1">eth_comp_data</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_acp</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 200: Assignment to <arg fmt="%s" index="1">eth_comp_data_ena</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 244: Assignment to <arg fmt="%s" index="1">FIX_POROG</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\fifo_acp.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">fifo_acp</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 152: Net &lt;<arg fmt="%s" index="1">SUB_TA_TB[23]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 248: Assignment to <arg fmt="%s" index="1">FIX_POROG</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 274: Net &lt;<arg fmt="%s" index="1">Led_reg[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="604" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\uart_control.v" Line 51: Module instantiation should have an instance name
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 105: Input port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\ipcore_dir\RAM_control_data.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM_control_data</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v" Line 119: Input port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\uart_control.v" Line 57: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">douta</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 156: Net &lt;<arg fmt="%s" index="1">SUB_TA_TB[23]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 278: Net &lt;<arg fmt="%s" index="1">Led_reg[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 109: Input port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v" Line 123: Input port <arg fmt="%s" index="1">clk_dv_new</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk_dv_new</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">adc_01</arg>&apos;, is tied to GND.
@@ -155,61 +167,64 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">e_rx_er</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">83</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">87</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">93</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">97</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_01</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_01</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">adc_data_trigger</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_01</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">adc_data_trigger</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_01</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">119</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">123</arg>: Output port &lt;<arg fmt="%s" index="3">en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">119</arg>: Output port &lt;<arg fmt="%s" index="3">adc_data_trigger</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">123</arg>: Output port &lt;<arg fmt="%s" index="3">adc_data_trigger</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adc_02</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">137</arg>: Output port &lt;<arg fmt="%s" index="3">error_uart</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">laser_cntrl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">error_uart</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">laser_cntrl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">167</arg>: Output port &lt;<arg fmt="%s" index="3">header_parsed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">header_parsed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">167</arg>: Output port &lt;<arg fmt="%s" index="3">data_type_one</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">data_type_one</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">167</arg>: Output port &lt;<arg fmt="%s" index="3">header_parsed_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">header_parsed_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">167</arg>: Output port &lt;<arg fmt="%s" index="3">data_type_one_wren</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">171</arg>: Output port &lt;<arg fmt="%s" index="3">data_type_one_wren</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ethernet</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">214</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">214</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">210</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">214</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">229</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">229</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">229</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input_acp2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\MBO_53_top.v</arg>&quot; line <arg fmt="%s" index="2">324</arg>: Output port &lt;<arg fmt="%s" index="3">laser_on</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_control</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SUB_TA_TB</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -221,10 +236,10 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_dv_new</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v</arg>&quot; line <arg fmt="%s" index="2">51</arg>: Output port &lt;<arg fmt="%s" index="3">o_Tx_Active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_tx</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v</arg>&quot; line <arg fmt="%s" index="2">51</arg>: Output port &lt;<arg fmt="%s" index="3">o_Tx_Active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_tx</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\laser_connect_top.v</arg>&quot; line <arg fmt="%s" index="2">64</arg>: Output port &lt;<arg fmt="%s" index="3">rx_Active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_rx</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\laser_connect_top.v</arg>&quot; line <arg fmt="%s" index="2">64</arg>: Output port &lt;<arg fmt="%s" index="3">rx_Active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_rx</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">cnt_send_b</arg> may hinder XST clustering optimizations.
@@ -239,10 +254,10 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_main</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">77</arg>: Output port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">77</arg>: Output port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\verilog\ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">77</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\ethernet\Ethernet_module_upper.v</arg>&quot; line <arg fmt="%s" index="2">77</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fifo_input</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">BOARD_MAC</arg>&lt;<arg fmt="%d" index="2">47</arg>:<arg fmt="%d" index="3">47</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">dataHolder</arg>&gt;.
@@ -297,6 +312,27 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">BOARD_IP</arg>&lt;<arg fmt="%d" index="2">3</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">dataHolder</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\uart_control.v</arg>&quot; line <arg fmt="%s" index="2">26</arg>: Output port &lt;<arg fmt="%s" index="3">o_Tx_Active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_tx</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\verilog\uart_control.v</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">rx_Active</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">uart_rx</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">laser_on</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">UART_STATE</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">UART_STATE</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">data_in_counter</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="new" >HDL ADVISOR - <arg fmt="%s" index="1">MARK_DEBUG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">tx_done</arg> may hinder XST clustering optimizations.
 </msg>
 
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -1547,6 +1583,12 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">error_uart</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">laser_cntrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">o_Tx_Active</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rx_Active</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart_rx</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">o_Tx_Active</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart_tx</arg>&gt;.

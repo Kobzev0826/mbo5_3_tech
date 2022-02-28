@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="e_rx_d">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="e_tx_d">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="LED">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="clk" Dir="IN"/>
+		<Port Id="BTN_WEST" Dir="IN"/>
+		<Port Id="BTN_NORTH" Dir="IN"/>
+		<Port Id="e_tx_clk" Dir="IN"/>
+		<Port Id="e_rx_er" Dir="IN"/>
+		<Port Id="e_rx_dv" Dir="IN"/>
+		<Port Id="e_rx_clk" Dir="IN"/>
+		<Port Id="adc_01_sdo" Dir="IN"/>
+		<Port Id="adc_02_sdo" Dir="IN"/>
+		<Port Id="Laser_rx_d" Dir="IN"/>
+		<Port Id="uart_rx_d" Dir="IN"/>
+		<Port Id="e_tx_en" Dir="OUT"/>
+		<Port Id="e_tx_er" Dir="OUT"/>
+		<Port Id="adc_01_sck" Dir="OUT"/>
+		<Port Id="adc_01_cs" Dir="OUT"/>
+		<Port Id="adc_02_sck" Dir="OUT"/>
+		<Port Id="adc_02_cs" Dir="OUT"/>
+		<Port Id="Laser_tx_d" Dir="OUT"/>
+		<Port Id="uart_tx_d" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

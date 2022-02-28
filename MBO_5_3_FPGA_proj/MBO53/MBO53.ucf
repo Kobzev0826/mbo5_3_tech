@@ -517,3 +517,13 @@ NET "adc_01_cs" SLEW = SLOW;
 NET "adc_01_sck" SLEW = SLOW;
 NET "adc_02_cs" SLEW = SLOW;
 NET "adc_02_sck" SLEW = SLOW;
+
+# PlanAhead Generated IO constraints 
+
+NET "uart_rx_d" IOSTANDARD = LVTTL;
+NET "uart_tx_d" IOSTANDARD = LVTTL;
+
+# PlanAhead Generated physical constraints 
+
+NET "uart_rx_d" LOC = R7;
+NET "uart_tx_d" LOC = M14;

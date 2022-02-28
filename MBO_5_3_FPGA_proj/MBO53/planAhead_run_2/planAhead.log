@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Feb 28 17:26:02 2022
+# Process ID: 5384
+# Log file: C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/pa.fromNetlist.tcl
+# create_project -name MBO53 -dir "C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/planAhead_run_2" -part xc3s500efg320-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO_53_top_cs.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53} {ipcore_dir} }
+# add_files [list {ipcore_dir/Eth_RAM_120_data.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_ARP.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_headers.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_holder.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Eth_RAM_udp.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_25_12_5.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_acp.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_compression_base.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/FIFO_CONV_IN.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/FIFO_CONV_OUT.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fifo_doll.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/MEM_OPORA_LCHM.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RAM_control_data.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ROM_UART_DATA.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/sum.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "MBO53.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO53.ucf' to fileset 'constrs_1'
+# add_files [list {MBO53.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-5
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MBO_53_top_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SR
+   L16/sel<11 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_S
+   RL16/sel<11 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_S
+   RL16/sel<11 : 0> on block ila_pro_0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_
+   GANDX_SRL16/sel<5 : 0> on block ila_pro_0 is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_
+   GANDX_SRL16/sel<5 : 0> on block ila_pro_0 is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus _n0153[7 : 1] on block MBO_uart_rx_NO1
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus _n0114[8 : 2] on block MBO_uart_tx_NO1
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus _n0153[7 : 1] on block MBO_uart_rx is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:304 - Port bus ila0_data0<15 : 6> on block MBO_uart_tx is
+   not reconstructed, because there are some missing bus pins.
+WARNING:NetListWriters:306 - Signal bus _n0114[8 : 2] on block MBO_uart_tx is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GND_22_o_counter[4]_mux_21_OUT(15 : 0)
+   on block ipHeader is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Shift[59][7]_GND_29_o_mux_1_OUT(320 : 0)
+   on block ARPanswerFormer is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_counter[15]_GND_31_o_LessThan_15_o_lut[6 : 1] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_GND_31_o_counter[15]_LessThan_22_o_lut[9 : 0] on block
+   messagePartialReporter is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus input_fifo_rdempty_delay(15 : 0) on
+   block Ethernet_module_upper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MBO_53_top_cs.edif ...
+ngc2edif: Total memory usage is 109708 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/MBO53.data/cache/MBO_53_top_cs_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/MBO53.data/cache/MBO_53_top_cs_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_25_12_5.ncf]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_25_12_5.ncf]
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ncf]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/fifo_acp.ncf]
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/RAM_control_data.ncf]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/RAM_control_data.ncf]
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/ROM_UART_DATA.ncf]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/ROM_UART_DATA.ncf]
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/sum.ncf]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/ipcore_dir/sum.ncf]
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf]
+CRITICAL WARNING: [Constraints 18-47] TIMESPEC TS_RD_CLK is redefined. The earlier version defined at (file = fifo_acp.ncf, line = 54) will be discarded [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:12]
+CRITICAL WARNING: [Constraints 18-47] TIMESPEC TS_WR_CLK is redefined. The earlier version defined at (file = fifo_acp.ncf, line = 55) will be discarded [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:13]
+CRITICAL WARNING: [Constraints 18-47] TIMESPEC TS_RD_CLK is redefined. The earlier version defined at (file = MBO_53_top_cs.xncf, line = 12) will be discarded [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:16]
+CRITICAL WARNING: [Constraints 18-47] TIMESPEC TS_WR_CLK is redefined. The earlier version defined at (file = MBO_53_top_cs.xncf, line = 13) will be discarded [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:17]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf]
+Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO53.ucf]
+WARNING: [Constraints 18-7] Clock terminal e_rx_clk is located on a non-clock IO location V3 this can produce sub-optimal results [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO53.ucf:37]
+Finished Parsing UCF File [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/MBO53.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'J_CLK', timing constraint is ignored [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:21]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'J_CLK', timing constraint is ignored [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:23]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'J_CLK', timing constraint is ignored [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:24]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'J_CLK', timing constraint is ignored [C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/.Xil/PlanAhead-5384-WIN-8KBTDN6I8P9/ngc2edif/MBO_53_top_cs.xncf:20]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 94487973
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 670.391 ; gain = 160.609
+startgroup
+set_property package_pin M14 [get_ports uart_rx_d]
+endgroup
+set_property iostandard LVTTL [get_ports [list uart_rx_d]]
+set_property iostandard LVTTL [get_ports [list uart_tx_d]]
+startgroup
+set_property package_pin M14 [get_ports uart_rx_d]
+endgroup
+startgroup
+set_property package_pin R7 [get_ports uart_rx_d]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports uart_tx_d]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53\planAhead_pid5384.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Feb 28 17:29:21 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead
