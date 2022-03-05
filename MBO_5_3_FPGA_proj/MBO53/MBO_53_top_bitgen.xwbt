@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\MBO_53_top.ncd
-OUTFILE=C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53\MBO_53_top.bit
+INFILE=C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.ncd
+OUTFILE=C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.bit
 FAMILY=Spartan3E
 PART=xc3s500e-5fg320
-WORKINGDIR=C:\Users\user\Documents\MBO53_ver17_laser_update\MBO53
+WORKINGDIR=C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53
 LICENSE=WebPack
-USER_INFO=__0_0_0
+USER_INFO=_

@@ -147,3 +147,13 @@ No Unisim elements were transformed.
 
 Phase 0 | Netlist Checksum: 94487973
 link_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 645.809 ; gain = 129.813
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53\planAhead_pid5436.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Feb 28 18:03:53 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

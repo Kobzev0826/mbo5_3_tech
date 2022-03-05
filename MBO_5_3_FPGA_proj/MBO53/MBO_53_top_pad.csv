@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Mon Feb 21 17:15:10 2022
+#Mon Feb 28 17:54:39 2022
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -226,7 +226,7 @@ M10,,DIFFM,IO_L16P_2/M0,UNUSED,,2,,,,,,,,,
 M11,,,VCCO_2,,,2,,,,,3.30,,,,
 M12,,,GND,,,,,,,,,,,,
 M13,Laser_tx_d,IOB,IO_L05N_1/VREF_1,OUTPUT,LVTTL,1,12,SLOW,NONE**,,,LOCATED,NO,NONE,
-M14,,DIFFM,IO_L05P_1,UNUSED,,1,,,,,,,,,
+M14,uart_tx_d,IOB,IO_L05P_1,OUTPUT,LVTTL,1,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 M15,,DIFFM,IO_L07P_1,UNUSED,,1,,,,,,,,,
 M16,,DIFFS,IO_L07N_1,UNUSED,,1,,,,,,,,,
 M17,,,VCCAUX,,,,,,,,2.5,,,,
@@ -273,7 +273,7 @@ R3,,DIFFM,IO_L23P_3,UNUSED,,3,,,,,,,,,
 R4,,IOB,IO/VREF_3,UNUSED,,3,,,,,,,,,
 R5,e_tx_d(2),IOB,IO_L04P_2,OUTPUT,LVCMOS33,2,8,SLOW,NONE**,,,LOCATED,NO,NONE,
 R6,e_tx_er,IOB,IO_L05P_2,OUTPUT,LVCMOS33,2,8,SLOW,NONE**,,,LOCATED,NO,NONE,
-R7,,DIFFSI,IP_L08N_2,UNUSED,,2,,,,,,,,,
+R7,uart_rx_d,IBUF,IP_L08N_2,INPUT,LVTTL,2,,,,NONE,,LOCATED,NO,NONE,
 R8,,DIFFM,IO_L10P_2,UNUSED,,2,,,,,,,,,
 R9,,IOB,IO/D5,UNUSED,,2,,,,,,,,,
 R10,,DIFFM,IO_L15P_2/D2/GCLK2,UNUSED,,2,,,,,,,,,

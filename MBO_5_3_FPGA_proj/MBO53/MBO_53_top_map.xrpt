@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Mon Feb 21 17:14:43 2022">
+  <application stringID="Map" timeStamp="Mon Feb 28 17:54:10 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Users\user\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;F:\Program Files\MATLAB\R2016a\runtime\win64;F:\Program Files\MATLAB\R2016a\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\User\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python310\;C:\Users\User\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -34,22 +34,18 @@
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
           <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
         </row>
-        <row stringID="row" value="6">
-          <item stringID="variable" value="XIL_IMPACT_SKIPIDCODECHECK"/>
-          <item stringID="value" value="1"/>
-        </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="DESKTOP-5G8PJ0K"/>
+      <item stringID="User_EnvHost" value="WIN-8KBTDN6I8P9"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz"/>
-          <item stringID="speed" value="3193 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz"/>
+          <item stringID="speed" value="3400 MHz"/>
         </row>
       </table>
     </section>
@@ -72,39 +68,39 @@
       <section stringID="MAP_DESIGN_SUMMARY">
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="41"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4598624"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="4 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="4 secs "/>
+        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="42"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="367512"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="8 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="5 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="9312" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="3187">
-          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3186"/>
+        <item AVAILABLE="9312" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="3295">
+          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3294"/>
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="1"/>
         </item>
-        <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="3523">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="215"/>
-          <item dataType="int" label="Number used as Shift registers" stringID="MAP_NUM_SHIFT" value="139"/>
+        <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="3606">
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="208"/>
+          <item dataType="int" label="Number used as Shift registers" stringID="MAP_NUM_SHIFT" value="190"/>
         </item>
-        <item AVAILABLE="4656" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="2427">
+        <item AVAILABLE="4656" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="2490">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <section stringID="MAP_IOB_DATA">
-          <item AVAILABLE="232" dataType="int" stringID="MAP_AGG_BONDED_IO" value="31"/>
+          <item AVAILABLE="232" dataType="int" stringID="MAP_AGG_BONDED_IO" value="33"/>
           <item dataType="int" label="IOB Flip Flops" stringID="MAP_NUM_IOB_FF" value="3"/>
         </section>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
-        <item AVAILABLE="20" dataType="int" stringID="MAP_NUM_RAMB16" value="11"/>
+        <item AVAILABLE="20" dataType="int" stringID="MAP_NUM_RAMB16" value="8"/>
         <item AVAILABLE="24" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="10"/>
         <item AVAILABLE="4" dataType="int" stringID="MAP_NUM_DCM" value="3"/>
         <item AVAILABLE="1" dataType="int" stringID="MAP_NUM_BSCAN" value="1"/>
       </section>
       <section stringID="MAP_MACRO_RPM_REPORTING">
         <item dataType="int" stringID="MAP_HARD_MACROS" value="0"/>
-        <item dataType="int" stringID="MAP_RPMS" value="16"/>
+        <item dataType="int" stringID="MAP_RPMS" value="15"/>
       </section>
       <section stringID="MAP_IOB_PROPERTIES">
         <table stringID="MAP_IOB_TABLE">
@@ -376,11 +372,27 @@
             <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
             <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
           </row>
+          <row stringID="row" value="32">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="uart_rx_d"/>
+            <item stringID="Type" value="IBUF"/>
+            <item stringID="Direction" value="INPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
+            <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
+          </row>
+          <row stringID="row" value="33">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="uart_tx_d"/>
+            <item stringID="Type" value="IOB"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
+            <item label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="SLEW_RATE" value="SLOW"/>
+            <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
+          </row>
         </table>
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[4].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16_MSET"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="U_ila_pro_0/U0_I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16_MSET"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>
@@ -389,14 +401,22 @@
       <section stringID="MAP_CONFIGURATION_STRING_DETAILS"/>
       <section stringID="MAP_GENERAL_CONFIG_DATA">
         <item stringID="MAP_DISABLE_ATTR" value="LOW"/>
-        <item stringID="MAP_INIT_00" value="0004000000000000060103060103080800040000000000000C01030100020508"/>
-        <item stringID="MAP_INIT_01" value="0004000000000000060003050000000000040000000000000A01030500000C01"/>
-        <item stringID="MAP_INIT_02" value="000400000000000001010E040000000A00040000000000000500030600000000"/>
-        <item stringID="MAP_INIT_03" value="0004000000000000080103020000000800040000000000000A010F0100030E08"/>
-        <item stringID="MAP_INIT_04" value="00040000000000000A0109000000000200040000000000000000000000000000"/>
-        <item stringID="MAP_INIT_05" value="000400000000000008000E060000000000040000000000000B010E0500000001"/>
-        <item stringID="MAP_INIT_06" value="0004000000000000080109000000000000040000000000000A010E0500000000"/>
-        <item stringID="MAP_INIT_07" value="0000000000000000000000000000000000040000000000000001030200000000"/>
+        <item stringID="MAP_INITP_00" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_01" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_02" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_03" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_04" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_06" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_07" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_00" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_01" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_02" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_03" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_04" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_06" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_07" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_08" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_09" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_0A" value="0000000000000000000000000000000000000000000000000000000000000000"/>
@@ -457,14 +477,6 @@
         <item stringID="MAP_SRVAL_A" value="000000000"/>
         <item stringID="MAP_INIT_B" value="000000000"/>
         <item stringID="MAP_SRVAL_B" value="000000000"/>
-        <item stringID="MAP_INITP_00" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_01" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_02" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_03" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_04" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_06" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INITP_07" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_CLKDV_DIVIDE" value="7"/>
         <item stringID="MAP_CLKOUT_PHASE_SHIFT" value="NONE"/>
         <item stringID="MAP_CLK_FEEDBACK" value="1X"/>
