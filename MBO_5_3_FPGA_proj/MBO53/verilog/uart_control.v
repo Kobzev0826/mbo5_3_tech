@@ -10,17 +10,25 @@ output laser_on
 
 parameter LISTEN = 0, ANALYZE=1 , send =2, waiting =0 ;
 
-(*mark_debug = "true"*)wire 			tx_done; 			// трансивер завершил передачу байта
-(*mark_debug = "true"*)wire 			Rx_DV;   			// ресивер принял байт  
-(*mark_debug = "true"*) wire 	[7:0] 	Rx_Byte; 			// принятый байт на выходе из ресивера	
+// debug part-------------------
+wire [31:00] delta_time = 32'h 12345678;
+wire [31:00] omega = 32'hffeeddcc;
+wire [15:00] temperature = 16'h 1b;
+wire [15:00] ready = 16'h 1;
+//--------------------------------
 
+(*mark_debug = "true"*)wire 			tx_done; 			// С‚СЂР°РЅСЃРёРІРµСЂ Р·Р°РІРµСЂС€РёР» РїРµСЂРµРґР°С‡Сѓ Р±Р°Р№С‚Р°
+(*mark_debug = "true"*)wire 			Rx_DV;   			// СЂРµСЃРёРІРµСЂ РїСЂРёРЅСЏР» Р±Р°Р№С‚  
+(*mark_debug = "true"*) wire 	[7:0] 	Rx_Byte; 			// РїСЂРёРЅСЏС‚С‹Р№ Р±Р°Р№С‚ РЅР° РІС‹С…РѕРґРµ РёР· СЂРµСЃРёРІРµСЂР°	
+
+reg [31:00] time_counter;
 wire [15:0] ram_data;
 reg [7:0] tx_data = 8'hd0;
 (*mark_debug = "true"*)reg [31:00] data_in_reg,data_in_uart;
 (*mark_debug = "true"*)reg [15:0] ram_din;
 (*mark_debug = "true"*)reg [7:0] ram_addr;
-(*mark_debug = "true"*)reg [2:0] UART_STATE,data_in_counter,send_cnt,send_case;
-(*mark_debug = "true"*) reg wea,start_uart_strob,uart_start, uart_start_ft;
+(*mark_debug = "true"*)reg [2:0] UART_STATE,data_in_counter,send_cnt,send_case, send_end_point_counter;
+(*mark_debug = "true"*) reg wea,start_uart_strob,uart_start, uart_start_ft,start_uart_strob_ff,send_to_end_pont;
 //___________________________________________________________________________________________
 // speed 115200
 (*keep_hierarchy="yes"*) 
@@ -41,9 +49,9 @@ MBO_uart_rx #(186)uart_rx
 (
 .i_Clock		(clk),
 .rst			(rst),
-.i_Rx_Serial	(rx_d), //строб начала выдачи данных
+.i_Rx_Serial	(rx_d), //СЃС‚СЂРѕР± РЅР°С‡Р°Р»Р° РІС‹РґР°С‡Рё РґР°РЅРЅС‹С…
 
-.o_Rx_DV		(Rx_DV),	// строб окончания передачи
+.o_Rx_DV		(Rx_DV),	// СЃС‚СЂРѕР± РѕРєРѕРЅС‡Р°РЅРёСЏ РїРµСЂРµРґР°С‡Рё
 .o_Rx_Byte_wire	(Rx_Byte),
 .rx_Active 		()
 );
@@ -84,61 +92,36 @@ always @(posedge clk ) begin
 	end
 	
 	ANALYZE: begin 
-		// пришла команда на запись
+		// РїСЂРёС€Р»Р° РєРѕРјР°РЅРґР° РЅР° Р·Р°РїРёСЃСЊ
 		if ( data_in_reg[24])begin
-				wea <=1;
-				ram_din <= data_in_reg[15:00];
-				ram_addr <= data_in_reg[23:16];
 				
-				//режим отправки
-				if ((data_in_reg[23:16] == 8'h00)) begin 
-					if ((data_in_reg[11:08] == 4'h1)) begin 
-						UART_STATE <= SEND;
-						start_uart_strob <= 1; // строб запуска отправки
-					end
-				
+				if ( send_to_end_pont) begin 
+					if ((data_in_reg[23:16] == 8'h00)&&(data_in_reg[11:08] == 4'h0)) send_to_end_pont <=0;
 				end
-				else UART_STATE <= LISTEN;
-				
+				else begin 
+					wea <=1;
+					ram_din <= data_in_reg[15:00];
+					ram_addr <= data_in_reg[23:16];
+					
+					//СЂРµР¶РёРј РѕС‚РїСЂР°РІРєРё
+					if ((data_in_reg[23:16] == 8'h00)&&(data_in_reg[11:08] == 4'h1)) send_to_end_pont <=1;
+					else UART_STATE <= LISTEN;
+				end
 			end
 		else begin
+			if (!send_to_end_pont) begin
 				wea <=0;
 				ram_addr <= data_in_reg[23:16];
-				start_uart_strob <= 1; // строб запуска отправки
+				start_uart_strob <= 1; // СЃС‚СЂРѕР± Р·Р°РїСѓСЃРєР° РѕС‚РїСЂР°РІРєРё
 				send_case <= send;
 				
 				//debug part
 				data_in_uart <= {8'hff,ram_addr,ram_data};
 				UART_STATE <= LISTEN;
 			end
-		
-		
-		
-	end
-	
-	SEND:	begin 
-	
-		// слушаем что приходит 
-		
-		if ( Rx_DV) begin 
-			data_in_reg[7:0] <= Rx_Byte;
-			data_in_reg[31:8] <= data_in_reg [23:0];
-			data_in_counter <= data_in_counter+1;
+			else UART_STATE <= LISTEN;
 		end
-		
-		if (data_in_counter == 4) begin
-			data_in_counter <=0;
-			if (data_in_reg[24] && (data_in_reg[23:16] == 8'h00) && (data_in_reg[11:08] == 4'h0)) UART_STATE <= LISTEN;
-		end
-		
-		wea <=0;
-		
-		
-		
-		
-	
 	end
-	
 	
 	endcase
 	
@@ -161,6 +144,30 @@ always @(posedge clk ) begin
 				uart_start <= 0;
 				
 			end
+		endcase
+	end
+	
+	start_uart_strob_ff <= start_uart_strob;
+	
+	if ( send_to_end_pont) begin 
+		
+		if ( start_uart_strob_ff & (!start_uart_strob))begin
+			if (send_end_point_counter == 3) send_end_point_counter <= 0;
+			else send_end_point_counter <= send_end_point_counter+1;
+			time_counter <= time_counter +1;
+			start_uart_strob <= 1;
+		end
+		
+		case (send_end_point_counter)
+		
+		0:	data_in_uart <= time_counter;
+		
+		1:	data_in_uart <= delta_time;
+		
+		2:	data_in_uart <= omega;
+		
+		3:	data_in_uart <= {temperature,ready};
+		
 		endcase
 	end
 	

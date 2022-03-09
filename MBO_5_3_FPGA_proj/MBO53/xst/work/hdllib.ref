@@ -1,1 +1,4 @@
-MO MBO_uart_tx NULL verilog/MBO_uart_tx.v vlg3C/_m_b_o__uart__tx.bin 1646052470
+MO RAM_control_data NULL ipcore_dir/RAM_control_data.v vlg29/_r_a_m__control__data.bin 1646816436
+MO MBO_uart_rx NULL verilog/MBO_uart_rx.v vlg32/_m_b_o__uart__rx.bin 1646816436
+MO MBO_uart_tx NULL verilog/MBO_uart_tx.v vlg3C/_m_b_o__uart__tx.bin 1646816436
+MO uart_control NULL verilog/uart_control.v vlg5C/uart__control.bin 1646816436
