@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.ncd
-OUTFILE=C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53\MBO_53_top.bit
-FAMILY=Spartan3E
-PART=xc3s500e-5fg320
-WORKINGDIR=C:\Users\User\Documents\GitHub\mbo5_3_tech\MBO_5_3_FPGA_proj\MBO53
-LICENSE=WebPack
-USER_INFO=_

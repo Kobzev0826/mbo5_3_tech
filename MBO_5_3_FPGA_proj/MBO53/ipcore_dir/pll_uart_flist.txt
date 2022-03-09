@@ -1,2 +1,0 @@
-# Output products list for <pll_uart>
-pll_uart_flist.txt

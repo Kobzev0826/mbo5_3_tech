@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/User/Documents/GitHub/mbo5_3_tech/MBO_5_3_FPGA_proj/MBO53/xst"
-elaborate
--ifn uart_control.prj
--ifmt mixed
